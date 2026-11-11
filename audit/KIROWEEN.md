@@ -1,5 +1,7 @@
 # Preparación Kiroween 2026
 
+**Actualización experimental, 11-11-2026:** la rama `codex/costume-contest` implementa **The Illuminated Threshold**. [Evaluación de las cuatro categorías, comparación y pruebas](costume-contest/REPORT.md). Costume Contest es defendible para ese experimento; la versión de `main` y producción sigue siendo la auditada el día 10. El análisis de falta de encaje que aparece abajo describe esa versión original.
+
 Reglas consultadas 10-11-2026: [reglas](https://kiroween.devpost.com/rules), [convocatoria](https://kiroween.devpost.com/). Revisión propia, no certificación del organizador.
 
 Se exige proyecto nuevo durante 30 octubre–4 diciembre 2026, software funcional y uso suficiente de Kiro; GitHub público con licencia y `.kiro` en raíz, acceso funcional, descripción y evidencia del desarrollo. Cierre 14:00 PST/17:00 Perú. Video público YouTube<3 min y materiales en inglés o traducción. La primera etapa comprueba viabilidad, tema y herramientas; luego cinco criterios iguales:Impact,Implementation,Design,Innovation,Presentation. [Reglas§§1,4,6](https://kiroween.devpost.com/rules).

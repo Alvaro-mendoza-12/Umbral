@@ -9,7 +9,7 @@ export default defineConfig({
   outputDir: 'test-results',
   reporter: [
     ['list'],
-    ['json', { outputFile: 'audit/results/playwright.json' }],
+    ['json', { outputFile: `${process.env.UMBRAL_RESULTS_DIR || 'audit/results'}/playwright.json` }],
     ['html', { outputFolder: 'playwright-report', open: 'never' }],
   ],
   use: {

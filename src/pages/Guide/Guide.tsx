@@ -83,20 +83,24 @@ export default function Guide() {
                   const stepNum = i + 1;
                   const stepTitle = t(`guide.steps.${i}.title`);
                   const isActive = stepNum === step;
-                  const isCompleted = stepNum < step;
+                  const isPrevious = stepNum < step;
 
                   return (
                     <li key={stepNum}>
                       <button
                         type="button"
                         onClick={() => navigate(`/guide/${stepNum}`)}
+                        aria-label={`${stepNum}. ${t(`threshold.shortSteps.${i}`)}: ${stepTitle}`}
+                        data-journey-state={isActive ? 'current' : isPrevious ? 'previous' : 'upcoming'}
                         className={`${styles.stepButton} ${
                           isActive ? styles.active : ''
-                        } ${isCompleted ? styles.completed : ''}`}
+                        } ${isPrevious ? styles.previous : ''}`}
                         aria-current={isActive ? 'step' : undefined}
                       >
-                        <span className={styles.stepNumber}>{stepNum}</span>
-                        <span className={styles.stepTitle}>{stepTitle}</span>
+                        <span className={styles.stepNumber} aria-hidden="true">{stepNum}</span>
+                        <span className={styles.stepTitle} aria-hidden="true">{stepTitle}</span>
+                        <span className={styles.shortTitle} aria-hidden="true">{t(`threshold.shortSteps.${i}`)}</span>
+                        {isActive && <span className={styles.currentLabel} aria-hidden="true">{t('threshold.current')}</span>}
                       </button>
                     </li>
                   );

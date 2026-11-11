@@ -297,5 +297,28 @@
     "title": "Página no encontrada",
     "message": "La página que buscas no existe o ha sido movida.",
     "backHome": "Volver al inicio"
+  },
+  "threshold": {
+    "invitation": "Del primer paso a la claridad",
+    "reassurance": "Sin registro. Sin ingresar datos personales.",
+    "routeName": "Tu recorrido de preparación",
+    "routeTitle": "Un paso a la vez",
+    "routeLabels": [
+      "Comprender la CSE",
+      "Reunir documentos",
+      "Preparar la información",
+      "Presentar la solicitud",
+      "Saber qué sigue"
+    ],
+    "routeNote": "Puedes consultar cualquier paso.",
+    "shortSteps": [
+      "Inicio",
+      "Reunir",
+      "Datos",
+      "Acudir",
+      "Después"
+    ],
+    "current": "Estás aquí",
+    "preparationNote": "Cada luz representa una casilla marcada. Prepararte no significa que tu solicitud esté aprobada."
   }
 }

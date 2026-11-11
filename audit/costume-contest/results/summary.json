@@ -1,0 +1,279 @@
+{
+  "date": "2026-11-11",
+  "branch": "codex/costume-contest",
+  "baselineCommit": "ac586fa1822b44ba8f2a0232c6f1fdc858219288",
+  "mainUnchanged": true,
+  "productionDeploymentChanged": false,
+  "baselineScreenshots": "copied from the previously verified main audit; not new captures",
+  "build": "passed",
+  "lint": "passed",
+  "unit": {
+    "total": 16,
+    "passed": 16,
+    "failed": 0
+  },
+  "e2e": {
+    "startTime": "2026-11-11T13:54:03.139Z",
+    "duration": 54722.380000000005,
+    "expected": 171,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "screenshots": {
+    "before": 24,
+    "after": 33,
+    "widths": [
+      390,
+      768,
+      1440
+    ]
+  },
+  "comparisons": [
+    {
+      "viewport": "mobile",
+      "page": "home",
+      "before": {
+        "width": 390,
+        "height": 3183
+      },
+      "after": {
+        "width": 390,
+        "height": 3685
+      },
+      "heightDifference": 502
+    },
+    {
+      "viewport": "mobile",
+      "page": "guide-step1",
+      "before": {
+        "width": 390,
+        "height": 2294
+      },
+      "after": {
+        "width": 390,
+        "height": 2068
+      },
+      "heightDifference": -226
+    },
+    {
+      "viewport": "mobile",
+      "page": "guide-step3",
+      "before": {
+        "width": 390,
+        "height": 2430
+      },
+      "after": {
+        "width": 390,
+        "height": 2204
+      },
+      "heightDifference": -226
+    },
+    {
+      "viewport": "mobile",
+      "page": "checklist",
+      "before": {
+        "width": 390,
+        "height": 3614
+      },
+      "after": {
+        "width": 390,
+        "height": 3702
+      },
+      "heightDifference": 88
+    },
+    {
+      "viewport": "tablet",
+      "page": "home",
+      "before": {
+        "width": 768,
+        "height": 2569
+      },
+      "after": {
+        "width": 768,
+        "height": 2338
+      },
+      "heightDifference": -231
+    },
+    {
+      "viewport": "tablet",
+      "page": "guide-step1",
+      "before": {
+        "width": 768,
+        "height": 1764
+      },
+      "after": {
+        "width": 768,
+        "height": 1538
+      },
+      "heightDifference": -226
+    },
+    {
+      "viewport": "tablet",
+      "page": "guide-step3",
+      "before": {
+        "width": 768,
+        "height": 1792
+      },
+      "after": {
+        "width": 768,
+        "height": 1566
+      },
+      "heightDifference": -226
+    },
+    {
+      "viewport": "tablet",
+      "page": "checklist",
+      "before": {
+        "width": 768,
+        "height": 2657
+      },
+      "after": {
+        "width": 768,
+        "height": 2745
+      },
+      "heightDifference": 88
+    },
+    {
+      "viewport": "desktop",
+      "page": "home",
+      "before": {
+        "width": 1440,
+        "height": 2548
+      },
+      "after": {
+        "width": 1440,
+        "height": 2296
+      },
+      "heightDifference": -252
+    },
+    {
+      "viewport": "desktop",
+      "page": "guide-step1",
+      "before": {
+        "width": 1440,
+        "height": 1291
+      },
+      "after": {
+        "width": 1440,
+        "height": 1372
+      },
+      "heightDifference": 81
+    },
+    {
+      "viewport": "desktop",
+      "page": "guide-step3",
+      "before": {
+        "width": 1440,
+        "height": 1319
+      },
+      "after": {
+        "width": 1440,
+        "height": 1400
+      },
+      "heightDifference": 81
+    },
+    {
+      "viewport": "desktop",
+      "page": "checklist",
+      "before": {
+        "width": 1440,
+        "height": 2426
+      },
+      "after": {
+        "width": 1440,
+        "height": 2514
+      },
+      "heightDifference": 88
+    }
+  ],
+  "bundles": {
+    "method": "local gzip of JS/CSS assets only; not field performance or Core Web Vitals",
+    "baseline": {
+      "files": [
+        {
+          "name": "i18n-vendor-Dhx5QfvT.js",
+          "bytes": 59291,
+          "gzipBytes": 18849
+        },
+        {
+          "name": "index-E4UW6ltU.css",
+          "bytes": 31685,
+          "gzipBytes": 6061
+        },
+        {
+          "name": "index-FLaPkh8t.js",
+          "bytes": 85387,
+          "gzipBytes": 26672
+        },
+        {
+          "name": "react-vendor-BJpJhz-H.js",
+          "bytes": 173466,
+          "gzipBytes": 57286
+        }
+      ],
+      "gzipBytes": 108868
+    },
+    "experiment": {
+      "files": [
+        {
+          "name": "i18n-vendor-Dhx5QfvT.js",
+          "bytes": 59291,
+          "gzipBytes": 18849
+        },
+        {
+          "name": "index-CYhMunZZ.css",
+          "bytes": 36484,
+          "gzipBytes": 7524
+        },
+        {
+          "name": "index-oSzdybyj.js",
+          "bytes": 88906,
+          "gzipBytes": 28030
+        },
+        {
+          "name": "react-vendor-BJpJhz-H.js",
+          "bytes": 173466,
+          "gzipBytes": 57286
+        }
+      ],
+      "gzipBytes": 111689
+    },
+    "differenceGzipBytes": 2821
+  },
+  "contrastPairs": [
+    {
+      "purpose": "action text",
+      "foreground": "#ffffff",
+      "background": "#80551d",
+      "ratio": 6.49
+    },
+    {
+      "purpose": "dark scene light",
+      "foreground": "#f3c789",
+      "background": "#171d2a",
+      "ratio": 10.71
+    },
+    {
+      "purpose": "muted reading",
+      "foreground": "#5c6470",
+      "background": "#f5f6f3",
+      "ratio": 5.51
+    },
+    {
+      "purpose": "door boundary",
+      "foreground": "#747c75",
+      "background": "#f5f6f3",
+      "ratio": 3.96
+    },
+    {
+      "purpose": "unlit boundary",
+      "foreground": "#747c75",
+      "background": "#e9ede7",
+      "ratio": 3.63
+    }
+  ],
+  "physicalDevicesTested": false,
+  "screenReaderTested": false,
+  "userResearchConducted": false
+}

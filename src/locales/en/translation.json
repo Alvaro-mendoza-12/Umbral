@@ -297,5 +297,28 @@
     "title": "Page not found",
     "message": "The page you're looking for doesn't exist or has been moved.",
     "backHome": "Back to home"
+  },
+  "threshold": {
+    "invitation": "From the first step to clarity",
+    "reassurance": "No sign-up. No personal information required.",
+    "routeName": "Your preparation route",
+    "routeTitle": "One step at a time",
+    "routeLabels": [
+      "Understand the CSE",
+      "Gather documents",
+      "Prepare information",
+      "Submit the request",
+      "Know what comes next"
+    ],
+    "routeNote": "You can read any step.",
+    "shortSteps": [
+      "Start",
+      "Gather",
+      "Details",
+      "Request",
+      "After"
+    ],
+    "current": "You are here",
+    "preparationNote": "Each light represents a checked item. Being prepared does not mean your request is approved."
   }
 }

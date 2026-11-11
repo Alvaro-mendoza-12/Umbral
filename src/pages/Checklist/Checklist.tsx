@@ -82,19 +82,22 @@ export default function Checklist() {
                   completed: completedCount,
                   total: checklistItems.length,
                 })}</span>
-                <div className={styles.progressBar}>
-                  <div
-                    className={styles.progressFill}
-                    style={{
-                      width: `${(completedCount / checklistItems.length) * 100}%`,
-                    }}
-                    role="progressbar"
-                    aria-label={t('checklist.progressLabel')}
-                    aria-valuenow={completedCount}
-                    aria-valuemin={0}
-                    aria-valuemax={checklistItems.length}
-                  />
+                <div
+                  className={styles.progressBar}
+                  role="progressbar"
+                  aria-label={t('checklist.progressLabel')}
+                  aria-valuenow={completedCount}
+                  aria-valuemin={0}
+                  aria-valuemax={checklistItems.length}
+                  aria-valuetext={t('checklist.progress', { completed: completedCount, total: checklistItems.length })}
+                >
+                  <div className={styles.preparationLights} aria-hidden="true">
+                    {checklistItems.map((item, index) => (
+                      <span key={item.id} data-preparation-light={index < completedCount ? 'on' : 'off'} />
+                    ))}
+                  </div>
                 </div>
+                <p className={styles.progressNote}>{t('threshold.preparationNote')}</p>
               </div>
               <Button variant="secondary" size="sm" onClick={resetChecklist}>
                 {t('checklist.resetButton')}

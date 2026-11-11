@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import styles from './Header.module.css';
+import ThresholdMark from '../ThresholdMark';
 
 const navigationLinks = [
   { to: '/about', label: 'common.about' },
@@ -76,6 +77,7 @@ export default function Header() {
       </a>
       <div className={styles.container}>
         <Link to="/" className={styles.logo} onClick={closeMobileMenu}>
+          <ThresholdMark />
           <span>{t('common.appName')}</span>
           <span className={styles.tagline}>{t('common.tagline')}</span>
         </Link>

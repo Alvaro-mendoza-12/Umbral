@@ -8,6 +8,7 @@ export default function Home() {
   const { t } = useTranslation();
 
   const features = t('home.whatIs.features', { returnObjects: true }) as string[];
+  const routeLabels = t('threshold.routeLabels', { returnObjects: true }) as string[];
   const reasons = t('home.whyUse.reasons', { returnObjects: true }) as Array<{
     title: string;
     description: string;
@@ -17,12 +18,32 @@ export default function Home() {
     <main id="main-content" className={styles.home}>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className="container">
-          <h1 className={styles.heroTitle}>{t('home.hero.title')}</h1>
-          <p className={styles.heroDescription}>{t('home.hero.description')}</p>
-          <Link to="/guide" className={`${buttonStyles.button} ${buttonStyles.primary} ${buttonStyles.lg}`}>
-            {t('home.hero.cta')}
-          </Link>
+        <div className={`container ${styles.heroLayout}`}>
+          <div className={styles.heroCopy}>
+            <p className={styles.orientation}>{t('threshold.invitation')}</p>
+            <h1 className={styles.heroTitle}>{t('home.hero.title')}</h1>
+            <p className={styles.heroDescription}>{t('home.hero.description')}</p>
+            <Link to="/guide" className={`${buttonStyles.button} ${buttonStyles.lg} ${styles.beginButton}`}>
+              {t('home.hero.cta')}
+              <span aria-hidden="true">→</span>
+            </Link>
+            <p className={styles.reassurance}>{t('threshold.reassurance')}</p>
+          </div>
+          <nav className={styles.gateway} aria-label={t('threshold.routeName')}>
+            <p className={styles.gatewayTitle}>{t('threshold.routeTitle')}</p>
+            <ol className={styles.gatewayList}>
+              {routeLabels.map((label, index) => (
+                <li key={index}>
+                  <Link to={`/guide/${index + 1}`} className={styles.gatewayLink}>
+                    <span className={styles.gatewayNumber}>{index + 1}</span>
+                    <span>{label}</span>
+                    <span className={styles.gatewayArrow} aria-hidden="true">↗</span>
+                  </Link>
+                </li>
+              ))}
+            </ol>
+            <p className={styles.gatewayNote}>{t('threshold.routeNote')}</p>
+          </nav>
         </div>
       </section>
 
@@ -54,7 +75,7 @@ export default function Home() {
         {/* Why use UMBRAL */}
         <section className={styles.section}>
           <h2>{t('home.whyUse.title')}</h2>
-          <div className={`grid grid-cols-1 md:grid-cols-2 gap-6`}>
+          <div className={styles.reasonsGrid}>
             {reasons.map((reason, index) => (
               <Card key={index}>
                 <h3 className={styles.reasonTitle}>{reason.title}</h3>
@@ -67,7 +88,7 @@ export default function Home() {
         {/* Quick Links */}
         <section className={styles.section}>
           <h2>{t('home.quickLinks.title')}</h2>
-          <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6`}>
+          <div className={styles.quickGrid}>
             <Link to="/about" className={styles.quickLinkCard}>
               <Card variant="interactive">
                 <h3>{t('home.quickLinks.aboutCSE.title')}</h3>

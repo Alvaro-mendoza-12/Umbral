@@ -1,0 +1,268 @@
+{
+  "numTotalTestSuites": 8,
+  "numPassedTestSuites": 8,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 16,
+  "numPassedTests": 16,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1794405080943,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "getStorageItem"
+          ],
+          "fullName": "storage utils getStorageItem should return default value when key does not exist",
+          "status": "passed",
+          "title": "should return default value when key does not exist",
+          "duration": 3.2869000000000597,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "getStorageItem"
+          ],
+          "fullName": "storage utils getStorageItem should return stored value when key exists",
+          "status": "passed",
+          "title": "should return stored value when key exists",
+          "duration": 0.9161999999996624,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "getStorageItem"
+          ],
+          "fullName": "storage utils getStorageItem should handle objects",
+          "status": "passed",
+          "title": "should handle objects",
+          "duration": 1.5754000000001724,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "getStorageItem"
+          ],
+          "fullName": "storage utils getStorageItem should return default value on parse error",
+          "status": "passed",
+          "title": "should return default value on parse error",
+          "duration": 6.3190999999997075,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "setStorageItem"
+          ],
+          "fullName": "storage utils setStorageItem should store string values",
+          "status": "passed",
+          "title": "should store string values",
+          "duration": 0.5869999999999891,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "setStorageItem"
+          ],
+          "fullName": "storage utils setStorageItem should store objects",
+          "status": "passed",
+          "title": "should store objects",
+          "duration": 0.4533000000001266,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "setStorageItem"
+          ],
+          "fullName": "storage utils setStorageItem should store numbers",
+          "status": "passed",
+          "title": "should store numbers",
+          "duration": 0.49969999999984793,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "removeStorageItem"
+          ],
+          "fullName": "storage utils removeStorageItem should remove existing items",
+          "status": "passed",
+          "title": "should remove existing items",
+          "duration": 0.5498999999999796,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "removeStorageItem"
+          ],
+          "fullName": "storage utils removeStorageItem should not throw on non-existent items",
+          "status": "passed",
+          "title": "should not throw on non-existent items",
+          "duration": 1.6559000000002015,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "StorageKeys"
+          ],
+          "fullName": "storage utils StorageKeys should have correct prefix",
+          "status": "passed",
+          "title": "should have correct prefix",
+          "duration": 0.706300000000283,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "StorageKeys"
+          ],
+          "fullName": "storage utils StorageKeys should be unique",
+          "status": "passed",
+          "title": "should be unique",
+          "duration": 0.23329999999987194,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1794405083863,
+      "endTime": 1794405083880.2334,
+      "status": "passed",
+      "message": "",
+      "name": "<project>/tests/unit/storage.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "useLocalStorage"
+          ],
+          "fullName": "useLocalStorage should return initial value when storage is empty",
+          "status": "passed",
+          "title": "should return initial value when storage is empty",
+          "duration": 21.5317,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "useLocalStorage"
+          ],
+          "fullName": "useLocalStorage should store and retrieve values",
+          "status": "passed",
+          "title": "should store and retrieve values",
+          "duration": 5.2051000000001295,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "useLocalStorage"
+          ],
+          "fullName": "useLocalStorage should persist values across hook instances",
+          "status": "passed",
+          "title": "should persist values across hook instances",
+          "duration": 6.153800000000047,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "useLocalStorage"
+          ],
+          "fullName": "useLocalStorage should handle complex objects",
+          "status": "passed",
+          "title": "should handle complex objects",
+          "duration": 3.750800000000254,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "useLocalStorage"
+          ],
+          "fullName": "useLocalStorage should support functional updates",
+          "status": "passed",
+          "title": "should support functional updates",
+          "duration": 2.2880999999997584,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1794405083877,
+      "endTime": 1794405083915.288,
+      "status": "passed",
+      "message": "",
+      "name": "<project>/tests/unit/useLocalStorage.test.ts"
+    }
+  ]
+}

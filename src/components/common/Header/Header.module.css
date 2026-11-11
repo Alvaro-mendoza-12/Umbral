@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   z-index: var(--z-sticky);
-  background-color: var(--surface-primary);
-  border-bottom: 1px solid var(--color-neutral-200);
+  background-color: var(--threshold-night);
+  border-bottom: 1px solid #434754;
   box-shadow: var(--shadow-sm);
 }
 
@@ -28,14 +28,14 @@
   align-items: center;
   gap: var(--space-3);
   text-decoration: none;
-  color: var(--text-primary);
+  color: #fff8ec;
   font-weight: var(--font-bold);
   font-size: var(--text-xl);
   min-width: 0;
 }
 
 .logo:hover {
-  color: var(--color-primary-500);
+  color: var(--threshold-light);
   text-decoration: none;
 }
 
@@ -43,11 +43,11 @@
   display: none;
   font-size: var(--text-sm);
   font-weight: var(--font-normal);
-  color: var(--text-muted);
+  color: var(--color-neutral-300);
   margin-left: var(--space-2);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1536px) {
   .tagline {
     display: inline;
   }
@@ -86,7 +86,7 @@
 
 .navLink {
   display: inline-block;
-  color: var(--text-secondary);
+  color: var(--color-neutral-200);
   text-decoration: none;
   font-weight: var(--font-medium);
   padding: var(--space-2) 0;
@@ -95,14 +95,14 @@
 }
 
 .navLink:hover {
-  color: var(--text-primary);
+  color: var(--threshold-light);
   text-decoration: none;
-  border-bottom-color: var(--color-primary-500);
+  border-bottom-color: var(--threshold-light);
 }
 
 .navLink.active {
-  color: var(--color-primary-500);
-  border-bottom-color: var(--color-primary-500);
+  color: var(--threshold-light);
+  border-bottom-color: var(--threshold-light);
 }
 
 .languageSelector {
@@ -113,9 +113,9 @@
 .langButton {
   padding: var(--space-2) var(--space-3);
   background: transparent;
-  border: 1px solid var(--color-neutral-300);
+  border: 1px solid #8c929d;
   border-radius: var(--radius-md);
-  color: var(--text-secondary);
+  color: var(--color-neutral-200);
   font-size: var(--text-sm);
   font-weight: var(--font-medium);
   cursor: pointer;
@@ -125,14 +125,14 @@
 }
 
 .langButton:hover {
-  border-color: var(--color-primary-500);
-  color: var(--color-primary-500);
+  border-color: var(--threshold-light);
+  color: var(--threshold-light);
 }
 
 .langButton.active {
-  background-color: var(--color-primary-500);
-  border-color: var(--color-primary-500);
-  color: var(--text-inverse);
+  background-color: var(--threshold-light);
+  border-color: var(--threshold-light);
+  color: var(--threshold-night);
 }
 
 .menuButton {
@@ -145,7 +145,7 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  color: var(--text-primary);
+  color: #fff8ec;
 }
 
 @media (min-width: 1024px) {
@@ -155,8 +155,8 @@
 }
 
 .mobileMenu {
-  background-color: var(--surface-primary);
-  border-top: 1px solid var(--color-neutral-200);
+  background-color: var(--threshold-night);
+  border-top: 1px solid #434754;
   padding: var(--space-4);
   max-height: calc(100dvh - 5rem);
   overflow-y: auto;
@@ -184,7 +184,7 @@
 .mobileNavLink {
   display: block;
   padding: var(--space-4);
-  color: var(--text-primary);
+  color: var(--color-neutral-200);
   font-size: var(--text-lg);
   font-weight: var(--font-medium);
   text-decoration: none;
@@ -193,11 +193,20 @@
 }
 
 .mobileNavLink:hover {
-  background-color: var(--color-neutral-100);
+  background-color: var(--threshold-stone);
   text-decoration: none;
 }
 
 .mobileNavLink.active {
-  background-color: var(--color-primary-50);
-  color: var(--color-primary-500);
+  background-color: var(--threshold-light);
+  color: var(--threshold-night);
+}
+
+.logo svg { color: var(--threshold-light); flex-shrink: 0; }
+.header :focus-visible { outline-color: var(--threshold-light); box-shadow: 0 0 0 3px var(--threshold-night); }
+
+@media (max-width: 359px) {
+  .container { gap: var(--space-2); padding-inline: var(--space-3); }
+  .logo { gap: var(--space-2); font-size: var(--text-lg); }
+  .nav { gap: var(--space-2); }
 }
