@@ -2,11 +2,11 @@
 
 **Las oportunidades existen. Encontrar el camino no debería ser difícil.**
 
-Esta rama evoluciona UMBRAL hacia un **acompañante internacional de acceso a oportunidades**, conservando **The Illuminated Threshold**. [Entrega de esta evolución](audit/opportunity-evolution/DELIVERY.md). `main` y la producción original conservan la versión publicada.
+Esta rama evoluciona UMBRAL hacia un **acompañante internacional de acceso a oportunidades**, conservando **The Illuminated Threshold**. Las [fuentes verificadas](audit/catalog-usefulness/verification.json) registran la revisión del catálogo. `main` y la producción original conservan la versión publicada.
 
-**[Abrir la nueva vista previa pública](https://umbral-review-20261111-cmxyf4wkj-alvaro-s-projects1.vercel.app)**. Es un Preview de revisión, sin publicación definitiva. La [vista previa anterior](https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app) conserva la fase previa.
+**[Abrir la nueva vista previa pública](https://umbral-review-20261111-6mnp45v52-alvaro-s-projects1.vercel.app)**. Rama `codex/catalog-usefulness`, aplicación `18ce9b7`. Es un Preview de revisión, sin publicación definitiva. La [vista previa anterior](https://umbral-review-20261111-cmxyf4wkj-alvaro-s-projects1.vercel.app) conserva la fase previa.
 
-**Versión de revisión:** seis categorías, 14 oportunidades concretas nuevas y el trámite CSE conservado. Perú, Estados Unidos, México, Colombia y España tienen contenido propio; CS50x tiene acceso internacional explícito. Las categorías sin registros lo explican. Hay vacantes específicas, cursos, ayudas y préstamos, con requisitos, fechas, fuente y acceso oficial. Mi Ruta conserva guardado, pasos, tareas propias, progreso, descarga e impresión; país e idioma persisten por separado.
+**Versión de revisión:** 31 oportunidades concretas y el trámite CSE conservado. Hay 15 vacantes: Perú 4, EE. UU. 2, México 3, Colombia 3 y España 3. Se revisaron las 14 oportunidades anteriores y se incorporaron 12 vacantes, dos becas internacionales (completa y parcial), un certificado profesional de pago, capacitación gratuita para emprender y una aceleradora con inversión. Las tarjetas resumen beneficio y requisito clave; antes de postular o guardar se muestran elegibilidad, restricciones y condiciones. Los datos no publicados se identifican expresamente. Las categorías sin registros lo explican. Mi Ruta conserva tareas, progreso, descarga e impresión; país e idioma persisten por separado.
 
 La CSE permanece como un procedimiento de orientación dentro de apoyo familiar, con su guía conservada en `/cse`, cinco pasos, once casillas, recursos y preguntas frecuentes. Las fuentes son específicas de cada país; cambiar idioma no cambia jurisdicción. Español e inglés, almacenamiento local y lectura sin conexión tras la primera carga. No se incorporan cuentas ni APIs de IA.
 
@@ -41,7 +41,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-`test:e2e` compila y prueba el build local en un servidor aislado `127.0.0.1:5186`. Incluye los seis recorridos de aceptación en español/inglés, filtros, Mi Ruta, persistencia, descarga, popup imprimible, CSE, idioma, offline y axe. Viewports: 360×640, 390×844, 768×1024 y 1440×900; reflow adicional a 320 px. Son emulaciones, no teléfonos físicos. Para conservar las evidencias de fases anteriores, establecer `UMBRAL_RESULTS_DIR=audit/opportunity-evolution/results` y `UMBRAL_SCREENSHOTS_DIR=audit/opportunity-evolution/screenshots` antes de ejecutar Playwright.
+`test:e2e` compila y prueba el build local en un servidor aislado `127.0.0.1:5186`. Incluye los seis recorridos de aceptación en español/inglés, filtros, Mi Ruta, persistencia, descarga, popup imprimible, CSE, idioma, offline y axe. Viewports: 360×640, 390×844, 768×1024 y 1440×900; reflow adicional a 320 px. Son emulaciones, no teléfonos físicos. Para conservar las evidencias de fases anteriores, establecer `UMBRAL_RESULTS_DIR=audit/catalog-usefulness/results` y `UMBRAL_SCREENSHOTS_DIR=test-results/review-screenshots` antes de ejecutar Playwright.
 
 ```sh
 npm run preview

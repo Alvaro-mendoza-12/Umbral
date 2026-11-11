@@ -5,5 +5,8 @@
   "productionBefore": "dpl_FocecH2p4BS8BvYXn48NJC6nWZjr",
   "productionBranch": "main",
   "previousBranch": "codex/verified-opportunities-evolution",
-  "workingBranch": "codex/catalog-usefulness"
+  "workingBranch": "codex/catalog-usefulness",
+  "productionAfter": "dpl_FocecH2p4BS8BvYXn48NJC6nWZjr",
+  "productionUnchanged": true,
+  "originalDocumentsUnchanged": true
 }
