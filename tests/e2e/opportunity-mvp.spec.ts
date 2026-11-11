@@ -13,19 +13,21 @@ for (const language of ['es', 'en'] as const) {
     await expect(page.locator('main h1')).toHaveText(copy.question);
     const goals=page.getByRole('navigation',{name:copy.question});await expect(goals.getByRole('link')).toHaveCount(6);
     await goals.getByRole('link',{name:copy.goals.employment,exact:true}).click();
-    await expect(page.locator('main article')).toHaveCount(2);
+    await expect(page.locator('main article')).toHaveCount(4);
     await expect(page.locator('main article').filter({hasText:'Empleos Perú'})).toHaveCount(0);
-    const job=page.locator('main article').filter({hasText:opportunities[0].title[language]});
+    const vacancy=opportunities.find(item=>item.id==='pe-promigas-billing')!;
+    const job=page.locator('main article').filter({hasText:vacancy.title[language]});
     await expect(job).toContainText(language==='es'?'2.100':'2,100');await expect(job).toContainText('Trujillo');
     await job.getByRole('heading').getByRole('link').click();
-    await expect(page.locator('main h1')).toHaveText(opportunities[0].title[language]);
-    const apply=page.locator('[data-official-action]');await expect(apply).toHaveAttribute('href',opportunities[0].access!.actionUrl);
-    const box=await apply.boundingBox();expect(box).not.toBeNull();expect(box!.y+box!.height).toBeLessThanOrEqual(page.viewportSize()!.height);
+    await expect(page.locator('main h1')).toHaveText(vacancy.title[language]);
+    const apply=page.locator('[data-official-action]');await expect(apply).toHaveAttribute('href',vacancy.access!.actionUrl);
+    await expect(page.locator('[data-eligibility]')).toBeVisible();
+    expect(await page.locator('[data-eligibility]').evaluate(node=>Boolean(node.compareDocumentPosition(document.querySelector('[data-official-action]')!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
     await expect(page.locator('aside')).toContainText('tania.guimac@promigas.pe');
     await page.locator('summary').filter({hasText:copy.requirements}).click();
-    await expect(page.getByText(opportunities[0].requirements[0].text[language],{exact:true})).toBeVisible();
+    await expect(page.getByText(vacancy.requirements[0].text[language],{exact:true})).toBeVisible();
     await page.locator('summary').filter({hasText:copy.conditions}).click();
-    await expect(page.getByText(opportunities[0].conditions[0].text[language],{exact:true})).toBeVisible();
+    await expect(page.getByText(vacancy.conditions[0].text[language],{exact:true})).toBeVisible();
     await captureReviewState(page,'concrete-job-'+language);
   });
 
@@ -46,7 +48,7 @@ for (const language of ['es', 'en'] as const) {
     for(const [country,id] of [['MX','mx-nafin-women'],['CO','co-fondo-emprender-168'],['ES','es-enisa-digital-women']]) {
       await page.goto('/discover?country='+country+'&category=enterprise');await setLanguage(page,language);
       const opportunity=opportunities.find(item=>item.id===id)!;const card=page.locator('main article').filter({hasText:opportunity.title[language]});
-      await expect(card).toBeVisible();await expect(card).toContainText(copy.kinds[opportunity.kind]);
+      await expect(card).toBeVisible();await expect(card).toContainText(opportunity.access?.supportType ? copy.supportTypes[opportunity.access.supportType] : copy.kinds[opportunity.kind]);
       await expect(page.locator('main article').filter({hasText:'CSE'})).toHaveCount(0);
       await card.getByRole('heading').getByRole('link').click();
       await expect(page.locator('main')).toContainText(catalogCountries.find(item=>item.code===country)!.name[language]);
@@ -70,10 +72,9 @@ for (const language of ['es', 'en'] as const) {
     await expect(page.locator('main article')).toHaveCount(1);await expect(page.locator('main article')).toContainText('Beca 18');
     await page.locator('main article').getByRole('heading').getByRole('link').click();
     await expect(page.locator('[data-official-action]')).toHaveCount(0);await expect(page.getByText(copy.notAvailable,{exact:true})).toBeVisible();
-    await page.goto('/discover?country=MX&category=employment');await expect(page.getByText(copy.noResults,{exact:true})).toBeVisible();
+    await page.goto('/discover?country=MX&category=family');await expect(page.getByText(copy.noResults,{exact:true})).toBeVisible();
     await expect(page.locator('main article')).toHaveCount(0);
-    await page.goto('/discover?country=INT&category=technology');await expect(page.locator('main article')).toHaveCount(1);
-    await expect(page.locator('main article')).toContainText('CS50');
+    await page.goto('/discover?country=INT&category=technology');await expect(page.locator('main article').filter({hasText:'CS50'})).toHaveCount(1);
   });
 
   test('saved opportunities preserve country, custom preparation, dates and next step after reload and export in '+language,async({page,context})=>{
@@ -89,9 +90,9 @@ for (const language of ['es', 'en'] as const) {
     const popupPromise=page.waitForEvent('popup');await page.getByRole('button',{name:copy.print,exact:true}).click();const popup=await popupPromise;
     await expect(popup.locator('body')).toHaveAttribute('data-print-requested','true');await expect(popup.locator('body')).toContainText('vacante-196b171e');await popup.close();
     await page.goto('/discover?country=ES&category=enterprise');
-    await page.locator('main article').getByRole('heading').getByRole('link').click();await page.getByRole('button',{name:copy.save,exact:true}).click();
+    await page.locator('main article').filter({hasText:'ENISA'}).getByRole('heading').getByRole('link').click();await page.getByRole('button',{name:copy.save,exact:true}).click();
     await page.getByRole('link',{name:copy.goRoute,exact:true}).click();await expect(page.locator('main article')).toHaveCount(2);
-    const peru=page.locator('main article').filter({hasText:'Trujillo'});await expect(peru).toHaveCount(0);
+    const peru=page.locator('main article').filter({hasText:'Trujillo'});await expect(peru).toHaveCount(1);
     await expect(page.locator('main article').first()).toContainText(language==='es'?'Perú':'Peru');
     await expect(page.locator('main article').last()).toContainText(language==='es'?'España':'Spain');
     await expect(page.locator('main article').first().getByRole('progressbar')).toHaveAttribute('value','2');

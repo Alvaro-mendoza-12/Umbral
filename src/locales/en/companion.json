@@ -59,7 +59,7 @@
   "resultCount_other": "{{count}} opportunities",
   "noResults": "No verified opportunities match these filters. Remove a filter or try another category. Closed calls only appear when selected under Availability.",
   "status": {
-    "ongoing": "Ongoing access",
+    "ongoing": "Access available",
     "open": "Open call",
     "closed": "Call closed",
     "upcoming": "Upcoming call",
@@ -72,7 +72,9 @@
     "job": "Job vacancy",
     "course": "Course",
     "grant": "Grant or seed capital",
-    "loan": "Loan · must be repaid"
+    "loan": "Loan · must be repaid",
+    "accelerator": "Accelerator",
+    "incubator": "Incubator"
   },
   "details": "View opportunity",
   "saved": "Saved to My Route",
@@ -162,5 +164,33 @@
   "notAvailable": "This option is not available for new applications. Check its status and official source.",
   "localShort": "Only in this browser, without an account.",
   "routeCountries": "Your route can include multiple countries. Each opportunity keeps its jurisdiction and conditions.",
-  "nextPrepared": "Preparation marked. Review the opportunity to continue officially."
+  "nextPrepared": "Preparation marked. Review the opportunity to continue officially.",
+  "keyRequirement": "Key requirement",
+  "eligibilityHeading": "Check whether you can apply",
+  "keyCondition": "Key condition",
+  "credential": "Certificate or credential",
+  "procedureAvailable": "Procedure available",
+  "eligibilityFields": {
+    "age": "Age",
+    "residence": "Residency or citizenship",
+    "education": "Education",
+    "experience": "Experience",
+    "restrictions": "Special restrictions",
+    "international": "International participation"
+  },
+  "supportTypes": {
+    "full-scholarship": "Full scholarship",
+    "partial-scholarship": "Partial scholarship",
+    "education-aid": "Educational financial aid",
+    "free-course": "Free course",
+    "paid-course": "Paid course",
+    "professional-certificate": "Professional Certificate · paid",
+    "seed-capital": "Seed capital",
+    "subsidy": "Grant",
+    "loan": "Loan · repayable",
+    "incubator": "Incubator",
+    "accelerator": "Accelerator · investment",
+    "business-training": "Founder training"
+  },
+  "lateApplications": "Late applications accepted"
 }

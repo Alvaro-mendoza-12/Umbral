@@ -19,8 +19,9 @@ function RouteCard({ opportunity, entry, onFeedback }: { opportunity: Opportunit
   const { completed, total, percent } = routeProgress(entry, opportunity.id);
   const nextStep = opportunity.steps.find(step => !entry.completedStepIds.includes(step.id));
   return <article className={styles.routeCard}>
-    <div className={styles.cardMeta}><span>{catalogCountries.find(country => country.code === opportunity.countryCode)?.name[language]} · {t(`companion.kinds.${opportunity.kind}`)}</span><StatusBadge opportunity={opportunity} /></div>
+    <div className={styles.cardMeta}><span>{catalogCountries.find(country => country.code === opportunity.countryCode)?.name[language]} · {t(opportunity.access?.supportType ? `companion.supportTypes.${opportunity.access.supportType}` : `companion.kinds.${opportunity.kind}`)}</span><StatusBadge opportunity={opportunity} /></div>
     <h2><Link to={`/opportunities/${opportunity.id}`}>{opportunity.title[language]}</Link></h2>
+    {opportunity.access?.keyCondition && <p className={styles.small}>{opportunity.access.keyCondition[language]}</p>}
     <p className={styles.routeNext}><strong>{t('companion.nextStep')}: </strong>{canAct(opportunity) ? nextStep?.text[language] ?? t('companion.nextPrepared') : t('companion.notAvailable')}</p>
     {opportunity.availability.closesOn && <p className={styles.deadline}>{t('companion.closes')}: {formatDate(opportunity.availability.closesOn, language)}</p>}
     <p>{t('companion.progress', { completed, total })}</p>
@@ -52,6 +53,8 @@ export default function MyRoutePage() {
     for (const { opportunity, entry } of entries) {
       const progress = routeProgress(entry, opportunity.id);
       lines.push(opportunity.title[language], t(opportunityStatusLabelKey(opportunity)), t('companion.progress', progress), opportunity.availability.description[language]);
+      lines.push(t(opportunity.access?.supportType ? `companion.supportTypes.${opportunity.access.supportType}` : `companion.kinds.${opportunity.kind}`));
+      if (opportunity.access?.keyCondition) lines.push(opportunity.access.keyCondition[language]);
       for (const step of opportunity.steps) lines.push(`[${entry.completedStepIds.includes(step.id) ? 'x' : ' '}] ${step.text[language]}`);
       for (const task of entry.tasks) lines.push(`[${task.completed ? 'x' : ' '}] ${task.title}`);
       if (!opportunity.availability.dates.length) lines.push(t('companion.noDeadline'));
@@ -81,6 +84,8 @@ export default function MyRoutePage() {
         <h1>UMBRAL · {t('companion.myRoute')}</h1><p>{t('companion.progressNote')}</p>
         {entries.map(({ opportunity, entry }) => <section key={opportunity.id}>
           <h2>{opportunity.title[language]}</h2><p>{t('companion.progress', routeProgress(entry, opportunity.id))}</p><p>{t('companion.reviewed', { date: formatDate(opportunity.verification.checkedAt, language) })}</p>
+          <p>{t(opportunity.access?.supportType ? `companion.supportTypes.${opportunity.access.supportType}` : `companion.kinds.${opportunity.kind}`)}</p>
+          {opportunity.access?.keyCondition && <p>{opportunity.access.keyCondition[language]}</p>}
           <ul>{opportunity.steps.map(step => <li key={step.id}>[{t(entry.completedStepIds.includes(step.id) ? 'companion.completed' : 'companion.pending')}] {step.text[language]}</li>)}{entry.tasks.map(task => <li key={task.id}>[{t(task.completed ? 'companion.completed' : 'companion.pending')}] {task.title}</li>)}</ul>
           <h3>{t('companion.dates')}</h3><StatusBadge opportunity={opportunity} /><OpportunityDates opportunity={opportunity} />
           <h3>{t('companion.sources')}</h3><ul>{sources.filter(source => opportunity.sourceIds.includes(source.id)).map(source => <li key={source.id}>{source.title[language]}<p>{source.url}</p></li>)}</ul>

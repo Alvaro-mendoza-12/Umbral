@@ -1,18 +1,27 @@
 import type { ContentInstitution, ContentJurisdiction } from '../../../content';
 import type { CategoryId, Opportunity, OpportunitySource } from '../domain/types';
+import { additionalRecords, additionalInstitutionNames, additionalSources } from './additional';
+import { existingFacts } from './eligibility';
 
 const tr = (es: string, en: string) => ({ es, en });
 type Pair = ReturnType<typeof tr>;
-type RecordInput = {
+export type RecordInput = {
   id: string; country: string; institution: string; category: CategoryId; kind: Opportunity['kind'];
   title: Pair; benefit: Pair; audience: Pair; location: Pair; mode: NonNullable<Opportunity['access']>['mode'];
   requirements: Pair[]; conditions: Pair[]; steps: Pair[];
   url: string; actionUrl?: string; actionLabel?: Pair; action: NonNullable<Opportunity['access']>['action']; instructions: Pair;
   status: Opportunity['availability']['status']; availability: Pair; close?: string; open?: string; deadlineAt?: string;
+  lateApplications?: boolean;
+  timeZone?: string;
   salary?: Pair; published?: string; duration?: Pair; price?: Pair; certification?: Pair;
+  extraSourceIds?: string[];
   international?: boolean; eligibleCountries?: string[]; secondaryCategories?: CategoryId[]; region?: string;
+  supportType?: NonNullable<Opportunity['access']>['supportType'];
+  eligibilityFacts?: NonNullable<Opportunity['access']>['eligibilityFacts'];
+  keyCondition?: Pair;
 };
 const records: RecordInput[] = [
+  ...additionalRecords,
   {
     id: 'pe-promigas-billing', country: 'PE', institution: 'promigas', category: 'employment', kind: 'job',
     title: tr('Auxiliar de facturación', 'Billing assistant'),
@@ -95,7 +104,7 @@ const records: RecordInput[] = [
   },
   {
     id: 'mx-unam-excel', country: 'MX', institution: 'unam', category: 'training', kind: 'course',
-    title: tr('Excel básico · Aprendo+ UNAM', 'Basic Excel · UNAM Aprendo+'),
+    title: tr('Excel 2010 básico · Aprendo+ UNAM', 'Basic Excel 2010 · UNAM Aprendo+'),
     benefit: tr('Curso autogestivo de 30 horas para organizar datos y actividades cotidianas.', '30-hour self-paced course for organising data and everyday tasks.'),
     audience: tr('Público general; no requiere ser estudiante de la UNAM.', 'General public; no UNAM enrolment required.'),
     location: tr('En línea · UNAM, México', 'Online · UNAM, Mexico'), mode: 'online', duration: tr('30 horas, a tu ritmo', '30 hours, self-paced'), price: tr('Gratuito', 'Free'),
@@ -201,6 +210,7 @@ const records: RecordInput[] = [
 ];
 
 const institutionNames: Record<string, Pair> = {
+  ...additionalInstitutionNames,
   promigas: tr('Promigas Perú · vacante difundida por CONADIS', 'Promigas Perú · vacancy published by CONADIS'),
   xylem: tr('Xylem Perú · vacante difundida por CONADIS', 'Xylem Perú · vacancy published by CONADIS'),
   va: tr('U.S. Department of Veterans Affairs', 'U.S. Department of Veterans Affairs'),
@@ -213,6 +223,7 @@ const institutionNames: Record<string, Pair> = {
 };
 export const concreteSources: OpportunitySource[] = records.map(record => ({ id: record.id, institutionId: record.institution, title: record.title, url: record.url, consultedAt: '2026-11-11' }));
 concreteSources.push(
+  ...additionalSources,
   { id: 'fsa-eligibility', institutionId: 'fsa', title: tr('Requisitos generales de ayuda federal', 'General federal aid eligibility'), url: 'https://studentaid.gov/understand-aid/eligibility', consultedAt: '2026-11-11' },
   { id: 'fafsa-2026-form', institutionId: 'fsa', title: tr('Formulario y plazo FAFSA 2026–27', '2026–27 FAFSA form and deadline'), url: 'https://studentaid.gov/sites/default/files/2026-27-fafsa-form.pdf', consultedAt: '2026-11-11' },
   { id: 'fafsa-online', institutionId: 'fsa', title: tr('FAFSA: solicitud en línea (requiere JavaScript)', 'FAFSA: apply online (requires JavaScript)'), url: 'https://studentaid.gov/h/apply-for-aid/fafsa', consultedAt: '2026-11-11' },
@@ -225,18 +236,19 @@ export const concreteJurisdictions: ContentJurisdiction[] = [
   ...['US', 'MX', 'CO', 'ES', 'INT'].map(code => ({ id: `${code}-national`, countryCode: code, level: 'national' as const, name: tr(code === 'INT' ? 'Acceso internacional' : 'Todo el país', code === 'INT' ? 'International access' : 'Nationwide') })),
   { id: 'PE-LaLibertad', countryCode: 'PE', level: 'regional', parentId: 'PE-national', name: tr('La Libertad', 'La Libertad') },
   { id: 'PE-Ancash', countryCode: 'PE', level: 'regional', parentId: 'PE-national', name: tr('Áncash', 'Áncash') },
+  ...Object.entries({ 'PE-Lima': tr('Lima', 'Lima'), 'PE-Callao': tr('Callao (sede por confirmar)', 'Callao (confirm location)'), 'MX-CDMX': tr('Ciudad de México', 'Mexico City'), 'MX-NuevoLeon': tr('Nuevo León', 'Nuevo León'), 'CO-Bogota': tr('Bogotá', 'Bogotá'), 'ES-Andalucia': tr('Andalucía', 'Andalusia'), 'ES-Madrid': tr('Madrid', 'Madrid'), 'US-Illinois': tr('Illinois', 'Illinois') }).map(([id, name]) => ({ id, name, countryCode: id.split('-')[0], parentId: `${id.split('-')[0]}-national`, level: 'regional' as const })),
 ];
 export const concreteOpportunities: Opportunity[] = records.map(record => {
-  const sourceIds = [record.id, ...(record.id === 'us-pell-2026' ? ['fsa-eligibility', 'fafsa-2026-form', 'fafsa-online'] : []), ...(record.id === 'int-cs50x-2026' ? ['cs50-faq'] : []), ...(record.id === 'mx-unam-excel' ? ['unam-public'] : []), ...(record.id === 'co-sena-english-1' ? ['sena-free'] : [])];
+  const sourceIds = [record.id, ...(record.extraSourceIds ?? []), ...(record.id === 'us-pell-2026' ? ['fsa-eligibility', 'fafsa-2026-form', 'fafsa-online'] : []), ...(record.id === 'int-cs50x-2026' ? ['cs50-faq'] : []), ...(record.id === 'mx-unam-excel' ? ['unam-public'] : []), ...(record.id === 'co-sena-english-1' ? ['sena-free'] : [])];
   const sourced = (items: Pair[], prefix: string) => items.map((text, index) => ({ id: `${prefix}-${index + 1}`, text, sourceIds }));
   return {
     id: record.id, countryCode: record.country, jurisdictionId: record.region ?? `${record.country}-national`, localGuidanceIds: [], institutionId: record.institution,
     category: record.category, secondaryCategories: record.secondaryCategories, audiences: record.kind === 'job' ? ['jobseekers'] : record.category === 'enterprise' ? ['entrepreneurs'] : record.category === 'education' ? ['students'] : ['learners'], kind: record.kind,
     title: record.title, summary: record.benefit, audienceDescription: record.audience,
     requirements: sourced(record.requirements, 'requirement'), conditions: sourced(record.conditions, 'condition'), steps: sourced(record.steps, 'prepare'),
-    availability: { status: record.status, description: record.availability, opensOn: record.open, closesOn: record.close, dates: record.close ? [{ date: record.close, label: tr('Cierre de solicitudes', 'Application deadline'), sourceId: record.id }] : [] },
-    sourceIds, officialUrl: record.url, verification: { status: 'documentary', checkedAt: '2026-11-11', reviewBy: record.kind === 'job' || record.status === 'open' ? '2026-11-18' : '2026-12-11' },
-    access: { eligibleCountries: record.eligibleCountries ?? [record.country], international: record.international ?? false, location: record.location, eligibility: record.audience,
+    availability: { status: record.status, timeZone: record.timeZone, lateApplications: record.lateApplications, description: record.availability, opensOn: record.open, closesOn: record.close, dates: record.close ? [{ date: record.close, label: tr('Cierre de solicitudes', 'Application deadline'), sourceId: record.id }] : [] },
+    sourceIds, officialUrl: record.url, verification: { status: 'documentary', checkedAt: '2026-11-11', reviewBy: record.id === 'int-yc-winter-2027' ? '2026-11-12' : record.kind === 'job' ? '2026-11-14' : record.status === 'open' ? '2026-11-18' : '2026-12-11' },
+    access: { ...existingFacts[record.id], supportType: record.supportType ?? existingFacts[record.id]?.supportType, eligibilityFacts: record.eligibilityFacts ?? existingFacts[record.id]?.eligibilityFacts, keyCondition: record.keyCondition ?? existingFacts[record.id]?.keyCondition, eligibleCountries: record.eligibleCountries ?? [record.country], international: record.international ?? false, location: record.location, eligibility: record.audience,
       mode: record.mode, benefit: record.benefit, publishedOn: record.published, salary: record.salary, duration: record.duration, price: record.price, certification: record.certification,
       action: record.action, actionUrl: record.actionUrl ?? record.url, actionLabel: record.actionLabel, instructions: record.instructions, deadlineAt: record.deadlineAt },
   };

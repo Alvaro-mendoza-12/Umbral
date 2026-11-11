@@ -132,4 +132,15 @@
 .routeNext { border-left: 3px solid #80551d; padding-left: 12px; }
 @media (min-width: 768px) { .detailLayout { grid-template-columns: minmax(0, 1fr) minmax(280px, 360px); gap: 24px 36px; } .accessPanel { grid-column: 2; grid-row: 1 / 3; } .detailSections { grid-column: 1; grid-row: 2; margin-top: 0; padding-top: 0; } .detailSections .facts { grid-template-columns: 1fr; } }
 .audiencePreview { margin-top: 16px; font-size: 0.9375rem; line-height: 1.6; }
+.cardRequirement { font-size: 0.875rem; line-height: 1.5; margin-bottom: 16px; }
+.card .offer { margin-bottom: 12px; }
+.card .muted { font-size: 0.875rem; margin-bottom: 12px; }
+.eligibilitySummary { margin-top: 24px; border-top: 1px solid #b5babf; padding-top: 18px; }
+.eligibilitySummary h2 { font-size: 1.25rem; margin-bottom: 18px; }
+.eligibilitySummary dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 24px; }
+.eligibilitySummary dl > div { min-width: 0; }
+.eligibilitySummary dt { color: #4b5563; font-size: 0.8125rem; font-weight: 600; margin-bottom: 4px; }
+.eligibilitySummary dd { margin: 0; font-size: 0.875rem; line-height: 1.5; }
+.keyCondition { border-block: 1px solid #b49a78; padding-block: 12px; font-size: 0.875rem; line-height: 1.5; }
+@media (max-width: 350px) { .eligibilitySummary dl { grid-template-columns: 1fr; } }
 @media (max-width: 400px) { .goal { min-height: 80px; } .goalTitle { font-size: 1rem; } .facts { grid-template-columns: 1fr; } }

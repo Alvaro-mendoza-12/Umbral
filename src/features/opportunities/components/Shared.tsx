@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { normalizeLanguage } from '../../../services/i18n';
 import { institutions, catalogCountries } from '../data/catalog';
-import { formatDate, opportunityStatus, opportunityStatusLabelKey, canAct } from '../domain/catalog';
+import { formatDate, opportunityStatus, opportunityStatusLabelKey } from '../domain/catalog';
 import type { Opportunity } from '../domain/types';
 import { useMyRoute } from '../application/routeContext';
 import styles from '../Companion.module.css';
@@ -36,19 +36,19 @@ export function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
   const { route } = useMyRoute();
   const access = opportunity.access;
   return <article className={styles.card}>
-    <div className={styles.cardMeta}><span>{t(`companion.kinds.${opportunity.kind}`)}</span><StatusBadge opportunity={opportunity} /></div>
+    <div className={styles.cardMeta}><span>{t(access?.supportType ? `companion.supportTypes.${access.supportType}` : `companion.kinds.${opportunity.kind}`)}</span><StatusBadge opportunity={opportunity} /></div>
     <h2><Link to={`/opportunities/${opportunity.id}`}>{opportunity.title[language]}</Link></h2>
     <p className={styles.muted}>{institutions.find(institution => institution.id === opportunity.institutionId)?.name[language]}</p>
     {access && <p className={styles.location}>{access.location[language]} · {t(`companion.modes.${access.mode}`)}</p>}
     <p className={styles.offer}>{access?.salary?.[language] ?? access?.benefit[language] ?? opportunity.summary[language]}</p>
-    <p className={styles.small}>{opportunity.audienceDescription[language]}</p>
+    <p className={styles.cardRequirement}><strong>{t('companion.keyRequirement')}: </strong>{access?.eligibilityFacts?.priority[language] ?? opportunity.audienceDescription[language]}</p>
     <div className={styles.cardFacts}>
       {access?.duration && <span>{access.duration[language]}</span>}
       {access?.price && <span>{access.price[language]}</span>}
       <span>{opportunity.availability.closesOn ? `${t('companion.closes')}: ${formatDate(opportunity.availability.closesOn, language)}` : t('companion.noFixedDeadline')}</span>
     </div>
     {route.entries[opportunity.id] && <p className={styles.saved}>{t('companion.saved')}</p>}
-    <Link className={styles.cardAction} to={`/opportunities/${opportunity.id}`} aria-label={`${t('companion.details')}: ${opportunity.title[language]}`}>{canAct(opportunity) ? t('companion.viewAccess') : t('companion.details')}<span aria-hidden="true">→</span></Link>
+    <Link className={styles.cardAction} to={`/opportunities/${opportunity.id}`} aria-label={`${t('companion.details')}: ${opportunity.title[language]}`}>{t('companion.details')}<span aria-hidden="true">→</span></Link>
     <span className={styles.checked}>{t('companion.checkedShort', { date: formatDate(opportunity.verification.checkedAt, language) })}</span>
   </article>;
 }

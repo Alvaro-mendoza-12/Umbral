@@ -59,7 +59,7 @@
   "resultCount_other": "{{count}} oportunidades",
   "noResults": "No encontramos oportunidades verificadas para estos filtros. Quita algún filtro o consulta otra categoría. Los programas cerrados sólo aparecen si los eliges en Disponibilidad.",
   "status": {
-    "ongoing": "Acceso permanente",
+    "ongoing": "Acceso disponible",
     "open": "Convocatoria abierta",
     "closed": "Convocatoria cerrada",
     "upcoming": "Próxima convocatoria",
@@ -72,7 +72,9 @@
     "job": "Vacante laboral",
     "course": "Curso",
     "grant": "Ayuda o capital semilla",
-    "loan": "Préstamo · se devuelve"
+    "loan": "Préstamo · se devuelve",
+    "accelerator": "Aceleradora",
+    "incubator": "Incubadora"
   },
   "details": "Ver oportunidad",
   "saved": "Guardada en Mi Ruta",
@@ -162,5 +164,33 @@
   "notAvailable": "Esta opción no está disponible para nuevas solicitudes. Consulta el estado y la fuente.",
   "localShort": "Sólo en este navegador, sin cuenta.",
   "routeCountries": "Tu ruta puede incluir varios países. Cada oportunidad conserva su jurisdicción y sus condiciones.",
-  "nextPrepared": "Preparación marcada. Revisa la ficha para continuar oficialmente."
+  "nextPrepared": "Preparación marcada. Revisa la ficha para continuar oficialmente.",
+  "keyRequirement": "Requisito clave",
+  "eligibilityHeading": "Comprueba si puedes acceder",
+  "keyCondition": "Condición clave",
+  "credential": "Certificado o acreditación",
+  "procedureAvailable": "Trámite disponible",
+  "eligibilityFields": {
+    "age": "Edad",
+    "residence": "Residencia o ciudadanía",
+    "education": "Estudios",
+    "experience": "Experiencia",
+    "restrictions": "Restricciones especiales",
+    "international": "Participación internacional"
+  },
+  "supportTypes": {
+    "full-scholarship": "Beca completa",
+    "partial-scholarship": "Beca parcial",
+    "education-aid": "Ayuda económica educativa",
+    "free-course": "Curso gratuito",
+    "paid-course": "Curso de pago",
+    "professional-certificate": "Certificado profesional · de pago",
+    "seed-capital": "Capital semilla",
+    "subsidy": "Subvención",
+    "loan": "Préstamo · se devuelve",
+    "incubator": "Incubadora",
+    "accelerator": "Aceleradora · inversión",
+    "business-training": "Capacitación para emprender"
+  },
+  "lateApplications": "Admite solicitudes tardías"
 }

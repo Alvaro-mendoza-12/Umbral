@@ -3,6 +3,16 @@ import type { TranslatedContent } from '../../../types';
 export type CategoryId = 'education' | 'employment' | 'training' | 'enterprise' | 'technology' | 'family';
 export type AudienceId = 'students' | 'jobseekers' | 'learners' | 'entrepreneurs' | 'households';
 export type OpportunityStatus = 'ongoing' | 'open' | 'closed' | 'upcoming' | 'unconfirmed';
+export type SupportType = 'full-scholarship' | 'partial-scholarship' | 'education-aid' | 'free-course' | 'paid-course' | 'professional-certificate' | 'seed-capital' | 'subsidy' | 'loan' | 'incubator' | 'accelerator' | 'business-training';
+export interface EligibilityFacts {
+  priority: TranslatedContent;
+  age: TranslatedContent;
+  residence: TranslatedContent;
+  education: TranslatedContent;
+  experience: TranslatedContent;
+  restrictions: TranslatedContent;
+  international: TranslatedContent;
+}
 export interface OpportunitySource {
   id: string;
   title: TranslatedContent;
@@ -23,7 +33,7 @@ export interface Opportunity {
   institutionId: string;
   category: CategoryId;
   audiences: readonly AudienceId[];
-  kind: 'scholarship' | 'service' | 'procedure' | 'job' | 'course' | 'grant' | 'loan';
+  kind: 'scholarship' | 'service' | 'procedure' | 'job' | 'course' | 'grant' | 'loan' | 'accelerator' | 'incubator';
   placement?: 'supplementary';
   secondaryCategories?: readonly CategoryId[];
   access?: {
@@ -33,6 +43,9 @@ export interface Opportunity {
     eligibility: TranslatedContent;
     mode: 'onsite' | 'hybrid' | 'remote' | 'online' | 'not-published';
     benefit: TranslatedContent;
+    supportType?: SupportType;
+    eligibilityFacts?: EligibilityFacts;
+    keyCondition?: TranslatedContent;
     publishedOn?: string;
     salary?: TranslatedContent;
     duration?: TranslatedContent;
@@ -52,6 +65,8 @@ export interface Opportunity {
   steps: readonly SourcedText[];
   availability: {
     status: OpportunityStatus;
+    lateApplications?: boolean;
+    timeZone?: string;
     description: TranslatedContent;
     opensOn?: string;
     closesOn?: string;

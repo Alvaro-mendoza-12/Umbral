@@ -2,6 +2,7 @@ import type { ContentInstitution, ContentJurisdiction } from '../../../content';
 import type { Opportunity, OpportunitySource } from '../domain/types';
 import { opportunities as previousOpportunities, sources as previousSources, institutions as previousInstitutions, jurisdictions as previousJurisdictions } from './peru';
 import { concreteOpportunities, concreteSources, concreteInstitutions, concreteJurisdictions } from './verified';
+import { existingFacts } from './eligibility';
 
 export const categories = ['employment', 'education', 'training', 'enterprise', 'technology', 'family'] as const;
 export const audiences = ['students', 'jobseekers', 'learners', 'entrepreneurs', 'households'] as const;
@@ -21,6 +22,7 @@ export const opportunities: readonly Opportunity[] = [
   ...previousOpportunities.map(opportunity => opportunity.id === 'cse-peru' ? {
     ...opportunity,
     access: {
+      ...existingFacts['cse-peru'],
       eligibleCountries: ['PE'], international: false, mode: 'onsite' as const,
       location: { es: 'ULE del distrito de residencia · Perú', en: 'ULE in your district of residence · Peru' },
       eligibility: opportunity.audienceDescription,
