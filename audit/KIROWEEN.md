@@ -1,5 +1,7 @@
 # Preparación Kiroween 2026
 
+**Revisión de producto, 11-11-2026:** [cierre de UX, CI, vista pública aislada y pruebas de usabilidad preparadas](product-review/REPORT.md). La dirección visual fue aprobada por el propietario. La portada se simplificó y el contenido se separó por país; `main` y producción conservan la versión original.
+
 **Actualización experimental, 11-11-2026:** la rama `codex/costume-contest` implementa **The Illuminated Threshold**. [Evaluación de las cuatro categorías, comparación y pruebas](costume-contest/REPORT.md). Costume Contest es defendible para ese experimento; la versión de `main` y producción sigue siendo la auditada el día 10. El análisis de falta de encaje que aparece abajo describe esa versión original.
 
 Reglas consultadas 10-11-2026: [reglas](https://kiroween.devpost.com/rules), [convocatoria](https://kiroween.devpost.com/). Revisión propia, no certificación del organizador.

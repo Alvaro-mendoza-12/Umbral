@@ -2,6 +2,8 @@
 
 Estado: **preparada, no realizada**. No hay participantes ni resultados registrados. Duración orientativa: 15–20 minutos por persona. Objetivo: decidir si la portada compacta y los detalles bajo demanda permiten entender el producto y preparar una consulta ficticia sin confundir orientación con trámite o aprobación.
 
+[Vista pública de prueba](https://umbral-review-20261111-j9u10cgko-alvaro-s-projects1.vercel.app) · [Comparación de portadas](compare.html). Usar un perfil de navegador de prueba; el entorno no envía solicitudes a instituciones.
+
 ## Preparación
 
 - Cinco adultos que lean español, con distinta familiaridad con aplicaciones cuando sea posible. No preguntar por ingresos, empleo, beneficios, composición familiar, DNI, domicilio o situación de CSE. No es necesario que sean solicitantes reales.

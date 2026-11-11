@@ -4,7 +4,9 @@
 
 Esta rama contiene el experimento **The Illuminated Threshold** para Costume Contest. [Comparación y evaluación](audit/costume-contest/REPORT.md) · [Galería local antes/después](audit/costume-contest/compare.html). `main` y la aplicación de producción conservan la versión publicada.
 
-Guía para preparar una primera solicitud de Clasificación Socioeconómica (CSE), con contenido del distrito de Chiclayo, Perú. Conserva la implementación de Kiro: siete vistas, guía de cinco pasos, once casillas de preparación, recursos, preguntas frecuentes, español/inglés y lectura sin conexión tras la primera carga.
+**Revisión actual:** [portada compacta, arquitectura internacional y cierre de pruebas](audit/product-review/REPORT.md) · [comparación actual](audit/product-review/compare.html) · [prueba con cinco adultos](audit/product-review/USABILITY.md). Sólo Perú/CSE tiene contenido disponible; los demás países indicados aún no tienen guías verificadas.
+
+Plataforma de orientación para procedimientos de servicios públicos, organizada por paquetes de país. La primera guía disponible ayuda a preparar una solicitud de Clasificación Socioeconómica (CSE) en Perú, con orientación local de Chiclayo cuando corresponde. Conserva siete vistas, guía de cinco pasos, once casillas, recursos, preguntas frecuentes, ES/EN y lectura sin conexión tras la primera carga.
 
 UMBRAL no calcula ni solicita la CSE, consulta padrones o concede beneficios. No sustituye a la ULE ni pide DNI, ingresos, domicilio o documentos. Las casillas registran preparación en el dispositivo, no requisitos obligatorios ni elegibilidad. El hosting puede registrar metadatos técnicos; no se promete anonimato absoluto.
 

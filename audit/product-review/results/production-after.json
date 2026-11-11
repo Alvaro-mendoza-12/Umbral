@@ -1,0 +1,10 @@
+{
+  "id": "prj_yKtjhtNBnLfTc72qufZADydrwClN",
+  "name": "umbral",
+  "ssoProtection": {
+    "deploymentType": "all_except_custom_domains"
+  },
+  "hasPassword": false,
+  "gitRepository": "Umbral",
+  "productionBranch": "main"
+}
