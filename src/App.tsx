@@ -15,6 +15,7 @@ import Catalog from './features/opportunities/pages/Catalog';
 import Detail from './features/opportunities/pages/Detail';
 import MyRoutePage from './features/opportunities/pages/MyRoute';
 import RouteProvider from './features/opportunities/application/RouteProvider';
+import CountryProvider from './features/opportunities/application/CountryProvider';
 import { getOpportunity } from './features/opportunities/domain/catalog';
 import { normalizeLanguage } from './services/i18n';
 import './styles/tokens.css';
@@ -71,7 +72,7 @@ function RouteAccessibility() {
 
 function App() {
   return (
-    <RouteProvider><BrowserRouter>
+    <RouteProvider><BrowserRouter><CountryProvider>
       <RouteAccessibility />
       <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Header />
@@ -93,7 +94,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </BrowserRouter></RouteProvider>
+    </CountryProvider></BrowserRouter></RouteProvider>
   );
 }
 

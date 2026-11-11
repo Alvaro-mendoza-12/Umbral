@@ -1,0 +1,1102 @@
+{
+  "config": {
+    "argv": [
+      "D:\\nodejs\\node.exe",
+      "D:\\CombiRumbo-review\\umbral\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/opportunity-mvp.spec.ts",
+      "--project=mobile"
+    ],
+    "configFile": "D:\\CombiRumbo-review\\umbral\\playwright.config.ts",
+    "rootDir": "D:/CombiRumbo-review/umbral/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/CombiRumbo-review/umbral/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "small-mobile",
+        "name": "small-mobile",
+        "testDir": "D:/CombiRumbo-review/umbral/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/CombiRumbo-review/umbral/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "D:/CombiRumbo-review/umbral/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/CombiRumbo-review/umbral/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "tablet",
+        "name": "tablet",
+        "testDir": "D:/CombiRumbo-review/umbral/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/CombiRumbo-review/umbral/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "D:/CombiRumbo-review/umbral/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\CombiRumbo-review\\umbral\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "name": "mobile",
+        "testDir": "D:\\CombiRumbo-review\\umbral\\tests\\e2e",
+        "snapshotDir": "D:\\CombiRumbo-review\\umbral\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5192",
+          "trace": "on-first-retry",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.18 Safari/537.36",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "audit/opportunity-evolution/results/focused/playwright.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "opportunity-mvp.spec.ts",
+      "file": "opportunity-mvp.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Peru job search reaches a specific vacancy, requirements and a concrete application path in es",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1165,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:25.776Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-f3b61034b0e9ad552157",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 11,
+          "column": 3
+        },
+        {
+          "title": "US education explains citizenship eligibility and links to the correct FAFSA process in es",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1076,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:25.777Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-1a4f7cbabb613dcbf0ea",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "Mexico Colombia Spain show domestic funding and explicit loan or grant conditions in es",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 995,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:27.348Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-33b864fde55ae2c37119",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 45,
+          "column": 3
+        },
+        {
+          "title": "filters exclude closed calls by default, retain specific scopes and explain empty categories in es",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 662,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:27.440Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-8423639b9d0b2d220329",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 60,
+          "column": 3
+        },
+        {
+          "title": "saved opportunities preserve country, custom preparation, dates and next step after reload and export in es",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1852,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:28.115Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-4582d2eba37f45b94cbd",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 79,
+          "column": 3
+        },
+        {
+          "title": "country and language survive reload without importing Peru records into another jurisdiction in es",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 558,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:28.366Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-6143e634a1040eee8708",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 100,
+          "column": 3
+        },
+        {
+          "title": "readability keyboard and WCAG rules for /?country=PE in es",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 1310,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 10\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"id\": \"link-in-text-block\",\u001b[39m\n\u001b[31m+     \"targets\": Array [\u001b[39m\n\u001b[31m+       Array [\u001b[39m\n\u001b[31m+         \"._homeRoute_17ln0_106 > a[href$=\\\"my-route\\\"][data-discover=\\\"true\\\"]\",\u001b[39m\n\u001b[31m+       ],\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 10\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"id\": \"link-in-text-block\",\u001b[39m\n\u001b[31m+     \"targets\": Array [\u001b[39m\n\u001b[31m+       Array [\u001b[39m\n\u001b[31m+         \"._homeRoute_17ln0_106 > a[href$=\\\"my-route\\\"][data-discover=\\\"true\\\"]\",\u001b[39m\n\u001b[31m+       ],\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts:120:206",
+                    "location": {
+                      "file": "D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts",
+                      "column": 206,
+                      "line": 120
+                    },
+                    "snippet": " \u001b[90m 118 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expectReflow(page)\u001b[33m;\u001b[39m\n \u001b[90m 119 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'main'\u001b[39m)\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m{level\u001b[33m:\u001b[39m\u001b[35m1\u001b[39m}))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 120 |\u001b[39m       \u001b[36mconst\u001b[39m result\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAxeBuilder\u001b[39m({page})\u001b[33m.\u001b[39mwithTags([\u001b[32m'wcag2a'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'wcag2aa'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'wcag21aa'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'wcag22aa'\u001b[39m])\u001b[33m.\u001b[39manalyze()\u001b[33m;\u001b[39mexpect(result\u001b[33m.\u001b[39mviolations\u001b[33m.\u001b[39mmap(item\u001b[33m=>\u001b[39m({id\u001b[33m:\u001b[39mitem\u001b[33m.\u001b[39mid\u001b[33m,\u001b[39mtargets\u001b[33m:\u001b[39mitem\u001b[33m.\u001b[39mnodes\u001b[33m.\u001b[39mmap(node\u001b[33m=>\u001b[39mnode\u001b[33m.\u001b[39mtarget)})))\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                                                                                                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 121 |\u001b[39m       \u001b[36mawait\u001b[39m captureReviewState(page\u001b[33m,\u001b[39m\u001b[32m'evolution-'\u001b[39m\u001b[33m+\u001b[39mroute\u001b[33m.\u001b[39mreplaceAll(\u001b[32m'/'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'-'\u001b[39m)\u001b[33m.\u001b[39mreplaceAll(\u001b[32m'?'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'-'\u001b[39m)\u001b[33m.\u001b[39mreplaceAll(\u001b[32m'&'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'-'\u001b[39m)\u001b[33m+\u001b[39m\u001b[32m'-'\u001b[39m\u001b[33m+\u001b[39mlanguage)\u001b[33m;\u001b[39m\n \u001b[90m 122 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39maddStyleTag({content\u001b[33m:\u001b[39m\u001b[32m':root {font-size:200% !important;}'\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expectReflow(page)\u001b[33m;\u001b[39m\n \u001b[90m 123 |\u001b[39m     })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts",
+                        "column": 206,
+                        "line": 120
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 10\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"id\": \"link-in-text-block\",\u001b[39m\n\u001b[31m+     \"targets\": Array [\u001b[39m\n\u001b[31m+       Array [\u001b[39m\n\u001b[31m+         \"._homeRoute_17ln0_106 > a[href$=\\\"my-route\\\"][data-discover=\\\"true\\\"]\",\u001b[39m\n\u001b[31m+       ],\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  118 |       await page.goto(route);await expectReflow(page);\n  119 |       await expect(page.locator('main').getByRole('heading',{level:1})).toHaveCount(1);\n> 120 |       const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();expect(result.violations.map(item=>({id:item.id,targets:item.nodes.map(node=>node.target)}))).toEqual([]);\n      |                                                                                                                                                                                                              ^\n  121 |       await captureReviewState(page,'evolution-'+route.replaceAll('/','-').replaceAll('?','-').replaceAll('&','-')+'-'+language);\n  122 |       await page.addStyleTag({content:':root {font-size:200% !important;}'});await expectReflow(page);\n  123 |     });\n    at D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts:120:206"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:28.940Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\CombiRumbo-review\\umbral\\test-results\\opportunity-mvp-readabilit-82e9b--rules-for-country-PE-in-es-mobile\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\CombiRumbo-review\\umbral\\test-results\\opportunity-mvp-readabilit-82e9b--rules-for-country-PE-in-es-mobile\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts",
+                    "column": 206,
+                    "line": 120
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-d607be7d06bded26aab9",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 116,
+          "column": 5
+        },
+        {
+          "title": "readability keyboard and WCAG rules for /discover?country=PE&category=employment in es",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1659,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:29.980Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-d2e61127b8fa038b3ed8",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 116,
+          "column": 5
+        },
+        {
+          "title": "readability keyboard and WCAG rules for /opportunities/pe-promigas-billing in es",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1317,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:31.246Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-a36cf81211255ecb0171",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 116,
+          "column": 5
+        },
+        {
+          "title": "readability keyboard and WCAG rules for /opportunities/us-pell-2026 in es",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1303,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:31.659Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-fb06063db26063ccff22",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 116,
+          "column": 5
+        },
+        {
+          "title": "readability keyboard and WCAG rules for /my-route in es",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1258,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:32.738Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-0c8be4eba87f3001701d",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 116,
+          "column": 5
+        },
+        {
+          "title": "Peru job search reaches a specific vacancy, requirements and a concrete application path in en",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5486,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('main article').filter({ hasText: 'Billing assistant' })\nExpected substring: \u001b[32m\"2.100\"\u001b[39m\nReceived string:    \u001b[31m\"Job vacancyOpen callBilling assistantPromigas Perú · vacancy published by CONADISTrujillo, La Libertad · Peru · On sitePEN 2,100 · pay period not statedAdministration, Industrial Engineering or related graduates; one year of similar experience.Deadline: 27 November 2026View requirements and next steps→Checked: 11 November 2026\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('main article').filter({ hasText: 'Billing assistant' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('main article').filter({ hasText: 'Billing assistant' })\u001b[22m\n\u001b[2m    14 × locator resolved to <article class=\"_card_17ln0_42\">…</article>\u001b[22m\n\u001b[2m       - unexpected value \"Job vacancyOpen callBilling assistantPromigas Perú · vacancy published by CONADISTrujillo, La Libertad · Peru · On sitePEN 2,100 · pay period not statedAdministration, Industrial Engineering or related graduates; one year of similar experience.Deadline: 27 November 2026View requirements and next steps→Checked: 11 November 2026\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('main article').filter({ hasText: 'Billing assistant' })\nExpected substring: \u001b[32m\"2.100\"\u001b[39m\nReceived string:    \u001b[31m\"Job vacancyOpen callBilling assistantPromigas Perú · vacancy published by CONADISTrujillo, La Libertad · Peru · On sitePEN 2,100 · pay period not statedAdministration, Industrial Engineering or related graduates; one year of similar experience.Deadline: 27 November 2026View requirements and next steps→Checked: 11 November 2026\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('main article').filter({ hasText: 'Billing assistant' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('main article').filter({ hasText: 'Billing assistant' })\u001b[22m\n\u001b[2m    14 × locator resolved to <article class=\"_card_17ln0_42\">…</article>\u001b[22m\n\u001b[2m       - unexpected value \"Job vacancyOpen callBilling assistantPromigas Perú · vacancy published by CONADISTrujillo, La Libertad · Peru · On sitePEN 2,100 · pay period not statedAdministration, Industrial Engineering or related graduates; one year of similar experience.Deadline: 27 November 2026View requirements and next steps→Checked: 11 November 2026\"\u001b[22m\n\n    at D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts:19:23",
+                    "location": {
+                      "file": "D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts",
+                      "column": 23,
+                      "line": 19
+                    },
+                    "snippet": " \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'main article'\u001b[39m)\u001b[33m.\u001b[39mfilter({hasText\u001b[33m:\u001b[39m\u001b[32m'Empleos Perú'\u001b[39m}))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mconst\u001b[39m job\u001b[33m=\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'main article'\u001b[39m)\u001b[33m.\u001b[39mfilter({hasText\u001b[33m:\u001b[39mopportunities[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mtitle[language]})\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(job)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'2.100'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(job)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Trujillo'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m job\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m)\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'main h1'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(opportunities[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39mtitle[language])\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mconst\u001b[39m apply\u001b[33m=\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-official-action]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expect(apply)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'href'\u001b[39m\u001b[33m,\u001b[39mopportunities[\u001b[35m0\u001b[39m]\u001b[33m.\u001b[39maccess\u001b[33m!\u001b[39m\u001b[33m.\u001b[39mactionUrl)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts",
+                        "column": 23,
+                        "line": 19
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('main article').filter({ hasText: 'Billing assistant' })\nExpected substring: \u001b[32m\"2.100\"\u001b[39m\nReceived string:    \u001b[31m\"Job vacancyOpen callBilling assistantPromigas Perú · vacancy published by CONADISTrujillo, La Libertad · Peru · On sitePEN 2,100 · pay period not statedAdministration, Industrial Engineering or related graduates; one year of similar experience.Deadline: 27 November 2026View requirements and next steps→Checked: 11 November 2026\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('main article').filter({ hasText: 'Billing assistant' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('main article').filter({ hasText: 'Billing assistant' })\u001b[22m\n\u001b[2m    14 × locator resolved to <article class=\"_card_17ln0_42\">…</article>\u001b[22m\n\u001b[2m       - unexpected value \"Job vacancyOpen callBilling assistantPromigas Perú · vacancy published by CONADISTrujillo, La Libertad · Peru · On sitePEN 2,100 · pay period not statedAdministration, Industrial Engineering or related graduates; one year of similar experience.Deadline: 27 November 2026View requirements and next steps→Checked: 11 November 2026\"\u001b[22m\n\n\n  17 |     await expect(page.locator('main article').filter({hasText:'Empleos Perú'})).toHaveCount(0);\n  18 |     const job=page.locator('main article').filter({hasText:opportunities[0].title[language]});\n> 19 |     await expect(job).toContainText('2.100');await expect(job).toContainText('Trujillo');\n     |                       ^\n  20 |     await job.getByRole('heading').getByRole('link').click();\n  21 |     await expect(page.locator('main h1')).toHaveText(opportunities[0].title[language]);\n  22 |     const apply=page.locator('[data-official-action]');await expect(apply).toHaveAttribute('href',opportunities[0].access!.actionUrl);\n    at D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts:19:23"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:32.982Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\CombiRumbo-review\\umbral\\test-results\\opportunity-mvp-Peru-job-s-36788-rete-application-path-in-en-mobile\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\CombiRumbo-review\\umbral\\test-results\\opportunity-mvp-Peru-job-s-36788-rete-application-path-in-en-mobile\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts",
+                    "column": 23,
+                    "line": 19
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-3aba6227659d528a1384",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 11,
+          "column": 3
+        },
+        {
+          "title": "US education explains citizenship eligibility and links to the correct FAFSA process in en",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 560,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:34.013Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-c2b08a847579ec12e62d",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "Mexico Colombia Spain show domestic funding and explicit loan or grant conditions in en",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1071,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:34.587Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-7410283f80d45588ede8",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 45,
+          "column": 3
+        },
+        {
+          "title": "filters exclude closed calls by default, retain specific scopes and explain empty categories in en",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 695,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:35.671Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-4fc3ffbc7825a6e7832a",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 60,
+          "column": 3
+        },
+        {
+          "title": "saved opportunities preserve country, custom preparation, dates and next step after reload and export in en",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1563,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:36.380Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-590c7656619675e40b10",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 79,
+          "column": 3
+        },
+        {
+          "title": "country and language survive reload without importing Peru records into another jurisdiction in en",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 559,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:37.952Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-fccef5074cb18c2dffc5",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 100,
+          "column": 3
+        },
+        {
+          "title": "readability keyboard and WCAG rules for /?country=PE in en",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 1071,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 10\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"id\": \"link-in-text-block\",\u001b[39m\n\u001b[31m+     \"targets\": Array [\u001b[39m\n\u001b[31m+       Array [\u001b[39m\n\u001b[31m+         \"._homeRoute_17ln0_106 > a[href$=\\\"my-route\\\"][data-discover=\\\"true\\\"]\",\u001b[39m\n\u001b[31m+       ],\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 10\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"id\": \"link-in-text-block\",\u001b[39m\n\u001b[31m+     \"targets\": Array [\u001b[39m\n\u001b[31m+       Array [\u001b[39m\n\u001b[31m+         \"._homeRoute_17ln0_106 > a[href$=\\\"my-route\\\"][data-discover=\\\"true\\\"]\",\u001b[39m\n\u001b[31m+       ],\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts:120:206",
+                    "location": {
+                      "file": "D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts",
+                      "column": 206,
+                      "line": 120
+                    },
+                    "snippet": " \u001b[90m 118 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(route)\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expectReflow(page)\u001b[33m;\u001b[39m\n \u001b[90m 119 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'main'\u001b[39m)\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m{level\u001b[33m:\u001b[39m\u001b[35m1\u001b[39m}))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 120 |\u001b[39m       \u001b[36mconst\u001b[39m result\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mAxeBuilder\u001b[39m({page})\u001b[33m.\u001b[39mwithTags([\u001b[32m'wcag2a'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'wcag2aa'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'wcag21aa'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'wcag22aa'\u001b[39m])\u001b[33m.\u001b[39manalyze()\u001b[33m;\u001b[39mexpect(result\u001b[33m.\u001b[39mviolations\u001b[33m.\u001b[39mmap(item\u001b[33m=>\u001b[39m({id\u001b[33m:\u001b[39mitem\u001b[33m.\u001b[39mid\u001b[33m,\u001b[39mtargets\u001b[33m:\u001b[39mitem\u001b[33m.\u001b[39mnodes\u001b[33m.\u001b[39mmap(node\u001b[33m=>\u001b[39mnode\u001b[33m.\u001b[39mtarget)})))\u001b[33m.\u001b[39mtoEqual([])\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                                                                                                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 121 |\u001b[39m       \u001b[36mawait\u001b[39m captureReviewState(page\u001b[33m,\u001b[39m\u001b[32m'evolution-'\u001b[39m\u001b[33m+\u001b[39mroute\u001b[33m.\u001b[39mreplaceAll(\u001b[32m'/'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'-'\u001b[39m)\u001b[33m.\u001b[39mreplaceAll(\u001b[32m'?'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'-'\u001b[39m)\u001b[33m.\u001b[39mreplaceAll(\u001b[32m'&'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'-'\u001b[39m)\u001b[33m+\u001b[39m\u001b[32m'-'\u001b[39m\u001b[33m+\u001b[39mlanguage)\u001b[33m;\u001b[39m\n \u001b[90m 122 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39maddStyleTag({content\u001b[33m:\u001b[39m\u001b[32m':root {font-size:200% !important;}'\u001b[39m})\u001b[33m;\u001b[39m\u001b[36mawait\u001b[39m expectReflow(page)\u001b[33m;\u001b[39m\n \u001b[90m 123 |\u001b[39m     })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts",
+                        "column": 206,
+                        "line": 120
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 10\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"id\": \"link-in-text-block\",\u001b[39m\n\u001b[31m+     \"targets\": Array [\u001b[39m\n\u001b[31m+       Array [\u001b[39m\n\u001b[31m+         \"._homeRoute_17ln0_106 > a[href$=\\\"my-route\\\"][data-discover=\\\"true\\\"]\",\u001b[39m\n\u001b[31m+       ],\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  118 |       await page.goto(route);await expectReflow(page);\n  119 |       await expect(page.locator('main').getByRole('heading',{level:1})).toHaveCount(1);\n> 120 |       const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();expect(result.violations.map(item=>({id:item.id,targets:item.nodes.map(node=>node.target)}))).toEqual([]);\n      |                                                                                                                                                                                                              ^\n  121 |       await captureReviewState(page,'evolution-'+route.replaceAll('/','-').replaceAll('?','-').replaceAll('&','-')+'-'+language);\n  122 |       await page.addStyleTag({content:':root {font-size:200% !important;}'});await expectReflow(page);\n  123 |     });\n    at D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts:120:206"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:38.525Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\CombiRumbo-review\\umbral\\test-results\\opportunity-mvp-readabilit-958c3--rules-for-country-PE-in-en-mobile\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\CombiRumbo-review\\umbral\\test-results\\opportunity-mvp-readabilit-958c3--rules-for-country-PE-in-en-mobile\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\CombiRumbo-review\\umbral\\tests\\e2e\\opportunity-mvp.spec.ts",
+                    "column": 206,
+                    "line": 120
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-d4be93ad71473a71ca72",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 116,
+          "column": 5
+        },
+        {
+          "title": "readability keyboard and WCAG rules for /discover?country=PE&category=employment in en",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1287,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:39.111Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-a0c92f905dd334c7e611",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 116,
+          "column": 5
+        },
+        {
+          "title": "readability keyboard and WCAG rules for /opportunities/pe-promigas-billing in en",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1194,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:40.285Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-eb7ded814006c7b74d7b",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 116,
+          "column": 5
+        },
+        {
+          "title": "readability keyboard and WCAG rules for /opportunities/us-pell-2026 in en",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1097,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:40.544Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-6a5e89fe16152721ae2d",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 116,
+          "column": 5
+        },
+        {
+          "title": "readability keyboard and WCAG rules for /my-route in en",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1214,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:41.633Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-164979e3ae2fd6d35410",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 116,
+          "column": 5
+        },
+        {
+          "title": "unknown countries never fall back, CSE remains a procedure and existing local task data stays safe",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 894,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:41.659Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-b0634032bd4ffaa00355",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 127,
+          "column": 1
+        },
+        {
+          "title": "keyboard can choose a category and reach the real opportunity",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 453,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T19:35:42.570Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7abaa1c694505a083c4c-dd37c2f309b7bab0b80d",
+          "file": "opportunity-mvp.spec.ts",
+          "line": 139,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-11T19:35:25.000Z",
+    "duration": 18120.951,
+    "expected": 21,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

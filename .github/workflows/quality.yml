@@ -11,8 +11,8 @@ jobs:
       options: --shm-size=1g
     timeout-minutes: 15
     env:
-      UMBRAL_RESULTS_DIR: audit/opportunity-mvp/results
-      UMBRAL_SCREENSHOTS_DIR: audit/opportunity-mvp/screenshots
+      UMBRAL_RESULTS_DIR: audit/opportunity-evolution/results
+      UMBRAL_SCREENSHOTS_DIR: audit/opportunity-evolution/screenshots
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
@@ -37,4 +37,5 @@ jobs:
             audit/screenshots/
             audit/product-review/
             audit/opportunity-mvp/
+            audit/opportunity-evolution/
           retention-days: 14

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { normalizeLanguage } from '../../../services/i18n';
 import { printElement } from '../../../utils/print';
-import { getOpportunity, formatDate, opportunityStatusLabelKey } from '../domain/catalog';
+import { getOpportunity, formatDate, opportunityStatusLabelKey, canAct } from '../domain/catalog';
 import { routeProgress } from '../domain/myRoute';
-import { sources } from '../data/peru';
+import { sources, catalogCountries } from '../data/catalog';
 import { useMyRoute } from '../application/routeContext';
 import type { Opportunity, RouteEntry } from '../domain/types';
 import { OpportunityDates, StatusBadge } from '../components/Shared';
@@ -17,9 +17,12 @@ function RouteCard({ opportunity, entry, onFeedback }: { opportunity: Opportunit
   const { toggleStep, toggleTask, removeTask, addTask, remove } = useMyRoute();
   const [newTask, setNewTask] = useState('');
   const { completed, total, percent } = routeProgress(entry, opportunity.id);
+  const nextStep = opportunity.steps.find(step => !entry.completedStepIds.includes(step.id));
   return <article className={styles.routeCard}>
-    <div className={styles.cardMeta}><span>{t(`companion.categories.${opportunity.category}`)}</span><StatusBadge opportunity={opportunity} /></div>
+    <div className={styles.cardMeta}><span>{catalogCountries.find(country => country.code === opportunity.countryCode)?.name[language]} · {t(`companion.kinds.${opportunity.kind}`)}</span><StatusBadge opportunity={opportunity} /></div>
     <h2><Link to={`/opportunities/${opportunity.id}`}>{opportunity.title[language]}</Link></h2>
+    <p className={styles.routeNext}><strong>{t('companion.nextStep')}: </strong>{canAct(opportunity) ? nextStep?.text[language] ?? t('companion.nextPrepared') : t('companion.notAvailable')}</p>
+    {opportunity.availability.closesOn && <p className={styles.deadline}>{t('companion.closes')}: {formatDate(opportunity.availability.closesOn, language)}</p>}
     <p>{t('companion.progress', { completed, total })}</p>
     <progress className={styles.progress} value={completed} max={total || 1} aria-label={`${opportunity.title[language]}: ${t('companion.progress', { completed, total })}`}>{percent}%</progress>
     <details className={styles.disclosure} open><summary>{t('companion.routeSteps')}</summary>
@@ -66,7 +69,7 @@ export default function MyRoutePage() {
   };
   return <main id="main-content" className={styles.page}>
     <div className={styles.container}>
-      <h1>{t('companion.myRoute')}</h1><p className={styles.lead}>{t('companion.routeIntro')}</p>
+      <h1>{t('companion.myRoute')}</h1><p className={styles.lead}>{t('companion.routeIntro')}</p><p className={styles.small}>{t('companion.routeCountries')}</p>
       <p className={styles.notice}>{t('companion.progressNote')}</p><p className={styles.small}>{t('companion.privacy')}</p>
       {!available && <p role="status" className={styles.notice}>{t('companion.storageUnavailable')}</p>}
       <p role="status" aria-live="polite" className={styles.feedback}>{feedback}</p>

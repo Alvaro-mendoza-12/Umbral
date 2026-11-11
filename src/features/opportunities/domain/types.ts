@@ -1,6 +1,6 @@
 import type { TranslatedContent } from '../../../types';
 
-export type CategoryId = 'education' | 'employment' | 'training' | 'enterprise' | 'family';
+export type CategoryId = 'education' | 'employment' | 'training' | 'enterprise' | 'technology' | 'family';
 export type AudienceId = 'students' | 'jobseekers' | 'learners' | 'entrepreneurs' | 'households';
 export type OpportunityStatus = 'ongoing' | 'open' | 'closed' | 'upcoming' | 'unconfirmed';
 export interface OpportunitySource {
@@ -23,7 +23,27 @@ export interface Opportunity {
   institutionId: string;
   category: CategoryId;
   audiences: readonly AudienceId[];
-  kind: 'scholarship' | 'service' | 'procedure';
+  kind: 'scholarship' | 'service' | 'procedure' | 'job' | 'course' | 'grant' | 'loan';
+  placement?: 'supplementary';
+  secondaryCategories?: readonly CategoryId[];
+  access?: {
+    eligibleCountries: readonly string[];
+    international: boolean;
+    location: TranslatedContent;
+    eligibility: TranslatedContent;
+    mode: 'onsite' | 'hybrid' | 'remote' | 'online' | 'not-published';
+    benefit: TranslatedContent;
+    publishedOn?: string;
+    salary?: TranslatedContent;
+    duration?: TranslatedContent;
+    price?: TranslatedContent;
+    certification?: TranslatedContent;
+    action: 'apply' | 'enroll' | 'request' | 'procedure';
+    actionUrl: string;
+    actionLabel?: TranslatedContent;
+    instructions: TranslatedContent;
+    deadlineAt?: string;
+  };
   title: TranslatedContent;
   summary: TranslatedContent;
   audienceDescription: TranslatedContent;

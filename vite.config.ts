@@ -12,9 +12,9 @@ export default defineConfig({
       includeAssets: ['icons/icon-192.png', 'icons/icon-512.png'],
       manifest: {
         lang: 'es',
-        name: 'UMBRAL | Tu acompañante de acceso a oportunidades',
+        name: 'UMBRAL | Oportunidades reales, caminos claros',
         short_name: 'UMBRAL',
-        description: 'Descubre oportunidades de educación, empleo, formación, emprendimiento y apoyo familiar. Comprende sus condiciones y organiza tus pasos. Primer país: Perú.',
+        description: 'Encuentra vacantes, becas, cursos y financiación con fuentes oficiales en Perú, Estados Unidos, México, Colombia y España. Prepara tu siguiente paso.',
         theme_color: '#171d2a',
         background_color: '#f5f6f3',
         display: 'standalone',

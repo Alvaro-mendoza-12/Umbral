@@ -1,71 +1,84 @@
 import { describe, expect, it } from 'vitest';
-import { opportunities, sources, institutions, jurisdictions } from '../../src/features/opportunities/data/peru';
-import { filterOpportunities, getOpportunity, opportunityStatus, opportunityStatusLabelKey } from '../../src/features/opportunities/domain/catalog';
+import { opportunities, sources, institutions, jurisdictions, catalogCountries } from '../../src/features/opportunities/data/catalog';
+import { filterOpportunities, getOpportunity, opportunityStatus, opportunityStatusLabelKey, canAct } from '../../src/features/opportunities/domain/catalog';
 import { emptyRoute, normalizeMyRoute, routeProgress } from '../../src/features/opportunities/domain/myRoute';
 import es from '../../src/locales/es/companion.json' with { type: 'json' };
 import en from '../../src/locales/en/companion.json' with { type: 'json' };
-
 const filters = { country: 'PE', region: '', category: '', audience: '', status: '' };
 const today = '2026-11-11';
-describe('verified opportunity catalogue', () => {
-  it('has five distinct categories, traceable requirements and official sources', () => {
-    expect(new Set(opportunities.map(item => item.category)).size).toBe(5);
-    expect(new Set(opportunities.map(item => item.id)).size).toBe(opportunities.length);
-    const knownSources = new Set(sources.map(source => source.id));
-    for (const opportunity of opportunities) {
-      expect(opportunity.countryCode).toBe('PE');
-      expect(institutions.find(item => item.id === opportunity.institutionId)?.countryCode).toBe('PE');
-      expect(jurisdictions.find(item => item.id === opportunity.jurisdictionId)?.countryCode).toBe('PE');
-      expect(opportunity.title.es).toBeTruthy(); expect(opportunity.title.en).toBeTruthy();
-      expect(opportunity.verification.status).toBe('documentary');
-      expect(opportunity.officialUrl).toMatch(/^https:\/\/[^/]+\.gob\.pe\//);
-      for (const item of [...opportunity.requirements, ...opportunity.conditions, ...opportunity.steps]) {
+describe('specific verified international opportunities', () => {
+  it('covers five jurisdictions and six categories using concrete records rather than portals', () => {
+    for(const country of ['PE','US','MX','CO','ES']) {
+      expect(catalogCountries.some(item=>item.code===country)).toBe(true);
+      const domestic=filterOpportunities({...filters,country},today).filter(item=>item.countryCode===country);
+      expect(domestic.length).toBeGreaterThan(0);
+      expect(domestic.every(item=>item.access && item.placement!=='supplementary')).toBe(true);
+    }
+    expect(new Set(opportunities.filter(item=>!item.placement).map(item=>item.category)).size).toBe(6);
+    const jobs=filterOpportunities({...filters,category:'employment'},today);
+    expect(jobs.map(item=>item.id)).toEqual(['pe-promigas-billing','pe-xylem-electromechanical']);
+    expect(jobs.every(item=>item.kind==='job' && item.access?.salary && item.access.location && item.access.instructions && /\/jobs\//.test(item.officialUrl))).toBe(true);
+    expect(filterOpportunities({...filters,category:'employment',country:'MX'},today)).toEqual([]);
+  });
+  it('resolves source, institution, jurisdiction and action without losing provenance', () => {
+    const ids=new Set(sources.map(source=>source.id));
+    expect(new Set(opportunities.map(item=>item.id)).size).toBe(opportunities.length);
+    for(const opportunity of opportunities) {
+      expect(institutions.some(item=>item.id===opportunity.institutionId)).toBe(true);
+      expect(jurisdictions.some(item=>item.id===opportunity.jurisdictionId)).toBe(true);
+      expect(opportunity.sourceIds.every(id=>ids.has(id))).toBe(true);
+      for(const item of [...opportunity.requirements,...opportunity.conditions,...opportunity.steps]) {
+        expect(item.text.es).toBeTruthy();expect(item.text.en).toBeTruthy();
         expect(item.sourceIds.length).toBeGreaterThan(0);
-        expect(item.sourceIds.every(id => knownSources.has(id) && opportunity.sourceIds.includes(id))).toBe(true);
-        expect(item.text.es).toBeTruthy(); expect(item.text.en).toBeTruthy();
+        expect(item.sourceIds.every(id=>opportunity.sourceIds.includes(id))).toBe(true);
       }
-      for (const date of opportunity.availability.dates) expect(opportunity.sourceIds).toContain(date.sourceId);
-      expect(sources.filter(source => opportunity.sourceIds.includes(source.id)).every(source => source.consultedAt === opportunity.verification.checkedAt)).toBe(true);
+      if(opportunity.access) {
+        expect(opportunity.access.actionUrl).toMatch(/^https:\/\//);
+        expect(opportunity.access.instructions.es.length).toBeGreaterThan(30);
+        expect(opportunity.access.instructions.en.length).toBeGreaterThan(30);
+      }
     }
   });
-  it.each(['MX', 'CO', 'ES', 'ZZ'])('never falls back to Peru for %s', country => {
-    expect(filterOpportunities({ ...filters, country }, today)).toEqual([]);
+  it('keeps territorial eligibility separate from international access', () => {
+    expect(filterOpportunities({...filters,country:'US',category:'education'},today).map(item=>item.id)).toContain('us-pell-2026');
+    expect(filterOpportunities({...filters,country:'MX'},today).map(item=>item.id)).not.toContain('us-pell-2026');
+    expect(filterOpportunities({...filters,country:'CO'},today).map(item=>item.id)).not.toContain('cse-peru');
+    expect(filterOpportunities({...filters,country:'INT'},today).map(item=>item.id)).toEqual(['int-cs50x-2026']);
+    expect(filterOpportunities({...filters,country:'MX',category:'technology'},today).map(item=>item.id)).toContain('int-cs50x-2026');
+    expect(filterOpportunities({...filters,country:'ZZ'},today)).toEqual([]);
+    expect(getOpportunity('missing')).toBeUndefined();
   });
-  it('combines region, category, audience and call status without inventing local vacancies', () => {
-    expect(filterOpportunities({ ...filters, region: 'PE-140101' }, today).map(item => item.id)).toEqual(['cse-peru']);
-    expect(filterOpportunities({ ...filters, category: 'training', audience: 'jobseekers', status: 'ongoing' }, today).map(item => item.id)).toEqual(['capacita-t']);
-    expect(filterOpportunities({ ...filters, category: 'enterprise', audience: 'students' }, today)).toEqual([]);
-    expect(filterOpportunities({ ...filters, region: 'ZZ' }, today)).toEqual([]);
-    expect(filterOpportunities({ ...filters, status: 'closed' }, today).map(item => item.id)).toEqual(['beca-18-2027']);
+  it('does not present old calls or stale records as available; preserves saved legacy IDs', () => {
+    expect(filterOpportunities(filters,today).map(item=>item.id)).not.toContain('beca-18-2027');
+    expect(filterOpportunities({...filters,status:'closed'},today).map(item=>item.id)).toContain('beca-18-2027');
+    expect(opportunityStatus(getOpportunity('pe-promigas-billing')!,'2026-11-28')).toBe('closed');
+    expect(opportunityStatus(getOpportunity('pe-promigas-billing')!,'2026-11-19')).toBe('unconfirmed');
+    expect(opportunityStatus(getOpportunity('pe-innovasuyu-libertad')!,'2026-11-12')).toBe('open');
+    expect(opportunityStatus(getOpportunity('pe-innovasuyu-libertad')!,'2026-11-14')).toBe('closed');
+    expect(opportunityStatus(getOpportunity('us-pell-2026')!,'2026-11-10')).toBe('open');
+    expect(filterOpportunities({...filters,status:'all'},today).map(item=>item.id)).not.toContain('empleos-peru');
+    expect(getOpportunity('empleos-peru')).toBeTruthy();
+    expect(canAct(getOpportunity('empleos-peru')!)).toBe(false);
   });
-  it('retains closed registration while exam dates are still in the future', () => {
-    const scholarship = getOpportunity('beca-18-2027')!;
-    expect(opportunityStatus(scholarship, today)).toBe('closed');
-    expect(scholarship.availability.closesOn).toBe('2026-10-18');
-    expect(scholarship.availability.dates.some(date => date.date > today)).toBe(true);
+  it('distinguishes course, debt, grant and CSE without inventing salary or certification', () => {
+    expect(getOpportunity('cse-peru')).toMatchObject({kind:'procedure',guidePath:'/cse'});
+    expect(opportunityStatusLabelKey(getOpportunity('cse-peru')!,today)).toBe('companion.kinds.procedure');
+    expect(getOpportunity('es-enisa-digital-women')?.kind).toBe('loan');
+    expect(getOpportunity('pe-innovasuyu-libertad')?.kind).toBe('grant');
+    expect(getOpportunity('mx-unam-excel')?.access?.certification?.es).toContain('no disponibles');
+    expect(getOpportunity('pe-promigas-billing')?.access?.publishedOn).toBeUndefined();
+    expect(getOpportunity('us-va-nurse')?.access?.publishedOn).toBe('2026-10-19');
+    expect(getOpportunity('pe-innovasuyu-libertad')?.access?.deadlineAt).toBe('2026-11-13T13:00:00-05:00');
   });
-  it('requires fresh confirmation for ongoing services after the review deadline', () => {
-    expect(opportunityStatus(getOpportunity('empleos-peru')!, '2026-12-12')).toBe('unconfirmed');
-    expect(opportunityStatus(getOpportunity('beca-18-2027')!, '2027-01-01')).toBe('closed');
-    expect(getOpportunity('unknown')).toBeUndefined();
+  it('combines category, geography and audience; secondary categories stay explicit', () => {
+    expect(filterOpportunities({...filters,region:'PE-LaLibertad',category:'employment'},today).map(item=>item.id)).toEqual(['pe-promigas-billing']);
+    expect(filterOpportunities({...filters,country:'US',category:'employment'},today).map(item=>item.id)).toEqual(['us-va-nurse']);
+    expect(filterOpportunities({...filters,category:'technology'},today).map(item=>item.id)).toContain('pe-abc-digital');
+    expect(filterOpportunities({...filters,region:'ZZ'},today)).toEqual([]);
   });
-  it('keeps CSE a family-support procedure with its original guide', () => {
-    expect(getOpportunity('cse-peru')).toMatchObject({ category: 'family', kind: 'procedure', guidePath: '/cse', localGuidanceIds: ['PE-140101'] });
-  });
-  it('classifies CSE as a procedure in labels and excludes it from the ongoing service filter', () => {
-    expect(opportunityStatusLabelKey(getOpportunity('cse-peru')!, today)).toBe('companion.kinds.procedure');
-    expect(opportunityStatusLabelKey(getOpportunity('cse-peru')!, '2026-12-12')).toBe('companion.status.unconfirmed');
-    expect(opportunityStatusLabelKey(getOpportunity('beca-18-2027')!, today)).toBe('companion.status.closed');
-    for (const id of ['empleos-peru', 'capacita-t', 'tu-empresa']) {
-      expect(opportunityStatusLabelKey(getOpportunity(id)!, today)).toBe('companion.status.ongoing');
-    }
-    expect(filterOpportunities({ ...filters, status: 'ongoing' }, today).map(item => item.id)).toEqual(['empleos-peru', 'capacita-t', 'tu-empresa']);
-    expect(filterOpportunities({ ...filters, category: 'family', status: 'ongoing' }, today)).toEqual([]);
-    expect(filterOpportunities({ ...filters, category: 'family' }, today).map(item => item.id)).toEqual(['cse-peru']);
-  });
-  it('maintains the same interface key set in Spanish and English', () => {
-    const paths = (value: object, prefix = ''): string[] => Object.entries(value).flatMap(([key, item]) => typeof item === 'object' ? paths(item, `${prefix}${key}.`) : [`${prefix}${key}`]);
-    expect(paths(es)).toEqual(paths(en));
+  it('keeps translations complete in ES and EN', () => {
+    const paths=(value:object,prefix=''):string[]=>Object.entries(value).flatMap(([key,item])=>typeof item==='object'?paths(item,prefix+key+'.'):[prefix+key]);
+    expect(paths(es).sort()).toEqual(paths(en).sort());
   });
 });
 describe('local My Route boundary', () => {

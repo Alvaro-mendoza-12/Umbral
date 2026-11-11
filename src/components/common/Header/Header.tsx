@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import styles from './Header.module.css';
 import ThresholdMark from '../ThresholdMark';
+import { useDiscoveryCountry } from '../../../features/opportunities/application/countryContext';
 
 const cseLinks = [
   { to: '/about', label: 'common.about' },
@@ -20,7 +21,7 @@ const navigationLinks = [
 export default function Header() {
   const { t, i18n } = useTranslation();
   const { pathname, search } = useLocation();
-  const country = (new URLSearchParams(search).get('country') ?? 'PE').toUpperCase();
+  const { country } = useDiscoveryCountry();
   const links = navigationLinks.map(link => country !== 'PE' && link.to !== '/my-route' ? { ...link, to: `${link.to}?country=${encodeURIComponent(country)}` } : link);
   const showCseNavigation = /^\/(?:cse|about|guide|checklist|resources|faq)(?:\/|$)/.test(pathname) && (pathname !== '/cse' || country === 'PE');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

@@ -2,15 +2,15 @@
 
 **Las oportunidades existen. Encontrar el camino no debería ser difícil.**
 
-Esta rama evoluciona UMBRAL hacia un **acompañante internacional de acceso a oportunidades**, conservando **The Illuminated Threshold**. [Entrega del MVP](audit/opportunity-mvp/REPORT.md). `main` y la producción original conservan la versión publicada.
+Esta rama evoluciona UMBRAL hacia un **acompañante internacional de acceso a oportunidades**, conservando **The Illuminated Threshold**. [Entrega de esta evolución](audit/opportunity-evolution/DELIVERY.md). `main` y la producción original conservan la versión publicada.
 
-**[Abrir la vista previa pública del MVP](https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app)**. Es un Preview de revisión, sin publicación definitiva.
+**Vista previa de esta evolución:** consultar el enlace de la [entrega](audit/opportunity-evolution/DELIVERY.md). Es un Preview de revisión, sin publicación definitiva. La [vista previa anterior](https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app) conserva la fase previa.
 
-**MVP actual:** inicio por objetivos, catálogo con cinco filtros, fichas verificables y Mi Ruta con guardado, pasos, tareas propias, progreso, descarga e impresión. Perú tiene cinco registros en educación, empleo, formación, emprendimiento y apoyo familiar. México, Colombia y España están preparados para futura incorporación y no tienen oportunidades ni guías verificadas.
+**Versión de revisión:** seis categorías, 14 oportunidades concretas nuevas y el trámite CSE conservado. Perú, Estados Unidos, México, Colombia y España tienen contenido propio; CS50x tiene acceso internacional explícito. Las categorías sin registros lo explican. Hay vacantes específicas, cursos, ayudas y préstamos, con requisitos, fechas, fuente y acceso oficial. Mi Ruta conserva guardado, pasos, tareas propias, progreso, descarga e impresión; país e idioma persisten por separado.
 
 La CSE permanece como un procedimiento de orientación dentro de apoyo familiar, con su guía conservada en `/cse`, cinco pasos, once casillas, recursos y preguntas frecuentes. Las fuentes son específicas de cada país; cambiar idioma no cambia jurisdicción. Español e inglés, almacenamiento local y lectura sin conexión tras la primera carga. No se incorporan cuentas ni APIs de IA.
 
-Se conservan la [revisión de producto anterior](audit/product-review/REPORT.md), [comparación](audit/product-review/compare.html), [guía para cinco adultos](audit/product-review/USABILITY.md) y [resumen editable](audit/product-review/USABILITY-RESULTS.md). Las pruebas humanas siguen pendientes.
+Se conservan la [revisión de producto anterior](audit/product-review/REPORT.md), [comparación](audit/product-review/compare.html), [guía para cinco adultos](audit/product-review/USABILITY.md) y [resumen editable](audit/product-review/USABILITY-RESULTS.md). Estos documentos corresponden a la fase previa; sus URLs y cobertura no describen esta evolución. Las pruebas humanas siguen pendientes; no se han inventado sesiones ni resultados.
 
 UMBRAL no calcula ni solicita la CSE, consulta padrones o concede beneficios. No sustituye a la ULE ni pide DNI, ingresos, domicilio o documentos. Las casillas registran preparación en el dispositivo, no requisitos obligatorios ni elegibilidad. El hosting puede registrar metadatos técnicos; no se promete anonimato absoluto.
 
@@ -41,7 +41,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-`test:e2e` compila y prueba el build local en un servidor aislado `127.0.0.1:5186`. Incluye catálogo, filtros, Mi Ruta, persistencia, descarga, popup imprimible, CSE, idioma, offline y axe. Viewports: 360×640, 390×844, 768×1024 y 1440×900; reflow adicional a 320 px. Son emulaciones, no teléfonos físicos. Para conservar las evidencias de fases anteriores, establecer `UMBRAL_RESULTS_DIR=audit/opportunity-mvp/results` y `UMBRAL_SCREENSHOTS_DIR=audit/opportunity-mvp/screenshots` antes de ejecutar Playwright.
+`test:e2e` compila y prueba el build local en un servidor aislado `127.0.0.1:5186`. Incluye los seis recorridos de aceptación en español/inglés, filtros, Mi Ruta, persistencia, descarga, popup imprimible, CSE, idioma, offline y axe. Viewports: 360×640, 390×844, 768×1024 y 1440×900; reflow adicional a 320 px. Son emulaciones, no teléfonos físicos. Para conservar las evidencias de fases anteriores, establecer `UMBRAL_RESULTS_DIR=audit/opportunity-evolution/results` y `UMBRAL_SCREENSHOTS_DIR=audit/opportunity-evolution/screenshots` antes de ejecutar Playwright.
 
 ```sh
 npm run preview
@@ -53,7 +53,7 @@ Desarrollo no es prueba del Service Worker. Offline requiere una primera carga c
 
 `.kiro/` conserva Specs/Steering auténticos. `src/features/opportunities/` separa dominio, datos, estado local y presentación; el contenido CSE sigue en `src/content/pe/cse/`. `public/` contiene recursos; `tests/`, Vitest/Playwright; `audit/`, resultados/capturas; `vercel.json`, build estático, rutas SPA y cabeceras. `.github/workflows/quality.yml` automatiza comprobaciones.
 
-El catálogo real está en `src/features/opportunities/data/peru.ts`: jurisdicciones, instituciones, público, requisitos, condiciones, fechas y fuentes con consulta documental. Una inscripción vencida permanece cerrada aunque tenga hitos posteriores. Tras la fecha de próxima revisión editorial, los servicios continuos pasan a «Requiere confirmación». No hay actualización automática desde instituciones ni alertas de fechas.
+El catálogo se combina en `src/features/opportunities/data/catalog.ts`; `verified.ts` contiene las oportunidades nuevas y `peru.ts` conserva los registros previos. Los portales generales son complementarios. Las convocatorias cerradas y registros pendientes de revisión no aparecen en la búsqueda inicial. Las fechas y horas publicadas determinan el cierre; tras la próxima revisión editorial pasa a «Requiere confirmación» y se oculta la acción de solicitud. No hay actualización automática desde instituciones ni alertas de fechas.
 
 Se excluyen dependencias, `dist`, secretos, `.env` y metadatos `.vercel`. El lockfile permite instalación reproducible. Licencia [MIT](LICENSE).
 
