@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-10",
+  "repository": "Alvaro-mendoza-12/Umbral",
+  "workflow": "Quality",
+  "branch": "main",
+  "sourceCommit": "c07458096a6ecc37d33f6ab9da00f4ef1591291f",
+  "runId": 42960105639,
+  "url": "https://github.com/Alvaro-mendoza-12/Umbral/actions/runs/42960105639",
+  "status": "completed",
+  "conclusion": "success",
+  "checkedSteps": [
+    "npm ci",
+    "npm run lint",
+    "npm run test -- --run",
+    "npm audit --omit=dev --audit-level=moderate",
+    "npx playwright install --with-deps chromium",
+    "npm run test:e2e",
+    "upload quality evidence"
+  ],
+  "subsequentChanges": "README and audit evidence only; no application, dependency or workflow changes"
+}

@@ -56,7 +56,7 @@ Se excluyen dependencias, build, secretos y `.vercel`. `tsconfig.tsbuildinfo` de
 
 Se comprobaron21 combinaciones de rutas/tamaños públicas, idioma tras recarga, ruta offline, manifiesto, PNG, cabeceras y revalidación SW. Sin excepciones de página ni peticiones a terceros en ese recorrido. [Resultado público](results/public-smoke.json). Una copia limpia del commit auditado completó `npm ci` y `npm run build`; [registro](results/clean-build.json). Los logs usan UTC; la fecha de revisión corresponde a UTC-5.
 
-GitHub se comprobó accesible sin credenciales. Los commits se incorporan por avance normal, sin force-push. El workflow se añadió; no se atribuye a CI remota un resultado antes de observarlo.
+GitHub se comprobó público sin credenciales. `main` contiene la revisión auditada `c074580`, incorporada por avance normal desde el commit original, sin force-push. La rama `codex/audit-kiroween` conserva la revisión previa a la entrega. El workflow Quality de GitHub Actions terminó **aprobado en main**, con instalación, lint, Vitest, auditoría de producción, Playwright y artefactos: [ejecución 42960105639](https://github.com/Alvaro-mendoza-12/Umbral/actions/runs/42960105639). [Registro CI](results/github-ci.json).
 
 ## Límites y entrega Devpost
 

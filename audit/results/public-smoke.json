@@ -1,6 +1,7 @@
 {
   "date": "2026-11-10",
-  "sourceCommit": "5e12045",
+  "sourceCommit": "c07458096a6ecc37d33f6ab9da00f4ef1591291f",
+  "deploymentId": "dpl_FmSyqaXokJ9vGUJfcT3wsUwmrBGF",
   "url": "https://umbral-seven-khaki.vercel.app",
   "anonymousBrowser": true,
   "routes": [
@@ -152,6 +153,7 @@
       "overflow": false
     }
   ],
+  "numberedGuideInstructions": 5,
   "languagePersisted": true,
   "offlineDeepLink": true,
   "manifest": {

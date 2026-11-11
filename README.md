@@ -7,6 +7,7 @@ Guía para preparar una primera solicitud de Clasificación Socioeconómica (CSE
 UMBRAL no calcula ni solicita la CSE, consulta padrones o concede beneficios. No sustituye a la ULE ni pide DNI, ingresos, domicilio o documentos. Las casillas registran preparación en el dispositivo, no requisitos obligatorios ni elegibilidad. El hosting puede registrar metadatos técnicos; no se promete anonimato absoluto.
 
 - [Repositorio](https://github.com/Alvaro-mendoza-12/Umbral)
+- [Aplicación pública](https://umbral-seven-khaki.vercel.app)
 - [Auditoría y resultados](audit/REPORT.md)
 - [Procedencia Kiro/Codex](audit/ATTRIBUTION.md)
 - [Preparación Devpost y pendientes](audit/KIROWEEN.md)
@@ -29,10 +30,10 @@ npm run lint
 npm run test -- --run
 npm run build
 npx playwright install chromium
-npm run test:e 2 e
+npm run test:e2e
 ```
 
-`test:e 2 e` compila y prueba producción en un servidor aislado `127.0.0.1:5186`. Incluye navegación, idioma, almacenamiento, popup imprimible, offline y axe. Viewports:390×844,768×1024,1440×900; reflow adicional a 320 px. Son emulaciones, no teléfonos físicos.
+`test:e2e` compila y prueba producción en un servidor aislado `127.0.0.1:5186`. Incluye navegación, idioma, almacenamiento, popup imprimible, offline y axe. Viewports:390×844,768×1024,1440×900; reflow adicional a 320 px. Son emulaciones, no teléfonos físicos.
 
 ```sh
 npm run preview

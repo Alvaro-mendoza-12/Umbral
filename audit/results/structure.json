@@ -2,7 +2,7 @@
   "root": "D:/CombiRumbo-review/umbral",
   "remote": "https://github.com/Alvaro-mendoza-12/Umbral.git",
   "baseCommit": "813c87ab57084010a8cff0e431344ad6193bd786",
-  "branch": "codex/audit-kiroween",
+  "branch": "main",
   "kiroTrackedFiles": [
     ".kiro/specs/umbral/design.md",
     ".kiro/specs/umbral/requirements.md",

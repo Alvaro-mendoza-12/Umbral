@@ -27,7 +27,7 @@ Se conservan sin cambios de contenido respecto al snapshot original:
 
 ## Auditoría Codex
 
-Antes de corregir, Codex guardó ZIP/manifest del trabajo y bundle del historial. Reprodujo seis fallos E2 E móviles y revisó código, contenido, accesibilidad y PWA. Corrigió idioma, rutas inválidas, estado local incompatible, menú/foco y contraste; revisó CSE e impresión sin reconstruir la app.
+Antes de corregir, Codex guardó ZIP/manifest del trabajo y bundle del historial. Reprodujo seis fallos E2E móviles y revisó código, contenido, accesibilidad y PWA. Corrigió idioma, rutas inválidas, estado local incompatible, menú/foco y contraste; revisó CSE e impresión sin reconstruir la app.
 
 Añadió regresiones y axe, actualizó dependencias afectadas y preparó Vercel/rutas/cabeceras, instalación limpia, CI y publicación. Los commits posteriores a 813c87a identifican esta auditoría. No se atribuyen a Kiro estas correcciones ni investigaciones/maquetas previas de Codex.
 
