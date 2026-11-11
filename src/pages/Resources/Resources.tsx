@@ -1,16 +1,38 @@
 import { useTranslation } from 'react-i18next';
 import Card from '../../components/common/Card';
 import Button from '../../components/common/Button';
-import { officialSources } from '../../data/sources';
+import { officialSources, uleChiclayoInfo, ULE_DIRECTORY_URL } from '../../data/sources';
+import { checklistItems } from '../../data/checklistItems';
 import { printElement } from '../../utils/print';
 import styles from './Resources.module.css';
 
+function PrintParagraph({ text }: { text: string }) {
+  if (text.startsWith('**') && text.endsWith('**')) {
+    return <h4>{text.slice(2, -2)}</h4>;
+  }
+  const lines = text.split('\n');
+  if (lines.every(line => line.startsWith('- '))) {
+    return <ul>{lines.map((line, index) => <li key={index}>{line.slice(2)}</li>)}</ul>;
+  }
+  if (lines.every(line => /^\d+\. /.test(line))) {
+    return <ol>{lines.map((line, index) => <li key={index}>{line.replace(/^\d+\. /, '')}</li>)}</ol>;
+  }
+  return <p>{text}</p>;
+}
+
 export default function Resources() {
   const { t, i18n } = useTranslation();
-  const lang = i18n.language as 'es' | 'en';
+  const lang = (i18n.resolvedLanguage ?? i18n.language).startsWith('en') ? 'en' : 'es';
+  const steps = t('guide.steps', { returnObjects: true }) as Array<{
+    title: string;
+    content: string;
+  }>;
 
   const handlePrint = () => {
-    printElement('prep-sheet');
+    printElement('prep-sheet', {
+      language: lang,
+      title: `${t('common.appName')} - ${t('resources.prepSheet.title')}`,
+    });
   };
 
   return (
@@ -24,9 +46,15 @@ export default function Resources() {
           <h2>{t('resources.uleTitle')}</h2>
           <Card variant="highlighted">
             <p className={styles.uleNote}>{t('resources.uleNote')}</p>
+            <p>{uleChiclayoInfo.address?.[lang]}</p>
+            <p>{uleChiclayoInfo.hours?.[lang]}</p>
+            <p className={styles.verifiedDate}>{uleChiclayoInfo.notes[lang]}</p>
             <div className={styles.uleContact}>
               <h3>{t('resources.uleContact.title')}</h3>
               <p>{t('resources.uleContact.description')}</p>
+              <a href={ULE_DIRECTORY_URL} target="_blank" rel="noopener noreferrer" className={styles.sourceLink}>
+                {t('resources.uleContact.directoryLink')}
+              </a>
             </div>
           </Card>
         </section>
@@ -108,41 +136,49 @@ export default function Resources() {
         <p>{t('common.tagline')}</p>
         
         <h2>{t('guide.title')}</h2>
-        {Array.from({ length: 5 }, (_, i) => {
-          const step = t(`guide.steps.${i}`, { returnObjects: true }) as {
-            title: string;
-            content: string;
-          };
-          return (
+        {steps.map((step, i) => (
             <div key={i}>
-              <h3>Paso {i + 1}: {step.title}</h3>
-              <p>{step.content.split('\n\n')[0]}</p>
+              <h3>{t('resources.prepSheet.stepTitle', { number: i + 1, title: step.title })}</h3>
+              {step.content.split('\n\n').map((paragraph, index) => (
+                <PrintParagraph key={index} text={paragraph} />
+              ))}
             </div>
-          );
-        })}
+        ))}
 
         <h2>{t('checklist.title')}</h2>
+        <p>{t('checklist.description')}</p>
         <div>
-          {Array.from({ length: 11 }, (_, i) => {
-            const itemKey = Object.keys(t('checklist.items', { returnObjects: true }))[i];
-            const item = t(`checklist.items.${itemKey}`, { returnObjects: true }) as {
-              label: string;
-              description: string;
-            };
-            return (
-              <div className="checklist-item" key={i}>
-                <div className="checkbox"></div>
+          {checklistItems.map(item => (
+              <div className="checklist-item" key={item.id}>
+                <div className="checkbox" aria-hidden="true"></div>
                 <div className="item-text">
-                  <div className="item-label">{item.label}</div>
-                  <div className="item-desc">{item.description}</div>
+                  <div className="item-label">{item.item[lang]}</div>
+                  <div className="item-desc">{item.description?.[lang]}</div>
                 </div>
               </div>
-            );
-          })}
+          ))}
         </div>
 
+        <h2>{t('resources.uleTitle')}</h2>
+        <p>{t('resources.uleNote')}</p>
+        <p>{uleChiclayoInfo.address?.[lang]}</p>
+        <p>{uleChiclayoInfo.hours?.[lang]}</p>
+        <p>{uleChiclayoInfo.notes[lang]}</p>
+        <p>{t('resources.uleContact.description')}</p>
+
+        <h2>{t('resources.officialSources.title')}</h2>
+        <p>{t('resources.description')}</p>
+        {officialSources.map(source => (
+          <div key={source.id}>
+            <h3>{source.name[lang]}</h3>
+            <p>{source.description?.[lang]}</p>
+            <p>{t('resources.officialSources.verifiedDate', { date: source.verifiedDate })}</p>
+            <p>{source.url && <a href={source.url}>{source.url}</a>}</p>
+          </div>
+        ))}
+
         <div className="footer">
-          <p>{t('footer.disclaimer')}</p>
+          <p>{t('resources.disclaimer.content')}</p>
           <p>{t('footer.credits')}</p>
         </div>
       </div>

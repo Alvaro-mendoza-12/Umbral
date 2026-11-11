@@ -13,11 +13,6 @@
   white-space: nowrap;
 }
 
-.button:focus-visible {
-  outline: 3px solid var(--color-primary-400);
-  outline-offset: 2px;
-}
-
 /* Sizes */
 .sm {
   padding: var(--space-2) var(--space-4);
@@ -81,6 +76,20 @@
 
 .ghost:active:not(:disabled) {
   background-color: var(--color-neutral-200);
+}
+
+.button:focus-visible:not(:disabled) {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--surface-primary);
+}
+
+a.button:hover {
+  text-decoration: none;
+}
+
+a.button.primary:hover {
+  color: var(--text-inverse);
 }
 
 /* States */

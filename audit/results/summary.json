@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-10",
+  "unit": {
+    "numTotalTests": 16,
+    "numPassedTests": 16,
+    "numFailedTests": 0,
+    "numPendingTests": 0
+  },
+  "baselineMobile": {
+    "startTime": "2026-11-11T03:43:43.115Z",
+    "duration": 61690.729999999996,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  },
+  "productionE2E": {
+    "startTime": "2026-11-11T04:03:38.514Z",
+    "duration": 52313.131,
+    "expected": 129,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "screenshots": 24,
+  "viewports": [
+    [
+      390,
+      844
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "physicalDevicesTested": false,
+  "screenReaderTested": false,
+  "physicalPrintTested": false,
+  "interviewsConducted": 0
+}

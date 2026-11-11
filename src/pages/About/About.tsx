@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Button from '../../components/common/Button';
+import buttonStyles from '../../components/common/Button/Button.module.css';
 import Card from '../../components/common/Card';
 import styles from './About.module.css';
 
@@ -29,7 +29,7 @@ export default function About() {
           <Card>
             <h2>{t('about.purpose.title')}</h2>
             <p className={styles.content}>{t('about.purpose.content')}</p>
-            <h3>{t('about.purpose.title')}</h3>
+            <h3>{t('about.purpose.examplesTitle')}</h3>
             <ul className={styles.list}>
               {examples.map((example, index) => (
                 <li key={index}>{example}</li>
@@ -79,8 +79,8 @@ export default function About() {
         </section>
 
         <div className={styles.cta}>
-          <Link to="/guide">
-            <Button size="lg">{t('about.cta')}</Button>
+          <Link to="/guide" className={`${buttonStyles.button} ${buttonStyles.primary} ${buttonStyles.lg}`}>
+            {t('about.cta')}
           </Link>
         </div>
       </div>

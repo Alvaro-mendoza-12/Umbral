@@ -35,7 +35,11 @@ class LocalStorageMock {
 }
 
 beforeAll(() => {
-  global.localStorage = new LocalStorageMock() as Storage;
+  Object.defineProperty(globalThis, 'localStorage', {
+    value: new LocalStorageMock() as Storage,
+    configurable: true,
+    writable: true,
+  });
 });
 
 afterEach(() => {

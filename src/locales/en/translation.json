@@ -23,12 +23,16 @@
     "offline": "Offline",
     "loading": "Loading...",
     "error": "Error",
-    "success": "Success"
+    "success": "Success",
+    "skipToContent": "Skip to content",
+    "mainNavigation": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "home": {
     "hero": {
       "title": "Prepare for your Socioeconomic Classification Application",
-      "description": "A clear and reliable guide to understand the CSE process in Chiclayo. No complications, no personal data, just information that helps you.",
+      "description": "A guide to prepare your first CSE application in Chiclayo district. Check the steps, documents and official sources without entering personal data.",
       "cta": "Start the guide"
     },
     "whatIs": {
@@ -36,9 +40,9 @@
       "description": "UMBRAL is an informative tool that helps you understand and prepare your first Socioeconomic Classification (CSE) application. We guide you step by step on what you need to know, what documents to gather, and where to complete the process.",
       "features": [
         "Interactive step-by-step guide",
-        "Required documents list",
-        "Verified official sources",
-        "Works offline"
+        "Preparation checklist",
+        "Official sources with consultation dates",
+        "Content available offline after loading"
       ]
     },
     "whyUse": {
@@ -50,15 +54,15 @@
         },
         {
           "title": "Verifiable sources",
-          "description": "Every important piece of information is backed by official sources."
+          "description": "Find official sources and their dates in Resources."
         },
         {
           "title": "Your privacy first",
-          "description": "We don't ask for personal data. Everything works locally on your device."
+          "description": "You do not enter names or documents. Progress is saved on this device."
         },
         {
           "title": "Always accessible",
-          "description": "Works offline after your first visit."
+          "description": "Loaded content can be read offline. Official links require internet."
         }
       ]
     },
@@ -74,7 +78,7 @@
       },
       "checklist": {
         "title": "Document checklist",
-        "description": "Complete list of what you need to gather."
+        "description": "Review documents, questions and actions to prepare for your visit."
       },
       "faq": {
         "title": "Frequently asked questions",
@@ -86,34 +90,35 @@
     "title": "What is Socioeconomic Classification?",
     "definition": {
       "title": "Definition",
-      "content": "Socioeconomic Classification (CSE) is a process through which the Peruvian State evaluates the living conditions of households to determine their socioeconomic status. This classification is carried out through the Household Targeting System (SISFOH)."
+      "content": "Socioeconomic Classification (CSE) is a measure of household welfare used by the Peruvian State in the Household Targeting System (SISFOH). It is obtained through an official procedure; UMBRAL does not calculate or certify your classification."
     },
     "purpose": {
       "title": "What is it for?",
-      "content": "CSE allows the identification of people and households that require State support. This classification is used by various social programs to determine who can access their benefits.",
+      "content": "Some social programs and public interventions use CSE as one of their criteria. Having a CSE does not automatically enroll you or guarantee a benefit: each program checks its other requirements.",
       "examples": [
-        "Food assistance programs",
-        "Housing programs",
-        "Basic services subsidies",
-        "Educational and health programs"
-      ]
+        "Juntos",
+        "Pensión 65",
+        "Contigo",
+        "Free SIS coverage and certain Pronabec scholarships"
+      ],
+      "examplesTitle": "Examples of interventions that use CSE"
     },
     "whoCanApply": {
       "title": "Who can apply?",
-      "content": "Any adult who represents their household can apply for Socioeconomic Classification. Being affiliated with any prior social program is not required.",
+      "content": "An adult household member can submit the first application at the ULE of the district where the household currently lives. They do not have to own the dwelling or be the head of the family. This guide is for adults; ask the ULE about special situations.",
       "requirements": [
-        "Be 18 years or older",
-        "Have a valid ID card",
-        "Represent your household (head of family or representative)"
+        "Be an adult household member (18 or older)",
+        "Present household members’ identity documents: DNI, CE or CPP, as applicable; ask the ULE about other identification or temporarily missing documents",
+        "Bring an electricity bill no more than three months old, only if the dwelling has that service"
       ]
     },
     "important": {
       "title": "Important",
       "notes": [
-        "UMBRAL does not submit the application for you. It only prepares you with information.",
-        "The final classification is carried out by SISFOH through a technical evaluation.",
-        "This process is free. You should not pay intermediaries.",
-        "The data you provide must be truthful and up to date."
+        "UMBRAL prepares you for your first application; it does not process or decide CSE.",
+        "The ULE receives the application and collects information; the competent authorities determine the official classification.",
+        "The application is free and you do not need intermediaries.",
+        "Give clear, complete and truthful information to the authority. See sources and dates in Resources."
       ]
     },
     "cta": "Go to step-by-step guide"
@@ -124,23 +129,23 @@
     "steps": [
       {
         "title": "Before you start",
-        "content": "Before starting your Socioeconomic Classification application, it's important that you understand some basic concepts and what this process entails.\n\n**What is CSE?**\nIt's an evaluation that the State carries out to understand your household's living conditions.\n\n**What is it for?**\nIt allows identification of whether your household can access State social programs.\n\n**Basic requirements:**\n- Be 18 years or older\n- Have a valid ID\n- Be head of family or household representative\n\n**Important:**\n- The process is completely free\n- You don't need intermediaries\n- You must provide truthful information\n- The evaluation is conducted by authorized SISFOH personnel"
+        "content": "This guide prepares adults for a first CSE application. The procedure is free and takes place at the ULE of the municipality of the household’s current district of residence.\n\n**What CSE is**\n\nCSE is an official household classification. It does not automatically enroll you in social programs or guarantee benefits; each program checks its other criteria. UMBRAL does not apply for, calculate or certify CSE.\n\n**Who can apply**\n\nAn adult household member (18 or older) can attend. They do not have to be the head of the family or own the dwelling. Ask the ULE for guidance on special situations.\n\n**What household means**\n\nPeople who share a dwelling and a budget for basic needs. This does not necessarily include everyone in the building or at the same address.\n\nSee official sources and their dates in Resources. You do not need to check every box before asking for guidance."
       },
       {
         "title": "Documents I need to gather",
-        "content": "To submit your CSE application, you'll need to gather the following documents. We recommend having them all ready before going to the Local Registration Unit.\n\n**Mandatory documents:**\n- Valid ID of head of family or representative\n- ID of all household members (adults)\n\n**Complementary documents (if applicable):**\n- Birth certificates of minors\n- Utility bills (electricity, water)\n- Proof of address (if you don't have services in your name)\n- Documents certifying income (pay stubs, work certificates)\n\n**Note:** Some documents may vary depending on your particular situation. It's advisable to consult directly with Chiclayo's ULE to confirm specific requirements."
+        "content": "Review the identity documents of your household members. If you have a question, ask the ULE for guidance without waiting to complete every preparation item.\n\n**Identity documents**\n\n- DNI, Alien Registration Card (CE) or Temporary Stay Permit Card (CPP), as applicable, for all household members, including children.\n- The directive also covers identification recognized by the competent authority. Ask the ULE if you have another document or someone is temporarily undocumented; this does not automatically exclude the whole household.\n\n**Electricity bill, only if you have the service**\n\nBring an electricity bill for the dwelling that is no more than three months old. If the dwelling has no electricity service, that bill is not required.\n\n**Additional documents**\n\nThe reviewed general list does not require a water bill, birth certificates, proof of address, a property title or income slips as additional documents for a first application. Copies are not listed as a general requirement.\n\nIf your DNI address differs from where you live, that alone does not require updating it before applying. Updating your address with Reniec is a recommendation; ask the ULE about other identification questions."
       },
       {
         "title": "Information they will request from me",
-        "content": "During the application process, you'll be asked for information about your household. It's important that you answer truthfully.\n\n**Household information:**\n- Complete address and reference\n- Number of people living in the household\n- Basic data of each member (name, age, relationship)\n\n**Housing information:**\n- Type of dwelling (owned, rented, borrowed)\n- Construction materials\n- Services available (water, electricity, sewage)\n\n**Economic information:**\n- Household income sources\n- Occupation of working members\n- Main household expenses\n\n**Important:** Don't worry if you don't remember all the exact data. What's important is that the information is as accurate and honest as possible."
+        "content": "Official information is declared to the ULE. UMBRAL does not ask you for names, document numbers, income or an address: here you only mark your preparation.\n\n**About your household**\n\nReview who shares the dwelling and the budget for basic needs. Staff can help you correctly register household members and their situation.\n\n**About the dwelling and household economy**\n\nThink about the current address and landmarks, the dwelling’s characteristics and services, and household members’ economic activities. Answer the official form’s questions with clear, complete and truthful information.\n\n**If you do not remember something**\n\nAsk staff for help and explain your question; do not invent answers. The ULE provides assistance with completing the application. You do not need a UMBRAL form or to attach personal documents here.\n\nThe Single Socioeconomic Form (FSU) is an official instrument. Its implementation may vary; this guide does not reproduce its form or the CSE calculation."
       },
       {
         "title": "Where and how to submit the application",
-        "content": "The Socioeconomic Classification application is submitted in person at the Local Registration Unit (ULE).\n\n**In Chiclayo:**\nThe ULE corresponds to your district municipality. For specific information about location and hours, check the Resources section.\n\n**Application process:**\n1. Go to the ULE with your documents\n2. Request an appointment or turn for registration\n3. Complete the form with staff assistance\n4. Provide the requested information\n5. Sign the application\n6. Keep your processing number\n\n**Recommendations:**\n- Arrive early, especially if you don't have a prior appointment\n- Bring all documents in original and copy\n- If you have questions, ask the staff\n- Don't pay intermediaries; the service is free"
+        "content": "Go to the Local Registration Unit (ULE) of the municipality of your current district of residence. If you live in another district of Chiclayo province, find its own ULE in the official directory.\n\n**If you live in Chiclayo district**\n\nThe OFIS directory lists San José 1394, at the corner of av. Quiñones, Monday to Friday from 08:00 to 15:00. The report shows an update of 06-11-2026 and was consulted on 10-11-2026. Service was not confirmed by phone or visit: check the location, hours and whether an appointment is needed before travelling. Resources links to the directory.\n\n**When submitting your application**\n\n1. Present identity documents and the electricity bill when applicable.\n2. Ask for help completing Form S100.\n3. Give clear, complete and truthful information; read the consent and ask staff to explain anything you do not understand before signing.\n4. Sign S100 and receive your submission receipt.\n5. Keep the receipt to check your application status with the ULE.\n\nThe application is free. You do not need to pay intermediaries or bring every household member with you. If a document is missing or you have a question, ask for specific guidance."
       },
       {
         "title": "After the application",
-        "content": "Once you've completed your application, the socioeconomic evaluation process begins.\n\n**What's next?**\n- A registrar will visit your home to verify the information\n- This visit is coordinated with you in advance\n- The registrar must identify themselves and carry an official credential\n- An interview will be conducted and photos of the dwelling will be taken\n\n**Waiting time:**\nThe evaluation process can take several weeks. The time varies depending on demand and staff availability.\n\n**Results consultation:**\nYou can check your classification through:\n- SISFOH's web platform\n- In person at the ULE\n- With your ID number\n\n**What if I'm not satisfied?**\nIf you believe your classification doesn't reflect your current situation, you can request a reclassification following the official procedure.\n\n**Remember:** UMBRAL only prepares you for the process. To follow up on your application, you must go to official channels."
+        "content": "Keep your S100 submission receipt. The ULE collects the necessary information and the competent authorities assess and certify CSE; UMBRAL does not track the case.\n\n**Information collection**\n\nThe ULE completes the Single Socioeconomic Form (FSU) at the dwelling when applicable. An adult household member can provide the information. Ask the ULE how the visit will take place and how to identify staff; the authority must resolve particular situations.\n\n**Expected time limit**\n\nUp to 25 working days in urban areas and 40 in rural areas, counted from the day after submitting S100. This is the time limit set by the rule, not a guarantee of observed service. If there is a delay, ask the ULE and keep your receipt.\n\n**Status and results**\n\n- To check your application status, ask the ULE where you submitted it.\n- To check your CSE and download its certificate, use the official OFIS consultation service linked in Resources. Enter information only on the official platform.\n- Having CSE does not automatically enroll you or guarantee program benefits.\n\n**If you question the result or your situation changes**\n\nReassessment and updating are separate procedures with their own rules. Ask the ULE for guidance; this guide only covers a first application and does not impose a six-month wait to start one."
       }
     ],
     "navigation": {
@@ -157,11 +162,14 @@
         "faq": "View frequently asked questions",
         "resources": "View official resources"
       }
-    }
+    },
+    "stepsNavigation": "Guide steps",
+    "stepNavigation": "Step navigation",
+    "progressLabel": "Guide progress"
   },
   "checklist": {
     "title": "Preparation checklist",
-    "description": "Mark the documents and information you already have ready. Your progress is saved automatically.",
+    "description": "Mark what you have reviewed to prepare for your first application. The boxes save your progress on this device: they are not an assessment or certification of requirements, and you do not need to complete them all to ask for guidance. Sources and dates are in Resources.",
     "progress": "{{completed}} of {{total}} completed",
     "resetButton": "Reset checklist",
     "resetConfirm": "Are you sure you want to reset the checklist? All marked items will be cleared.",
@@ -171,97 +179,37 @@
       "information": "Household information",
       "economic": "Economic information"
     },
-    "items": {
-      "dni_holder": {
-        "label": "Valid ID of head of family",
-        "description": "Original and copy"
-      },
-      "dni_members": {
-        "label": "ID of all adult members",
-        "description": "Originals and copies"
-      },
-      "birth_certificates": {
-        "label": "Birth certificates of minors",
-        "description": "If there are minors in the household"
-      },
-      "utility_bills": {
-        "label": "Electricity and water bills",
-        "description": "Last 2-3 months"
-      },
-      "address_proof": {
-        "label": "Proof of address",
-        "description": "If services are not in your name"
-      },
-      "income_proof": {
-        "label": "Income documents",
-        "description": "Pay stubs, work certificates"
-      },
-      "household_data": {
-        "label": "Data of all household members",
-        "description": "Full names, ages, relationship"
-      },
-      "address_complete": {
-        "label": "Complete address with reference",
-        "description": "Street, number, district, references"
-      },
-      "housing_info": {
-        "label": "Housing information",
-        "description": "Type, materials, services"
-      },
-      "income_info": {
-        "label": "Household income information",
-        "description": "Sources, approximate amounts"
-      },
-      "expenses_info": {
-        "label": "Main expenses information",
-        "description": "Food, services, education, etc."
-      }
-    },
     "emptyState": {
       "title": "You haven't marked any items yet",
       "message": "Start by reviewing the guide to know what you need to prepare."
-    }
+    },
+    "progressLabel": "Preparation progress"
   },
   "resources": {
     "title": "Resources and official sources",
-    "description": "Verified information from official sources for your CSE application.",
-    "uleTitle": "Local Registration Unit - Chiclayo",
-    "uleNote": "Updated official verification information pending. We recommend contacting your district municipality in Chiclayo directly to confirm location, hours, and specific requirements.",
+    "description": "Official sources consulted on 10-11-2026. This is a document review; it does not confirm current office service or acceptance of an individual case.",
+    "uleTitle": "ULE for Chiclayo district",
+    "uleNote": "This location is for Chiclayo district (ubigeo 140101). If you live in José Leonardo Ortiz, La Victoria or another district, find the ULE for your current district of residence in the official directory.",
     "uleContact": {
-      "title": "How to contact?",
-      "description": "Contact your district municipality (Chiclayo, José Leonardo Ortiz, La Victoria, etc.) and ask for the SISFOH office or Local Registration Unit."
+      "title": "Before travelling",
+      "description": "Check that the location and hours are still current, and ask whether you need an appointment. A published address does not mean UMBRAL has confirmed service there.",
+      "directoryLink": "Open the official ULE directory"
     },
     "officialSources": {
       "title": "Official sources",
-      "verifiedDate": "Verified on {{date}}",
-      "pending": "Pending verification",
-      "sources": [
-        {
-          "name": "Household Targeting System (SISFOH)",
-          "description": "Official SISFOH portal - Ministry of Development and Social Inclusion",
-          "url": "https://www.gob.pe/sisfoh"
-        },
-        {
-          "name": "Ministry of Development and Social Inclusion (MIDIS)",
-          "description": "Information about social programs and socioeconomic classification",
-          "url": "https://www.gob.pe/midis"
-        },
-        {
-          "name": "Peruvian State Platform",
-          "description": "Official portal with information about government procedures",
-          "url": "https://www.gob.pe"
-        }
-      ]
+      "verifiedDate": "Document review: {{date}}",
+      "pending": "Pending verification"
     },
     "prepSheet": {
       "title": "Preparation sheet",
-      "description": "Download a printable sheet with the summary of steps and checklist to take with you.",
+      "description": "Print all five steps, the same preparation checklist and the sources with their dates. You can choose to save as PDF in the print dialog.",
       "downloadButton": "Download preparation sheet",
-      "printButton": "Print directly"
+      "printButton": "Print directly",
+      "stepTitle": "Step {{number}}: {{title}}"
     },
     "disclaimer": {
       "title": "Important notice",
-      "content": "UMBRAL is an independent informative tool. It is not affiliated with or represents any governmental entity. For updated official information, always consult directly with SISFOH or the corresponding institutions."
+      "content": "UMBRAL is an independent information tool; it does not represent the State or submit applications. The corresponding authorities decide classifications and benefits. Confirm local conditions before travelling. For current official information, use the links on this page."
     }
   },
   "faq": {
@@ -276,63 +224,63 @@
     "items": [
       {
         "question": "What exactly is Socioeconomic Classification?",
-        "answer": "It's a process through which the State evaluates household living conditions to determine their socioeconomic status. This classification is used to identify who can access social programs.",
+        "answer": "It is a measure of household welfare used by the State. Some programs use CSE as one of their criteria, but having it does not automatically enroll you or guarantee benefits.",
         "category": "general"
       },
       {
         "question": "Does the CSE application have any cost?",
-        "answer": "No. The Socioeconomic Classification process is completely free. You should not pay any intermediary. If someone asks you for money for this procedure, report them to the authorities.",
+        "answer": "No. Applying for CSE is free and you do not need to pay intermediaries.",
         "category": "general"
       },
       {
-        "question": "Can I submit the application online?",
-        "answer": "No. The initial application must be submitted in person at your district's Local Registration Unit (ULE). This allows staff to verify your documents and explain the process.",
+        "question": "Can I submit my first application online?",
+        "answer": "Official guidance for a first application says to go to the ULE of the municipality of the district where the household currently lives. Staff help you complete and sign S100 and give you a submission receipt. Check local service conditions before travelling.",
         "category": "process"
       },
       {
-        "question": "How long does the complete process take?",
-        "answer": "The time varies depending on demand and staff availability. From the application to the home visit and final classification, several weeks or even months may pass. It's important to be patient and attentive to communications.",
+        "question": "How long does the process take?",
+        "answer": "The expected time limit is up to 25 working days in urban areas and 40 in rural areas, from the day after submitting S100. This is not a guarantee of observed service. If there is a delay, ask the ULE and keep your receipt.",
         "category": "process"
       },
       {
-        "question": "What happens if I don't have all the documents?",
-        "answer": "We recommend gathering all documents before going to the ULE. However, staff can guide you on what to do if you're missing a specific document. Basic documents (like your ID) are essential.",
+        "question": "What if a document is missing or my DNI shows another address?",
+        "answer": "Ask the ULE for guidance without waiting to check every box. DNI, CE, CPP and other identification recognized by the competent authority are covered. Someone temporarily lacking a document does not automatically exclude the whole household. A different DNI address alone does not require updating it before applying.",
         "category": "requirements"
       },
       {
-        "question": "Can I apply for CSE if I'm renting?",
-        "answer": "Yes. You can apply for CSE regardless of whether your dwelling is owned, rented, or borrowed. You must provide truthful information about your current housing situation.",
+        "question": "Can I apply if I rent or do not have electricity?",
+        "answer": "Yes. You do not need to own the dwelling or be the head of the family: an adult household member can apply. An electricity bill no more than three months old is only presented if the dwelling has that service. A water bill is not a substitute general requirement.",
         "category": "requirements"
       },
       {
-        "question": "What should I do if I'm not satisfied with my classification?",
-        "answer": "If you believe your classification doesn't reflect your current situation, you can request a reclassification. You must go to the ULE or contact SISFOH to learn about the specific reconsideration procedure.",
+        "question": "What if I disagree with my classification?",
+        "answer": "Ask the ULE for guidance. Reassessment and updating have their own rules and are not handled by UMBRAL. This guide only prepares a first application and does not impose a six-month wait to start one.",
         "category": "after"
       },
       {
-        "question": "How do I know if my application is in process?",
-        "answer": "You can check your application status on SISFOH's web platform using your ID, or by going in person to the ULE. Always keep your processing number to facilitate inquiries.",
+        "question": "How do I check my application and classification?",
+        "answer": "For your application status, ask the ULE and keep the S100 receipt. To check CSE and download its certificate, use the official OFIS service linked in Resources. Enter identity information only on that official platform; UMBRAL does not ask for it.",
         "category": "after"
       },
       {
         "question": "Is the classification permanent?",
-        "answer": "Not necessarily. Your classification can change if your household conditions change significantly. You can request an update if your economic or family situation has changed.",
+        "answer": "CSE has a validity period that you should check on the official certificate. If your conditions change or validity is about to end, ask the ULE which procedure applies.",
         "category": "after"
       },
       {
         "question": "Does UMBRAL submit the application for me?",
-        "answer": "No. UMBRAL is only an informative tool that helps you understand and prepare your application. You must personally complete the official procedure at the corresponding ULE.",
+        "answer": "No. UMBRAL helps prepare your first application and only saves your preparation progress on this device. It does not receive documents, submit applications, calculate CSE or decide benefits.",
         "category": "general"
       }
     ],
     "notFound": {
       "title": "Can't find your question?",
-      "message": "For specific inquiries, we recommend contacting your district's ULE directly or SISFOH through their official channels."
+      "message": "For an individual case, ask the ULE of the district where you currently live. Resources links to the directory and official OFIS services."
     }
   },
   "footer": {
     "tagline": "Reliable information for your CSE procedure",
-    "privacy": "UMBRAL does not collect or store personal data. Everything works locally on your device.",
+    "privacy": "You do not enter personal data in UMBRAL. Your language and progress are saved locally on this device.",
     "links": {
       "about": "About UMBRAL",
       "resources": "Official resources",

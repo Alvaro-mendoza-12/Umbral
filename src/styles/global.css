@@ -69,8 +69,8 @@ a:hover {
 }
 
 a:focus-visible {
-  outline: 3px solid var(--color-primary-400);
-  outline-offset: 2px;
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
   border-radius: var(--radius-sm);
 }
 
@@ -121,8 +121,15 @@ select {
 
 /* Focus visible */
 :focus-visible {
-  outline: 3px solid var(--color-primary-400);
-  outline-offset: 2px;
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--surface-primary);
+}
+
+#main-content,
+main h1,
+[data-route-focus] {
+  scroll-margin-top: 6rem;
 }
 
 /* Scrollbar styling (webkit browsers) */
@@ -147,7 +154,8 @@ select {
 /* Skip link */
 .skip-link {
   position: absolute;
-  top: -40px;
+  top: 0;
+  transform: translateY(-120%);
   left: 0;
   background: var(--color-primary-500);
   color: var(--text-inverse);
@@ -158,6 +166,7 @@ select {
 }
 
 .skip-link:focus {
+  transform: translateY(0);
   top: var(--space-4);
   left: var(--space-4);
 }

@@ -3,16 +3,22 @@ import { useTranslation } from 'react-i18next';
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
 import useLocalStorage from '../../hooks/useLocalStorage';
-import { StorageKeys } from '../../utils/storage';
+import { normalizeChecklistState, StorageKeys } from '../../utils/storage';
+import { normalizeLanguage } from '../../services/i18n';
 import { checklistItems } from '../../data/checklistItems';
 import { ChecklistState } from '../../types';
 import styles from './Checklist.module.css';
 
+const checklistIds = checklistItems.map(item => item.id);
+const readChecklist = (value: unknown) => normalizeChecklistState(value, checklistIds);
+
 export default function Checklist() {
   const { t, i18n } = useTranslation();
-  const [checklist, setChecklist] = useLocalStorage<ChecklistState>(
+  const lang = normalizeLanguage(i18n.resolvedLanguage);
+  const [checklist, setChecklist, storageAvailable] = useLocalStorage<ChecklistState>(
     StorageKeys.CHECKLIST,
-    {}
+    {},
+    readChecklist
   );
 
   const toggleItem = (itemId: string) => {
@@ -36,21 +42,36 @@ export default function Checklist() {
   const categories = useMemo(() => {
     const categoryMap = new Map<string, typeof checklistItems>();
     checklistItems.forEach(item => {
-      const categoryName = item.category[i18n.language as 'es' | 'en'];
+      const categoryName = item.category[lang];
       if (!categoryMap.has(categoryName)) {
         categoryMap.set(categoryName, []);
       }
       categoryMap.get(categoryName)!.push(item);
     });
     return categoryMap;
-  }, [i18n.language]);
+  }, [lang]);
 
   return (
     <main id="main-content" className={styles.checklist}>
       <div className="container">
         <header className={styles.header}>
           <h1>{t('checklist.title')}</h1>
-          <p className={styles.description}>{t('checklist.description')}</p>
+          <p className={styles.description}>
+            {storageAvailable
+              ? t('checklist.description')
+              : t('checklist.instructions', {
+                  defaultValue: lang === 'en'
+                    ? 'Mark the documents and information you already have ready.'
+                    : 'Marca los documentos e información que ya tienes listos.',
+                })}
+          </p>
+          {!storageAvailable && (
+            <p role="status">{t('checklist.storageUnavailable', {
+              defaultValue: lang === 'en'
+                ? 'Your browser cannot save changes. Keep this page open to retain your progress.'
+                : 'Tu navegador no puede guardar los cambios. Mantén esta página abierta para conservar tu progreso.',
+            })}</p>
+          )}
         </header>
 
         <div className={styles.progress}>
@@ -68,6 +89,7 @@ export default function Checklist() {
                       width: `${(completedCount / checklistItems.length) * 100}%`,
                     }}
                     role="progressbar"
+                    aria-label={t('checklist.progressLabel')}
                     aria-valuenow={completedCount}
                     aria-valuemin={0}
                     aria-valuemax={checklistItems.length}
@@ -97,14 +119,14 @@ export default function Checklist() {
                       />
                       <div className={styles.itemContent}>
                         <span className={styles.itemTitle}>
-                          {item.item[i18n.language as 'es' | 'en']}
+                          {item.item[lang]}
                           {item.required && (
                             <span className={styles.required}> *</span>
                           )}
                         </span>
                         {item.description && (
                           <span className={styles.itemDescription}>
-                            {item.description[i18n.language as 'es' | 'en']}
+                            {item.description[lang]}
                           </span>
                         )}
                       </div>

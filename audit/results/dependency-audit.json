@@ -1,0 +1,356 @@
+{
+  "before": {
+    "counts": {
+      "info": 0,
+      "low": 2,
+      "moderate": 15,
+      "high": 1,
+      "critical": 2,
+      "total": 20
+    },
+    "packages": {
+      "@rollup/plugin-node-resolve": {
+        "severity": "low",
+        "direct": false,
+        "range": ">=8.0.0",
+        "advisories": []
+      },
+      "@typescript-eslint/eslint-plugin": {
+        "severity": "moderate",
+        "direct": true,
+        "range": "6.16.0 - 8.72.2",
+        "advisories": []
+      },
+      "@typescript-eslint/parser": {
+        "severity": "moderate",
+        "direct": true,
+        "range": "6.16.0 - 8.72.2",
+        "advisories": []
+      },
+      "@typescript-eslint/type-utils": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "6.16.0 - 8.72.2",
+        "advisories": []
+      },
+      "@typescript-eslint/typescript-estree": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "6.16.0 - 8.72.2",
+        "advisories": []
+      },
+      "@typescript-eslint/utils": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "6.16.0 - 8.72.2",
+        "advisories": []
+      },
+      "@vitest/mocker": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "<=4.1.11",
+        "advisories": [
+          {
+            "title": "Vitest: Path Traversal / Arbitrary File Read via @vitest/mocker Redirect Mock",
+            "url": "https://github.com/advisories/GHSA-82fw-gwwq-j7x9",
+            "range": ">=2.1.0 <4.1.11"
+          },
+          {
+            "title": "Vitest: Code injection via unauthenticated manual mock registration",
+            "url": "https://github.com/advisories/GHSA-qxg6-89mg-rqv8",
+            "range": ">=2.1.0-beta.7 <4.1.12"
+          }
+        ]
+      },
+      "deepmerge": {
+        "severity": "low",
+        "direct": false,
+        "range": ">=4.2.0",
+        "advisories": [
+          {
+            "title": "deepmerge mergeObject() allows prototype poisoning of returned objects",
+            "url": "https://github.com/advisories/GHSA-gcqx-w48m-w2h4",
+            "range": ">=4.2.0 <=4.3.1"
+          }
+        ]
+      },
+      "esbuild": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "<=0.24.2",
+        "advisories": [
+          {
+            "title": "esbuild enables any website to send any requests to the development server and read the response",
+            "url": "https://github.com/advisories/GHSA-67mh-4wv8-2f99",
+            "range": "<=0.24.2"
+          }
+        ]
+      },
+      "glob": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "9.0.0 - 14.0.1",
+        "advisories": [
+          {
+            "title": "Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
+            "url": "https://github.com/advisories/GHSA-3g3m-2fjr-6pw4",
+            "range": ">=9.0.0 <=14.0.1"
+          }
+        ]
+      },
+      "minimatch": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "7.0.0 - 11.0.0",
+        "advisories": [
+          {
+            "title": "minimatch has potential denial of service via globparts amplification",
+            "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
+            "range": ">=7.0.0 <11.0.1"
+          }
+        ]
+      },
+      "react-router": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "6.0.0 - 7.17.0",
+        "advisories": [
+          {
+            "title": "React Router: Open redirect via backslash in <Link> and useNavigate (CVE-2025-68470 bypass)",
+            "url": "https://github.com/advisories/GHSA-wrjc-x8rr-h8h6",
+            "range": ">=6.0.0 <7.18.0"
+          },
+          {
+            "title": "React Router: Arbitrary Constructor Injection via deserializeErrors() in React Router SSR Hydration",
+            "url": "https://github.com/advisories/GHSA-337j-9hxr-rhxg",
+            "range": ">=6.4.0 <7.18.0"
+          }
+        ]
+      },
+      "react-router-dom": {
+        "severity": "moderate",
+        "direct": true,
+        "range": "6.0.0-alpha.0 - 7.17.0",
+        "advisories": []
+      },
+      "tinypool": {
+        "severity": "critical",
+        "direct": false,
+        "range": "<=2.1.1",
+        "advisories": [
+          {
+            "title": "Tinypool: Prototype Pollution gadget in worker options leads to Remote Code Execution",
+            "url": "https://github.com/advisories/GHSA-5gmw-xhrv-c9v3",
+            "range": "<=2.1.0"
+          },
+          {
+            "title": "Tinypool: Prototype Pollution Gadget to RCE in run() options",
+            "url": "https://github.com/advisories/GHSA-85c8-ppgw-ccpr",
+            "range": "<2.1.2"
+          }
+        ]
+      },
+      "typescript-eslint": {
+        "severity": "moderate",
+        "direct": true,
+        "range": "<=8.72.2",
+        "advisories": []
+      },
+      "vite": {
+        "severity": "high",
+        "direct": true,
+        "range": "<=6.4.3",
+        "advisories": [
+          {
+            "title": "Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling",
+            "url": "https://github.com/advisories/GHSA-4w7w-66w2-5vf9",
+            "range": "<=6.4.1"
+          },
+          {
+            "title": "launch-editor: NTLMv2 hash disclosure via UNC path handling on Windows",
+            "url": "https://github.com/advisories/GHSA-v6wh-96g9-6wx3",
+            "range": "<=6.4.2"
+          },
+          {
+            "title": "launch-editor: escapeCmdArgs() omits % escaping on Windows",
+            "url": "https://github.com/advisories/GHSA-698v-4r3x-3vcv",
+            "range": "<=6.4.3"
+          },
+          {
+            "title": "launch-editor: Editor CLI flag misinterpretation causing arbitrary command execution for some editors",
+            "url": "https://github.com/advisories/GHSA-r825-w8mm-5pxw",
+            "range": "<=6.4.3"
+          },
+          {
+            "title": "launch-editor: `fs.existsSync()` existence check can be bypassed on Windows",
+            "url": "https://github.com/advisories/GHSA-587h-7wmj-h5pm",
+            "range": "<=6.4.3"
+          },
+          {
+            "title": "Vite: Cross origin script execution through Vite custom middleware",
+            "url": "https://github.com/advisories/GHSA-9jrq-w75r-8gcw",
+            "range": "<=6.4.3"
+          },
+          {
+            "title": "Vite: Files outside `server.fs.allow` could be served when project paths match system paths on non-Windows machine",
+            "url": "https://github.com/advisories/GHSA-rq7h-c2jc-7f22",
+            "range": "<=6.4.3"
+          },
+          {
+            "title": "vite: `server.fs.deny` bypass on Windows alternate paths",
+            "url": "https://github.com/advisories/GHSA-fx2h-pf6j-xcff",
+            "range": "<=6.4.2"
+          }
+        ]
+      },
+      "vite-node": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "<=2.2.0-beta.2",
+        "advisories": []
+      },
+      "vite-plugin-pwa": {
+        "severity": "moderate",
+        "direct": true,
+        "range": "0.3.0 - 0.3.5 || 0.7.0 - 0.21.0",
+        "advisories": []
+      },
+      "vitest": {
+        "severity": "critical",
+        "direct": true,
+        "range": "<=4.1.10",
+        "advisories": [
+          {
+            "title": "When Vitest UI server is listening, arbitrary file can be read and executed",
+            "url": "https://github.com/advisories/GHSA-5xrq-8626-4rwp",
+            "range": "<3.2.6"
+          },
+          {
+            "title": "Vitest: Path Traversal / Arbitrary File Read via @vitest/mocker Redirect Mock",
+            "url": "https://github.com/advisories/GHSA-82fw-gwwq-j7x9",
+            "range": ">=2.1.0 <4.1.11"
+          }
+        ]
+      },
+      "workbox-build": {
+        "severity": "moderate",
+        "direct": false,
+        "range": ">=6.0.0-alpha.0",
+        "advisories": []
+      }
+    }
+  },
+  "afterFullTree": {
+    "counts": {
+      "info": 0,
+      "low": 2,
+      "moderate": 10,
+      "high": 0,
+      "critical": 0,
+      "total": 12
+    },
+    "packages": {
+      "@rollup/plugin-node-resolve": {
+        "severity": "low",
+        "direct": false,
+        "range": ">=8.0.0",
+        "advisories": []
+      },
+      "@typescript-eslint/eslint-plugin": {
+        "severity": "moderate",
+        "direct": true,
+        "range": "6.16.0 - 8.72.2",
+        "advisories": []
+      },
+      "@typescript-eslint/parser": {
+        "severity": "moderate",
+        "direct": true,
+        "range": "6.16.0 - 8.72.2",
+        "advisories": []
+      },
+      "@typescript-eslint/type-utils": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "6.16.0 - 8.72.2",
+        "advisories": []
+      },
+      "@typescript-eslint/typescript-estree": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "6.16.0 - 8.72.2",
+        "advisories": []
+      },
+      "@typescript-eslint/utils": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "6.16.0 - 8.72.2",
+        "advisories": []
+      },
+      "deepmerge": {
+        "severity": "low",
+        "direct": false,
+        "range": ">=4.2.0",
+        "advisories": [
+          {
+            "title": "deepmerge mergeObject() allows prototype poisoning of returned objects",
+            "url": "https://github.com/advisories/GHSA-gcqx-w48m-w2h4",
+            "range": ">=4.2.0 <=4.3.1"
+          }
+        ]
+      },
+      "glob": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "9.0.0 - 14.0.1",
+        "advisories": [
+          {
+            "title": "Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
+            "url": "https://github.com/advisories/GHSA-3g3m-2fjr-6pw4",
+            "range": ">=9.0.0 <=14.0.1"
+          }
+        ]
+      },
+      "minimatch": {
+        "severity": "moderate",
+        "direct": false,
+        "range": "7.0.0 - 11.0.0",
+        "advisories": [
+          {
+            "title": "minimatch has potential denial of service via globparts amplification",
+            "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
+            "range": ">=7.0.0 <11.0.1"
+          }
+        ]
+      },
+      "typescript-eslint": {
+        "severity": "moderate",
+        "direct": true,
+        "range": "<=8.72.2",
+        "advisories": []
+      },
+      "vite-plugin-pwa": {
+        "severity": "moderate",
+        "direct": true,
+        "range": ">=1.2.0",
+        "advisories": []
+      },
+      "workbox-build": {
+        "severity": "moderate",
+        "direct": false,
+        "range": ">=6.0.0-alpha.0",
+        "advisories": []
+      }
+    }
+  },
+  "afterProduction": {
+    "counts": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "packages": {}
+  }
+}

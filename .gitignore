@@ -31,5 +31,13 @@ test-results
 
 # Environment
 .env
+.env.*
+!.env.example
 .env.local
 .env.*.local
+
+# Local deployment metadata and generated compiler cache
+.vercel/
+*.tsbuildinfo
+
+.vercel

@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { navigateFromHeader } from './helpers';
 
 test.describe('Language Switching', () => {
   test('should switch from Spanish to English', async ({ page }) => {
@@ -12,6 +13,7 @@ test.describe('Language Switching', () => {
     
     // Content should change
     await expect(page.locator('main h1')).toContainText('Prepare');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'en');
     
     // Button should now show ES
     await expect(page.locator('header').getByRole('button', { name: 'ES' }).first()).toBeVisible();
@@ -37,11 +39,11 @@ test.describe('Language Switching', () => {
     await page.locator('header').getByRole('button', { name: 'EN' }).first().click();
     
     // Navigate to About page
-    await page.locator('header').getByRole('link', { name: /about/i }).first().click();
+    await navigateFromHeader(page, /about/i);
     await expect(page.locator('main h1')).toContainText('Socioeconomic Classification');
     
     // Navigate to Guide
-    await page.locator('header').getByRole('link', { name: /guide/i }).first().click();
+    await navigateFromHeader(page, /guide/i);
     await expect(page).toHaveURL(/\/guide/);
     await expect(page.locator('main')).toContainText(/Before you start/i);
   });

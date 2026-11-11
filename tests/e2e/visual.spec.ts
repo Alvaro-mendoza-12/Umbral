@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
 
 const pages = [
   { path: '/', name: 'home' },
@@ -8,9 +9,10 @@ const pages = [
   { path: '/checklist', name: 'checklist' },
   { path: '/resources', name: 'resources' },
   { path: '/faq', name: 'faq' },
+  { path: '/not-found-audit', name: 'not-found' },
 ];
 
-test.describe('Visual Regression', () => {
+test.describe('Visual evidence and layout', () => {
   for (const page of pages) {
     test(`should capture ${page.name} page`, async ({ page: browserPage }) => {
       await browserPage.goto(page.path);
@@ -18,12 +20,12 @@ test.describe('Visual Regression', () => {
       // Wait for main content to be visible
       await expect(browserPage.locator('main')).toBeVisible();
       
-      // Wait a bit for any transitions/animations
-      await browserPage.waitForTimeout(500);
+      await browserPage.evaluate(() => document.fonts.ready);
+      expect(await browserPage.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       
       // Take screenshot
       await browserPage.screenshot({
-        path: `screenshots/${test.info().project.name}/${page.name}.png`,
+        path: `audit/screenshots/${test.info().project.name}/${page.name}.png`,
         fullPage: true,
       });
     });
@@ -43,13 +45,8 @@ test.describe('Visual Regression', () => {
   test('should have sufficient color contrast', async ({ page }) => {
     await page.goto('/');
     
-    // This is a basic check - full a11y testing would use axe-core
-    const main = page.locator('main');
-    await expect(main).toBeVisible();
-    
-    // Verify critical buttons are visible (implying contrast)
-    const primaryButton = page.locator('main').getByRole('link', { name: /comenzar/i });
-    await expect(primaryButton).toBeVisible();
+    const result = await new AxeBuilder({ page }).withRules(['color-contrast']).analyze();
+    expect(result.violations).toEqual([]);
   });
 
   test('should display correctly on mobile', async ({ page }) => {

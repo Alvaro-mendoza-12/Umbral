@@ -10,7 +10,8 @@ test.describe('Checklist', () => {
 
   test('should display progress correctly', async ({ page }) => {
     // Initial progress should be 0%
-    await expect(page.locator('text=/0%/i').or(page.locator('text=/progreso/i'))).toBeVisible();
+    await expect(page.getByRole('progressbar')).toHaveAttribute('aria-valuenow', '0');
+    await expect(page.getByRole('progressbar')).toHaveAttribute('aria-valuemax', '11');
   });
 
   test('should check and uncheck items', async ({ page }) => {

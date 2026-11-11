@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { navigateFromHeader } from './helpers';
 
 test.describe('Home Page', () => {
   test('should display hero section', async ({ page }) => {
@@ -38,6 +39,8 @@ test.describe('Home Page', () => {
     
     // Verify navigation links - using more specific selectors
     await expect(header.getByRole('link', { name: 'UMBRAL' })).toBeVisible();
-    await expect(header.getByRole('link', { name: /inicio/i }).first()).toBeVisible();
+    await navigateFromHeader(page, /acerca/i);
+    await expect(page).toHaveURL('/about');
+    await expect(page.locator('main h1')).toBeFocused();
   });
 });

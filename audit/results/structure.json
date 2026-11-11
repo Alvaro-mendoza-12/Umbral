@@ -1,0 +1,20 @@
+{
+  "root": "D:/CombiRumbo-review/umbral",
+  "remote": "https://github.com/Alvaro-mendoza-12/Umbral.git",
+  "baseCommit": "813c87ab57084010a8cff0e431344ad6193bd786",
+  "branch": "codex/audit-kiroween",
+  "kiroTrackedFiles": [
+    ".kiro/specs/umbral/design.md",
+    ".kiro/specs/umbral/requirements.md",
+    ".kiro/specs/umbral/tasks.md",
+    ".kiro/steering/architecture.md",
+    ".kiro/steering/product.md",
+    ".kiro/steering/quality.md",
+    ".kiro/steering/security.md",
+    ".kiro/steering/ux.md"
+  ],
+  "parentTrackedFilesChecked": 92,
+  "parentTrackedFilesChanged": [],
+  "license": "MIT",
+  "vercelLinked": true
+}

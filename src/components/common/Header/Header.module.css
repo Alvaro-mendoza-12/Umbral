@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--space-4);
 }
 
 @media (min-width: 640px) {
@@ -30,6 +31,7 @@
   color: var(--text-primary);
   font-weight: var(--font-bold);
   font-size: var(--text-xl);
+  min-width: 0;
 }
 
 .logo:hover {
@@ -45,7 +47,7 @@
   margin-left: var(--space-2);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .tagline {
     display: inline;
   }
@@ -54,24 +56,36 @@
 .nav {
   display: flex;
   align-items: center;
-  gap: var(--space-6);
+  gap: var(--space-4);
+  flex-shrink: 0;
+}
+
+.desktopNav {
+  display: none;
 }
 
 .navLinks {
-  display: none;
-  gap: var(--space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-@media (min-width: 768px) {
-  .navLinks {
-    display: flex;
+@media (min-width: 1024px) {
+  .desktopNav {
+    display: block;
   }
 }
 
+.navLinks li,
+.mobileNavLinks li {
+  margin: 0;
+}
+
 .navLink {
+  display: inline-block;
   color: var(--text-secondary);
   text-decoration: none;
   font-weight: var(--font-medium);
@@ -106,6 +120,8 @@
   font-weight: var(--font-medium);
   cursor: pointer;
   transition: all var(--transition-fast);
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .langButton:hover {
@@ -121,6 +137,10 @@
 
 .menuButton {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   padding: var(--space-2);
   background: transparent;
   border: none;
@@ -128,27 +148,28 @@
   color: var(--text-primary);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .menuButton {
     display: none;
   }
 }
 
 .mobileMenu {
-  display: none;
-  position: fixed;
-  top: 73px;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-color: var(--surface-primary);
-  z-index: var(--z-fixed);
-  padding: var(--space-6);
+  border-top: 1px solid var(--color-neutral-200);
+  padding: var(--space-4);
+  max-height: calc(100dvh - 5rem);
   overflow-y: auto;
 }
 
-.mobileMenu.open {
-  display: block;
+.mobileMenu[hidden] {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .mobileMenu {
+    display: none;
+  }
 }
 
 .mobileNavLinks {
@@ -157,7 +178,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: var(--space-2);
 }
 
 .mobileNavLink {

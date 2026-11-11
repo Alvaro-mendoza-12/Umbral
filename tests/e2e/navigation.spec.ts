@@ -1,28 +1,29 @@
 import { test, expect } from '@playwright/test';
+import { navigateFromHeader } from './helpers';
 
 test.describe('Navigation', () => {
   test('should navigate to all main pages', async ({ page }) => {
     await page.goto('/');
     
     // About - use header navigation
-    await page.locator('header').getByRole('link', { name: /acerca/i }).first().click();
+    await navigateFromHeader(page, /acerca/i);
     await expect(page).toHaveURL('/about');
     await expect(page.locator('main h1')).toContainText('Clasificación Socioeconómica');
     
     // Guide
-    await page.locator('header').getByRole('link', { name: /guía/i }).first().click();
+    await navigateFromHeader(page, /guía/i);
     await expect(page).toHaveURL(/\/guide/);
     
     // Checklist
-    await page.locator('header').getByRole('link', { name: /checklist/i }).first().click();
+    await navigateFromHeader(page, /checklist/i);
     await expect(page).toHaveURL('/checklist');
     
     // Resources
-    await page.locator('header').getByRole('link', { name: /recursos/i }).first().click();
+    await navigateFromHeader(page, /recursos/i);
     await expect(page).toHaveURL('/resources');
     
     // FAQ
-    await page.locator('header').getByRole('link', { name: /preguntas/i }).first().click();
+    await navigateFromHeader(page, /preguntas/i);
     await expect(page).toHaveURL('/faq');
     
     // Back home via logo

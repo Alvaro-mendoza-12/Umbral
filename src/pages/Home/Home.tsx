@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Button from '../../components/common/Button';
+import buttonStyles from '../../components/common/Button/Button.module.css';
 import Card from '../../components/common/Card';
 import styles from './Home.module.css';
 
@@ -20,8 +20,8 @@ export default function Home() {
         <div className="container">
           <h1 className={styles.heroTitle}>{t('home.hero.title')}</h1>
           <p className={styles.heroDescription}>{t('home.hero.description')}</p>
-          <Link to="/guide">
-            <Button size="lg">{t('home.hero.cta')}</Button>
+          <Link to="/guide" className={`${buttonStyles.button} ${buttonStyles.primary} ${buttonStyles.lg}`}>
+            {t('home.hero.cta')}
           </Link>
         </div>
       </section>

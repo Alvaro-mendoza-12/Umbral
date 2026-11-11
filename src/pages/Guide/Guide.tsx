@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
 import useLocalStorage from '../../hooks/useLocalStorage';
 import { StorageKeys } from '../../utils/storage';
 import styles from './Guide.module.css';
+import buttonStyles from '../../components/common/Button/Button.module.css';
 
 const TOTAL_STEPS = 5;
 
@@ -19,15 +20,16 @@ export default function Guide() {
     1
   );
 
-  const step = stepParam ? parseInt(stepParam, 10) : currentStep;
+  const isValidStep = typeof stepParam === 'string' && /^[1-5]$/.test(stepParam);
+  const step = isValidStep ? Number(stepParam) : 1;
 
   useEffect(() => {
-    if (step < 1 || step > TOTAL_STEPS) {
-      navigate('/guide/1');
-    } else if (step !== currentStep) {
+    if (isValidStep && step !== currentStep) {
       setCurrentStep(step);
     }
-  }, [step, currentStep, setCurrentStep, navigate]);
+  }, [step, isValidStep, currentStep, setCurrentStep]);
+
+  if (!isValidStep) return <Navigate to="/guide/1" replace />;
 
   const stepData = t(`guide.steps.${step - 1}`, { returnObjects: true }) as {
     title: string;
@@ -62,9 +64,11 @@ export default function Guide() {
                 className={styles.progressFill}
                 style={{ width: `${(step / TOTAL_STEPS) * 100}%` }}
                 role="progressbar"
+                aria-label={t('guide.progressLabel')}
                 aria-valuenow={step}
-                aria-valuemin={1}
+                aria-valuemin={0}
                 aria-valuemax={TOTAL_STEPS}
+                aria-valuetext={t('guide.progress', { current: step, total: TOTAL_STEPS })}
               />
             </div>
           </div>
@@ -73,7 +77,7 @@ export default function Guide() {
         <div className={styles.content}>
           {/* Sidebar with steps */}
           <aside className={styles.sidebar}>
-            <nav aria-label="Guide steps">
+            <nav aria-label={t('guide.stepsNavigation')}>
               <ul className={styles.stepList}>
                 {Array.from({ length: TOTAL_STEPS }, (_, i) => {
                   const stepNum = i + 1;
@@ -84,6 +88,7 @@ export default function Guide() {
                   return (
                     <li key={stepNum}>
                       <button
+                        type="button"
                         onClick={() => navigate(`/guide/${stepNum}`)}
                         className={`${styles.stepButton} ${
                           isActive ? styles.active : ''
@@ -104,7 +109,7 @@ export default function Guide() {
           <div className={styles.mainContent}>
             <Card>
               <article className={styles.article}>
-                <h2>{stepData.title}</h2>
+                <h2 data-route-focus tabIndex={-1}>{stepData.title}</h2>
                 <div className={styles.stepContent}>
                   {stepData.content.split('\n\n').map((paragraph, index) => {
                     if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
@@ -138,7 +143,7 @@ export default function Guide() {
             </Card>
 
             {/* Navigation */}
-            <nav className={styles.navigation} aria-label="Step navigation">
+            <nav className={styles.navigation} aria-label={t('guide.stepNavigation')}>
               <Button
                 variant="secondary"
                 onClick={goToPreviousStep}
@@ -164,18 +169,14 @@ export default function Guide() {
                 <h3>{t('guide.completion.title')}</h3>
                 <p>{t('guide.completion.message')}</p>
                 <div className={styles.completionActions}>
-                  <Link to="/checklist">
-                    <Button>{t('guide.completion.actions.checklist')}</Button>
+                  <Link to="/checklist" className={`${buttonStyles.button} ${buttonStyles.primary} ${buttonStyles.md}`}>
+                    {t('guide.completion.actions.checklist')}
                   </Link>
-                  <Link to="/faq">
-                    <Button variant="secondary">
-                      {t('guide.completion.actions.faq')}
-                    </Button>
+                  <Link to="/faq" className={`${buttonStyles.button} ${buttonStyles.secondary} ${buttonStyles.md}`}>
+                    {t('guide.completion.actions.faq')}
                   </Link>
-                  <Link to="/resources">
-                    <Button variant="ghost">
-                      {t('guide.completion.actions.resources')}
-                    </Button>
+                  <Link to="/resources" className={`${buttonStyles.button} ${buttonStyles.ghost} ${buttonStyles.md}`}>
+                    {t('guide.completion.actions.resources')}
                   </Link>
                 </div>
               </Card>

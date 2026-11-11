@@ -1,0 +1,55 @@
+{
+  "baseCommit": "813c87ab57084010a8cff0e431344ad6193bd786",
+  "artifacts": [
+    {
+      "path": ".kiro/specs/umbral/design.md",
+      "originalSha256": "8c9859060e7a249408c3ae68a6d88a883d3765cf1b47f90933853a555ea248fb",
+      "currentSha256": "8c9859060e7a249408c3ae68a6d88a883d3765cf1b47f90933853a555ea248fb",
+      "unchanged": true
+    },
+    {
+      "path": ".kiro/specs/umbral/requirements.md",
+      "originalSha256": "9650c47479df5e7853d24d4ef7c7c819957a5158cbaca1b618d7702cd7a9c8fa",
+      "currentSha256": "9650c47479df5e7853d24d4ef7c7c819957a5158cbaca1b618d7702cd7a9c8fa",
+      "unchanged": true
+    },
+    {
+      "path": ".kiro/specs/umbral/tasks.md",
+      "originalSha256": "51083d8872d9d5c356a5b1aaf573b57af17a5f255ddd073ba69384d410aab309",
+      "currentSha256": "51083d8872d9d5c356a5b1aaf573b57af17a5f255ddd073ba69384d410aab309",
+      "unchanged": true
+    },
+    {
+      "path": ".kiro/steering/architecture.md",
+      "originalSha256": "847458882da6173728067b02e8ef7c5dc5247c36a087e9b64f3b4696fdb816ab",
+      "currentSha256": "847458882da6173728067b02e8ef7c5dc5247c36a087e9b64f3b4696fdb816ab",
+      "unchanged": true
+    },
+    {
+      "path": ".kiro/steering/product.md",
+      "originalSha256": "180a1ab830b405668fe6f35ee113bfdf5875ef9a25887a211f65bee473dcfa57",
+      "currentSha256": "180a1ab830b405668fe6f35ee113bfdf5875ef9a25887a211f65bee473dcfa57",
+      "unchanged": true
+    },
+    {
+      "path": ".kiro/steering/quality.md",
+      "originalSha256": "693daaecc3a2880f59cabd4833b44db4692b4ede530ed712a28ed28ac700c2d4",
+      "currentSha256": "693daaecc3a2880f59cabd4833b44db4692b4ede530ed712a28ed28ac700c2d4",
+      "unchanged": true
+    },
+    {
+      "path": ".kiro/steering/security.md",
+      "originalSha256": "b42b1cb9e7a46adc35fc98fb416f9530ad894f577152f4642c1fb062f04bf46d",
+      "currentSha256": "b42b1cb9e7a46adc35fc98fb416f9530ad894f577152f4642c1fb062f04bf46d",
+      "unchanged": true
+    },
+    {
+      "path": ".kiro/steering/ux.md",
+      "originalSha256": "77c9d122653fba650807c7c4cf5f692a2b51959edaafeae5f5cc39263a17b83f",
+      "currentSha256": "77c9d122653fba650807c7c4cf5f692a2b51959edaafeae5f5cc39263a17b83f",
+      "unchanged": true
+    }
+  ],
+  "allUnchanged": true,
+  "agentHooksFound": false
+}
