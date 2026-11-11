@@ -1,0 +1,459 @@
+{
+  "numTotalTestSuites": 11,
+  "numPassedTestSuites": 11,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 30,
+  "numPassedTests": 30,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1794408298421,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "country-specific content resolution"
+          ],
+          "fullName": "country-specific content resolution publishes only the reviewed PE procedure and accepts normalized country codes",
+          "status": "passed",
+          "title": "publishes only the reviewed PE procedure and accepts normalized country codes",
+          "duration": 1.388300000000072,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "country-specific content resolution"
+          ],
+          "fullName": "country-specific content resolution keeps MX planned without inventing or borrowing procedures",
+          "status": "passed",
+          "title": "keeps MX planned without inventing or borrowing procedures",
+          "duration": 0.6603999999999814,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "country-specific content resolution"
+          ],
+          "fullName": "country-specific content resolution keeps CO planned without inventing or borrowing procedures",
+          "status": "passed",
+          "title": "keeps CO planned without inventing or borrowing procedures",
+          "duration": 0.26310000000012224,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "country-specific content resolution"
+          ],
+          "fullName": "country-specific content resolution keeps ES planned without inventing or borrowing procedures",
+          "status": "passed",
+          "title": "keeps ES planned without inventing or borrowing procedures",
+          "duration": 0.1835000000000946,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "country-specific content resolution"
+          ],
+          "fullName": "country-specific content resolution does not fall back for unknown country ",
+          "status": "passed",
+          "title": "does not fall back for unknown country ",
+          "duration": 0.16529999999988831,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "country-specific content resolution"
+          ],
+          "fullName": "country-specific content resolution does not fall back for unknown country ZZ",
+          "status": "passed",
+          "title": "does not fall back for unknown country ZZ",
+          "duration": 0.14789999999993597,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "country-specific content resolution"
+          ],
+          "fullName": "country-specific content resolution does not fall back for unknown country Peru",
+          "status": "passed",
+          "title": "does not fall back for unknown country Peru",
+          "duration": 0.13989999999989777,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "country-specific content resolution"
+          ],
+          "fullName": "country-specific content resolution does not fall back for unknown country PE/cse",
+          "status": "passed",
+          "title": "does not fall back for unknown country PE/cse",
+          "duration": 0.12409999999999854,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "country-specific content resolution"
+          ],
+          "fullName": "country-specific content resolution does not substitute CSE for an unknown procedure",
+          "status": "passed",
+          "title": "does not substitute CSE for an unknown procedure",
+          "duration": 0.26080000000001746,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "reviewed PE/CSE package"
+          ],
+          "fullName": "reviewed PE/CSE package separates national coverage from the documented Chiclayo office",
+          "status": "passed",
+          "title": "separates national coverage from the documented Chiclayo office",
+          "duration": 0.8145999999999276,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "reviewed PE/CSE package"
+          ],
+          "fullName": "reviewed PE/CSE package keeps conditional requirements distinct from optional preparation actions",
+          "status": "passed",
+          "title": "keeps conditional requirements distinct from optional preparation actions",
+          "duration": 0.24489999999991596,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "reviewed PE/CSE package"
+          ],
+          "fullName": "reviewed PE/CSE package resolves every requirement, institution, step and local source inside this package",
+          "status": "passed",
+          "title": "resolves every requirement, institution, step and local source inside this package",
+          "duration": 0.5210999999999331,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "reviewed PE/CSE package"
+          ],
+          "fullName": "reviewed PE/CSE package retains the dated documentary review without asserting ongoing validity",
+          "status": "passed",
+          "title": "retains the dated documentary review without asserting ongoing validity",
+          "duration": 0.1426000000001295,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "reviewed PE/CSE package"
+          ],
+          "fullName": "reviewed PE/CSE package uses the same manually maintained ES/EN content in metadata and live translations",
+          "status": "passed",
+          "title": "uses the same manually maintained ES/EN content in metadata and live translations",
+          "duration": 0.7237999999999829,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1794408300239,
+      "endTime": 1794408300245.7239,
+      "status": "passed",
+      "message": "",
+      "name": "<project>/tests/unit/content.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "getStorageItem"
+          ],
+          "fullName": "storage utils getStorageItem should return default value when key does not exist",
+          "status": "passed",
+          "title": "should return default value when key does not exist",
+          "duration": 1.1485999999999876,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "getStorageItem"
+          ],
+          "fullName": "storage utils getStorageItem should return stored value when key exists",
+          "status": "passed",
+          "title": "should return stored value when key exists",
+          "duration": 0.3162999999999556,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "getStorageItem"
+          ],
+          "fullName": "storage utils getStorageItem should handle objects",
+          "status": "passed",
+          "title": "should handle objects",
+          "duration": 0.7485000000001492,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "getStorageItem"
+          ],
+          "fullName": "storage utils getStorageItem should return default value on parse error",
+          "status": "passed",
+          "title": "should return default value on parse error",
+          "duration": 2.678100000000086,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "setStorageItem"
+          ],
+          "fullName": "storage utils setStorageItem should store string values",
+          "status": "passed",
+          "title": "should store string values",
+          "duration": 0.2765999999999167,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "setStorageItem"
+          ],
+          "fullName": "storage utils setStorageItem should store objects",
+          "status": "passed",
+          "title": "should store objects",
+          "duration": 0.22230000000013206,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "setStorageItem"
+          ],
+          "fullName": "storage utils setStorageItem should store numbers",
+          "status": "passed",
+          "title": "should store numbers",
+          "duration": 0.14460000000008222,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "removeStorageItem"
+          ],
+          "fullName": "storage utils removeStorageItem should remove existing items",
+          "status": "passed",
+          "title": "should remove existing items",
+          "duration": 0.1812999999999647,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "removeStorageItem"
+          ],
+          "fullName": "storage utils removeStorageItem should not throw on non-existent items",
+          "status": "passed",
+          "title": "should not throw on non-existent items",
+          "duration": 0.7115999999998621,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "StorageKeys"
+          ],
+          "fullName": "storage utils StorageKeys should have correct prefix",
+          "status": "passed",
+          "title": "should have correct prefix",
+          "duration": 0.3226000000001932,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "storage utils",
+            "StorageKeys"
+          ],
+          "fullName": "storage utils StorageKeys should be unique",
+          "status": "passed",
+          "title": "should be unique",
+          "duration": 0.14170000000012806,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1794408300128,
+      "endTime": 1794408300135.3225,
+      "status": "passed",
+      "message": "",
+      "name": "<project>/tests/unit/storage.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "useLocalStorage"
+          ],
+          "fullName": "useLocalStorage should return initial value when storage is empty",
+          "status": "passed",
+          "title": "should return initial value when storage is empty",
+          "duration": 8.763400000000047,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "useLocalStorage"
+          ],
+          "fullName": "useLocalStorage should store and retrieve values",
+          "status": "passed",
+          "title": "should store and retrieve values",
+          "duration": 1.9773999999999887,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "useLocalStorage"
+          ],
+          "fullName": "useLocalStorage should persist values across hook instances",
+          "status": "passed",
+          "title": "should persist values across hook instances",
+          "duration": 2.052900000000136,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "useLocalStorage"
+          ],
+          "fullName": "useLocalStorage should handle complex objects",
+          "status": "passed",
+          "title": "should handle complex objects",
+          "duration": 1.614799999999832,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [
+            "useLocalStorage"
+          ],
+          "fullName": "useLocalStorage should support functional updates",
+          "status": "passed",
+          "title": "should support functional updates",
+          "duration": 1.0821999999998297,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1794408300136,
+      "endTime": 1794408300151.0823,
+      "status": "passed",
+      "message": "",
+      "name": "<project>/tests/unit/useLocalStorage.test.ts"
+    }
+  ]
+}

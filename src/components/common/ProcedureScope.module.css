@@ -1,0 +1,2 @@
+.scope { display: flex; align-items: center; flex-wrap: wrap; column-gap: 8px; margin: 0 0 20px; font-size: 0.875rem; color: var(--text-secondary); }
+.scope a { display: inline-flex; align-items: center; min-height: 32px; text-decoration: underline; text-underline-offset: 3px; }

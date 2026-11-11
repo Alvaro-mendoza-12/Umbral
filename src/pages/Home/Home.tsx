@@ -1,131 +1,101 @@
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { countries, getCountry, getAvailableProcedures } from '../../content';
+import { normalizeLanguage } from '../../services/i18n';
+import ThresholdMark from '../../components/common/ThresholdMark';
+import Disclosure from '../../components/common/Disclosure/Disclosure';
 import buttonStyles from '../../components/common/Button/Button.module.css';
-import Card from '../../components/common/Card';
 import styles from './Home.module.css';
 
 export default function Home() {
-  const { t } = useTranslation();
-
-  const features = t('home.whatIs.features', { returnObjects: true }) as string[];
+  const { t, i18n } = useTranslation();
+  const lang = normalizeLanguage(i18n.resolvedLanguage);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const selectedCode = (searchParams.get('country') ?? 'PE').toUpperCase();
+  const selectedCountry = getCountry(selectedCode);
+  const procedures = getAvailableProcedures(selectedCode);
+  const procedure = procedures[0];
   const routeLabels = t('threshold.routeLabels', { returnObjects: true }) as string[];
-  const reasons = t('home.whyUse.reasons', { returnObjects: true }) as Array<{
-    title: string;
-    description: string;
-  }>;
+  const chooseCountry = (code: string) => setSearchParams({ country: code });
 
   return (
     <main id="main-content" className={styles.home}>
-      {/* Hero Section */}
       <section className={styles.hero}>
         <div className={`container ${styles.heroLayout}`}>
           <div className={styles.heroCopy}>
-            <p className={styles.orientation}>{t('threshold.invitation')}</p>
             <h1 className={styles.heroTitle}>{t('home.hero.title')}</h1>
             <p className={styles.heroDescription}>{t('home.hero.description')}</p>
-            <Link to="/guide" className={`${buttonStyles.button} ${buttonStyles.lg} ${styles.beginButton}`}>
-              {t('home.hero.cta')}
-              <span aria-hidden="true">→</span>
-            </Link>
-            <p className={styles.reassurance}>{t('threshold.reassurance')}</p>
           </div>
-          <nav className={styles.gateway} aria-label={t('threshold.routeName')}>
-            <p className={styles.gatewayTitle}>{t('threshold.routeTitle')}</p>
-            <ol className={styles.gatewayList}>
-              {routeLabels.map((label, index) => (
-                <li key={index}>
-                  <Link to={`/guide/${index + 1}`} className={styles.gatewayLink}>
-                    <span className={styles.gatewayNumber}>{index + 1}</span>
-                    <span>{label}</span>
-                    <span className={styles.gatewayArrow} aria-hidden="true">↗</span>
-                  </Link>
-                </li>
-              ))}
-            </ol>
-            <p className={styles.gatewayNote}>{t('threshold.routeNote')}</p>
-          </nav>
+          <div className={styles.entry}>
+            <div className={styles.countryField}>
+              <label htmlFor="country">{t('home.countryLabel')}</label>
+              <select id="country" value={selectedCountry?.code ?? ''} onChange={event => chooseCountry(event.target.value)}>
+                {!selectedCountry && <option value="" disabled>{t('home.chooseCountry')}</option>}
+                {countries.map(country => (
+                  <option key={country.code} value={country.code}>
+                    {country.name[lang]}{country.status === 'planned' ? ` — ${t('home.noGuidesShort')}` : ''}
+                  </option>
+                ))}
+              </select>
+            </div>
+            {procedure ? (
+              <div className={styles.service}>
+                <div className={styles.serviceHeading}>
+                  <span className={styles.doorway}><ThresholdMark /></span>
+                  <div>
+                    <p className={styles.serviceLabel}>{t('home.availableGuide')}</p>
+                    <h2 id="available-service">{procedure.displayName[lang]}</h2>
+                  </div>
+                </div>
+                <Link to={procedure.path} className={`${buttonStyles.button} ${styles.beginButton}`} aria-describedby="available-service">
+                  {t('home.hero.cta')}<span aria-hidden="true">→</span>
+                </Link>
+              </div>
+            ) : (
+              <div className={styles.emptyCountry} role="status">
+                <h2>{selectedCountry?.name[lang] ?? t('home.chooseCountry')}</h2>
+                <p>{t('home.noGuides')}</p>
+                <button type="button" onClick={() => chooseCountry('PE')} className={`${buttonStyles.button} ${styles.beginButton}`}>
+                  {t('home.backToPeru')}
+                </button>
+              </div>
+            )}
+          </div>
+          <p className={styles.reassurance}>{t('threshold.reassurance')}</p>
         </div>
       </section>
 
-      <div className="container">
-        {/* What is UMBRAL */}
-        <section className={styles.section}>
-          <h2>{t('home.whatIs.title')}</h2>
-          <p className={styles.description}>{t('home.whatIs.description')}</p>
-          <ul className={styles.featuresList}>
-            {features.map((feature, index) => (
-              <li key={index} className={styles.feature}>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  aria-hidden="true"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <span>{feature}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        {/* Why use UMBRAL */}
-        <section className={styles.section}>
-          <h2>{t('home.whyUse.title')}</h2>
-          <div className={styles.reasonsGrid}>
-            {reasons.map((reason, index) => (
-              <Card key={index}>
-                <h3 className={styles.reasonTitle}>{reason.title}</h3>
-                <p className={styles.reasonDescription}>{reason.description}</p>
-              </Card>
-            ))}
-          </div>
-        </section>
-
-        {/* Quick Links */}
-        <section className={styles.section}>
-          <h2>{t('home.quickLinks.title')}</h2>
-          <div className={styles.quickGrid}>
-            <Link to="/about" className={styles.quickLinkCard}>
-              <Card variant="interactive">
-                <h3>{t('home.quickLinks.aboutCSE.title')}</h3>
-                <p className={styles.linkDescription}>
-                  {t('home.quickLinks.aboutCSE.description')}
-                </p>
-              </Card>
-            </Link>
-
-            <Link to="/guide" className={styles.quickLinkCard}>
-              <Card variant="interactive">
-                <h3>{t('home.quickLinks.guide.title')}</h3>
-                <p className={styles.linkDescription}>
-                  {t('home.quickLinks.guide.description')}
-                </p>
-              </Card>
-            </Link>
-
-            <Link to="/checklist" className={styles.quickLinkCard}>
-              <Card variant="interactive">
-                <h3>{t('home.quickLinks.checklist.title')}</h3>
-                <p className={styles.linkDescription}>
-                  {t('home.quickLinks.checklist.description')}
-                </p>
-              </Card>
-            </Link>
-
-            <Link to="/faq" className={styles.quickLinkCard}>
-              <Card variant="interactive">
-                <h3>{t('home.quickLinks.faq.title')}</h3>
-                <p className={styles.linkDescription}>
-                  {t('home.quickLinks.faq.description')}
-                </p>
-              </Card>
-            </Link>
-          </div>
-        </section>
+      <div className={`container ${styles.supportingContent}`}>
+        {procedure && (
+          <Disclosure title={t('home.viewSteps')}>
+            <nav aria-label={t('threshold.routeName')}>
+              <ol className={styles.routeList}>
+                {routeLabels.map((label, index) => (
+                  <li key={index}>
+                    <Link to={`/guide/${index + 1}`}>
+                      <span className={styles.routeNumber}>{index + 1}</span>{label}
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          </Disclosure>
+        )}
+        <Disclosure title={t('home.whatIs.title')}>
+          <p>{t('home.whatIs.description')}</p>
+          <p>{t('home.scopeNote')}</p>
+        </Disclosure>
+        {procedure && (
+          <section className={styles.quickLinks}>
+            <h2>{t('home.quickLinks.title')}</h2>
+            <div className={styles.quickGrid}>
+              <Link to="/about">{t('home.quickLinks.aboutCSE.title')}</Link>
+              <Link to="/guide">{t('home.quickLinks.guide.title')}</Link>
+              <Link to="/checklist">{t('home.quickLinks.checklist.title')}</Link>
+              <Link to="/faq">{t('home.quickLinks.faq.title')}</Link>
+            </div>
+          </section>
+        )}
       </div>
     </main>
   );

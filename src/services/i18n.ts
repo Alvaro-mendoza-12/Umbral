@@ -3,18 +3,24 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { StorageKeys } from '../utils/storage';
 import type { Language } from '../types';
+import { getProcedure } from '../content';
 
-import esTranslation from '../locales/es/translation.json';
-import enTranslation from '../locales/en/translation.json';
+import esTranslation from '../locales/es/translation.json' with { type: 'json' };
+import enTranslation from '../locales/en/translation.json' with { type: 'json' };
 
-const resources = {
-  es: {
-    translation: esTranslation,
-  },
-  en: {
-    translation: enTranslation,
-  },
-};
+/** Resolve legal content explicitly; an unavailable country must never receive PE content. */
+export function getTranslationResources(countryCode: string, procedureId: string) {
+  const procedure = getProcedure(countryCode, procedureId);
+  if (!procedure) return undefined;
+
+  return {
+    es: { translation: { ...esTranslation, ...procedure.translations.es } },
+    en: { translation: { ...enTranslation, ...procedure.translations.en } },
+  };
+}
+
+// Current routes are the first PE/CSE implementation. Future routes must resolve their own pair.
+const resources = getTranslationResources('PE', 'cse');
 
 export function normalizeLanguage(language?: string): Language {
   let value = language ?? 'es';

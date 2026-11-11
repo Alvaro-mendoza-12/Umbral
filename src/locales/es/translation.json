@@ -31,13 +31,13 @@
   },
   "home": {
     "hero": {
-      "title": "Prepárate para tu solicitud de Clasificación Socioeconómica",
-      "description": "Una guía para preparar tu primera solicitud de CSE en el distrito de Chiclayo. Consulta los pasos, documentos y fuentes oficiales sin ingresar datos personales.",
-      "cta": "Comenzar la guía"
+      "title": "Los trámites públicos, más fáciles de entender",
+      "description": "Descubre qué necesitas, conoce los pasos y prepárate con información oficial.",
+      "cta": "Comenzar"
     },
     "whatIs": {
-      "title": "¿Qué es UMBRAL?",
-      "description": "UMBRAL es una herramienta informativa que te ayuda a entender y preparar tu primera solicitud de Clasificación Socioeconómica (CSE). Te guiamos paso a paso sobre qué necesitas saber, qué documentos reunir y dónde realizar el trámite.",
+      "title": "Cómo te ayuda UMBRAL",
+      "description": "Una plataforma para comprender y preparar procedimientos de servicios públicos. Consulta el resumen, abre los detalles que necesites y guarda tu preparación en este dispositivo.",
       "features": [
         "Guía interactiva paso a paso",
         "Lista de preparación",
@@ -84,205 +84,21 @@
         "title": "Preguntas frecuentes",
         "description": "Respuestas a las dudas más comunes sobre el proceso."
       }
-    }
-  },
-  "about": {
-    "title": "¿Qué es la Clasificación Socioeconómica?",
-    "definition": {
-      "title": "Definición",
-      "content": "La Clasificación Socioeconómica (CSE) es una medida del bienestar del hogar utilizada por el Estado peruano en el Sistema de Focalización de Hogares (SISFOH). Se obtiene mediante un procedimiento oficial; UMBRAL no calcula ni certifica tu clasificación."
     },
-    "purpose": {
-      "title": "¿Para qué sirve?",
-      "content": "Algunos programas sociales e intervenciones públicas utilizan la CSE como uno de sus criterios. Tener una CSE no te afilia automáticamente ni garantiza un beneficio: cada programa evalúa sus demás requisitos.",
-      "examples": [
-        "Juntos",
-        "Pensión 65",
-        "Contigo",
-        "SIS gratuito y determinadas becas de Pronabec"
-      ],
-      "examplesTitle": "Ejemplos de intervenciones que utilizan la CSE"
-    },
-    "whoCanApply": {
-      "title": "¿Quién puede solicitarla?",
-      "content": "Un integrante adulto del hogar puede presentar la primera solicitud en la ULE del distrito donde vive actualmente. No tiene que ser propietario de la vivienda ni jefe de familia. Esta guía se dirige a personas adultas; consulta con la ULE las situaciones especiales.",
-      "requirements": [
-        "Ser integrante adulto del hogar (18 años o más)",
-        "Presentar los documentos de identidad de los integrantes: DNI, CE o CPP, según corresponda; consulta otras identificaciones o falta temporal de documento con la ULE",
-        "Llevar un recibo eléctrico de hasta tres meses, sólo si la vivienda tiene ese servicio"
-      ]
-    },
-    "important": {
-      "title": "Importante",
-      "notes": [
-        "UMBRAL prepara tu primera solicitud; no tramita ni decide la CSE.",
-        "La ULE recibe la solicitud y recoge información; las autoridades competentes realizan la clasificación oficial.",
-        "La solicitud es gratuita y no necesitas intermediarios.",
-        "Brinda información clara, completa y veraz ante la entidad. Consulta las fuentes y fechas en Recursos."
-      ]
-    },
-    "cta": "Ir a la guía paso a paso"
-  },
-  "guide": {
-    "title": "Guía de preparación paso a paso",
-    "progress": "Paso {{current}} de {{total}}",
-    "steps": [
-      {
-        "title": "Antes de empezar",
-        "content": "Esta guía prepara a personas adultas para una primera solicitud de CSE. El trámite es gratuito y se realiza ante la ULE de la municipalidad del distrito de residencia actual.\n\n**Qué es la CSE**\n\nLa CSE es una clasificación oficial del hogar. No afilia automáticamente a programas sociales ni garantiza beneficios; cada programa evalúa sus demás criterios. UMBRAL no solicita, calcula ni certifica la CSE.\n\n**Quién puede solicitarla**\n\nPuede acudir un integrante adulto del hogar (18 años o más). No tiene que ser jefe de familia ni propietario. Para situaciones especiales, solicita orientación a la ULE.\n\n**Qué significa hogar**\n\nSon las personas que comparten vivienda y presupuesto para sus necesidades básicas. No son necesariamente todas las personas del edificio o de una misma dirección.\n\nConsulta las fuentes oficiales y sus fechas en Recursos. No necesitas marcar todas las casillas antes de pedir orientación."
-      },
-      {
-        "title": "Documentos que debo reunir",
-        "content": "Revisa los documentos de los integrantes de tu hogar. Si tienes una duda, pide orientación a la ULE sin esperar a completar toda la lista de preparación.\n\n**Documentos de identidad**\n\n- DNI, Carné de Extranjería (CE) o Carné de Permiso Temporal de Permanencia (CPP), según corresponda, de todos los integrantes, incluidos menores.\n- La directiva también contempla identificación reconocida por autoridad competente. Consulta con la ULE si tienes otro documento o si alguien está temporalmente indocumentado; esa situación no excluye automáticamente a todo el hogar.\n\n**Recibo eléctrico, sólo si tienes el servicio**\n\nLleva un recibo de electricidad de la vivienda de antigüedad no mayor a tres meses. Si la vivienda no tiene electricidad, no se exige ese recibo.\n\n**Documentos adicionales**\n\nLa lista general revisada no exige recibo de agua, partidas de nacimiento, constancia de domicilio, título de propiedad ni boletas de ingresos como documentos adicionales para la primera solicitud. No establece copias como requisito general.\n\nSi la dirección de tu DNI es distinta de donde vives, eso por sí solo no te obliga a actualizarlo antes de solicitar. Actualizar el domicilio ante Reniec es una recomendación; consulta otras dudas de identidad con la ULE."
-      },
-      {
-        "title": "Información que me solicitarán",
-        "content": "La información oficial se declara ante la ULE. UMBRAL no te pide nombres, números de documento, ingresos ni dirección: aquí sólo marcas tu preparación.\n\n**Sobre tu hogar**\n\nRevisa quiénes comparten vivienda y presupuesto para necesidades básicas. El personal puede orientarte para registrar correctamente a sus integrantes y su situación.\n\n**Sobre la vivienda y la economía del hogar**\n\nPiensa en la dirección actual y referencias, las características y servicios de la vivienda y las actividades económicas de sus integrantes. Responde a las preguntas del formulario oficial con información clara, completa y veraz.\n\n**Si no recuerdas un dato**\n\nPide ayuda al personal y aclara tu duda; no inventes respuestas. La ULE brinda asistencia para completar la solicitud. No necesitas preparar una ficha de UMBRAL ni adjuntar aquí documentación personal.\n\nLa Ficha Socioeconómica Única (FSU) es un instrumento oficial. Su implementación puede variar; esta guía no reproduce su formulario ni el cálculo de la CSE."
-      },
-      {
-        "title": "Dónde y cómo hacer la solicitud",
-        "content": "Acude a la Unidad Local de Empadronamiento (ULE) de la municipalidad de tu distrito de residencia actual. Si vives en otro distrito de la provincia de Chiclayo, consulta su propia ULE en el directorio oficial.\n\n**Si resides en el distrito de Chiclayo**\n\nEl directorio OFIS publica San José 1394, esquina con av. Quiñones, de lunes a viernes de 08:00 a 15:00. El reporte indica actualización 06-11-2026 y fue consultado el 10-11-2026. La atención no fue confirmada por llamada o visita: comprueba sede, horario y necesidad de cita antes de trasladarte. En Recursos tienes el enlace al directorio.\n\n**Al presentar tu solicitud**\n\n1. Presenta los documentos de identidad y el recibo eléctrico cuando corresponda.\n2. Solicita ayuda para completar el Formato S100.\n3. Brinda información clara, completa y veraz; lee el consentimiento y pide que te expliquen lo que no entiendas antes de firmar.\n4. Suscribe el S100 y recibe tu constancia de presentación.\n5. Guarda la constancia para consultar el estado de tu solicitud en la ULE.\n\nLa solicitud es gratuita. No necesitas pagar a intermediarios ni acudir con todos los integrantes del hogar. Si falta un documento o aparece una duda, solicita orientación específica."
-      },
-      {
-        "title": "Después de la solicitud",
-        "content": "Conserva tu constancia del S100. La ULE recoge la información necesaria y las autoridades competentes realizan la evaluación y certificación; UMBRAL no da seguimiento al expediente.\n\n**Recojo de información**\n\nLa ULE aplica la Ficha Socioeconómica Única (FSU) en la vivienda cuando corresponde. Puede informar un integrante adulto del hogar. Consulta con la ULE cómo se realizará la visita y cómo identificar al personal; existen situaciones particulares que la autoridad debe resolver.\n\n**Plazo previsto**\n\nHasta 25 días hábiles en el ámbito urbano y 40 días hábiles en el rural, contados desde el día siguiente de presentar el S100. Es el plazo previsto por la norma, no una garantía de atención observada. Si se demora, consulta con la ULE y conserva la constancia.\n\n**Consulta y resultado**\n\n- Para conocer el estado de tu solicitud, consulta con la ULE donde la presentaste.\n- Para consultar tu CSE y descargar su constancia, utiliza el servicio oficial OFIS de consulta, enlazado en Recursos. Ingresa los datos sólo en la plataforma oficial.\n- Tener CSE no afilia automáticamente ni garantiza beneficios de un programa.\n\n**Si tienes dudas sobre el resultado o tu situación cambia**\n\nLa reevaluación y la actualización son procedimientos con reglas propias. Solicita orientación a la ULE; esta guía se limita a la primera solicitud y no impone una espera de seis meses para iniciarla."
-      }
-    ],
-    "navigation": {
-      "backToHome": "Volver al inicio",
-      "previous": "Paso anterior",
-      "next": "Siguiente paso",
-      "finish": "Finalizar guía"
-    },
-    "completion": {
-      "title": "¡Has completado la guía!",
-      "message": "Ahora conoces los pasos principales para preparar tu solicitud de CSE. Te recomendamos revisar el checklist de documentos y las preguntas frecuentes.",
-      "actions": {
-        "checklist": "Ir al checklist",
-        "faq": "Ver preguntas frecuentes",
-        "resources": "Ver recursos oficiales"
-      }
-    },
-    "stepsNavigation": "Pasos de la guía",
-    "stepNavigation": "Navegación entre pasos",
-    "progressLabel": "Progreso de la guía"
-  },
-  "checklist": {
-    "title": "Checklist de preparación",
-    "description": "Marca lo que has revisado para preparar tu primera solicitud. Las casillas guardan tu progreso en este dispositivo: no son una evaluación, no certifican requisitos y no necesitas completarlas todas para pedir orientación. Fuentes y fechas en Recursos.",
-    "progress": "{{completed}} de {{total}} completados",
-    "resetButton": "Reiniciar checklist",
-    "resetConfirm": "¿Estás seguro de que quieres reiniciar el checklist? Se borrarán todos los items marcados.",
-    "categories": {
-      "documents": "Documentos principales",
-      "complementary": "Documentos complementarios",
-      "information": "Información del hogar",
-      "economic": "Información económica"
-    },
-    "emptyState": {
-      "title": "No has marcado ningún item todavía",
-      "message": "Comienza revisando la guía para saber qué necesitas preparar."
-    },
-    "progressLabel": "Progreso de la preparación"
-  },
-  "resources": {
-    "title": "Recursos y fuentes oficiales",
-    "description": "Fuentes oficiales consultadas el 10-11-2026. La revisión es documental; no confirma la atención actual de una oficina ni la aceptación de un caso individual.",
-    "uleTitle": "ULE del distrito de Chiclayo",
-    "uleNote": "Esta sede corresponde al distrito de Chiclayo (ubigeo 140101). Si vives en José Leonardo Ortiz, La Victoria u otro distrito, busca la ULE de tu distrito de residencia actual en el directorio oficial.",
-    "uleContact": {
-      "title": "Antes de trasladarte",
-      "description": "Comprueba que la sede y el horario sigan vigentes y pregunta si necesitas cita. La dirección publicada no equivale a atención confirmada por UMBRAL.",
-      "directoryLink": "Consultar el directorio oficial ULE"
-    },
-    "officialSources": {
-      "title": "Fuentes oficiales",
-      "verifiedDate": "Consulta documental: {{date}}",
-      "pending": "Pendiente de verificación"
-    },
-    "prepSheet": {
-      "title": "Hoja de preparación",
-      "description": "Imprime los cinco pasos completos, la misma lista de preparación y las fuentes con sus fechas. Puedes elegir guardar como PDF en el diálogo de impresión.",
-      "downloadButton": "Descargar hoja de preparación",
-      "printButton": "Imprimir directamente",
-      "stepTitle": "Paso {{number}}: {{title}}"
-    },
-    "disclaimer": {
-      "title": "Aviso importante",
-      "content": "UMBRAL es una herramienta informativa independiente; no representa al Estado ni realiza solicitudes. La clasificación y los beneficios los deciden las autoridades correspondientes. Confirma las condiciones locales antes de trasladarte. Para información oficial actualizada, consulta los enlaces de esta página."
-    }
-  },
-  "faq": {
-    "title": "Preguntas Frecuentes",
-    "description": "Respuestas a las preguntas más comunes sobre la Clasificación Socioeconómica.",
-    "categories": {
-      "general": "General",
-      "process": "Proceso de solicitud",
-      "requirements": "Requisitos",
-      "after": "Después de la solicitud"
-    },
-    "items": [
-      {
-        "question": "¿Qué es exactamente la Clasificación Socioeconómica?",
-        "answer": "Es una medida del bienestar del hogar utilizada por el Estado. Algunos programas usan la CSE como uno de sus criterios, pero tenerla no afilia automáticamente ni garantiza beneficios.",
-        "category": "general"
-      },
-      {
-        "question": "¿La solicitud de CSE tiene algún costo?",
-        "answer": "No. La solicitud de CSE es gratuita y no necesitas pagar a intermediarios.",
-        "category": "general"
-      },
-      {
-        "question": "¿Puedo hacer la primera solicitud en línea?",
-        "answer": "La orientación oficial para la primera solicitud indica acudir a la ULE de la municipalidad del distrito donde vive actualmente el hogar. Allí te ayudan a completar y suscribir el S100 y te entregan una constancia. Consulta las condiciones de atención local antes de ir.",
-        "category": "process"
-      },
-      {
-        "question": "¿Cuánto tiempo demora el proceso?",
-        "answer": "El plazo previsto es de hasta 25 días hábiles en el ámbito urbano y 40 en el rural, desde el día siguiente de presentar el S100. No es una garantía de atención observada. Si hay demora, consulta con la ULE y conserva tu constancia.",
-        "category": "process"
-      },
-      {
-        "question": "¿Qué pasa si falta un documento o mi DNI tiene otra dirección?",
-        "answer": "Pide orientación a la ULE sin esperar a marcar todas las casillas. Se contemplan DNI, CE, CPP y otras identificaciones reconocidas por autoridad competente. La falta temporal de documento de alguien no excluye automáticamente a todo el hogar. Una dirección distinta en el DNI no obliga por sí sola a actualizarlo antes de solicitar.",
-        "category": "requirements"
-      },
-      {
-        "question": "¿Puedo solicitar la CSE si estoy alquilando o no tengo electricidad?",
-        "answer": "Sí. No necesitas ser propietario ni jefe de familia: puede solicitar un integrante adulto del hogar. El recibo eléctrico de hasta tres meses sólo se presenta si la vivienda cuenta con ese servicio. No se sustituye por un recibo de agua como requisito general.",
-        "category": "requirements"
-      },
-      {
-        "question": "¿Qué hago si no estoy conforme con mi clasificación?",
-        "answer": "Solicita orientación a la ULE. La reevaluación y la actualización tienen sus propias reglas y no se resuelven en UMBRAL. Esta guía prepara únicamente una primera solicitud y no impone una espera de seis meses para iniciarla.",
-        "category": "after"
-      },
-      {
-        "question": "¿Cómo consulto mi solicitud y mi clasificación?",
-        "answer": "Para el estado de tu solicitud, consulta con la ULE y guarda la constancia del S100. Para consultar la CSE y descargar su constancia, utiliza el servicio oficial OFIS enlazado en Recursos. Introduce los datos de identidad sólo en esa plataforma oficial; UMBRAL no los pide.",
-        "category": "after"
-      },
-      {
-        "question": "¿La clasificación es permanente?",
-        "answer": "La CSE tiene un periodo de vigencia que debes revisar en la constancia oficial. Si tus condiciones cambian o la vigencia está por terminar, pide orientación a la ULE sobre el procedimiento que corresponde.",
-        "category": "after"
-      },
-      {
-        "question": "¿UMBRAL realiza la solicitud por mí?",
-        "answer": "No. UMBRAL te ayuda a preparar la primera solicitud y sólo guarda tu progreso de preparación en este dispositivo. No recibe documentos, presenta solicitudes, calcula la CSE ni decide beneficios.",
-        "category": "general"
-      }
-    ],
-    "notFound": {
-      "title": "¿No encuentras tu pregunta?",
-      "message": "Para un caso concreto, pide orientación a la ULE del distrito donde vives actualmente. En Recursos tienes el directorio y los servicios oficiales OFIS."
-    }
+    "countryLabel": "País",
+    "chooseCountry": "Selecciona un país",
+    "noGuidesShort": "sin guías verificadas",
+    "availableGuide": "Primera guía disponible",
+    "noGuides": "Todavía no hay guías verificadas para este país.",
+    "backToPeru": "Ver la guía de Perú",
+    "viewSteps": "Ver los cinco pasos",
+    "scopeNote": "Cada guía tiene su país, fuentes y fecha de revisión. El idioma no cambia la jurisdicción. UMBRAL no reemplaza a las instituciones ni envía solicitudes."
   },
   "footer": {
-    "tagline": "Información confiable para tu trámite de CSE",
+    "tagline": "Orientación para servicios públicos",
     "privacy": "No ingresas datos personales en UMBRAL. Tu idioma y progreso se guardan localmente en este dispositivo.",
     "links": {
-      "about": "Acerca de UMBRAL",
+      "about": "Acerca de la CSE",
       "resources": "Recursos oficiales",
       "faq": "Preguntas frecuentes"
     },

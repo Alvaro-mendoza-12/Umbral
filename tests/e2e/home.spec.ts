@@ -5,14 +5,14 @@ test.describe('Home Page', () => {
   test('should display hero section', async ({ page }) => {
     await page.goto('/');
     
-    await expect(page.locator('main h1')).toContainText('Prepárate para tu solicitud');
-    await expect(page.locator('main').getByRole('link', { name: /comenzar/i })).toBeVisible();
+    await expect(page.locator('main h1')).toHaveText('Los trámites públicos, más fáciles de entender');
+    await expect(page.locator('main').getByRole('link', { name: 'Comenzar', exact: true })).toBeVisible();
   });
 
   test('should navigate to guide', async ({ page }) => {
     await page.goto('/');
     
-    await page.locator('main').getByRole('link', { name: /comenzar la guía/i }).click();
+    await page.locator('main').getByRole('link', { name: 'Comenzar', exact: true }).click();
     await expect(page).toHaveURL(/\/guide/);
   });
 

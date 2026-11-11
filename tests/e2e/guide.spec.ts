@@ -7,7 +7,9 @@ test.describe('Interactive Guide', () => {
       await expect(page).toHaveURL(`/guide/${step}`);
       await expect(page.locator('main').getByRole('progressbar')).toHaveAttribute('aria-valuenow', String(step));
       if (step === 4) {
+        await page.locator('main article summary').filter({ hasText: 'Al presentar tu solicitud' }).click();
         await expect(page.locator('main article ol li')).toHaveCount(5);
+        await expect(page.locator('main article ol')).toBeVisible();
         await expect(page.locator('main article')).toContainText('S100');
       }
       if (step < 5) await page.locator('main').getByRole('button', { name: /siguiente/i }).click();

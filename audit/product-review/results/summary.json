@@ -1,0 +1,461 @@
+{
+  "date": "2026-11-11",
+  "branch": "codex/costume-contest",
+  "baselineCommit": "052cbb08cd7560d2c3165cbbc1b417a75bda2fad",
+  "build": "passed",
+  "lint": "passed",
+  "unit": {
+    "total": 30,
+    "passed": 30,
+    "failed": 0
+  },
+  "e2e": {
+    "startTime": "2026-11-11T14:48:15.094Z",
+    "duration": 208682.452,
+    "expected": 328,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "viewports": [
+    [
+      360,
+      640
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      1440,
+      900
+    ]
+  ],
+  "captures": 92,
+  "comparisons": [
+    {
+      "viewport": "small-mobile",
+      "page": "home",
+      "before": {
+        "width": 360,
+        "height": 3825
+      },
+      "after": {
+        "width": 360,
+        "height": 1658
+      },
+      "delta": -2167
+    },
+    {
+      "viewport": "small-mobile",
+      "page": "about",
+      "before": {
+        "width": 360,
+        "height": 3112
+      },
+      "after": {
+        "width": 360,
+        "height": 1656
+      },
+      "delta": -1456
+    },
+    {
+      "viewport": "small-mobile",
+      "page": "guide-step1",
+      "before": {
+        "width": 360,
+        "height": 2194
+      },
+      "after": {
+        "width": 360,
+        "height": 1864
+      },
+      "delta": -330
+    },
+    {
+      "viewport": "small-mobile",
+      "page": "guide-step3",
+      "before": {
+        "width": 360,
+        "height": 2330
+      },
+      "after": {
+        "width": 360,
+        "height": 1918
+      },
+      "delta": -412
+    },
+    {
+      "viewport": "small-mobile",
+      "page": "checklist",
+      "before": {
+        "width": 360,
+        "height": 3988
+      },
+      "after": {
+        "width": 360,
+        "height": 3777
+      },
+      "delta": -211
+    },
+    {
+      "viewport": "small-mobile",
+      "page": "resources",
+      "before": {
+        "width": 360,
+        "height": 4118
+      },
+      "after": {
+        "width": 360,
+        "height": 3045
+      },
+      "delta": -1073
+    },
+    {
+      "viewport": "small-mobile",
+      "page": "faq",
+      "before": {
+        "width": 360,
+        "height": 2157
+      },
+      "after": {
+        "width": 360,
+        "height": 2209
+      },
+      "delta": 52
+    },
+    {
+      "viewport": "small-mobile",
+      "page": "not-found",
+      "before": {
+        "width": 360,
+        "height": 1205
+      },
+      "after": {
+        "width": 360,
+        "height": 1205
+      },
+      "delta": 0
+    },
+    {
+      "viewport": "mobile",
+      "page": "home",
+      "before": {
+        "width": 390,
+        "height": 3685
+      },
+      "after": {
+        "width": 390,
+        "height": 1616
+      },
+      "delta": -2069
+    },
+    {
+      "viewport": "mobile",
+      "page": "about",
+      "before": {
+        "width": 390,
+        "height": 2914
+      },
+      "after": {
+        "width": 390,
+        "height": 1586
+      },
+      "delta": -1328
+    },
+    {
+      "viewport": "mobile",
+      "page": "guide-step1",
+      "before": {
+        "width": 390,
+        "height": 2068
+      },
+      "after": {
+        "width": 390,
+        "height": 1797
+      },
+      "delta": -271
+    },
+    {
+      "viewport": "mobile",
+      "page": "guide-step3",
+      "before": {
+        "width": 390,
+        "height": 2204
+      },
+      "after": {
+        "width": 390,
+        "height": 1823
+      },
+      "delta": -381
+    },
+    {
+      "viewport": "mobile",
+      "page": "checklist",
+      "before": {
+        "width": 390,
+        "height": 3702
+      },
+      "after": {
+        "width": 390,
+        "height": 3619
+      },
+      "delta": -83
+    },
+    {
+      "viewport": "mobile",
+      "page": "resources",
+      "before": {
+        "width": 390,
+        "height": 3884
+      },
+      "after": {
+        "width": 390,
+        "height": 2929
+      },
+      "delta": -955
+    },
+    {
+      "viewport": "mobile",
+      "page": "faq",
+      "before": {
+        "width": 390,
+        "height": 2071
+      },
+      "after": {
+        "width": 390,
+        "height": 2143
+      },
+      "delta": 72
+    },
+    {
+      "viewport": "mobile",
+      "page": "not-found",
+      "before": {
+        "width": 390,
+        "height": 1367
+      },
+      "after": {
+        "width": 390,
+        "height": 1367
+      },
+      "delta": 0
+    },
+    {
+      "viewport": "tablet",
+      "page": "home",
+      "before": {
+        "width": 768,
+        "height": 2338
+      },
+      "after": {
+        "width": 768,
+        "height": 1304
+      },
+      "delta": -1034
+    },
+    {
+      "viewport": "tablet",
+      "page": "about",
+      "before": {
+        "width": 768,
+        "height": 2198
+      },
+      "after": {
+        "width": 768,
+        "height": 1304
+      },
+      "delta": -894
+    },
+    {
+      "viewport": "tablet",
+      "page": "guide-step1",
+      "before": {
+        "width": 768,
+        "height": 1538
+      },
+      "after": {
+        "width": 768,
+        "height": 1422
+      },
+      "delta": -116
+    },
+    {
+      "viewport": "tablet",
+      "page": "guide-step3",
+      "before": {
+        "width": 768,
+        "height": 1566
+      },
+      "after": {
+        "width": 768,
+        "height": 1422
+      },
+      "delta": -144
+    },
+    {
+      "viewport": "tablet",
+      "page": "checklist",
+      "before": {
+        "width": 768,
+        "height": 2745
+      },
+      "after": {
+        "width": 768,
+        "height": 3060
+      },
+      "delta": 315
+    },
+    {
+      "viewport": "tablet",
+      "page": "resources",
+      "before": {
+        "width": 768,
+        "height": 3023
+      },
+      "after": {
+        "width": 768,
+        "height": 2556
+      },
+      "delta": -467
+    },
+    {
+      "viewport": "tablet",
+      "page": "faq",
+      "before": {
+        "width": 768,
+        "height": 1728
+      },
+      "after": {
+        "width": 768,
+        "height": 1980
+      },
+      "delta": 252
+    },
+    {
+      "viewport": "tablet",
+      "page": "not-found",
+      "before": {
+        "width": 768,
+        "height": 1304
+      },
+      "after": {
+        "width": 768,
+        "height": 1304
+      },
+      "delta": 0
+    },
+    {
+      "viewport": "desktop",
+      "page": "home",
+      "before": {
+        "width": 1440,
+        "height": 2296
+      },
+      "after": {
+        "width": 1440,
+        "height": 1199
+      },
+      "delta": -1097
+    },
+    {
+      "viewport": "desktop",
+      "page": "about",
+      "before": {
+        "width": 1440,
+        "height": 2000
+      },
+      "after": {
+        "width": 1440,
+        "height": 1170
+      },
+      "delta": -830
+    },
+    {
+      "viewport": "desktop",
+      "page": "guide-step1",
+      "before": {
+        "width": 1440,
+        "height": 1372
+      },
+      "after": {
+        "width": 1440,
+        "height": 1256
+      },
+      "delta": -116
+    },
+    {
+      "viewport": "desktop",
+      "page": "guide-step3",
+      "before": {
+        "width": 1440,
+        "height": 1400
+      },
+      "after": {
+        "width": 1440,
+        "height": 1256
+      },
+      "delta": -144
+    },
+    {
+      "viewport": "desktop",
+      "page": "checklist",
+      "before": {
+        "width": 1440,
+        "height": 2514
+      },
+      "after": {
+        "width": 1440,
+        "height": 3039
+      },
+      "delta": 525
+    },
+    {
+      "viewport": "desktop",
+      "page": "resources",
+      "before": {
+        "width": 1440,
+        "height": 2745
+      },
+      "after": {
+        "width": 1440,
+        "height": 2462
+      },
+      "delta": -283
+    },
+    {
+      "viewport": "desktop",
+      "page": "faq",
+      "before": {
+        "width": 1440,
+        "height": 1707
+      },
+      "after": {
+        "width": 1440,
+        "height": 1959
+      },
+      "delta": 252
+    },
+    {
+      "viewport": "desktop",
+      "page": "not-found",
+      "before": {
+        "width": 1440,
+        "height": 1159
+      },
+      "after": {
+        "width": 1440,
+        "height": 1159
+      },
+      "delta": 0
+    }
+  ],
+  "interviewsConducted": 0,
+  "screenReaderTested": false,
+  "physicalDevicesTested": false,
+  "attribution": "Original Kiro base; Codex audit, thematic design, product simplification, country package architecture and CI correction"
+}

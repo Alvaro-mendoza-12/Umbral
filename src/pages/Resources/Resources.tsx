@@ -1,10 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import Card from '../../components/common/Card';
 import Button from '../../components/common/Button';
+import Disclosure from '../../components/common/Disclosure/Disclosure';
 import { officialSources, uleChiclayoInfo, ULE_DIRECTORY_URL } from '../../data/sources';
 import { checklistItems } from '../../data/checklistItems';
 import { printElement } from '../../utils/print';
 import styles from './Resources.module.css';
+import ProcedureScope from '../../components/common/ProcedureScope';
+import { peCseProcedure } from '../../content';
 
 function PrintParagraph({ text }: { text: string }) {
   if (text.startsWith('**') && text.endsWith('**')) {
@@ -38,23 +41,21 @@ export default function Resources() {
   return (
     <main id="main-content" className={styles.resources}>
       <div className="container">
+        <ProcedureScope />
         <h1>{t('resources.title')}</h1>
         <p className={styles.description}>{t('resources.description')}</p>
 
-        {/* ULE Chiclayo Info */}
+        {/* The complete preparation sheet stays one action away. */}
         <section className={styles.section}>
-          <h2>{t('resources.uleTitle')}</h2>
-          <Card variant="highlighted">
-            <p className={styles.uleNote}>{t('resources.uleNote')}</p>
-            <p>{uleChiclayoInfo.address?.[lang]}</p>
-            <p>{uleChiclayoInfo.hours?.[lang]}</p>
-            <p className={styles.verifiedDate}>{uleChiclayoInfo.notes[lang]}</p>
-            <div className={styles.uleContact}>
-              <h3>{t('resources.uleContact.title')}</h3>
-              <p>{t('resources.uleContact.description')}</p>
-              <a href={ULE_DIRECTORY_URL} target="_blank" rel="noopener noreferrer" className={styles.sourceLink}>
-                {t('resources.uleContact.directoryLink')}
-              </a>
+          <h2>{t('resources.prepSheet.title')}</h2>
+          <Card>
+            <p className={styles.prepDescription}>
+              {t('resources.prepSheet.description')}
+            </p>
+            <div className={styles.prepActions}>
+              <Button onClick={handlePrint}>
+                {t('resources.prepSheet.printButton')}
+              </Button>
             </div>
           </Card>
         </section>
@@ -66,11 +67,6 @@ export default function Resources() {
             {officialSources.map(source => (
               <Card key={source.id}>
                 <h3 className={styles.sourceName}>{source.name[lang]}</h3>
-                {source.description && (
-                  <p className={styles.sourceDescription}>
-                    {source.description[lang]}
-                  </p>
-                )}
                 {source.url && (
                   <a
                     href={source.url}
@@ -101,24 +97,41 @@ export default function Resources() {
                       })
                     : t('resources.officialSources.pending')}
                 </p>
+                {source.description && (
+                  <Disclosure
+                    className={styles.sourceDetails}
+                    title={t('resources.sourceDetails', { defaultValue: lang === 'en' ? 'Content and certainty' : 'Contenido y certeza' })}
+                    summaryLabel={t('resources.sourceDetailsLabel', {
+                      source: source.name[lang],
+                      defaultValue: lang === 'en' ? 'Content and certainty: {{source}}' : 'Contenido y certeza: {{source}}',
+                    })}
+                  >
+                    <p className={styles.sourceDescription}>{source.description[lang]}</p>
+                  </Disclosure>
+                )}
               </Card>
             ))}
           </div>
         </section>
 
-        {/* Preparation Sheet */}
+        {/* Office details apply only to this local jurisdiction. */}
         <section className={styles.section}>
-          <h2>{t('resources.prepSheet.title')}</h2>
-          <Card>
-            <p className={styles.prepDescription}>
-              {t('resources.prepSheet.description')}
-            </p>
-            <div className={styles.prepActions}>
-              <Button onClick={handlePrint}>
-                {t('resources.prepSheet.printButton')}
-              </Button>
+          <Disclosure title={t('resources.localOrientation', {
+            defaultValue: lang === 'en' ? 'Local guidance: Chiclayo district' : 'Orientación local: distrito de Chiclayo',
+          })} headingLevel={2}>
+            <h3>{t('resources.uleTitle')}</h3>
+            <p className={styles.uleNote}>{t('resources.uleNote')}</p>
+            <p>{uleChiclayoInfo.address?.[lang]}</p>
+            <p>{uleChiclayoInfo.hours?.[lang]}</p>
+            <p className={styles.verifiedDate}>{uleChiclayoInfo.notes[lang]}</p>
+            <div className={styles.uleContact}>
+              <h3>{t('resources.uleContact.title')}</h3>
+              <p>{t('resources.uleContact.description')}</p>
+              <a href={ULE_DIRECTORY_URL} target="_blank" rel="noopener noreferrer" className={styles.sourceLink}>
+                {t('resources.uleContact.directoryLink')}
+              </a>
             </div>
-          </Card>
+          </Disclosure>
         </section>
 
         {/* Disclaimer */}
@@ -133,6 +146,7 @@ export default function Resources() {
       {/* Hidden content for printing */}
       <div id="prep-sheet" style={{ display: 'none' }}>
         <h1>{t('common.appName')} - {t('resources.prepSheet.title')}</h1>
+        <p>{peCseProcedure.displayName[lang]}</p>
         <p>{t('common.tagline')}</p>
         
         <h2>{t('guide.title')}</h2>

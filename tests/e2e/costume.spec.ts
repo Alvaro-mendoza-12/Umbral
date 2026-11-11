@@ -60,7 +60,7 @@ async function captureState(page: Page, name: 'guide-current' | 'checklist-parti
     window.scrollTo(0, 0);
     await new Promise<void>(resolve => requestAnimationFrame(() => resolve()));
   });
-  await page.screenshot({ path: `audit/costume-contest/after/${test.info().project.name}/${name}.png`, fullPage: true });
+  await page.screenshot({ path: `${process.env.UMBRAL_SCREENSHOTS_DIR || 'audit/costume-contest/after'}/${test.info().project.name}/${name}.png`, fullPage: true });
 }
 
 async function expectVisibleGuideLabelsInNames(page: Page, language: Language) {
@@ -128,7 +128,7 @@ async function expectPreparation(page: Page, completed: number, language: Langua
 
 async function tabTo(page: Page, target: Locator) {
   // Bound traversal by the available controls, so an unreachable gateway fails clearly.
-  const controls = await page.locator('a[href], button, input, select, textarea, [tabindex="0"]').count();
+  const controls = await page.locator('a[href], button, input, select, textarea, summary, [tabindex="0"]').count();
   for (let attempt = 0; attempt <= controls; attempt++) {
     if (await target.evaluate(element => element === document.activeElement)) break;
     await page.keyboard.press('Tab');
@@ -167,6 +167,12 @@ test.describe('The Illuminated Threshold', () => {
         name: copy[language].homeNavigation,
         exact: true,
       });
+      const summary = page.locator('main summary').filter({
+        hasText: language === 'es' ? 'Ver los cinco pasos' : 'View the five steps',
+      });
+      await expect(summary.locator('..')).not.toHaveAttribute('open');
+      await expect(navigation).not.toBeVisible();
+      await summary.click();
       const links = navigation.getByRole('link');
       await expect(links).toHaveCount(5);
 
@@ -208,6 +214,9 @@ test.describe('The Illuminated Threshold', () => {
     await page.keyboard.press('Enter');
     await expect(page.locator('#main-content')).toBeFocused();
 
+    const summary = page.locator('main summary').filter({ hasText: 'Ver los cinco pasos' });
+    await tabTo(page, summary);
+    await page.keyboard.press('Enter');
     const gateways = page.locator('main').getByRole('navigation', { name: copy.es.homeNavigation, exact: true }).getByRole('link');
     await expect(gateways).toHaveCount(5);
     await tabTo(page, gateways.first());

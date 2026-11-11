@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import styles from './Header.module.css';
 import ThresholdMark from '../ThresholdMark';
+import { getAvailableProcedures } from '../../../content';
 
 const navigationLinks = [
   { to: '/about', label: 'common.about' },
@@ -14,7 +15,9 @@ const navigationLinks = [
 
 export default function Header() {
   const { t, i18n } = useTranslation();
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
+  const country = new URLSearchParams(search).get('country') ?? 'PE';
+  const links = pathname === '/' && getAvailableProcedures(country).length === 0 ? [] : navigationLinks;
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
@@ -24,7 +27,7 @@ export default function Header() {
 
   useEffect(() => {
     setMobileMenuOpen(false);
-  }, [pathname]);
+  }, [pathname, search]);
 
   useEffect(() => {
     const desktop = window.matchMedia('(min-width: 1024px)');
@@ -83,9 +86,9 @@ export default function Header() {
         </Link>
 
         <div className={styles.nav}>
-          <nav aria-label={t('common.mainNavigation')} className={styles.desktopNav}>
+          {links.length > 0 && <nav aria-label={t('common.mainNavigation')} className={styles.desktopNav}>
             <ul className={styles.navLinks}>
-              {navigationLinks.map(link => (
+              {links.map(link => (
                 <li key={link.to}>
                   <NavLink
                     to={link.to}
@@ -96,7 +99,7 @@ export default function Header() {
                 </li>
               ))}
             </ul>
-          </nav>
+          </nav>}
 
           <div className={styles.languageSelector} role="group" aria-label={t('common.language')}>
             <button
@@ -121,7 +124,7 @@ export default function Header() {
             </button>
           </div>
 
-          <button
+          {links.length > 0 && <button
             ref={menuButtonRef}
             type="button"
             className={styles.menuButton}
@@ -144,7 +147,7 @@ export default function Header() {
                 </>
               )}
             </svg>
-          </button>
+          </button>}
         </div>
       </div>
 
@@ -155,7 +158,7 @@ export default function Header() {
         hidden={!mobileMenuOpen}
       >
         <ul className={styles.mobileNavLinks}>
-          {navigationLinks.map(link => (
+          {links.map(link => (
             <li key={link.to}>
               <NavLink
                 to={link.to}

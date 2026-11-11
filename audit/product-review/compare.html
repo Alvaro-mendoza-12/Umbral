@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UMBRAL — revisión de producto</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f6f3;color:#171d2a;font:16px/1.6 'Segoe UI',sans-serif}header{padding:32px max(24px,5vw);background:#171d2a;color:#fff8ec}h1{font:400 clamp(28px,4vw,44px)/1.2 Georgia,serif;margin:8px 0 16px}header p{max-width:80ch;margin:0;color:#e0e1e5}main{padding:24px max(16px,3vw)}.controls{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:24px}label{display:flex;flex-direction:column;gap:6px;font-weight:600}select{font:inherit;min-height:44px;padding:6px 12px;border:1px solid #5c6470;border-radius:6px;background:white;color:#171d2a}.pair{display:grid;grid-template-columns:1fr 1fr;gap:24px}figure{margin:0;min-width:0}figcaption{font-weight:600;margin-bottom:12px}.window{background:white;border:1px solid #8d928d;overflow:auto;max-height:80vh;border-radius:8px}img{display:block;width:100%;height:auto}a{color:#654215;text-underline-offset:3px}:focus-visible{outline:3px solid #80551d;outline-offset:3px}.note{max-width:85ch}button{font:inherit;min-height:44px;padding:8px 16px;background:#80551d;color:white;border:0;border-radius:6px;cursor:pointer}@media(max-width:700px){.pair{gap:12px}.window{max-height:65vh}figcaption{font-size:14px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}@media print{.controls{display:none}.window{max-height:none;overflow:visible}}
+</style>
+<header><p>UMBRAL · Revisión de producto en codex/costume-contest</p><h1>Una entrada más clara</h1><p>Comparación de la primera versión temática (052cbb0) y la revisión compacta e internacional. Estas imágenes muestran pantallas reales; no demuestran por sí solas una mejora de confianza o comprensión con familias.</p></header>
+<main>
+<div class="controls">
+<label>Tamaño<select id="size"><option value="small-mobile">360 × 640</option><option value="mobile">390 × 844</option><option value="tablet">768 × 1024</option><option value="desktop" selected>1440 × 900</option></select></label>
+<label>Vista<select id="route"><option value="home">Inicio</option><option value="guide-step1">Guía · paso 1</option><option value="guide-step3">Guía · paso 3</option><option value="checklist">Checklist vacío</option><option value="about">Acerca de la CSE</option><option value="resources">Recursos</option><option value="faq">Preguntas frecuentes</option><option value="not-found">Página no encontrada</option></select></label>
+</div>
+<div class="pair">
+<figure><figcaption>Anterior · temática 052cbb0</figcaption><div class="window"><a id="before-link" href="before/desktop/home.png"><img id="before" src="before/desktop/home.png" alt="Inicio actual, 1440 píxeles de ancho"></a></div></figure>
+<figure><figcaption>Nueva · entrada compacta</figcaption><div class="window"><a id="after-link" href="after/desktop/home.png"><img id="after" src="after/desktop/home.png" alt="Inicio experimental, 1440 píxeles de ancho"></a></div></figure>
+</div>
+<p class="note">Ambas columnas se pueden desplazar; pulsa una imagen para verla completa. La guía representa posición de lectura. Las once luces del checklist representan casillas marcadas y no aprobación del trámite.</p>
+<p><a href="REPORT.md">Informe, pruebas y recomendación</a> · <a href="DESIGN.md">Propuesta y arquitectura</a></p>
+</main>
+<script>
+const size=document.getElementById('size'),route=document.getElementById('route');
+function update(){for(const version of ['before','after']){const path=version+'/'+size.value+'/'+route.value+'.png';document.getElementById(version).src=path;document.getElementById(version).alt=route.selectedOptions[0].text+', '+size.selectedOptions[0].text+', versión '+(version==='before'?'actual':'experimental');document.getElementById(version+'-link').href=path}document.querySelectorAll('.window').forEach(el=>el.scrollTop=0)}
+size.addEventListener('change',update);route.addEventListener('change',update);
+</script>
+</html>
