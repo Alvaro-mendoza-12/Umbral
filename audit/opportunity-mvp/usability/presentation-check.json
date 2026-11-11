@@ -1,0 +1,68 @@
+{
+  "checkedOn": "2026-11-11",
+  "method": "Anonymous Playwright browser; read-only presentation check",
+  "humanSessions": 0,
+  "applicationChanges": false,
+  "records": [
+    {
+      "id": "beca-18-2027",
+      "kind": "Beca",
+      "status": "Inscripción cerrada",
+      "confirmation": "Inscripción cerrada el 18/10/2026. Las siguientes fechas corresponden a quienes ya se inscribieron; no son una reapertura.",
+      "url": "https://umbral-review-20261111-gchqn5i73-alvaro-s-projects1.vercel.app/opportunities/beca-18-2027",
+      "httpStatus": 200,
+      "title": "Beca 18 · convocatoria 2027",
+      "kindVisible": true,
+      "statusVisible": true,
+      "confirmationVisible": true
+    },
+    {
+      "id": "empleos-peru",
+      "kind": "Servicio",
+      "status": "Servicio continuo",
+      "confirmation": "Servicio continuo publicado. No hay un cierre general confirmado; cada oferta fija sus fechas.",
+      "url": "https://umbral-review-20261111-gchqn5i73-alvaro-s-projects1.vercel.app/opportunities/empleos-peru",
+      "httpStatus": 200,
+      "title": "Buscar trabajo en Empleos Perú",
+      "kindVisible": true,
+      "statusVisible": true,
+      "confirmationVisible": true
+    },
+    {
+      "id": "capacita-t",
+      "kind": "Servicio",
+      "status": "Servicio continuo",
+      "confirmation": "Catálogo continuo, con disponibilidad propia de cada curso. Sin fecha única de cierre confirmada.",
+      "url": "https://umbral-review-20261111-gchqn5i73-alvaro-s-projects1.vercel.app/opportunities/capacita-t",
+      "httpStatus": 200,
+      "title": "Capacíta-T · cursos gratuitos",
+      "kindVisible": true,
+      "statusVisible": true,
+      "confirmationVisible": true
+    },
+    {
+      "id": "tu-empresa",
+      "kind": "Servicio",
+      "status": "Servicio continuo",
+      "confirmation": "Canal de orientación publicado, sin cierre confirmado. Confirmar la atención con el programa.",
+      "url": "https://umbral-review-20261111-gchqn5i73-alvaro-s-projects1.vercel.app/opportunities/tu-empresa",
+      "httpStatus": 200,
+      "title": "Tu Empresa · orientación para formalizar",
+      "kindVisible": true,
+      "statusVisible": true,
+      "confirmationVisible": true
+    },
+    {
+      "id": "cse-peru",
+      "kind": "Procedimiento de orientación",
+      "status": "Servicio continuo",
+      "confirmation": "Orientación para solicitar la Clasificación Socioeconómica del hogar. No es una beca ni un beneficio.",
+      "url": "https://umbral-review-20261111-gchqn5i73-alvaro-s-projects1.vercel.app/opportunities/cse-peru",
+      "httpStatus": 200,
+      "title": "CSE · preparar la primera solicitud",
+      "kindVisible": true,
+      "statusVisible": true,
+      "confirmationVisible": true
+    }
+  ]
+}

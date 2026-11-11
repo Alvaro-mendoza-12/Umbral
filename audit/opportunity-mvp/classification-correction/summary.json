@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-11",
+  "sourceCommit": "b26ba80765e86e6f78c06223adf52900bc8452f8",
+  "previewUrl": "https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app",
+  "build": "passed",
+  "lint": "passed",
+  "unitTests": 48,
+  "localPlaywright": {
+    "startTime": "2026-11-11T18:12:14.351Z",
+    "duration": 43245.697,
+    "expected": 72,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "publicPlaywright": {
+    "startTime": "2026-11-11T18:15:32.760Z",
+    "duration": 21071.814000000002,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "changedApplicationFiles": [
+    "src/features/opportunities/components/Shared.tsx",
+    "src/features/opportunities/domain/catalog.ts",
+    "src/features/opportunities/pages/MyRoute.tsx"
+  ],
+  "stylesContentSourcesDependenciesStorageUnchanged": true,
+  "mainLocal": "ac586fa1822b44ba8f2a0232c6f1fdc858219288",
+  "mainRemote": "ac586fa1822b44ba8f2a0232c6f1fdc858219288",
+  "productionAndGitConnectionUnchanged": true,
+  "humanSessions": 0,
+  "blankParticipantTaskRows": 35
+}

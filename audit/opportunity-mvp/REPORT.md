@@ -1,11 +1,13 @@
 # UMBRAL — MVP de acompañamiento de acceso a oportunidades
 
+**Actualización antes de las pruebas humanas:** [Preview corregido](https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app), [corrección de clasificación de CSE](classification-correction/REPORT.md) y [protocolo vigente](USABILITY.md). CSE ya se identifica como procedimiento de orientación, sin etiqueta de servicio continuo. La entrega y evidencias que siguen corresponden al MVP anterior a esta corrección.
+
 11 de noviembre de 2026. Rama `codex/opportunity-companion-mvp`, creada desde `codex/costume-contest` (`ade52db`). React, TypeScript y Vite conservados. La identidad visual sigue siendo **The Illuminated Threshold**.
 
 ## Entrega
 
 - **[Vista previa pública del MVP](https://umbral-review-20261111-gchqn5i73-alvaro-s-projects1.vercel.app)**, comprobada sin autenticación.
-- Código desplegado y probado: [`24d0bacc2c8c2efdd979e6934e77eddeaaa63242`](https://github.com/Alvaro-mendoza-12/Umbral/commit/24d0bacc2c8c2efdd979e6934e77eddeaaa63242). Los commits posteriores de cierre sólo incorporan documentación y evidencias.
+- Código de la entrega original: [`24d0bacc2c8c2efdd979e6934e77eddeaaa63242`](https://github.com/Alvaro-mendoza-12/Umbral/commit/24d0bacc2c8c2efdd979e6934e77eddeaaa63242). Para la versión vigente de las sesiones, consultar la actualización anterior.
 - Producción original: sin cambios; `main` se conserva en `ac586fa1822b44ba8f2a0232c6f1fdc858219288`.
 - La publicación definitiva sigue pendiente de las pruebas humanas y de una decisión posterior explícita.
 
