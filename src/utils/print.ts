@@ -1,17 +1,17 @@
 export function printElement(
   elementId: string,
   options: { title?: string; language?: string } = {}
-): void {
+): boolean {
   const element = document.getElementById(elementId);
   if (!element) {
     console.warn(`Element with id "${elementId}" not found`);
-    return;
+    return false;
   }
 
   const printWindow = window.open('', '_blank');
   if (!printWindow) {
     console.warn('Could not open print window');
-    return;
+    return false;
   }
 
   // Clone React-rendered DOM so translated strings are never interpolated as HTML.
@@ -57,4 +57,5 @@ export function printElement(
     printWindow.focus();
     printWindow.print();
   }, 250);
+  return true;
 }

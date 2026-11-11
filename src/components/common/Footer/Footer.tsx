@@ -13,12 +13,12 @@ export default function Footer() {
         <div className={styles.content}>
           <div className={styles.brand}>
             <h3 className={styles.appName}>{t('common.appName')}</h3>
-            <p className={styles.tagline}>{t('footer.tagline')}</p>
-            <p className={styles.privacy}>{t('footer.privacy')}</p>
+            <p className={styles.tagline}>{t('companion.footer')}</p>
+            <p className={styles.privacy}>{t('companion.privacy')}</p>
           </div>
 
           <div className={styles.links}>
-            <h4>{t('common.resources')}</h4>
+            <h4>{t('companion.cseNavigation')}</h4>
             <ul>
               <li>
                 <Link to="/about">{t('footer.links.about')}</Link>

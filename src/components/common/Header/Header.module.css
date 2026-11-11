@@ -205,6 +205,10 @@
 
 .logo svg { color: var(--threshold-light); flex-shrink: 0; }
 .header :focus-visible { outline-color: var(--threshold-light); box-shadow: 0 0 0 3px var(--threshold-night); }
+.cseNav { display: flex; flex-wrap: nowrap; gap: 0 20px; padding: 4px 16px; background: #30394b; overflow-x: auto; white-space: nowrap; }
+.cseNav a { color: #fff8ec; display: inline-flex; align-items: center; min-height: 44px; font-size: 0.875rem; }
+.cseNav a[aria-current] { text-decoration: underline; text-underline-offset: 6px; color: #f3c789; }
+.cseNav a:hover { color: #f3c789; }
 
 @media (max-width: 359px) {
   .container { gap: var(--space-2); padding-inline: var(--space-3); }

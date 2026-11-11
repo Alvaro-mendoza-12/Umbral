@@ -19,7 +19,7 @@ const copy = {
 
 for (const language of ['es', 'en'] as const) {
   test(`first viewport communicates the value, action and available service in ${language}`, async ({ page }, testInfo) => {
-    await page.goto('/');
+    await page.goto('/cse');
     await setLanguage(page, language);
     await page.evaluate(() => document.fonts.ready);
     const title = page.locator('main h1');
@@ -70,7 +70,7 @@ for (const language of ['es', 'en'] as const) {
 
   test(`Home reflows at 320px and its primary action remains usable in ${language}`, async ({ page }) => {
     await page.setViewportSize({ width: 320, height: 844 });
-    await page.goto('/');
+    await page.goto('/cse');
     await setLanguage(page, language);
     await expectReflow(page);
     const summary = page.locator('main summary').filter({ hasText: language === 'es' ? 'Ver los cinco pasos' : 'View the five steps' });
@@ -81,7 +81,7 @@ for (const language of ['es', 'en'] as const) {
   });
 
   test(`Home tolerates 200% text resizing without clipping in ${language}`, async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/cse');
     await setLanguage(page, language);
     const title = page.locator('main h1');
     const initialFontSize = await title.evaluate(node => Number.parseFloat(getComputedStyle(node).fontSize));

@@ -29,6 +29,9 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
+  "seo": {
+    "title": "Your companion for access to opportunities"
+  },
   "home": {
     "hero": {
       "title": "Simpler public service procedures",
@@ -86,6 +89,7 @@
       }
     },
     "countryLabel": "Country",
+    "coverageNote": "Peru is the first country with available content. Other countries do not have verified guides yet.",
     "chooseCountry": "Choose a country",
     "noGuidesShort": "no verified guides",
     "availableGuide": "First available guide",

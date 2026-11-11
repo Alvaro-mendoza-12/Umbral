@@ -48,7 +48,7 @@ test('the real content registry publishes one Peru guide and never falls back fo
 for (const language of ['es', 'en'] as const) {
   for (const country of ['MX', 'CO', 'ES']) {
     test(`${country} transparently has no verified guide in ${language} and can return to Peru`, async ({ page }) => {
-      await page.goto(`/?country=${country}`);
+      await page.goto(`/cse?country=${country}`);
       await setLanguage(page, language);
       const main = page.locator('main');
       const selector = page.getByLabel(language === 'es' ? 'País' : 'Country', { exact: true });

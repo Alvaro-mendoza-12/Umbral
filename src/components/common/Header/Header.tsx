@@ -3,21 +3,26 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import styles from './Header.module.css';
 import ThresholdMark from '../ThresholdMark';
-import { getAvailableProcedures } from '../../../content';
 
-const navigationLinks = [
+const cseLinks = [
   { to: '/about', label: 'common.about' },
   { to: '/guide', label: 'common.guide' },
   { to: '/checklist', label: 'common.checklist' },
   { to: '/resources', label: 'common.resources' },
   { to: '/faq', label: 'common.faq' },
 ];
+const navigationLinks = [
+  { to: '/', label: 'companion.home' },
+  { to: '/discover', label: 'companion.discover' },
+  { to: '/my-route', label: 'companion.myRoute' },
+];
 
 export default function Header() {
   const { t, i18n } = useTranslation();
   const { pathname, search } = useLocation();
-  const country = new URLSearchParams(search).get('country') ?? 'PE';
-  const links = pathname === '/' && getAvailableProcedures(country).length === 0 ? [] : navigationLinks;
+  const country = (new URLSearchParams(search).get('country') ?? 'PE').toUpperCase();
+  const links = navigationLinks.map(link => country !== 'PE' && link.to !== '/my-route' ? { ...link, to: `${link.to}?country=${encodeURIComponent(country)}` } : link);
+  const showCseNavigation = /^\/(?:cse|about|guide|checklist|resources|faq)(?:\/|$)/.test(pathname) && (pathname !== '/cse' || country === 'PE');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
@@ -35,7 +40,7 @@ export default function Header() {
       if (!desktop.matches) return;
       const focused = document.activeElement;
       if (focused === menuButtonRef.current || document.getElementById('mobile-navigation')?.contains(focused)) {
-        headerRef.current?.querySelector<HTMLAnchorElement>('a[href="/"]')?.focus();
+        headerRef.current?.querySelector<HTMLAnchorElement>('[data-brand-link]')?.focus();
       }
       setMobileMenuOpen(false);
     };
@@ -79,10 +84,10 @@ export default function Header() {
         {t('common.skipToContent')}
       </a>
       <div className={styles.container}>
-        <Link to="/" className={styles.logo} onClick={closeMobileMenu}>
+        <Link data-brand-link to={country === 'PE' ? '/' : `/?country=${encodeURIComponent(country)}`} className={styles.logo} onClick={closeMobileMenu}>
           <ThresholdMark />
           <span>{t('common.appName')}</span>
-          <span className={styles.tagline}>{t('common.tagline')}</span>
+          <span className={styles.tagline}>{t('companion.identity')}</span>
         </Link>
 
         <div className={styles.nav}>
@@ -92,6 +97,7 @@ export default function Header() {
                 <li key={link.to}>
                   <NavLink
                     to={link.to}
+                    end={link.label === 'companion.home'}
                     className={({ isActive }) => `${styles.navLink} ${isActive ? styles.active : ''}`}
                   >
                     {t(link.label)}
@@ -162,6 +168,7 @@ export default function Header() {
             <li key={link.to}>
               <NavLink
                 to={link.to}
+                end={link.label === 'companion.home'}
                 className={({ isActive }) => `${styles.mobileNavLink} ${isActive ? styles.active : ''}`}
                 onClick={() => {
                   closeMobileMenu();
@@ -174,6 +181,10 @@ export default function Header() {
           ))}
         </ul>
       </nav>
+      {showCseNavigation && <nav aria-label={t('companion.cseNavigation')} className={styles.cseNav}>
+        <Link to="/opportunities/cse-peru">{t('companion.categories.family')}</Link>
+        {cseLinks.map(link => <NavLink key={link.to} to={link.to}>{t(link.label)}</NavLink>)}
+      </nav>}
     </header>
   );
 }

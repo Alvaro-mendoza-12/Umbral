@@ -1,3 +1,5 @@
+import esCompanion from '../../src/locales/es/companion.json' with { type: 'json' };
+import enCompanion from '../../src/locales/en/companion.json' with { type: 'json' };
 import { describe, expect, it } from 'vitest';
 import { countries, getAvailableProcedures, getCountry, getProcedure, peCseProcedure } from '../../src/content';
 import { checklistItems } from '../../src/data/checklistItems';
@@ -104,7 +106,7 @@ describe('reviewed PE/CSE package', () => {
     }
     for (const [language, ui, procedure] of [['es', esUi, esContent], ['en', enUi, enContent]] as const) {
       const resources = getTranslationResources('PE', 'cse')!;
-      expect(resources[language].translation).toEqual({ ...ui, ...procedure });
+      expect(resources[language].translation).toEqual({ ...ui, ...procedure, companion: language === 'es' ? esCompanion : enCompanion });
       for (const key of ['about', 'guide', 'checklist', 'resources', 'faq']) {
         expect(Object.hasOwn(ui, key)).toBe(false);
         expect(i18n.getResource(language, 'translation', key)).toEqual(procedure[key as keyof typeof procedure]);

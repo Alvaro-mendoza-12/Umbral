@@ -3,7 +3,7 @@ import { navigateFromHeader } from './helpers';
 
 test.describe('Navigation', () => {
   test('should navigate to all main pages', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/cse');
     
     // About - use header navigation
     await navigateFromHeader(page, /acerca/i);

@@ -7,6 +7,7 @@
 .countryField { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 12px; margin-bottom: 16px; }
 .countryField label { color: #e0e1e5; font-size: 0.875rem; }
 .countryField select { color: #fff8ec; background: var(--threshold-night); border: 1px solid #8c929d; border-radius: 6px; font: inherit; min-height: 44px; width: 100%; padding: 6px 10px; }
+.coverageNote { color: #e0e1e5; font-size: 0.875rem; line-height: 1.5; margin: 16px 0 0; }
 .serviceHeading { display: flex; gap: 14px; align-items: center; margin-bottom: 16px; }
 .serviceHeading > div { min-width: 0; }
 .doorway { display: flex; align-items: center; justify-content: center; width: 42px; min-width: 42px; height: 58px; color: var(--threshold-light); border: 1px solid #b49a78; border-radius: 24px 24px 3px 3px; background: #f3c7890d; }

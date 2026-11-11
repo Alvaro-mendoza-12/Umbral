@@ -162,7 +162,7 @@ async function expectReducedProgressMotion(page: Page) {
 test.describe('The Illuminated Threshold', () => {
   for (const language of ['es', 'en'] as const) {
     test(`Home exposes five named preparation gateways in ${language}`, async ({ page }) => {
-      await openRoute(page, '/', language);
+      await openRoute(page, '/cse', language);
       const navigation = page.locator('main').getByRole('navigation', {
         name: copy[language].homeNavigation,
         exact: true,
@@ -207,7 +207,7 @@ test.describe('The Illuminated Threshold', () => {
   }
 
   test('keyboard users can reach the Home gateways and enter the selected step', async ({ page }) => {
-    await openRoute(page, '/');
+    await openRoute(page, '/cse');
     await page.keyboard.press('Tab');
     const skip = page.locator('a[href="#main-content"]');
     await expect(skip).toBeFocused();

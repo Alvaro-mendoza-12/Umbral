@@ -7,6 +7,8 @@ import { getProcedure } from '../content';
 
 import esTranslation from '../locales/es/translation.json' with { type: 'json' };
 import enTranslation from '../locales/en/translation.json' with { type: 'json' };
+import esCompanion from '../locales/es/companion.json' with { type: 'json' };
+import enCompanion from '../locales/en/companion.json' with { type: 'json' };
 
 /** Resolve legal content explicitly; an unavailable country must never receive PE content. */
 export function getTranslationResources(countryCode: string, procedureId: string) {
@@ -14,8 +16,8 @@ export function getTranslationResources(countryCode: string, procedureId: string
   if (!procedure) return undefined;
 
   return {
-    es: { translation: { ...esTranslation, ...procedure.translations.es } },
-    en: { translation: { ...enTranslation, ...procedure.translations.en } },
+    es: { translation: { ...esTranslation, ...procedure.translations.es, companion: esCompanion } },
+    en: { translation: { ...enTranslation, ...procedure.translations.en, companion: enCompanion } },
   };
 }
 

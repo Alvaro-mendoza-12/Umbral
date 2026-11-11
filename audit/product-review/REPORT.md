@@ -1,8 +1,18 @@
 # UMBRAL — cierre de revisión de producto
 
-11-11-2026. Rama `codex/costume-contest`. Código revisado: `e7b984f`. **Listo para una decisión de publicación; sin merge ni cambio de la producción actual.**
+11-11-2026. Rama `codex/costume-contest`. Código de la revisión de producto previa: `e7b984f`. **Dirección de producto y nueva experiencia aprobadas; publicación definitiva pendiente de las cinco sesiones con adultos. Sin merge ni cambios en producción.**
 
-**[Vista previa pública](https://umbral-review-20261111-j9u10cgko-alvaro-s-projects1.vercel.app)** · [Comparación antes/después](compare.html) · [92 capturas](after/) · [Guía para cinco adultos](USABILITY.md)
+**[Vista previa pública de la revisión anterior](https://umbral-review-20261111-j9u10cgko-alvaro-s-projects1.vercel.app)** · [Comparación antes/después](compare.html) · [92 capturas](after/) · [Guía para cinco adultos](USABILITY.md) · [Resumen editable de resultados](USABILITY-RESULTS.md)
+
+## Ajustes de cierre solicitados
+
+- Título del navegador, descripción SEO, Open Graph y metadatos de la PWA presentan UMBRAL como plataforma de orientación y acceso a oportunidades. El título de inicio conserva esta identidad al cargar React y al cambiar ES/EN; las páginas de la guía conservan sus títulos específicos.
+- La portada muestra, sin abrir detalles: «Perú es el primer país con contenido disponible. Los demás países aún no tienen guías verificadas». El aviso también está en inglés; MX/CO/ES mantienen sus estados sin guías y el regreso explícito a Perú.
+- `USABILITY.md` y `usability-record.csv` se conservan sin cambios. El nuevo [resumen editable](USABILITY-RESULTS.md) permite registrar P01–P05, tareas, comprensión, confianza, conteos, hallazgos y la decisión posterior. No hay sesiones ni resultados humanos registrados.
+
+Comprobación acotada de estos ajustes: `npm run build` y `npm run lint` correctos; 14 pruebas existentes de países aprobadas en 360 px y escritorio, en ES/EN. Verificados HTML sin JavaScript, Open Graph, manifiesto y título tras cargar la aplicación. En ocho combinaciones ES/EN de 360, 390, 768 y 1440 px, el propósito, descripción, servicio y acción principal siguen dentro de la primera pantalla; el aviso de cobertura está visible sin desplegar detalles. No se repitieron auditorías generales.
+
+Los ajustes están en la rama de trabajo local. La URL pública anterior no se ha actualizado con ellos; para probarlos, usar el procedimiento local de este informe y registrar la versión y el entorno realmente utilizados. No se añadieron funcionalidades ni se modificaron `main` o producción. La publicación definitiva se decidirá después de las pruebas humanas.
 
 ## Resultado ejecutivo
 
@@ -55,6 +65,6 @@ Abrir `http://127.0.0.1:4173`. Para offline, esperar la primera carga completa a
 
 ## Decisión de publicación
 
-La propuesta técnica y visual está preparada; la guía y [plantilla vacía](usability-record.csv) permiten validar con cinco adultos sin datos socioeconómicos. No hay entrevistas ni resultados inventados. Recomiendo esta versión para la decisión final, usando los criterios de comprensión del protocolo antes de promoverla. Producción requiere una autorización posterior; no se ha fusionado esta rama.
+La dirección de producto y la nueva experiencia están aprobadas. La guía, [plantilla por tarea](usability-record.csv) y [resumen editable](USABILITY-RESULTS.md) permiten registrar cinco sesiones con adultos sin datos socioeconómicos. No hay entrevistas ni resultados inventados. La publicación definitiva queda pendiente de los resultados humanos y de una decisión posterior explícita; no se ha fusionado esta rama.
 
 La base y los artefactos auténticos de Kiro permanecen atribuidos. Codex realizó la auditoría, el tema, esta reorganización UX, el paquete de contenido y la corrección de CI; no se fabricaron Specs, Steering ni Agent Hooks.

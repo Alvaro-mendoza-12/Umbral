@@ -60,6 +60,7 @@ export default function Home() {
                 </button>
               </div>
             )}
+            <p className={styles.coverageNote}>{t('home.coverageNote')}</p>
           </div>
           <p className={styles.reassurance}>{t('threshold.reassurance')}</p>
         </div>

@@ -1,0 +1,50 @@
+[
+  {
+    "path": "/",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "path": "/discover",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "path": "/discover",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "path": "/opportunities/beca-18-2027",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "path": "/opportunities/capacita-t",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "path": "/my-route",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "horizontalOverflow": false
+  }
+]

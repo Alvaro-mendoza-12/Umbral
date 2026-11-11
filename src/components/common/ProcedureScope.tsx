@@ -10,7 +10,7 @@ export default function ProcedureScope() {
   const lang = normalizeLanguage(i18n.resolvedLanguage);
   return (
     <p className={styles.scope}>
-      <Link to="/?country=PE">{getCountry(peCseProcedure.countryCode)?.name[lang]}</Link>
+      <Link to="/cse?country=PE">{getCountry(peCseProcedure.countryCode)?.name[lang]}</Link>
       <span aria-hidden="true"> / </span>
       <span>{peCseProcedure.title[lang]}</span>
     </p>

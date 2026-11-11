@@ -29,6 +29,9 @@
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú"
   },
+  "seo": {
+    "title": "Tu acompañante de acceso a oportunidades"
+  },
   "home": {
     "hero": {
       "title": "Los trámites públicos, más fáciles de entender",
@@ -86,6 +89,7 @@
       }
     },
     "countryLabel": "País",
+    "coverageNote": "Perú es el primer país con contenido disponible. Los demás países aún no tienen guías verificadas.",
     "chooseCountry": "Selecciona un país",
     "noGuidesShort": "sin guías verificadas",
     "availableGuide": "Primera guía disponible",

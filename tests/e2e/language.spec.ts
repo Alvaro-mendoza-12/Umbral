@@ -3,7 +3,7 @@ import { navigateFromHeader } from './helpers';
 
 test.describe('Language Switching', () => {
   test('should switch from Spanish to English', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/cse');
     
     // Default should be Spanish
     await expect(page.locator('main h1')).toHaveText('Los trámites públicos, más fáciles de entender');
@@ -20,7 +20,7 @@ test.describe('Language Switching', () => {
   });
 
   test('should persist language preference', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/cse');
     
     // Switch to English
     await page.locator('header').getByRole('button', { name: 'EN' }).first().click();
@@ -35,7 +35,7 @@ test.describe('Language Switching', () => {
   });
 
   test('should translate all pages', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/cse');
     await page.locator('header').getByRole('button', { name: 'EN' }).first().click();
     
     // Navigate to About page

@@ -3,21 +3,21 @@ import { navigateFromHeader } from './helpers';
 
 test.describe('Home Page', () => {
   test('should display hero section', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/cse');
     
     await expect(page.locator('main h1')).toHaveText('Los trámites públicos, más fáciles de entender');
     await expect(page.locator('main').getByRole('link', { name: 'Comenzar', exact: true })).toBeVisible();
   });
 
   test('should navigate to guide', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/cse');
     
     await page.locator('main').getByRole('link', { name: 'Comenzar', exact: true }).click();
     await expect(page).toHaveURL(/\/guide/);
   });
 
   test('should display quick links', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/cse');
     
     // Check quick links section exists
     const quickLinksSection = page.locator('main section').filter({ hasText: /accesos rápidos/i });
@@ -31,7 +31,7 @@ test.describe('Home Page', () => {
   });
 
   test('should have accessible navigation', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/cse');
     
     // Check main navigation exists
     const header = page.locator('header');
