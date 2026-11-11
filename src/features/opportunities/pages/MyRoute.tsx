@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { normalizeLanguage } from '../../../services/i18n';
 import { printElement } from '../../../utils/print';
-import { getOpportunity, formatDate, opportunityStatus } from '../domain/catalog';
+import { getOpportunity, formatDate, opportunityStatusLabelKey } from '../domain/catalog';
 import { routeProgress } from '../domain/myRoute';
 import { sources } from '../data/peru';
 import { useMyRoute } from '../application/routeContext';
@@ -48,7 +48,7 @@ export default function MyRoutePage() {
     const lines = [`UMBRAL · ${t('companion.myRoute')}`, t('companion.progressNote'), ''];
     for (const { opportunity, entry } of entries) {
       const progress = routeProgress(entry, opportunity.id);
-      lines.push(opportunity.title[language], t(`companion.status.${opportunityStatus(opportunity)}`), t('companion.progress', progress), opportunity.availability.description[language]);
+      lines.push(opportunity.title[language], t(opportunityStatusLabelKey(opportunity)), t('companion.progress', progress), opportunity.availability.description[language]);
       for (const step of opportunity.steps) lines.push(`[${entry.completedStepIds.includes(step.id) ? 'x' : ' '}] ${step.text[language]}`);
       for (const task of entry.tasks) lines.push(`[${task.completed ? 'x' : ' '}] ${task.title}`);
       if (!opportunity.availability.dates.length) lines.push(t('companion.noDeadline'));

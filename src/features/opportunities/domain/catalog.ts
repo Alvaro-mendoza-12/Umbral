@@ -11,6 +11,13 @@ export function opportunityStatus(opportunity: Opportunity, today = peruToday())
   if (opportunity.availability.opensOn && today < opportunity.availability.opensOn) return 'upcoming';
   return opportunity.availability.status;
 }
+/** A procedure without an annual call must not be presented as an ongoing service. */
+export function opportunityStatusLabelKey(opportunity: Opportunity, today = peruToday()): string {
+  const status = opportunityStatus(opportunity, today);
+  return opportunity.kind === 'procedure' && status === 'ongoing'
+    ? 'companion.kinds.procedure'
+    : `companion.status.${status}`;
+}
 export function getOpportunity(id: string): Opportunity | undefined {
   return opportunities.find(opportunity => opportunity.id === id);
 }
@@ -20,7 +27,8 @@ export function filterOpportunities(filters: CatalogFilters, today = peruToday()
     (!filters.region || opportunity.jurisdictionId === filters.region || opportunity.localGuidanceIds.includes(filters.region)) &&
     (!filters.category || opportunity.category === filters.category) &&
     (!filters.audience || opportunity.audiences.some(audience => audience === filters.audience)) &&
-    (!filters.status || opportunityStatus(opportunity, today) === filters.status),
+    (!filters.status || (opportunityStatus(opportunity, today) === filters.status &&
+      (filters.status !== 'ongoing' || opportunity.kind === 'service'))),
   );
 }
 export function formatDate(date: string, language: string): string {

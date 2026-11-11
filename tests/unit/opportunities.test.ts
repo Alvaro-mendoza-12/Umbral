@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { opportunities, sources, institutions, jurisdictions } from '../../src/features/opportunities/data/peru';
-import { filterOpportunities, getOpportunity, opportunityStatus } from '../../src/features/opportunities/domain/catalog';
+import { filterOpportunities, getOpportunity, opportunityStatus, opportunityStatusLabelKey } from '../../src/features/opportunities/domain/catalog';
 import { emptyRoute, normalizeMyRoute, routeProgress } from '../../src/features/opportunities/domain/myRoute';
 import es from '../../src/locales/es/companion.json' with { type: 'json' };
 import en from '../../src/locales/en/companion.json' with { type: 'json' };
@@ -51,6 +51,17 @@ describe('verified opportunity catalogue', () => {
   });
   it('keeps CSE a family-support procedure with its original guide', () => {
     expect(getOpportunity('cse-peru')).toMatchObject({ category: 'family', kind: 'procedure', guidePath: '/cse', localGuidanceIds: ['PE-140101'] });
+  });
+  it('classifies CSE as a procedure in labels and excludes it from the ongoing service filter', () => {
+    expect(opportunityStatusLabelKey(getOpportunity('cse-peru')!, today)).toBe('companion.kinds.procedure');
+    expect(opportunityStatusLabelKey(getOpportunity('cse-peru')!, '2026-12-12')).toBe('companion.status.unconfirmed');
+    expect(opportunityStatusLabelKey(getOpportunity('beca-18-2027')!, today)).toBe('companion.status.closed');
+    for (const id of ['empleos-peru', 'capacita-t', 'tu-empresa']) {
+      expect(opportunityStatusLabelKey(getOpportunity(id)!, today)).toBe('companion.status.ongoing');
+    }
+    expect(filterOpportunities({ ...filters, status: 'ongoing' }, today).map(item => item.id)).toEqual(['empleos-peru', 'capacita-t', 'tu-empresa']);
+    expect(filterOpportunities({ ...filters, category: 'family', status: 'ongoing' }, today)).toEqual([]);
+    expect(filterOpportunities({ ...filters, category: 'family' }, today).map(item => item.id)).toEqual(['cse-peru']);
   });
   it('maintains the same interface key set in Spanish and English', () => {
     const paths = (value: object, prefix = ''): string[] => Object.entries(value).flatMap(([key, item]) => typeof item === 'object' ? paths(item, `${prefix}${key}.`) : [`${prefix}${key}`]);

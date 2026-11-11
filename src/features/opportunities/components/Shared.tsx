@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { countries } from '../../../content';
 import { normalizeLanguage } from '../../../services/i18n';
 import { institutions } from '../data/peru';
-import { formatDate, opportunityStatus } from '../domain/catalog';
+import { formatDate, opportunityStatus, opportunityStatusLabelKey } from '../domain/catalog';
 import type { Opportunity } from '../domain/types';
 import { useMyRoute } from '../application/routeContext';
 import styles from '../Companion.module.css';
@@ -29,7 +29,7 @@ export function CountryEmpty({ onReturn }: { onReturn: () => void }) {
 export function StatusBadge({ opportunity }: { opportunity: Opportunity }) {
   const { t } = useTranslation();
   const status = opportunityStatus(opportunity);
-  return <span className={`${styles.badge} ${status === 'closed' || status === 'unconfirmed' ? styles.caution : ''}`}>{t(`companion.status.${status}`)}</span>;
+  return <span className={`${styles.badge} ${status === 'closed' || status === 'unconfirmed' ? styles.caution : ''}`}>{t(opportunityStatusLabelKey(opportunity))}</span>;
 }
 export function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
   const { t, i18n } = useTranslation();

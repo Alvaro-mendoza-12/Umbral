@@ -104,7 +104,7 @@ for (const language of ['es', 'en'] as const) {
       for (const requirement of opportunity.requirements) await expect(page.getByText(requirement.text[language], { exact: true })).toBeVisible();
       for (const condition of opportunity.conditions) await expect(page.getByText(condition.text[language], { exact: true })).toBeVisible();
       await expect(page.getByRole('link', { name: copy.official, exact: true })).toHaveAttribute('href', opportunity.officialUrl);
-      await expect(page.getByText(copy.kinds[opportunity.kind], { exact: true })).toBeVisible();
+      await expect(page.getByText(copy.kinds[opportunity.kind], { exact: true }).first()).toBeVisible();
       await expectReflow(page);
       if (opportunity.id === 'beca-18-2027') await expect(page.getByText(copy.status.closed, { exact: true })).toBeVisible();
       if (opportunity.id === 'cse-peru') {
@@ -114,6 +114,41 @@ for (const language of ['es', 'en'] as const) {
         await expect(page).toHaveURL('/guide/1');
       }
     }
+  });
+
+  test(`CSE remains a procedure in catalogue, detail, My Route, download and print in ${language}`, async ({ page, context }) => {
+    await context.addInitScript(() => { window.print = () => { document.body.dataset.printRequested = 'true'; }; });
+    await page.goto('/discover?country=PE&category=family'); await setLanguage(page, language);
+    const catalogueCard = page.locator('main article');
+    await expect(catalogueCard).toHaveCount(1);
+    await expect(catalogueCard.getByText(copy.kinds.procedure, { exact: true })).toBeVisible();
+    await expect(catalogueCard).not.toContainText(copy.status.ongoing);
+    await catalogueCard.getByRole('heading').getByRole('link').click();
+    await expect(page.locator('main')).not.toContainText(copy.status.ongoing);
+    await expect(page.getByText(copy.kinds.procedure, { exact: true }).first()).toBeVisible();
+    await page.getByRole('button', { name: copy.save, exact: true }).click();
+    await page.getByRole('link', { name: copy.goRoute, exact: true }).click();
+    const routeCard = page.locator('main article');
+    await expect(routeCard.getByText(copy.kinds.procedure, { exact: true })).toBeVisible();
+    await expect(routeCard).not.toContainText(copy.status.ongoing);
+    const downloadPromise = page.waitForEvent('download');
+    await page.getByRole('button', { name: copy.download, exact: true }).click();
+    const download = await downloadPromise;
+    const downloaded = await readFile((await download.path())!, 'utf8');
+    expect(downloaded).toContain(copy.kinds.procedure);
+    expect(downloaded).not.toContain(copy.status.ongoing);
+    const popupPromise = page.waitForEvent('popup');
+    await page.getByRole('button', { name: copy.print, exact: true }).click();
+    const popup = await popupPromise;
+    await expect(popup.locator('body')).toHaveAttribute('data-print-requested', 'true');
+    await expect(popup.locator('body')).toContainText(copy.kinds.procedure);
+    await expect(popup.locator('body')).not.toContainText(copy.status.ongoing);
+    await popup.close();
+    await page.goto('/discover?country=PE&status=ongoing');
+    await expect(page.locator('main article')).toHaveCount(3);
+    for (const card of await page.locator('main article').all()) await expect(card).toContainText(copy.status.ongoing);
+    await expect(page.locator('main article').filter({ hasText: 'CSE' })).toHaveCount(0);
+    await expectReflow(page);
   });
 
   for (const route of ['/', '/discover', '/opportunities/beca-18-2027', '/my-route']) {
