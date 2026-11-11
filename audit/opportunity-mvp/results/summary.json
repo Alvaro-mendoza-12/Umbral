@@ -22,5 +22,17 @@
     "1440x900"
   ],
   "humanSessionsCompleted": 0,
-  "publication": "preview only; definitive publication pending human tests"
+  "publication": "preview only; definitive publication pending human tests",
+  "deployedCommit": "24d0bacc2c8c2efdd979e6934e77eddeaaa63242",
+  "previewUrl": "https://umbral-review-20261111-gchqn5i73-alvaro-s-projects1.vercel.app",
+  "publicPlaywright": {
+    "passed": 8,
+    "failed": 0
+  },
+  "anonymousRouteCases": 33,
+  "githubCI": {
+    "status": "success",
+    "runId": 43055659333
+  },
+  "productionUnchanged": true
 }

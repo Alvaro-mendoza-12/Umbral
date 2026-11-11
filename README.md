@@ -4,6 +4,8 @@
 
 Esta rama evoluciona UMBRAL hacia un **acompañante internacional de acceso a oportunidades**, conservando **The Illuminated Threshold**. [Entrega del MVP](audit/opportunity-mvp/REPORT.md). `main` y la producción original conservan la versión publicada.
 
+**[Abrir la vista previa pública del MVP](https://umbral-review-20261111-gchqn5i73-alvaro-s-projects1.vercel.app)**. Es un Preview de revisión, sin publicación definitiva.
+
 **MVP actual:** inicio por objetivos, catálogo con cinco filtros, fichas verificables y Mi Ruta con guardado, pasos, tareas propias, progreso, descarga e impresión. Perú tiene cinco registros en educación, empleo, formación, emprendimiento y apoyo familiar. México, Colombia y España están preparados para futura incorporación y no tienen oportunidades ni guías verificadas.
 
 La CSE permanece como un procedimiento de orientación dentro de apoyo familiar, con su guía conservada en `/cse`, cinco pasos, once casillas, recursos y preguntas frecuentes. Las fuentes son específicas de cada país; cambiar idioma no cambia jurisdicción. Español e inglés, almacenamiento local y lectura sin conexión tras la primera carga. No se incorporan cuentas ni APIs de IA.

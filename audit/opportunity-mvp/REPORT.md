@@ -4,8 +4,8 @@
 
 ## Entrega
 
-- Vista previa pública: pendiente de despliegue y comprobación anónima.
-- Commit del código desplegado: pendiente.
+- **[Vista previa pública del MVP](https://umbral-review-20261111-gchqn5i73-alvaro-s-projects1.vercel.app)**, comprobada sin autenticación.
+- Código desplegado y probado: [`24d0bacc2c8c2efdd979e6934e77eddeaaa63242`](https://github.com/Alvaro-mendoza-12/Umbral/commit/24d0bacc2c8c2efdd979e6934e77eddeaaa63242). Los commits posteriores de cierre sólo incorporan documentación y evidencias.
 - Producción original: sin cambios; `main` se conserva en `ac586fa1822b44ba8f2a0232c6f1fdc858219288`.
 - La publicación definitiva sigue pendiente de las pruebas humanas y de una decisión posterior explícita.
 
@@ -49,7 +49,10 @@ Los documentos, evidencias y artefactos originales de Kiro se conservan. [USABIL
 - Playwright: **392/392** aprobadas, cero fallidas, omitidas o flaky. [Resultado detallado](results/playwright.json). Incluye recorridos ES/EN, filtros combinados y vacíos, países sin contenido, fichas, guardado, tareas, persistencia, descargas reales, impresión, almacenamiento bloqueado/corrupto, teclado, reflow y regresión de la CSE.
 - Referencia WCAG: axe sin violaciones en las reglas ejecutadas para inicio, catálogo, ficha y Mi Ruta ES/EN, además de las vistas CSE conservadas. Reflow y texto al 200 % comprobados. No equivale a certificación de accesibilidad.
 - Pantallas comprobadas en 360, 390, 768 y 1440 px; revisión visual adicional de seis capturas de 390, 768 y 1440 px. [Geometría](results/viewport-check.json), [capturas](screenshots/).
-- Comprobación pública y aislamiento: pendientes de despliegue.
+- **CI remota del código desplegado: aprobada.** [Ejecución GitHub](https://github.com/Alvaro-mendoza-12/Umbral/actions/runs/43055659333), [pasos y conclusiones](results/github-ci.json).
+- **Vista pública:** ocho pruebas Playwright de recorridos completos y filtros ES/EN aprobadas en 390 px y escritorio; incluyen guardado, pasos, tareas, recarga, descarga real y documento imprimible. [Resultado](results/public/playwright.json).
+- **Acceso anónimo:** 33 combinaciones de once rutas y tres tamaños, sin errores de página ni solicitudes a terceros en ese recorrido. También se comprobaron metadatos, manifiesto, CSP, `nosniff`, `noindex` del Preview y consulta/guardado de una oportunidad y Mi Ruta offline tras la carga inicial. [Resultado público](results/public-preview.json).
+- **Aislamiento:** despliegue `dpl_ArxE2c9aRkqAcUi4HeUvRYTqtWbz`, entorno Preview, proyecto separado `umbral-review-20261111`, sin integración Git. El proyecto original conserva su producción `dpl_FocecH2p4BS8BvYXn48NJC6nWZjr`, protección y conexión a `main`. [Despliegue](results/deployment.json), [antes](results/production-before.json), [después](results/production-after.json), [comprobación](results/isolation.json).
 
 La impresión se comprueba como creación de un documento completo y llamada a la impresión del navegador. No se utiliza una impresora física. Las descargas se abren y se comprueban como archivos reales. Las pruebas no crean cuentas en portales institucionales ni envían postulaciones.
 

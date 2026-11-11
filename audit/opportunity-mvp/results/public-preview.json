@@ -1,0 +1,312 @@
+{
+  "url": "https://umbral-review-20261111-gchqn5i73-alvaro-s-projects1.vercel.app",
+  "sourceCommit": "24d0bacc2c8c2efdd979e6934e77eddeaaa63242",
+  "anonymous": true,
+  "routes": [
+    {
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "heading": "¿Qué te gustaría conseguir?"
+    },
+    {
+      "route": "/discover",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "heading": "Descubrir"
+    },
+    {
+      "route": "/opportunities/beca-18-2027",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "heading": "Beca 18 · convocatoria 2027"
+    },
+    {
+      "route": "/opportunities/empleos-peru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "heading": "Buscar trabajo en Empleos Perú"
+    },
+    {
+      "route": "/opportunities/capacita-t",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "heading": "Capacíta-T · cursos gratuitos"
+    },
+    {
+      "route": "/opportunities/tu-empresa",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "heading": "Tu Empresa · orientación para formalizar"
+    },
+    {
+      "route": "/opportunities/cse-peru",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "heading": "CSE · preparar la primera solicitud"
+    },
+    {
+      "route": "/my-route",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "heading": "Mi Ruta"
+    },
+    {
+      "route": "/cse",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "heading": "Los trámites públicos, más fáciles de entender"
+    },
+    {
+      "route": "/guide/1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "heading": "Guía de preparación paso a paso"
+    },
+    {
+      "route": "/discover?country=CO",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "heading": "Descubrir"
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "status": 200,
+      "heading": "¿Qué te gustaría conseguir?"
+    },
+    {
+      "route": "/discover",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "status": 200,
+      "heading": "Descubrir"
+    },
+    {
+      "route": "/opportunities/beca-18-2027",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "status": 200,
+      "heading": "Beca 18 · convocatoria 2027"
+    },
+    {
+      "route": "/opportunities/empleos-peru",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "status": 200,
+      "heading": "Buscar trabajo en Empleos Perú"
+    },
+    {
+      "route": "/opportunities/capacita-t",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "status": 200,
+      "heading": "Capacíta-T · cursos gratuitos"
+    },
+    {
+      "route": "/opportunities/tu-empresa",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "status": 200,
+      "heading": "Tu Empresa · orientación para formalizar"
+    },
+    {
+      "route": "/opportunities/cse-peru",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "status": 200,
+      "heading": "CSE · preparar la primera solicitud"
+    },
+    {
+      "route": "/my-route",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "status": 200,
+      "heading": "Mi Ruta"
+    },
+    {
+      "route": "/cse",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "status": 200,
+      "heading": "Los trámites públicos, más fáciles de entender"
+    },
+    {
+      "route": "/guide/1",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "status": 200,
+      "heading": "Guía de preparación paso a paso"
+    },
+    {
+      "route": "/discover?country=CO",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "status": 200,
+      "heading": "Descubrir"
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "heading": "¿Qué te gustaría conseguir?"
+    },
+    {
+      "route": "/discover",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "heading": "Descubrir"
+    },
+    {
+      "route": "/opportunities/beca-18-2027",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "heading": "Beca 18 · convocatoria 2027"
+    },
+    {
+      "route": "/opportunities/empleos-peru",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "heading": "Buscar trabajo en Empleos Perú"
+    },
+    {
+      "route": "/opportunities/capacita-t",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "heading": "Capacíta-T · cursos gratuitos"
+    },
+    {
+      "route": "/opportunities/tu-empresa",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "heading": "Tu Empresa · orientación para formalizar"
+    },
+    {
+      "route": "/opportunities/cse-peru",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "heading": "CSE · preparar la primera solicitud"
+    },
+    {
+      "route": "/my-route",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "heading": "Mi Ruta"
+    },
+    {
+      "route": "/cse",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "heading": "Los trámites públicos, más fáciles de entender"
+    },
+    {
+      "route": "/guide/1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "heading": "Guía de preparación paso a paso"
+    },
+    {
+      "route": "/discover?country=CO",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "status": 200,
+      "heading": "Descubrir"
+    }
+  ],
+  "offlineOpportunityAndRoute": true,
+  "pageErrors": [],
+  "thirdPartyOrigins": [],
+  "headers": {
+    "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+    "robots": "noindex",
+    "nosniff": "nosniff"
+  }
+}
