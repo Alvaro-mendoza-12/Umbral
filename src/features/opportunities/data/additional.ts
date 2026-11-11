@@ -7,6 +7,7 @@ type JobInput = {
   id: string; country: string; institution: string; title: Pair; benefit: Pair; location: Pair;
   url: string; education: Pair; experience: Pair; condition: Pair; restrictions: Pair;
   published?: string; salary?: Pair; region?: string; mode?: RecordInput['mode'];
+  close?: string; extraSourceIds?: string[];
 };
 const job = (input: JobInput): RecordInput => ({
   ...input, category: 'employment', kind: 'job', mode: input.mode ?? 'not-published',
@@ -18,7 +19,9 @@ const job = (input: JobInput): RecordInput => ({
   keyCondition: input.condition,
   steps: [tr('Revisar estudios, experiencia, sede y condiciones antes de postular.', 'Check education, experience, location and conditions before applying.'), tr('Preparar CV y documentos que pide esta vacante.', 'Prepare your CV and the documents required by this vacancy.'), tr('Abrir la oferta de la empresa y usar su botón de postulación.', 'Open the employer’s vacancy and use its application button.')],
   action: 'apply', instructions: tr('Abre esta vacante concreta y pulsa «Apply», «Apply now» o «Solicita empleo». El registro y envío se realizan en el sistema de contratación de la empresa; comprueba que conserva el identificador del puesto.', 'Open this specific vacancy and select “Apply”, “Apply now” or “Solicita empleo”. Register and submit in the employer’s hiring system; check that the job identifier is retained.'),
-  status: 'open', availability: tr('Ficha con postulación visible comprobada el 11-11-2026. Sin cierre publicado; confirmar que la plaza siga disponible.', 'Listing with a visible application action checked on 11 Nov 2026. No published deadline; confirm that the role remains available.'),
+  status: 'open', availability: input.close
+    ? tr(`Plazo publicado por la plataforma de contratación: ${input.close}. Hora no publicada; confirmar disponibilidad antes de postular.`, `Deadline published by the hiring platform: ${input.close}. Closing time not published; confirm availability before applying.`)
+    : tr('Ficha con postulación visible comprobada el 11-11-2026. Sin cierre publicado; confirmar que la plaza siga disponible.', 'Listing with a visible application action checked on 11 Nov 2026. No published deadline; confirm that the role remains available.'),
 });
 
 export const additionalRecords: RecordInput[] = [
@@ -103,6 +106,7 @@ export const additionalRecords: RecordInput[] = [
     url: 'https://www.amazon.jobs/en/jobs/10506034/aws-demand-generation-intern', published: '2026-08-18',
   }),
   job({ id: 'es-ikea-logistics', country: 'ES', institution: 'ikea-es', region: 'ES-Andalucia', mode: 'onsite',
+    close: '2026-11-12', extraSourceIds: ['ikea-granada-application'],
     title: tr('Reposición de mercancías · IKEA Granada', 'Goods replenishment · IKEA Granada'),
     benefit: tr('Jornada de 40 h en logística de tienda.', '40-hour role in store logistics.'),
     location: tr('Granada, Andalucía · España', 'Granada, Andalusia · Spain'),
@@ -113,6 +117,7 @@ export const additionalRecords: RecordInput[] = [
     url: 'https://jobs.ikea.com/es/trabajo/granada/aprovisionamiento-reposicion-de-mercancias-ikea-granada-40h-interinidad/24107/102933951680', published: '2026-11-06',
   }),
   job({ id: 'es-ikea-sales', country: 'ES', institution: 'ikea-es', region: 'ES-Andalucia', mode: 'onsite',
+    close: '2026-11-15', extraSourceIds: ['ikea-marbella-application'],
     title: tr('Ventas y atención al cliente · IKEA Marbella', 'Sales and customer service · IKEA Marbella'),
     benefit: tr('Jornada de 40 h con atención y diseño de soluciones para el hogar.', '40-hour role serving customers and designing home solutions.'),
     location: tr('Marbella, Málaga · España', 'Marbella, Málaga · Spain'),
@@ -234,6 +239,8 @@ export const additionalInstitutionNames: Record<string, Pair> = {
   'google-coursera': tr('Google · Coursera', 'Google · Coursera'), yc: tr('Y Combinator', 'Y Combinator'),
 };
 export const additionalSources: OpportunitySource[] = [
+  {id:'ikea-granada-application',institutionId:'ikea-es',title:tr('IKEA Granada: postulación 376185 y plazo','IKEA Granada: application 376185 and deadline'),url:'https://ikea.avature.net/es_ES/External/JobDetail?jobId=376185',consultedAt:'2026-11-11'},
+  {id:'ikea-marbella-application',institutionId:'ikea-es',title:tr('IKEA Marbella: postulación 375891 y plazo','IKEA Marbella: application 375891 and deadline'),url:'https://ikea.avature.net/es_ES/External/JobDetail?jobId=375891',consultedAt:'2026-11-11'},
   {id:'eth-dates',institutionId:'eth',title:tr('ETH: plazos de admisión 2027', 'ETH: 2027 admission dates'),url:'https://ethz.ch/en/studies/master/application/dates.html',consultedAt:'2026-11-11'},
   {id:'yc-deal',institutionId:'yc',title:tr('YC: condiciones de inversión y dilución','YC: investment and dilution terms'),url:'https://www.ycombinator.com/deal',consultedAt:'2026-11-11'},
   {id:'yc-faq',institutionId:'yc',title:tr('YC: equipos internacionales y participación','YC: international teams and participation'),url:'https://www.ycombinator.com/faq',consultedAt:'2026-11-11'},

@@ -120,6 +120,18 @@ describe('specific verified international opportunities', () => {
       expect(opportunityStatus(reviewed)).toBe('closed');
     } finally {vi.useRealTimers();}
   });
+  it('uses the IKEA hiring-platform deadlines even though the public career pages omit them', () => {
+    const granada=getOpportunity('es-ikea-logistics')!;
+    const marbella=getOpportunity('es-ikea-sales')!;
+    expect(granada.availability.closesOn).toBe('2026-11-12');
+    expect(marbella.availability.closesOn).toBe('2026-11-15');
+    expect(granada.sourceIds).toContain('ikea-granada-application');
+    expect(marbella.sourceIds).toContain('ikea-marbella-application');
+    expect(opportunityStatus(granada,'2026-11-12')).toBe('open');
+    expect(opportunityStatus(granada,'2026-11-13')).toBe('closed');
+    expect(opportunityStatus(marbella,'2026-11-16')).toBe('closed');
+    expect(granada.availability.description.es).not.toContain('Sin cierre');
+  });
 });
 describe('local My Route boundary', () => {
   it.each([null, [], 'bad', { version: 2, entries: {} }, { version: 1, entries: null }])('recovers malformed storage without inventing progress: %j', value => {
