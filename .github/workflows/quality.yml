@@ -5,7 +5,14 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
+    container:
+      # Official Playwright 1.65.0 noble image: browser and OS dependencies included.
+      image: mcr.microsoft.com/playwright@sha256:6e3fb709361521eb27161606e6da6d2674e5e89fa16516cb37d6fdd91372273d
+      options: --shm-size=1g
     timeout-minutes: 15
+    env:
+      UMBRAL_RESULTS_DIR: audit/product-review/results
+      UMBRAL_SCREENSHOTS_DIR: audit/product-review/after
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
@@ -16,7 +23,8 @@ jobs:
       - run: npm run lint
       - run: npm run test -- --run
       - run: npm audit --omit=dev --audit-level=moderate
-      - run: npx playwright install --with-deps chromium
+      - name: Verify matching preinstalled browser
+        run: node -e "const fs=require('node:fs');const p=require('@playwright/test');if(require('@playwright/test/package.json').version!=='1.65.0'||!fs.existsSync(p.chromium.executablePath()))throw new Error('Playwright image and lockfile must match');"
       - run: npm run test:e2e
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
         if: always()
@@ -27,4 +35,5 @@ jobs:
             test-results/
             audit/results/
             audit/screenshots/
+            audit/product-review/
           retention-days: 14
