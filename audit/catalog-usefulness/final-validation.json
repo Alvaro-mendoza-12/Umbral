@@ -467,7 +467,66 @@
       "es",
       "en"
     ],
-    "scope": "Country filters, saved records across countries, local progress, reload, text export and print"
+    "scope": "Country filters, saved records across countries, local progress, reload, text export and print",
+    "correctedPreview": "https://umbral-review-20261111-re35sy5c7-alvaro-s-projects1.vercel.app",
+    "correctedPreviewStats": {
+      "startTime": "2026-11-11T21:14:02.774Z",
+      "duration": 19173.604000000003,
+      "expected": 12,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
   },
-  "unitTests": 49
+  "unitTests": 49,
+  "talkpushApplicationForms": [
+    {
+      "id": "pe-concentrix-customer",
+      "title": "Call Center Agent",
+      "origin": "https://concentrix-peru.talkpush.com",
+      "path": "/careers/29/apply",
+      "visibleInputs": 6,
+      "noApplicationSubmitted": true
+    },
+    {
+      "id": "mx-concentrix-customer",
+      "title": "Customer Service Agents - Español - CDMX",
+      "origin": "https://concentrix-mexico.talkpush.com",
+      "path": "/careers/4/apply",
+      "visibleInputs": 6,
+      "noApplicationSubmitted": true
+    },
+    {
+      "id": "co-concentrix-customer",
+      "title": "Español",
+      "origin": "https://concentrix-colombia.talkpush.com",
+      "path": "/careers/1372/apply",
+      "visibleInputs": 6,
+      "noApplicationSubmitted": true
+    }
+  ],
+  "correctedDeployment": {
+    "id": "dpl_2getetjdbdqVDxXuwwDwXy25UAxc",
+    "state": "READY",
+    "target": null,
+    "projectId": "prj_lcTIJFFWwcijnAo5eUIhTkjMJpXT",
+    "commit": "a3d0cf0ff15b29604b47edb20447d19d3fc50eea",
+    "url": "https://umbral-review-20261111-re35sy5c7-alvaro-s-projects1.vercel.app",
+    "matchingLocalBundle": true,
+    "asset": "/assets/index-y3_hB6hA.js",
+    "publicDeadlineChecks": [
+      {
+        "id": "es-ikea-logistics",
+        "deadlineVisible": "12 de noviembre de 2026",
+        "simulatedClosedDate": "2026-11-13",
+        "expiredActionRemoved": true
+      },
+      {
+        "id": "es-ikea-sales",
+        "deadlineVisible": "15 de noviembre de 2026",
+        "simulatedClosedDate": "2026-11-16",
+        "expiredActionRemoved": true
+      }
+    ]
+  }
 }

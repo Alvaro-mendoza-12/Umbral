@@ -4,7 +4,7 @@
 
 Esta rama evoluciona UMBRAL hacia un **acompañante internacional de acceso a oportunidades**, conservando **The Illuminated Threshold**. Las [fuentes verificadas](audit/catalog-usefulness/verification.json) registran la revisión del catálogo. `main` y la producción original conservan la versión publicada.
 
-**[Abrir la nueva vista previa pública](https://umbral-review-20261111-6mnp45v52-alvaro-s-projects1.vercel.app)**. Rama `codex/catalog-usefulness`, aplicación `18ce9b7`. Es un Preview de revisión, sin publicación definitiva. La [vista previa anterior](https://umbral-review-20261111-cmxyf4wkj-alvaro-s-projects1.vercel.app) conserva la fase previa.
+**[Abrir la nueva vista previa pública](https://umbral-review-20261111-re35sy5c7-alvaro-s-projects1.vercel.app)**. Rama `codex/catalog-usefulness`, aplicación `a3d0cf0` (corrección de dos cierres de IKEA). Es un Preview de revisión, sin publicación definitiva. La [vista previa de 18ce9b7](https://umbral-review-20261111-6mnp45v52-alvaro-s-projects1.vercel.app) se conserva.
 
 **Versión de revisión:** 31 oportunidades concretas y el trámite CSE conservado. Hay 15 vacantes: Perú 4, EE. UU. 2, México 3, Colombia 3 y España 3. Se revisaron las 14 oportunidades anteriores y se incorporaron 12 vacantes, dos becas internacionales (completa y parcial), un certificado profesional de pago, capacitación gratuita para emprender y una aceleradora con inversión. Las tarjetas resumen beneficio y requisito clave; antes de postular o guardar se muestran elegibilidad, restricciones y condiciones. Los datos no publicados se identifican expresamente. Las categorías sin registros lo explican. Mi Ruta conserva tareas, progreso, descarga e impresión; país e idioma persisten por separado.
 
