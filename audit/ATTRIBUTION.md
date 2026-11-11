@@ -4,7 +4,7 @@ Revisión 10-11-2026. Este documento describe trabajo observable; no reemplaza s
 
 ## Base original
 
-El remoto contenía [`813 c 87 a`](https://github.com/Alvaro-mendoza-12/Umbral/commit/813c87ab57084010a8cff0e431344ad6193bd786), «feat: Initial commit - UMBRAL MVP». Kiro publicó desde la copia hermana `Umbral-repo`; `umbral` aún heredaba el Git padre. Codex recuperó ese historial en `umbral/.git` y continuó en `codex/audit-kiroween`, sin reescribir aquel commit ni cambiar CombiRumbo.
+El remoto contenía [`813c87a`](https://github.com/Alvaro-mendoza-12/Umbral/commit/813c87ab57084010a8cff0e431344ad6193bd786), «feat: Initial commit - UMBRAL MVP». Kiro publicó desde la copia hermana `Umbral-repo`; `umbral` aún heredaba el Git padre. Codex recuperó ese historial en `umbral/.git` y continuó en `codex/audit-kiroween`, sin reescribir aquel commit ni cambiar CombiRumbo.
 
 La base contiene React/TypeScript/Vite, siete vistas, guía, checklist, ES/EN, recursos, PWA, iconos, scripts, tests y reportes. Se observó Kiro con Claude Sonnet 4.5 corrigiendo configuración, ejecutando Vitest/Playwright y generando capturas. El propietario confirmó implementación/publicación de Kiro. Sus reportes se conservan atribuidos, sin tomarlos como pruebas independientes.
 
@@ -29,6 +29,6 @@ Se conservan sin cambios de contenido respecto al snapshot original:
 
 Antes de corregir, Codex guardó ZIP/manifest del trabajo y bundle del historial. Reprodujo seis fallos E2 E móviles y revisó código, contenido, accesibilidad y PWA. Corrigió idioma, rutas inválidas, estado local incompatible, menú/foco y contraste; revisó CSE e impresión sin reconstruir la app.
 
-Añadió regresiones y axe, actualizó dependencias afectadas y preparó Vercel/rutas/cabeceras, instalación limpia, CI y publicación. Los commits posteriores a 813 c 87 a identifican esta auditoría. No se atribuyen a Kiro estas correcciones ni investigaciones/maquetas previas de Codex.
+Añadió regresiones y axe, actualizó dependencias afectadas y preparó Vercel/rutas/cabeceras, instalación limpia, CI y publicación. Los commits posteriores a 813c87a identifican esta auditoría. No se atribuyen a Kiro estas correcciones ni investigaciones/maquetas previas de Codex.
 
 No se reconstruyó un historial granular inexistente ni se alteraron fechas/autores originales. Git acredita commits; el uso sustancial debe explicarse con el desarrollo y material real disponible. No se publican tokens, conversaciones personales completas o archivos de otros proyectos.

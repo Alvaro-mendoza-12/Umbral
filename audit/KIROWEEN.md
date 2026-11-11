@@ -25,7 +25,7 @@ Resurrection recupera tecnología obsoleta; Frankenstein combina elementos apare
 3. 1:05–1:35: checklist,ES/EN y persistencia,sin datos personales.
 4. 1:35–2:00: fuentes/fechas/certeza y hoja; atención local no confirmada.
 5. 2:00–2:20: después de carga inicial,desconectar y navegar; enlaces externos requieren red.
-6. 2:20–2:45: `.kiro`auténtico,commit base,arreglos Codex yresultados reales; pendientes de campo/categoría.
+6. 2:20–2:45: `.kiro` auténtico, commit base, arreglos Codex y resultados reales; pendientes de campo/categoría.
 
 Grabar la aplicación funcionando, publicar en YouTube como **Público**, añadir enlace y subtítulos/traducción en inglés. No sustituir funcionamiento por animaciones ni atribuir correcciones Codex a Kiro. Esta auditoría no añadió música/recursos ajenos.
 

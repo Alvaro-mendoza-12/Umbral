@@ -4,7 +4,7 @@ Fecha de revisión: 10 de noviembre de 2026. Alcance: corregir y publicar la apl
 
 ## Estado ejecutivo
 
-Implementación corregida y verificada localmente: build, lint,16 pruebas unitarias y 129 E2 E aprobados. Se preservan identidad, siete vistas y funciones. La comprobación de instalación limpia y la publicación se registran al cierre en este mismo documento; no se confunden con resultados locales.
+Implementación corregida y verificada: build, lint, 16 pruebas unitarias y 132 E2E aprobados. Se preservan identidad, siete vistas y funciones. Una instalación limpia compiló y el dominio público se comprobó sin iniciar sesión en Vercel.
 
 ## Errores encontrados y correcciones
 
@@ -28,7 +28,7 @@ Implementación corregida y verificada localmente: build, lint,16 pruebas unitar
 |`npm run build`|Aprobado; salida estática, manifiesto y SW generados.|
 |`npm run lint`|Aprobado.|
 |`npm run test -- --run`|16/16 aprobadas; setup adaptado a getter de localStorage del runner actualizado.|
-|`npx playwright test` tras build|129/129 aprobadas, sin retries locales.|
+|`npx playwright test` tras build|132/132 aprobadas, sin retries locales.|
 |axe|Siete vistas×tres viewports con tags WCAG2/2.1/2.2 AA, más contraste de Home. Sin violaciones detectadas por esas reglas.|
 |Responsive|390×844,768×1024,1440×900; comprobación adicional de reflow a 320 px.|
 |Capturas|24: siete vistas y un paso de guía adicional×tres tamaños; inspección visual realizada.|
@@ -48,11 +48,15 @@ Se mantienen scripts propios en CSP, sin `unsafe-eval`; estilos inline se permit
 
 ## Git, `.kiro` y publicación
 
-Raíz Git exclusiva: `D:\CombiRumbo-review\umbral`. Origen: `https://github.com/Alvaro-mendoza-12/Umbral.git`. Se conserva el commit original 813 c 87 a y una rama de auditoría; el historial no se reescribió. Tres Specs y cinco Steering originales permanecen en `.kiro` y no están ignorados; no hay evidencia de Agent Hooks. [Atribución](ATTRIBUTION.md), [hashes](results/kiro-artifacts.json).
+Raíz Git exclusiva: `D:\CombiRumbo-review\umbral`. Origen: `https://github.com/Alvaro-mendoza-12/Umbral.git`. Se conserva el commit original 813c87a y una rama de auditoría; el historial no se reescribió. Tres Specs y cinco Steering originales permanecen en `.kiro` y no están ignorados; no hay evidencia de Agent Hooks. [Atribución](ATTRIBUTION.md), [hashes](results/kiro-artifacts.json).
 
 Se excluyen dependencias, build, secretos y `.vercel`. `tsconfig.tsbuildinfo` deja de versionarse; su copia local y el commit original se conservan. El padre y la copia original de publicación no se sustituyeron. [Verificación de estructura](results/structure.json).
 
-**Publicación:** proyecto Vercel `umbral` enlazado a GitHub en el equipo del propietario. URL, instalación limpia y comprobaciones públicas se añadirán después de observarlas; este párrafo no acredita todavía despliegue.
+**Aplicación pública:** [umbral-seven-khaki.vercel.app](https://umbral-seven-khaki.vercel.app). Proyecto Vercel `umbral`, enlazado al repositorio del propietario, raíz `.` y salida `dist`. La compilación cloud finalizó en Linux. El dominio estable permite navegador anónimo; el enlace interno de despliegue puede pedir autenticación Vercel y no es el enlace para jueces.
+
+Se comprobaron21 combinaciones de rutas/tamaños públicas, idioma tras recarga, ruta offline, manifiesto, PNG, cabeceras y revalidación SW. Sin excepciones de página ni peticiones a terceros en ese recorrido. [Resultado público](results/public-smoke.json). Una copia limpia del commit auditado completó `npm ci` y `npm run build`; [registro](results/clean-build.json). Los logs usan UTC; la fecha de revisión corresponde a UTC-5.
+
+GitHub se comprobó accesible sin credenciales. Los commits se incorporan por avance normal, sin force-push. El workflow se añadió; no se atribuye a CI remota un resultado antes de observarlo.
 
 ## Límites y entrega Devpost
 

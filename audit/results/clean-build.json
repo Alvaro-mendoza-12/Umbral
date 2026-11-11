@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-10",
+  "method": "local clone --no-hardlinks; no preexisting node_modules; npm ci then npm run build",
+  "sourceCommit": "5e12045",
+  "install": "passed",
+  "build": "passed",
+  "node": "26.13.0",
+  "codeChangesAfterwards": "numbered guide list renderer and matching end-to-end journey; final revision also scheduled for clean rebuild",
+  "cloudLinuxBuild": "passed",
+  "deploymentId": "dpl_6Rd5k13wtGxTFyCXXhzE9tVw5rd2"
+}

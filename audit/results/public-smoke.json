@@ -1,0 +1,183 @@
+{
+  "date": "2026-11-10",
+  "sourceCommit": "5e12045",
+  "url": "https://umbral-seven-khaki.vercel.app",
+  "anonymousBrowser": true,
+  "routes": [
+    {
+      "route": "/",
+      "width": 390,
+      "status": 200,
+      "title": "Prepárate para tu solicitud de Clasificación Socioeconómica",
+      "overflow": false
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "status": 200,
+      "title": "¿Qué es la Clasificación Socioeconómica?",
+      "overflow": false
+    },
+    {
+      "route": "/guide/1",
+      "width": 390,
+      "status": 200,
+      "title": "Guía de preparación paso a paso",
+      "overflow": false
+    },
+    {
+      "route": "/checklist",
+      "width": 390,
+      "status": 200,
+      "title": "Checklist de preparación",
+      "overflow": false
+    },
+    {
+      "route": "/resources",
+      "width": 390,
+      "status": 200,
+      "title": "Recursos y fuentes oficiales",
+      "overflow": false
+    },
+    {
+      "route": "/faq",
+      "width": 390,
+      "status": 200,
+      "title": "Preguntas Frecuentes",
+      "overflow": false
+    },
+    {
+      "route": "/not-found-audit",
+      "width": 390,
+      "status": 200,
+      "title": "404",
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "status": 200,
+      "title": "Prepárate para tu solicitud de Clasificación Socioeconómica",
+      "overflow": false
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "status": 200,
+      "title": "¿Qué es la Clasificación Socioeconómica?",
+      "overflow": false
+    },
+    {
+      "route": "/guide/1",
+      "width": 768,
+      "status": 200,
+      "title": "Guía de preparación paso a paso",
+      "overflow": false
+    },
+    {
+      "route": "/checklist",
+      "width": 768,
+      "status": 200,
+      "title": "Checklist de preparación",
+      "overflow": false
+    },
+    {
+      "route": "/resources",
+      "width": 768,
+      "status": 200,
+      "title": "Recursos y fuentes oficiales",
+      "overflow": false
+    },
+    {
+      "route": "/faq",
+      "width": 768,
+      "status": 200,
+      "title": "Preguntas Frecuentes",
+      "overflow": false
+    },
+    {
+      "route": "/not-found-audit",
+      "width": 768,
+      "status": 200,
+      "title": "404",
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "title": "Prepárate para tu solicitud de Clasificación Socioeconómica",
+      "overflow": false
+    },
+    {
+      "route": "/about",
+      "width": 1440,
+      "status": 200,
+      "title": "¿Qué es la Clasificación Socioeconómica?",
+      "overflow": false
+    },
+    {
+      "route": "/guide/1",
+      "width": 1440,
+      "status": 200,
+      "title": "Guía de preparación paso a paso",
+      "overflow": false
+    },
+    {
+      "route": "/checklist",
+      "width": 1440,
+      "status": 200,
+      "title": "Checklist de preparación",
+      "overflow": false
+    },
+    {
+      "route": "/resources",
+      "width": 1440,
+      "status": 200,
+      "title": "Recursos y fuentes oficiales",
+      "overflow": false
+    },
+    {
+      "route": "/faq",
+      "width": 1440,
+      "status": 200,
+      "title": "Preguntas Frecuentes",
+      "overflow": false
+    },
+    {
+      "route": "/not-found-audit",
+      "width": 1440,
+      "status": 200,
+      "title": "404",
+      "overflow": false
+    }
+  ],
+  "languagePersisted": true,
+  "offlineDeepLink": true,
+  "manifest": {
+    "name": "UMBRAL - Guía CSE Chiclayo",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "/icons/icon-192.png",
+        "status": 200,
+        "type": "image/png"
+      },
+      {
+        "src": "/icons/icon-512.png",
+        "status": 200,
+        "type": "image/png"
+      }
+    ]
+  },
+  "headers": {
+    "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+    "nosniff": "nosniff",
+    "xFrameOptions": "DENY",
+    "referrerPolicy": "strict-origin-when-cross-origin",
+    "swCacheControl": "public, max-age=0, must-revalidate"
+  },
+  "pageErrors": [],
+  "thirdPartyRequests": [],
+  "status": "passed"
+}

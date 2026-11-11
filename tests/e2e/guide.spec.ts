@@ -1,6 +1,23 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Interactive Guide', () => {
+  test('completes all five steps with a readable S100 procedure', async ({ page }) => {
+    await page.goto('/guide/1');
+    for (let step = 1; step <= 5; step++) {
+      await expect(page).toHaveURL(`/guide/${step}`);
+      await expect(page.locator('main').getByRole('progressbar')).toHaveAttribute('aria-valuenow', String(step));
+      if (step === 4) {
+        await expect(page.locator('main article ol li')).toHaveCount(5);
+        await expect(page.locator('main article')).toContainText('S100');
+      }
+      if (step < 5) await page.locator('main').getByRole('button', { name: /siguiente/i }).click();
+    }
+    await expect(page.locator('main article')).toContainText(/25[\s\S]*40/);
+    await page.locator('main').getByRole('button', { name: /finalizar|checklist/i }).click();
+    await expect(page).toHaveURL('/checklist');
+    await expect(page.getByRole('checkbox')).toHaveCount(11);
+  });
+
   test('should navigate through guide steps', async ({ page }) => {
     await page.goto('/guide/1');
     

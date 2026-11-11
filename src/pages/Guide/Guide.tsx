@@ -132,6 +132,16 @@ export default function Guide() {
                         </ul>
                       );
                     }
+                    const numberedLines = paragraph.split('\n');
+                    if (numberedLines.every(line => /^\d+\. /.test(line))) {
+                      return (
+                        <ol key={index} className={styles.contentList}>
+                          {numberedLines.map((line, itemIndex) => (
+                            <li key={itemIndex}>{line.replace(/^\d+\. /, '')}</li>
+                          ))}
+                        </ol>
+                      );
+                    }
                     return (
                       <p key={index} className={styles.paragraph}>
                         {paragraph}
