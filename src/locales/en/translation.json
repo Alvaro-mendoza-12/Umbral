@@ -1,0 +1,353 @@
+{
+  "common": {
+    "appName": "UMBRAL",
+    "tagline": "Understand the process. Prepare with confidence.",
+    "home": "Home",
+    "about": "About CSE",
+    "guide": "Guide",
+    "checklist": "Checklist",
+    "resources": "Resources",
+    "faq": "Frequently Asked Questions",
+    "start": "Get Started",
+    "next": "Next",
+    "previous": "Previous",
+    "back": "Back",
+    "close": "Close",
+    "download": "Download",
+    "print": "Print",
+    "reset": "Reset",
+    "language": "Language",
+    "spanish": "Español",
+    "english": "English",
+    "online": "Online",
+    "offline": "Offline",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "home": {
+    "hero": {
+      "title": "Prepare for your Socioeconomic Classification Application",
+      "description": "A clear and reliable guide to understand the CSE process in Chiclayo. No complications, no personal data, just information that helps you.",
+      "cta": "Start the guide"
+    },
+    "whatIs": {
+      "title": "What is UMBRAL?",
+      "description": "UMBRAL is an informative tool that helps you understand and prepare your first Socioeconomic Classification (CSE) application. We guide you step by step on what you need to know, what documents to gather, and where to complete the process.",
+      "features": [
+        "Interactive step-by-step guide",
+        "Required documents list",
+        "Verified official sources",
+        "Works offline"
+      ]
+    },
+    "whyUse": {
+      "title": "Why use UMBRAL?",
+      "reasons": [
+        {
+          "title": "Clear information",
+          "description": "Simple explanations without technical jargon or bureaucratic terms."
+        },
+        {
+          "title": "Verifiable sources",
+          "description": "Every important piece of information is backed by official sources."
+        },
+        {
+          "title": "Your privacy first",
+          "description": "We don't ask for personal data. Everything works locally on your device."
+        },
+        {
+          "title": "Always accessible",
+          "description": "Works offline after your first visit."
+        }
+      ]
+    },
+    "quickLinks": {
+      "title": "Quick links",
+      "aboutCSE": {
+        "title": "What is CSE?",
+        "description": "Understand what Socioeconomic Classification is and what it's for."
+      },
+      "guide": {
+        "title": "Step-by-step guide",
+        "description": "Follow our interactive guide to prepare your application."
+      },
+      "checklist": {
+        "title": "Document checklist",
+        "description": "Complete list of what you need to gather."
+      },
+      "faq": {
+        "title": "Frequently asked questions",
+        "description": "Answers to the most common questions about the process."
+      }
+    }
+  },
+  "about": {
+    "title": "What is Socioeconomic Classification?",
+    "definition": {
+      "title": "Definition",
+      "content": "Socioeconomic Classification (CSE) is a process through which the Peruvian State evaluates the living conditions of households to determine their socioeconomic status. This classification is carried out through the Household Targeting System (SISFOH)."
+    },
+    "purpose": {
+      "title": "What is it for?",
+      "content": "CSE allows the identification of people and households that require State support. This classification is used by various social programs to determine who can access their benefits.",
+      "examples": [
+        "Food assistance programs",
+        "Housing programs",
+        "Basic services subsidies",
+        "Educational and health programs"
+      ]
+    },
+    "whoCanApply": {
+      "title": "Who can apply?",
+      "content": "Any adult who represents their household can apply for Socioeconomic Classification. Being affiliated with any prior social program is not required.",
+      "requirements": [
+        "Be 18 years or older",
+        "Have a valid ID card",
+        "Represent your household (head of family or representative)"
+      ]
+    },
+    "important": {
+      "title": "Important",
+      "notes": [
+        "UMBRAL does not submit the application for you. It only prepares you with information.",
+        "The final classification is carried out by SISFOH through a technical evaluation.",
+        "This process is free. You should not pay intermediaries.",
+        "The data you provide must be truthful and up to date."
+      ]
+    },
+    "cta": "Go to step-by-step guide"
+  },
+  "guide": {
+    "title": "Step-by-step preparation guide",
+    "progress": "Step {{current}} of {{total}}",
+    "steps": [
+      {
+        "title": "Before you start",
+        "content": "Before starting your Socioeconomic Classification application, it's important that you understand some basic concepts and what this process entails.\n\n**What is CSE?**\nIt's an evaluation that the State carries out to understand your household's living conditions.\n\n**What is it for?**\nIt allows identification of whether your household can access State social programs.\n\n**Basic requirements:**\n- Be 18 years or older\n- Have a valid ID\n- Be head of family or household representative\n\n**Important:**\n- The process is completely free\n- You don't need intermediaries\n- You must provide truthful information\n- The evaluation is conducted by authorized SISFOH personnel"
+      },
+      {
+        "title": "Documents I need to gather",
+        "content": "To submit your CSE application, you'll need to gather the following documents. We recommend having them all ready before going to the Local Registration Unit.\n\n**Mandatory documents:**\n- Valid ID of head of family or representative\n- ID of all household members (adults)\n\n**Complementary documents (if applicable):**\n- Birth certificates of minors\n- Utility bills (electricity, water)\n- Proof of address (if you don't have services in your name)\n- Documents certifying income (pay stubs, work certificates)\n\n**Note:** Some documents may vary depending on your particular situation. It's advisable to consult directly with Chiclayo's ULE to confirm specific requirements."
+      },
+      {
+        "title": "Information they will request from me",
+        "content": "During the application process, you'll be asked for information about your household. It's important that you answer truthfully.\n\n**Household information:**\n- Complete address and reference\n- Number of people living in the household\n- Basic data of each member (name, age, relationship)\n\n**Housing information:**\n- Type of dwelling (owned, rented, borrowed)\n- Construction materials\n- Services available (water, electricity, sewage)\n\n**Economic information:**\n- Household income sources\n- Occupation of working members\n- Main household expenses\n\n**Important:** Don't worry if you don't remember all the exact data. What's important is that the information is as accurate and honest as possible."
+      },
+      {
+        "title": "Where and how to submit the application",
+        "content": "The Socioeconomic Classification application is submitted in person at the Local Registration Unit (ULE).\n\n**In Chiclayo:**\nThe ULE corresponds to your district municipality. For specific information about location and hours, check the Resources section.\n\n**Application process:**\n1. Go to the ULE with your documents\n2. Request an appointment or turn for registration\n3. Complete the form with staff assistance\n4. Provide the requested information\n5. Sign the application\n6. Keep your processing number\n\n**Recommendations:**\n- Arrive early, especially if you don't have a prior appointment\n- Bring all documents in original and copy\n- If you have questions, ask the staff\n- Don't pay intermediaries; the service is free"
+      },
+      {
+        "title": "After the application",
+        "content": "Once you've completed your application, the socioeconomic evaluation process begins.\n\n**What's next?**\n- A registrar will visit your home to verify the information\n- This visit is coordinated with you in advance\n- The registrar must identify themselves and carry an official credential\n- An interview will be conducted and photos of the dwelling will be taken\n\n**Waiting time:**\nThe evaluation process can take several weeks. The time varies depending on demand and staff availability.\n\n**Results consultation:**\nYou can check your classification through:\n- SISFOH's web platform\n- In person at the ULE\n- With your ID number\n\n**What if I'm not satisfied?**\nIf you believe your classification doesn't reflect your current situation, you can request a reclassification following the official procedure.\n\n**Remember:** UMBRAL only prepares you for the process. To follow up on your application, you must go to official channels."
+      }
+    ],
+    "navigation": {
+      "backToHome": "Back to home",
+      "previous": "Previous step",
+      "next": "Next step",
+      "finish": "Finish guide"
+    },
+    "completion": {
+      "title": "You've completed the guide!",
+      "message": "Now you know the main steps to prepare your CSE application. We recommend reviewing the document checklist and frequently asked questions.",
+      "actions": {
+        "checklist": "Go to checklist",
+        "faq": "View frequently asked questions",
+        "resources": "View official resources"
+      }
+    }
+  },
+  "checklist": {
+    "title": "Preparation checklist",
+    "description": "Mark the documents and information you already have ready. Your progress is saved automatically.",
+    "progress": "{{completed}} of {{total}} completed",
+    "resetButton": "Reset checklist",
+    "resetConfirm": "Are you sure you want to reset the checklist? All marked items will be cleared.",
+    "categories": {
+      "documents": "Main documents",
+      "complementary": "Complementary documents",
+      "information": "Household information",
+      "economic": "Economic information"
+    },
+    "items": {
+      "dni_holder": {
+        "label": "Valid ID of head of family",
+        "description": "Original and copy"
+      },
+      "dni_members": {
+        "label": "ID of all adult members",
+        "description": "Originals and copies"
+      },
+      "birth_certificates": {
+        "label": "Birth certificates of minors",
+        "description": "If there are minors in the household"
+      },
+      "utility_bills": {
+        "label": "Electricity and water bills",
+        "description": "Last 2-3 months"
+      },
+      "address_proof": {
+        "label": "Proof of address",
+        "description": "If services are not in your name"
+      },
+      "income_proof": {
+        "label": "Income documents",
+        "description": "Pay stubs, work certificates"
+      },
+      "household_data": {
+        "label": "Data of all household members",
+        "description": "Full names, ages, relationship"
+      },
+      "address_complete": {
+        "label": "Complete address with reference",
+        "description": "Street, number, district, references"
+      },
+      "housing_info": {
+        "label": "Housing information",
+        "description": "Type, materials, services"
+      },
+      "income_info": {
+        "label": "Household income information",
+        "description": "Sources, approximate amounts"
+      },
+      "expenses_info": {
+        "label": "Main expenses information",
+        "description": "Food, services, education, etc."
+      }
+    },
+    "emptyState": {
+      "title": "You haven't marked any items yet",
+      "message": "Start by reviewing the guide to know what you need to prepare."
+    }
+  },
+  "resources": {
+    "title": "Resources and official sources",
+    "description": "Verified information from official sources for your CSE application.",
+    "uleTitle": "Local Registration Unit - Chiclayo",
+    "uleNote": "Updated official verification information pending. We recommend contacting your district municipality in Chiclayo directly to confirm location, hours, and specific requirements.",
+    "uleContact": {
+      "title": "How to contact?",
+      "description": "Contact your district municipality (Chiclayo, José Leonardo Ortiz, La Victoria, etc.) and ask for the SISFOH office or Local Registration Unit."
+    },
+    "officialSources": {
+      "title": "Official sources",
+      "verifiedDate": "Verified on {{date}}",
+      "pending": "Pending verification",
+      "sources": [
+        {
+          "name": "Household Targeting System (SISFOH)",
+          "description": "Official SISFOH portal - Ministry of Development and Social Inclusion",
+          "url": "https://www.gob.pe/sisfoh"
+        },
+        {
+          "name": "Ministry of Development and Social Inclusion (MIDIS)",
+          "description": "Information about social programs and socioeconomic classification",
+          "url": "https://www.gob.pe/midis"
+        },
+        {
+          "name": "Peruvian State Platform",
+          "description": "Official portal with information about government procedures",
+          "url": "https://www.gob.pe"
+        }
+      ]
+    },
+    "prepSheet": {
+      "title": "Preparation sheet",
+      "description": "Download a printable sheet with the summary of steps and checklist to take with you.",
+      "downloadButton": "Download preparation sheet",
+      "printButton": "Print directly"
+    },
+    "disclaimer": {
+      "title": "Important notice",
+      "content": "UMBRAL is an independent informative tool. It is not affiliated with or represents any governmental entity. For updated official information, always consult directly with SISFOH or the corresponding institutions."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Answers to the most common questions about Socioeconomic Classification.",
+    "categories": {
+      "general": "General",
+      "process": "Application process",
+      "requirements": "Requirements",
+      "after": "After application"
+    },
+    "items": [
+      {
+        "question": "What exactly is Socioeconomic Classification?",
+        "answer": "It's a process through which the State evaluates household living conditions to determine their socioeconomic status. This classification is used to identify who can access social programs.",
+        "category": "general"
+      },
+      {
+        "question": "Does the CSE application have any cost?",
+        "answer": "No. The Socioeconomic Classification process is completely free. You should not pay any intermediary. If someone asks you for money for this procedure, report them to the authorities.",
+        "category": "general"
+      },
+      {
+        "question": "Can I submit the application online?",
+        "answer": "No. The initial application must be submitted in person at your district's Local Registration Unit (ULE). This allows staff to verify your documents and explain the process.",
+        "category": "process"
+      },
+      {
+        "question": "How long does the complete process take?",
+        "answer": "The time varies depending on demand and staff availability. From the application to the home visit and final classification, several weeks or even months may pass. It's important to be patient and attentive to communications.",
+        "category": "process"
+      },
+      {
+        "question": "What happens if I don't have all the documents?",
+        "answer": "We recommend gathering all documents before going to the ULE. However, staff can guide you on what to do if you're missing a specific document. Basic documents (like your ID) are essential.",
+        "category": "requirements"
+      },
+      {
+        "question": "Can I apply for CSE if I'm renting?",
+        "answer": "Yes. You can apply for CSE regardless of whether your dwelling is owned, rented, or borrowed. You must provide truthful information about your current housing situation.",
+        "category": "requirements"
+      },
+      {
+        "question": "What should I do if I'm not satisfied with my classification?",
+        "answer": "If you believe your classification doesn't reflect your current situation, you can request a reclassification. You must go to the ULE or contact SISFOH to learn about the specific reconsideration procedure.",
+        "category": "after"
+      },
+      {
+        "question": "How do I know if my application is in process?",
+        "answer": "You can check your application status on SISFOH's web platform using your ID, or by going in person to the ULE. Always keep your processing number to facilitate inquiries.",
+        "category": "after"
+      },
+      {
+        "question": "Is the classification permanent?",
+        "answer": "Not necessarily. Your classification can change if your household conditions change significantly. You can request an update if your economic or family situation has changed.",
+        "category": "after"
+      },
+      {
+        "question": "Does UMBRAL submit the application for me?",
+        "answer": "No. UMBRAL is only an informative tool that helps you understand and prepare your application. You must personally complete the official procedure at the corresponding ULE.",
+        "category": "general"
+      }
+    ],
+    "notFound": {
+      "title": "Can't find your question?",
+      "message": "For specific inquiries, we recommend contacting your district's ULE directly or SISFOH through their official channels."
+    }
+  },
+  "footer": {
+    "tagline": "Reliable information for your CSE procedure",
+    "privacy": "UMBRAL does not collect or store personal data. Everything works locally on your device.",
+    "links": {
+      "about": "About UMBRAL",
+      "resources": "Official resources",
+      "faq": "Frequently asked questions"
+    },
+    "status": {
+      "online": "Connected",
+      "offline": "Offline - Content available locally"
+    },
+    "credits": "Developed for Kiroween 2026",
+    "disclaimer": "UMBRAL is an independent informative tool. It is not affiliated with any governmental entity."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to home"
+  }
+}

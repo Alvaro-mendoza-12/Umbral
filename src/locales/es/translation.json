@@ -1,0 +1,353 @@
+{
+  "common": {
+    "appName": "UMBRAL",
+    "tagline": "Entiende el trámite. Prepárate con confianza.",
+    "home": "Inicio",
+    "about": "Acerca de la CSE",
+    "guide": "Guía",
+    "checklist": "Checklist",
+    "resources": "Recursos",
+    "faq": "Preguntas Frecuentes",
+    "start": "Comenzar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "back": "Volver",
+    "close": "Cerrar",
+    "download": "Descargar",
+    "print": "Imprimir",
+    "reset": "Reiniciar",
+    "language": "Idioma",
+    "spanish": "Español",
+    "english": "English",
+    "online": "En línea",
+    "offline": "Sin conexión",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito"
+  },
+  "home": {
+    "hero": {
+      "title": "Prepárate para tu solicitud de Clasificación Socioeconómica",
+      "description": "Una guía clara y confiable para entender el proceso CSE en Chiclayo. Sin complicaciones, sin datos personales, solo información que te ayuda.",
+      "cta": "Comenzar la guía"
+    },
+    "whatIs": {
+      "title": "¿Qué es UMBRAL?",
+      "description": "UMBRAL es una herramienta informativa que te ayuda a entender y preparar tu primera solicitud de Clasificación Socioeconómica (CSE). Te guiamos paso a paso sobre qué necesitas saber, qué documentos reunir y dónde realizar el trámite.",
+      "features": [
+        "Guía interactiva paso a paso",
+        "Lista de documentos necesarios",
+        "Fuentes oficiales verificadas",
+        "Funciona sin conexión"
+      ]
+    },
+    "whyUse": {
+      "title": "¿Por qué usar UMBRAL?",
+      "reasons": [
+        {
+          "title": "Información clara",
+          "description": "Explicaciones sencillas sin jerga técnica ni términos burocráticos."
+        },
+        {
+          "title": "Fuentes verificables",
+          "description": "Cada dato importante está respaldado por fuentes oficiales."
+        },
+        {
+          "title": "Tu privacidad primero",
+          "description": "No pedimos datos personales. Todo funciona localmente en tu dispositivo."
+        },
+        {
+          "title": "Siempre accesible",
+          "description": "Funciona sin conexión después de la primera visita."
+        }
+      ]
+    },
+    "quickLinks": {
+      "title": "Accesos rápidos",
+      "aboutCSE": {
+        "title": "¿Qué es la CSE?",
+        "description": "Entiende qué es la Clasificación Socioeconómica y para qué sirve."
+      },
+      "guide": {
+        "title": "Guía paso a paso",
+        "description": "Sigue nuestra guía interactiva para preparar tu solicitud."
+      },
+      "checklist": {
+        "title": "Checklist de documentos",
+        "description": "Lista completa de lo que necesitas reunir."
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "description": "Respuestas a las dudas más comunes sobre el proceso."
+      }
+    }
+  },
+  "about": {
+    "title": "¿Qué es la Clasificación Socioeconómica?",
+    "definition": {
+      "title": "Definición",
+      "content": "La Clasificación Socioeconómica (CSE) es un proceso mediante el cual el Estado peruano evalúa las condiciones de vida de los hogares para determinar su situación socioeconómica. Esta clasificación se realiza a través del Sistema de Focalización de Hogares (SISFOH)."
+    },
+    "purpose": {
+      "title": "¿Para qué sirve?",
+      "content": "La CSE permite identificar a las personas y hogares que requieren apoyo del Estado. Esta clasificación es utilizada por diversos programas sociales para determinar quiénes pueden acceder a sus beneficios.",
+      "examples": [
+        "Programas de apoyo alimentario",
+        "Programas de vivienda",
+        "Subsidios de servicios básicos",
+        "Programas educativos y de salud"
+      ]
+    },
+    "whoCanApply": {
+      "title": "¿Quién puede solicitarla?",
+      "content": "Cualquier persona mayor de edad que represente a su hogar puede solicitar la Clasificación Socioeconómica. No se requiere estar afiliado a ningún programa social previo.",
+      "requirements": [
+        "Ser mayor de 18 años",
+        "Contar con DNI vigente",
+        "Representar a tu hogar (jefe de familia o representante)"
+      ]
+    },
+    "important": {
+      "title": "Importante",
+      "notes": [
+        "UMBRAL no realiza la solicitud por ti. Solo te prepara con información.",
+        "La clasificación final la realiza SISFOH mediante una evaluación técnica.",
+        "Este proceso es gratuito. No debes pagar a intermediarios.",
+        "Los datos que proporciones deben ser veraces y actualizados."
+      ]
+    },
+    "cta": "Ir a la guía paso a paso"
+  },
+  "guide": {
+    "title": "Guía de preparación paso a paso",
+    "progress": "Paso {{current}} de {{total}}",
+    "steps": [
+      {
+        "title": "Antes de empezar",
+        "content": "Antes de iniciar tu solicitud de Clasificación Socioeconómica, es importante que entiendas algunos conceptos básicos y lo que implica este proceso.\n\n**¿Qué es la CSE?**\nEs una evaluación que realiza el Estado para conocer las condiciones de vida de tu hogar.\n\n**¿Para qué sirve?**\nPermite identificar si tu hogar puede acceder a programas sociales del Estado.\n\n**Requisitos básicos:**\n- Ser mayor de 18 años\n- Tener DNI vigente\n- Ser jefe de familia o representante del hogar\n\n**Importante:**\n- El proceso es completamente gratuito\n- No necesitas intermediarios\n- Debes proporcionar información veraz\n- La evaluación la realiza personal autorizado de SISFOH"
+      },
+      {
+        "title": "Documentos que debo reunir",
+        "content": "Para realizar tu solicitud de CSE, necesitarás reunir los siguientes documentos. Te recomendamos tenerlos todos listos antes de acudir a la Unidad Local de Empadronamiento.\n\n**Documentos obligatorios:**\n- DNI vigente del jefe de familia o representante\n- DNI de todos los miembros del hogar (adultos)\n\n**Documentos complementarios (si aplica):**\n- Partidas de nacimiento de menores de edad\n- Recibos de servicios básicos (luz, agua)\n- Constancia de domicilio (si no tienes servicios a tu nombre)\n- Documentos que acrediten ingresos (boletas de pago, constancias de trabajo)\n\n**Nota:** Algunos documentos pueden variar según tu situación particular. Es recomendable consultar directamente con la ULE de Chiclayo para confirmar requisitos específicos."
+      },
+      {
+        "title": "Información que me solicitarán",
+        "content": "Durante el proceso de solicitud, te pedirán información sobre tu hogar. Es importante que respondas con veracidad.\n\n**Información del hogar:**\n- Dirección completa y referencia\n- Número de personas que viven en el hogar\n- Datos básicos de cada miembro (nombre, edad, parentesco)\n\n**Información sobre vivienda:**\n- Tipo de vivienda (propia, alquilada, cedida)\n- Material de construcción\n- Servicios con los que cuenta (agua, luz, desagüe)\n\n**Información económica:**\n- Fuentes de ingreso del hogar\n- Ocupación de los miembros que trabajan\n- Gastos principales del hogar\n\n**Importante:** No te preocupes si no recuerdas todos los datos exactos. Lo importante es que la información sea lo más precisa y honesta posible."
+      },
+      {
+        "title": "Dónde y cómo hacer la solicitud",
+        "content": "La solicitud de Clasificación Socioeconómica se realiza presencialmente en la Unidad Local de Empadronamiento (ULE).\n\n**En Chiclayo:**\nLa ULE corresponde al municipio de tu distrito. Para información específica sobre ubicación y horarios, consulta la sección de Recursos.\n\n**Proceso de solicitud:**\n1. Acude a la ULE con tus documentos\n2. Solicita una cita o turno para empadronamiento\n3. Completa el formulario con ayuda del personal\n4. Proporciona la información solicitada\n5. Firma la solicitud\n6. Guarda tu número de trámite\n\n**Recomendaciones:**\n- Llega temprano, especialmente si no tienes cita previa\n- Lleva todos los documentos en original y copia\n- Si tienes dudas, pregunta al personal\n- No pagues a intermediarios; el servicio es gratuito"
+      },
+      {
+        "title": "Después de la solicitud",
+        "content": "Una vez que hayas completado tu solicitud, comienza el proceso de evaluación socioeconómica.\n\n**¿Qué sigue?**\n- Un empadronador visitará tu hogar para verificar la información\n- Esta visita se coordina previamente contigo\n- El empadronador debe identificarse y llevar credencial oficial\n- Se realizará una entrevista y se tomarán fotografías de la vivienda\n\n**Tiempo de espera:**\nEl proceso de evaluación puede tomar varias semanas. El tiempo varía según la demanda y disponibilidad de personal.\n\n**Consulta de resultados:**\nPodrás consultar tu clasificación a través de:\n- La plataforma web de SISFOH\n- Presencialmente en la ULE\n- Con tu número de DNI\n\n**¿Y si no estoy conforme?**\nSi consideras que tu clasificación no refleja tu situación actual, puedes solicitar una recalificación siguiendo el procedimiento oficial.\n\n**Recuerda:** UMBRAL solo te prepara para el proceso. Para seguimiento de tu solicitud, debes acudir a los canales oficiales."
+      }
+    ],
+    "navigation": {
+      "backToHome": "Volver al inicio",
+      "previous": "Paso anterior",
+      "next": "Siguiente paso",
+      "finish": "Finalizar guía"
+    },
+    "completion": {
+      "title": "¡Has completado la guía!",
+      "message": "Ahora conoces los pasos principales para preparar tu solicitud de CSE. Te recomendamos revisar el checklist de documentos y las preguntas frecuentes.",
+      "actions": {
+        "checklist": "Ir al checklist",
+        "faq": "Ver preguntas frecuentes",
+        "resources": "Ver recursos oficiales"
+      }
+    }
+  },
+  "checklist": {
+    "title": "Checklist de preparación",
+    "description": "Marca los documentos e información que ya tienes listos. Tu progreso se guarda automáticamente.",
+    "progress": "{{completed}} de {{total}} completados",
+    "resetButton": "Reiniciar checklist",
+    "resetConfirm": "¿Estás seguro de que quieres reiniciar el checklist? Se borrarán todos los items marcados.",
+    "categories": {
+      "documents": "Documentos principales",
+      "complementary": "Documentos complementarios",
+      "information": "Información del hogar",
+      "economic": "Información económica"
+    },
+    "items": {
+      "dni_holder": {
+        "label": "DNI vigente del jefe de familia",
+        "description": "Original y copia"
+      },
+      "dni_members": {
+        "label": "DNI de todos los miembros adultos",
+        "description": "Originales y copias"
+      },
+      "birth_certificates": {
+        "label": "Partidas de nacimiento de menores",
+        "description": "Si hay menores en el hogar"
+      },
+      "utility_bills": {
+        "label": "Recibos de luz y agua",
+        "description": "Últimos 2-3 meses"
+      },
+      "address_proof": {
+        "label": "Constancia de domicilio",
+        "description": "Si los servicios no están a tu nombre"
+      },
+      "income_proof": {
+        "label": "Documentos de ingresos",
+        "description": "Boletas de pago, constancias laborales"
+      },
+      "household_data": {
+        "label": "Datos de todos los miembros del hogar",
+        "description": "Nombres completos, edades, parentesco"
+      },
+      "address_complete": {
+        "label": "Dirección completa con referencia",
+        "description": "Calle, número, distrito, referencias"
+      },
+      "housing_info": {
+        "label": "Información de la vivienda",
+        "description": "Tipo, materiales, servicios"
+      },
+      "income_info": {
+        "label": "Información de ingresos del hogar",
+        "description": "Fuentes, montos aproximados"
+      },
+      "expenses_info": {
+        "label": "Información de gastos principales",
+        "description": "Alimentación, servicios, educación, etc."
+      }
+    },
+    "emptyState": {
+      "title": "No has marcado ningún item todavía",
+      "message": "Comienza revisando la guía para saber qué necesitas preparar."
+    }
+  },
+  "resources": {
+    "title": "Recursos y fuentes oficiales",
+    "description": "Información verificada de fuentes oficiales para tu solicitud de CSE.",
+    "uleTitle": "Unidad Local de Empadronamiento - Chiclayo",
+    "uleNote": "Información pendiente de verificación oficial actualizada. Te recomendamos contactar directamente con el municipio de tu distrito en Chiclayo para confirmar ubicación, horarios y requisitos específicos.",
+    "uleContact": {
+      "title": "¿Cómo contactar?",
+      "description": "Comunícate con la municipalidad de tu distrito (Chiclayo, José Leonardo Ortiz, La Victoria, etc.) y pregunta por la oficina de SISFOH o Unidad Local de Empadronamiento."
+    },
+    "officialSources": {
+      "title": "Fuentes oficiales",
+      "verifiedDate": "Verificado el {{date}}",
+      "pending": "Pendiente de verificación",
+      "sources": [
+        {
+          "name": "Sistema de Focalización de Hogares (SISFOH)",
+          "description": "Portal oficial del SISFOH - Ministerio de Desarrollo e Inclusión Social",
+          "url": "https://www.gob.pe/sisfoh"
+        },
+        {
+          "name": "Ministerio de Desarrollo e Inclusión Social (MIDIS)",
+          "description": "Información sobre programas sociales y clasificación socioeconómica",
+          "url": "https://www.gob.pe/midis"
+        },
+        {
+          "name": "Plataforma del Estado Peruano",
+          "description": "Portal oficial con información sobre trámites gubernamentales",
+          "url": "https://www.gob.pe"
+        }
+      ]
+    },
+    "prepSheet": {
+      "title": "Hoja de preparación",
+      "description": "Descarga una hoja imprimible con el resumen de pasos y checklist para llevar contigo.",
+      "downloadButton": "Descargar hoja de preparación",
+      "printButton": "Imprimir directamente"
+    },
+    "disclaimer": {
+      "title": "Aviso importante",
+      "content": "UMBRAL es una herramienta informativa independiente. No está afiliada ni representa a ninguna entidad gubernamental. Para información oficial actualizada, siempre consulta directamente con SISFOH o las instituciones correspondientes."
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "description": "Respuestas a las preguntas más comunes sobre la Clasificación Socioeconómica.",
+    "categories": {
+      "general": "General",
+      "process": "Proceso de solicitud",
+      "requirements": "Requisitos",
+      "after": "Después de la solicitud"
+    },
+    "items": [
+      {
+        "question": "¿Qué es exactamente la Clasificación Socioeconómica?",
+        "answer": "Es un proceso mediante el cual el Estado evalúa las condiciones de vida de los hogares para determinar su situación socioeconómica. Esta clasificación se usa para identificar quiénes pueden acceder a programas sociales.",
+        "category": "general"
+      },
+      {
+        "question": "¿La solicitud de CSE tiene algún costo?",
+        "answer": "No. El proceso de Clasificación Socioeconómica es completamente gratuito. No debes pagar a ningún intermediario. Si alguien te pide dinero por este trámite, repórtalo a las autoridades.",
+        "category": "general"
+      },
+      {
+        "question": "¿Puedo hacer la solicitud en línea?",
+        "answer": "No. La solicitud inicial debe realizarse presencialmente en la Unidad Local de Empadronamiento (ULE) de tu distrito. Esto permite que el personal verifique tus documentos y explique el proceso.",
+        "category": "process"
+      },
+      {
+        "question": "¿Cuánto tiempo demora el proceso completo?",
+        "answer": "El tiempo varía según la demanda y disponibilidad de personal. Desde la solicitud hasta la visita domiciliaria y clasificación final pueden pasar varias semanas o incluso meses. Es importante ser paciente y estar atento a las comunicaciones.",
+        "category": "process"
+      },
+      {
+        "question": "¿Qué pasa si no tengo todos los documentos?",
+        "answer": "Te recomendamos reunir todos los documentos antes de ir a la ULE. Sin embargo, el personal puede orientarte sobre qué hacer si te falta algún documento específico. Los documentos básicos (como tu DNI) son indispensables.",
+        "category": "requirements"
+      },
+      {
+        "question": "¿Puedo solicitar la CSE si estoy alquilando?",
+        "answer": "Sí. Puedes solicitar la CSE independientemente de si tu vivienda es propia, alquilada o cedida. Deberás proporcionar información veraz sobre tu situación de vivienda actual.",
+        "category": "requirements"
+      },
+      {
+        "question": "¿Qué debo hacer si no estoy conforme con mi clasificación?",
+        "answer": "Si consideras que tu clasificación no refleja tu situación actual, puedes solicitar una recalificación. Debes acudir a la ULE o contactar a SISFOH para conocer el procedimiento específico de reconsideración.",
+        "category": "after"
+      },
+      {
+        "question": "¿Cómo sé si mi solicitud está en proceso?",
+        "answer": "Puedes consultar el estado de tu solicitud en la plataforma web de SISFOH usando tu DNI, o acudiendo presencialmente a la ULE. Guarda siempre tu número de trámite para facilitar las consultas.",
+        "category": "after"
+      },
+      {
+        "question": "¿La clasificación es permanente?",
+        "answer": "No necesariamente. Tu clasificación puede cambiar si las condiciones de tu hogar cambian significativamente. Puedes solicitar una actualización si tu situación económica o familiar ha variado.",
+        "category": "after"
+      },
+      {
+        "question": "¿UMBRAL realiza la solicitud por mí?",
+        "answer": "No. UMBRAL es solo una herramienta informativa que te ayuda a entender y preparar tu solicitud. El trámite oficial debes realizarlo tú personalmente en la ULE correspondiente.",
+        "category": "general"
+      }
+    ],
+    "notFound": {
+      "title": "¿No encuentras tu pregunta?",
+      "message": "Para consultas específicas, te recomendamos contactar directamente con la ULE de tu distrito o con SISFOH a través de sus canales oficiales."
+    }
+  },
+  "footer": {
+    "tagline": "Información confiable para tu trámite de CSE",
+    "privacy": "UMBRAL no recopila ni almacena datos personales. Todo funciona localmente en tu dispositivo.",
+    "links": {
+      "about": "Acerca de UMBRAL",
+      "resources": "Recursos oficiales",
+      "faq": "Preguntas frecuentes"
+    },
+    "status": {
+      "online": "Conectado",
+      "offline": "Sin conexión - Contenido disponible localmente"
+    },
+    "credits": "Desarrollado para Kiroween 2026",
+    "disclaimer": "UMBRAL es una herramienta informativa independiente. No está afiliada a ninguna entidad gubernamental."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "message": "La página que buscas no existe o ha sido movida.",
+    "backHome": "Volver al inicio"
+  }
+}

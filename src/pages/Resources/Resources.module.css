@@ -1,0 +1,138 @@
+.resources {
+  min-height: calc(100vh - 200px);
+  padding: var(--space-8) 0;
+}
+
+.resources h1 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-4);
+  color: var(--text-primary);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .resources h1 {
+    font-size: var(--text-3xl);
+  }
+}
+
+.description {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto var(--space-10);
+  text-align: center;
+}
+
+.section {
+  margin-bottom: var(--space-12);
+}
+
+.section h2 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-6);
+  color: var(--color-primary-600);
+}
+
+@media (min-width: 768px) {
+  .section h2 {
+    font-size: var(--text-2xl);
+  }
+}
+
+.uleNote {
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--text-secondary);
+  padding: var(--space-4);
+  background-color: var(--color-neutral-50);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+}
+
+.uleContact h3 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-2);
+  color: var(--text-primary);
+}
+
+.uleContact p {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.sourcesList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.sourceName {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-2);
+  color: var(--text-primary);
+}
+
+.sourceDescription {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.sourceLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-primary-500);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  word-break: break-all;
+}
+
+.sourceLink:hover {
+  text-decoration: underline;
+}
+
+.sourceLink svg {
+  flex-shrink: 0;
+}
+
+.verifiedDate {
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-neutral-200);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.prepDescription {
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+}
+
+.prepActions {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.disclaimer h3 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-3);
+  color: var(--color-warning);
+}
+
+.disclaimer p {
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--text-secondary);
+  margin: 0;
+}

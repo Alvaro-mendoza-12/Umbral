@@ -1,0 +1,129 @@
+.home {
+  min-height: calc(100vh - 200px);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--color-primary-500) 0%, var(--color-primary-700) 100%);
+  color: var(--text-inverse);
+  padding: var(--space-16) var(--space-4);
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: var(--space-20) var(--space-4);
+  }
+}
+
+.heroTitle {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-6);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--text-inverse);
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: var(--text-4xl);
+  }
+}
+
+.heroDescription {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-8);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: var(--leading-relaxed);
+}
+
+.section {
+  margin-bottom: var(--space-16);
+}
+
+.section h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-6);
+  color: var(--text-primary);
+}
+
+@media (min-width: 768px) {
+  .section h2 {
+    font-size: var(--text-3xl);
+  }
+}
+
+.description {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-8);
+  max-width: 800px;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  max-width: 600px;
+}
+
+@media (min-width: 640px) {
+  .featuresList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-base);
+  color: var(--text-primary);
+}
+
+.feature svg {
+  flex-shrink: 0;
+  color: var(--color-success);
+}
+
+.reasonTitle {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-3);
+  color: var(--text-primary);
+}
+
+.reasonDescription {
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.quickLinkCard {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.quickLinkCard h3 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-3);
+  color: var(--text-primary);
+}
+
+.linkDescription {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  margin: 0;
+}

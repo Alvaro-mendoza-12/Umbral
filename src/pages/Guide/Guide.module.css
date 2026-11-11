@@ -1,0 +1,226 @@
+.guide {
+  min-height: calc(100vh - 200px);
+  padding: var(--space-8) 0;
+}
+
+.header {
+  margin-bottom: var(--space-10);
+}
+
+.header h1 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-6);
+  color: var(--text-primary);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: var(--text-3xl);
+  }
+}
+
+.progressBar {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.progressLabel {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+  text-align: center;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 8px;
+  background-color: var(--color-neutral-200);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--color-primary-500);
+  transition: width var(--transition-base);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 1024px) {
+  .content {
+    grid-template-columns: 250px 1fr;
+  }
+}
+
+.sidebar {
+  order: 2;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    order: 1;
+    position: sticky;
+    top: 90px;
+    height: fit-content;
+  }
+}
+
+.stepList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.stepButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--surface-primary);
+  border: 2px solid var(--color-neutral-200);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.stepButton:hover {
+  border-color: var(--color-primary-300);
+  background-color: var(--color-neutral-50);
+}
+
+.stepButton.active {
+  border-color: var(--color-primary-500);
+  background-color: var(--color-primary-50);
+  color: var(--color-primary-700);
+}
+
+.stepButton.completed .stepNumber {
+  background-color: var(--color-success);
+  color: white;
+}
+
+.stepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-neutral-200);
+  color: var(--text-primary);
+  border-radius: var(--radius-full);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-sm);
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.stepButton.active .stepNumber {
+  background-color: var(--color-primary-500);
+  color: white;
+}
+
+.stepTitle {
+  flex: 1;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  line-height: var(--leading-tight);
+}
+
+.mainContent {
+  order: 1;
+}
+
+@media (min-width: 1024px) {
+  .mainContent {
+    order: 2;
+  }
+}
+
+.article h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-6);
+  color: var(--text-primary);
+}
+
+.stepContent {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--text-secondary);
+}
+
+.subheading {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+  color: var(--text-primary);
+}
+
+.paragraph {
+  margin-bottom: var(--space-4);
+}
+
+.contentList {
+  margin: var(--space-4) 0;
+  padding-left: var(--space-6);
+}
+
+.contentList li {
+  margin-bottom: var(--space-2);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.navigation button {
+  flex: 1;
+  min-width: 140px;
+}
+
+.completion {
+  margin-top: var(--space-8);
+}
+
+.completion h3 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-4);
+  color: var(--color-success);
+}
+
+.completion p {
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  margin-bottom: var(--space-6);
+}
+
+.completionActions {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.completionActions a {
+  flex: 1;
+  min-width: 160px;
+}
