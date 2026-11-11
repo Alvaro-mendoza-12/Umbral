@@ -1,0 +1,11 @@
+{
+  "url": "https://umbral-review-20261111-cmxyf4wkj-alvaro-s-projects1.vercel.app",
+  "checkedOn": "2026-11-11",
+  "anonymousHttp": 200,
+  "finalUrl": "https://umbral-review-20261111-cmxyf4wkj-alvaro-s-projects1.vercel.app/",
+  "title": "UMBRAL | Oportunidades reales, caminos claros",
+  "matchingLocalBundle": true,
+  "bundle": "/assets/index-DuK8qN5U.js",
+  "sha256": "89e6edc62db668ac10ac85d641faae3a24cf69c21d61615fef61fd2688712fd2",
+  "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'"
+}

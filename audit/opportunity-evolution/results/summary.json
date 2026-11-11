@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-11",
+  "applicationCommit": "9ff9f1ea96cf8510f34bdc73f2cf8ec650a08b92",
+  "branch": "codex/verified-opportunities-evolution",
+  "preview": "https://umbral-review-20261111-cmxyf4wkj-alvaro-s-projects1.vercel.app",
+  "newConcreteRecords": 14,
+  "retainedProcedure": "cse-peru",
+  "lint": "passed",
+  "unitTests": {
+    "passed": 44,
+    "failed": 0
+  },
+  "build": "passed",
+  "localBrowserTests": {
+    "startTime": "2026-11-11T19:41:10.921Z",
+    "duration": 214846.84300000002,
+    "expected": 424,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "publicAcceptanceTests": {
+    "startTime": "2026-11-11T19:47:51.651Z",
+    "duration": 31490.022,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "humanSessions": "not performed",
+  "note": "The earlier focused run includes three failures fixed before the complete 424-test run. Final public build also includes the Xylem audience clarification and replacement SENA supplementary source."
+}

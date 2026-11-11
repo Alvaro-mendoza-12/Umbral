@@ -4,7 +4,7 @@
 
 Esta rama evoluciona UMBRAL hacia un **acompañante internacional de acceso a oportunidades**, conservando **The Illuminated Threshold**. [Entrega de esta evolución](audit/opportunity-evolution/DELIVERY.md). `main` y la producción original conservan la versión publicada.
 
-**Vista previa de esta evolución:** consultar el enlace de la [entrega](audit/opportunity-evolution/DELIVERY.md). Es un Preview de revisión, sin publicación definitiva. La [vista previa anterior](https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app) conserva la fase previa.
+**[Abrir la nueva vista previa pública](https://umbral-review-20261111-cmxyf4wkj-alvaro-s-projects1.vercel.app)**. Es un Preview de revisión, sin publicación definitiva. La [vista previa anterior](https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app) conserva la fase previa.
 
 **Versión de revisión:** seis categorías, 14 oportunidades concretas nuevas y el trámite CSE conservado. Perú, Estados Unidos, México, Colombia y España tienen contenido propio; CS50x tiene acceso internacional explícito. Las categorías sin registros lo explican. Hay vacantes específicas, cursos, ayudas y préstamos, con requisitos, fechas, fuente y acceso oficial. Mi Ruta conserva guardado, pasos, tareas propias, progreso, descarga e impresión; país e idioma persisten por separado.
 
