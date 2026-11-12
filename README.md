@@ -1,64 +1,119 @@
-# UMBRAL
+# UMBRAL — The Illuminated Threshold
 
-**Las oportunidades existen. Encontrar el camino no debería ser difícil.**
+**Find real opportunities. Understand the requirements. Take the next step.**
 
-Esta rama evoluciona UMBRAL hacia un **acompañante internacional de acceso a oportunidades**, conservando **The Illuminated Threshold**. Las [fuentes verificadas](audit/catalog-usefulness/verification.json) registran la revisión del catálogo. `main` y la producción original conservan la versión publicada.
+[Open UMBRAL](https://umbral-seven-khaki.vercel.app) · [Español](README.es.md) · [Submission overview](docs/kiroween-submission/PROJECT-OVERVIEW.md) · [GitHub](https://github.com/Alvaro-mendoza-12/Umbral)
 
-**[Abrir la nueva vista previa pública](https://umbral-review-20261111-re35sy5c7-alvaro-s-projects1.vercel.app)**. Rama `codex/catalog-usefulness`, aplicación `a3d0cf0` (corrección de dos cierres de IKEA). Es un Preview de revisión, sin publicación definitiva. La [vista previa de 18ce9b7](https://umbral-review-20261111-6mnp45v52-alvaro-s-projects1.vercel.app) se conserva.
+UMBRAL is a bilingual opportunity companion for students, jobseekers, learners, entrepreneurs and households. It brings specific opportunities, dated official sources and a practical preparation route together without requiring an account.
 
-**Versión de revisión:** 31 oportunidades concretas y el trámite CSE conservado. Hay 15 vacantes: Perú 4, EE. UU. 2, México 3, Colombia 3 y España 3. Se revisaron las 14 oportunidades anteriores y se incorporaron 12 vacantes, dos becas internacionales (completa y parcial), un certificado profesional de pago, capacitación gratuita para emprender y una aceleradora con inversión. Las tarjetas resumen beneficio y requisito clave; antes de postular o guardar se muestran elegibilidad, restricciones y condiciones. Los datos no publicados se identifican expresamente. Las categorías sin registros lo explican. Mi Ruta conserva tareas, progreso, descarga e impresión; país e idioma persisten por separado.
+Finding a programme name often leaves essential questions unanswered: What does it offer? Who can access it? What does it cost? What should I do next? UMBRAL organises those details, labels information an institution has not published, and lets a person save the next steps on their device. This is a product hypothesis; interviews and measured social outcomes have not been established.
 
-La CSE permanece como un procedimiento de orientación dentro de apoyo familiar, con su guía conservada en `/cse`, cinco pasos, once casillas, recursos y preguntas frecuentes. Las fuentes son específicas de cada país; cambiar idioma no cambia jurisdicción. Español e inglés, almacenamiento local y lectura sin conexión tras la primera carga. No se incorporan cuentas ni APIs de IA.
+![UMBRAL home with country selection and categories](docs/kiroween-submission/assets/01-home.png)
 
-Se conservan la [revisión de producto anterior](audit/product-review/REPORT.md), [comparación](audit/product-review/compare.html), [guía para cinco adultos](audit/product-review/USABILITY.md) y [resumen editable](audit/product-review/USABILITY-RESULTS.md). Estos documentos corresponden a la fase previa; sus URLs y cobertura no describen esta evolución. Las pruebas humanas siguen pendientes; no se han inventado sesiones ni resultados.
+## From discovery to preparation
 
-UMBRAL no calcula ni solicita la CSE, consulta padrones o concede beneficios. No sustituye a la ULE ni pide DNI, ingresos, domicilio o documentos. Las casillas registran preparación en el dispositivo, no requisitos obligatorios ni elegibilidad. El hosting puede registrar metadatos técnicos; no se promete anonimato absoluto.
+1. Choose a country and browse categories or catalogue filters. Choose English or Spanish independently of the country.
+2. Open an opportunity. Read its benefit, audience and key condition, then save it to **My Route** if useful. The Peru CSE entry also exposes its guide early.
+3. Review eligibility, restrictions, costs, dates and official sources. Full eligibility remains available before the official application step; saving does not establish eligibility.
+4. In My Route, mark preparation steps, add personal tasks and track progress. Download a text copy or print the route.
+5. Continue through the institution's official link to apply, enrol or request. UMBRAL does not submit it for you.
 
-- [Repositorio](https://github.com/Alvaro-mendoza-12/Umbral)
-- [Producción original, sin cambios](https://umbral-seven-khaki.vercel.app)
-- [Auditoría y resultados](audit/REPORT.md)
-- [Procedencia Kiro/Codex](audit/ATTRIBUTION.md)
-- [Preparación Devpost y pendientes](audit/KIROWEEN.md)
+## Countries and catalogue
 
-## Ejecutar
+The editorial snapshot reviewed on **11 November 2026** contains **31 concrete opportunities plus the Peru CSE procedure**, including **15 job listings**: Peru 4, United States 2, Mexico 3, Colombia 3 and Spain 3. International opportunities appear for countries explicitly included in their access conditions. Selecting English does not change jurisdiction or make an offer available worldwide.
 
-Node.js **26.x** recomendado y usado en la auditoría; también se admite 24.15.0+ dentro de 24.x. Git tiene raíz independiente en `D:\CombiRumbo-review\umbral`; ejecutar aquí, no desde CombiRumbo.
+The six categories are employment, education, training, entrepreneurship, technology and family support. Coverage varies by country and category; empty states explain missing records. Scholarships distinguish full and partial funding; courses distinguish free, paid and professional certificate offers. Entrepreneurship records identify their actual support type rather than treating loans, training and investment as interchangeable.
+
+The catalogue is editorial, not a live feed. It contains closed records: **31 does not mean 31 currently open offers**. Closed and unconfirmed records are excluded from default discovery. Published deadlines affect availability; overdue editorial reviews change records to “Requires confirmation” and remove the application action. General portals are supplementary resources. Recheck institutional sources before acting. **Editorial re-verification is needed before submission and judging**: some job reviews are due on 14 November 2026 and become unconfirmed the following day if not refreshed, before the judging period.
+
+![Country-specific catalogue](docs/kiroween-submission/assets/02-catalog.png)
+![Opportunity summary, save action and access conditions](docs/kiroween-submission/assets/03-detail.png)
+
+## Features
+
+- English and Spanish content, with country and language preferences saved independently.
+- Specific opportunities with benefits, conditions, status, official links and dated documentary sources.
+- My Route: local saves, preparation steps, personal tasks, progress, text download and printing.
+- Peru CSE guidance: five steps, eleven preparation checkboxes, resources and FAQs. Chiclayo office details apply only to that district.
+- Installable PWA and cached reading after a first complete online load. External websites require a network connection.
+- Responsive layouts, keyboard navigation, route focus management, semantic controls, reduced-motion handling and automated accessibility checks. These do not certify full WCAG conformance.
+
+![My Route preparation and progress](docs/kiroween-submission/assets/04-my-route.png)
+![Mobile layout](docs/kiroween-submission/assets/05-mobile.png)
+
+## The Illuminated Threshold
+
+The interface uses a mysterious night palette, a warm illuminated threshold, arch icons, gateway-like opportunity cards and visible preparation progress. The metaphor connects finding an opportunity with taking the next step. The proposed Kiroween category is **Costume Contest**. The owner approved this direction; its effect on usability has not been measured. See the [category justification](docs/kiroween-submission/CATEGORY-JUSTIFICATION.md).
+
+![The illuminated threshold in the working interface](docs/kiroween-submission/assets/06-threshold.png)
+
+## Architecture and stack
+
+A static **React 18 + TypeScript + Vite** application uses React Router for navigation, i18next/react-i18next for English and Spanish, and Vite PWA/Workbox for precaching. Browser `localStorage` holds preferences, My Route and checklist state. There is no application backend, account system or runtime AI API. Vercel serves the static build with SPA routing and security headers.
+
+| Area | Location |
+|---|---|
+| Routes and route accessibility | [`src/App.tsx`](src/App.tsx) |
+| Opportunity types and status/filter rules | [`src/features/opportunities/domain/`](src/features/opportunities/domain/) |
+| Editorial catalogue and source records | [`src/features/opportunities/data/`](src/features/opportunities/data/) |
+| Country and saved-route state | [`src/features/opportunities/application/`](src/features/opportunities/application/) |
+| Home, catalogue, detail and My Route | [`src/features/opportunities/pages/`](src/features/opportunities/pages/) |
+| Peru CSE content and sources | [`src/content/pe/cse/`](src/content/pe/cse/) |
+| Tests and CI | [`tests/`](tests/), [Quality workflow](.github/workflows/quality.yml) |
+
+See [technical architecture](docs/kiroween-submission/TECHNICAL-ARCHITECTURE.md) for data flow and maintenance boundaries.
+
+## Kiro and Codex contributions
+
+Kiro created the initial MVP: the React/TypeScript implementation, original CSE experience, bilingual content, PWA setup, initial tests and reports. Its authentic [three Specs](.kiro/specs/umbral/) and [five Steering files](.kiro/steering/) remain with their original content.
+
+Codex performed independent audit and remediation, accessibility and regression work, catalogue and international expansion, The Illuminated Threshold theme, later interaction fixes and publication preparation. These later changes are not attributed to Kiro. No unobserved Kiro Agent Hooks, MCP, Crew or property-based testing are claimed. Read the [attribution record](audit/ATTRIBUTION.md) for evidence and limits.
+
+## Install and run
+
+Use **Node.js 26.x** and npm from this repository's root. The engine also accepts Node 24.15.0+ within 24.x. No keys, secrets or environment variables are required.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Abrir la URL local de Vite. No exponer el servidor de desarrollo a la red para servir producción. No se necesitan claves ni variables de entorno.
+Open Vite's printed local URL. For a production build and local preview:
 
-## Verificar y compilar
+```sh
+npm run build
+npm run preview
+```
+
+Offline behavior must be tested against the built preview or production after a complete online load; the development server is not the PWA offline test.
+
+## Verification
 
 ```sh
 npm run lint
 npm run test -- --run
 npm run build
+npm audit --omit=dev --audit-level=moderate
 npx playwright install chromium
 npm run test:e2e
 ```
 
-`test:e2e` compila y prueba el build local en un servidor aislado `127.0.0.1:5186`. Incluye los seis recorridos de aceptación en español/inglés, filtros, Mi Ruta, persistencia, descarga, popup imprimible, CSE, idioma, offline y axe. Viewports: 360×640, 390×844, 768×1024 y 1440×900; reflow adicional a 320 px. Son emulaciones, no teléfonos físicos. Para conservar las evidencias de fases anteriores, establecer `UMBRAL_RESULTS_DIR=audit/catalog-usefulness/results` y `UMBRAL_SCREENSHOTS_DIR=test-results/review-screenshots` antes de ejecutar Playwright.
+The lockfile pins Playwright **1.65.0**; CI uses its matching Chromium image. Local E2E builds the app and starts an isolated preview at `127.0.0.1:5186`. Use new `UMBRAL_RESULTS_DIR` and `UMBRAL_SCREENSHOTS_DIR` output directories to preserve earlier evidence. See the [testing guide](docs/kiroween-submission/TESTING-INSTRUCTIONS-EN.md).
 
-```sh
-npm run preview
-```
+Recorded checks on **11 November 2026**: **49 unit tests**, **484 local E2E passes**, and **86 production E2E passes** on 390 px and 1440 px layouts. The [main Quality run](https://github.com/Alvaro-mendoza-12/Umbral/actions/runs/43136483189) succeeded. [Quality evidence](docs/kiroween-submission/evidence/quality-tests.json), [production evidence](docs/kiroween-submission/evidence/production-tests.json) and the [deployment record](docs/kiroween-submission/evidence/production.json) identify the tested state. These are dated results, not guarantees about future listings. Documentation edits do not constitute a new application test run. Mobile checks used browser emulation, not physical devices.
 
-Desarrollo no es prueba del Service Worker. Offline requiere una primera carga completa con red; los enlaces oficiales externos necesitan conexión. La fecha de consulta no garantiza vigencia futura ni atención local.
+## Privacy, security and limits
 
-## Estructura y mantenimiento
+Saved routes and task text stay in browser storage, without cloud sync or account recovery. Clearing site data or changing browser/device can lose the state. Avoid entering identity numbers, financial details or other sensitive information in tasks. A shared device can expose local content. Downloads and printed copies are controlled by the user.
 
-`.kiro/` conserva Specs/Steering auténticos. `src/features/opportunities/` separa dominio, datos, estado local y presentación; el contenido CSE sigue en `src/content/pe/cse/`. `public/` contiene recursos; `tests/`, Vitest/Playwright; `audit/`, resultados/capturas; `vercel.json`, build estático, rutas SPA y cabeceras. `.github/workflows/quality.yml` automatiza comprobaciones.
+UMBRAL does not request identity documents, income or addresses to assess eligibility. The host may process technical request metadata; official external sites apply their own policies. Absolute anonymity is not promised. Static hosting, dependency checks and deployment headers address specific risks without establishing a general security certification.
 
-El catálogo se combina en `src/features/opportunities/data/catalog.ts`; `verified.ts` contiene las oportunidades nuevas y `peru.ts` conserva los registros previos. Los portales generales son complementarios. Las convocatorias cerradas y registros pendientes de revisión no aparecen en la búsqueda inicial. Las fechas y horas publicadas determinan el cierre; tras la próxima revisión editorial pasa a «Requiere confirmación» y se oculta la acción de solicitud. No hay actualización automática desde instituciones ni alertas de fechas.
+CSE is preparation guidance for Peru. UMBRAL does not calculate or request CSE, consult government registers, award benefits or replace a **ULE**. Checklist completion and route progress measure preparation only. There is no automated application, eligibility assessment, institutional synchronisation, deadline notification or AI recommendation engine. Documentary review cannot guarantee an offer stays open or an application succeeds.
 
-Se excluyen dependencias, `dist`, secretos, `.env` y metadatos `.vercel`. El lockfile permite instalación reproducible. Licencia [MIT](LICENSE).
+## Submission, historical evidence and licence
 
-Fuentes específicas, fechas y certeza están en Recursos y [`sources.ts`](src/data/sources.ts). La guía diferencia requisitos, recomendaciones y excepciones: CPP, recibo eléctrico condicionado, asistencia S100/constancia y plazos 25/40 días hábiles. La sede local procede de un directorio publicado, sin confirmación por llamada/visita.
+The [submission package](docs/kiroween-submission/PROJECT-OVERVIEW.md) contains the English description, category case, judging matrix and paste-ready Devpost material. Public YouTube publication and the actual Devpost submission remain owner actions until their URL/status is recorded. Technical publication alone does not certify competition eligibility.
 
-Los archivos `INFORME_FINAL.md`, `QA-REPORT.md`, `QA-SUMMARY.md` y `RESUMEN_EJECUTIVO.md` son entregables históricos de Kiro. Sus afirmaciones no son la conclusión de la auditoría actual: consultar [audit/REPORT.md](audit/REPORT.md).
+The [10 November audit](audit/REPORT.md), [earlier product review](audit/product-review/REPORT.md), and original `INFORME_FINAL.md`, `QA-REPORT.md`, `QA-SUMMARY.md` and `RESUMEN_EJECUTIVO.md` describe earlier phases. Their previews, screenshots, scope and conclusions are historical evidence, not current product descriptions. Human usability sessions and measured reductions in visits or effort have not been demonstrated.
 
-No se hicieron entrevistas ni se demuestra ahorro de visitas, afiliación o conformidad WCAG completa. La publicación técnica no certifica elegibilidad de Kiroween; categoría, video y envío siguen el documento de entrega.
+Licensed under [MIT](LICENSE). Institutions remain responsible for their programmes and materials; UMBRAL is an independent guide.

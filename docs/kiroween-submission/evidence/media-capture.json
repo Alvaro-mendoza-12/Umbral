@@ -1,0 +1,247 @@
+{
+  "capturedAt": "2026-11-12T02:28:24.637Z",
+  "base": "https://umbral-seven-khaki.vercel.app",
+  "productionCommit": "5c77941542c1b498c37639a2d03a26dd8fbfee42",
+  "segments": [
+    {
+      "name": "desktop",
+      "path": "desktop.webm",
+      "lead": 6.272,
+      "duration": 100,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "mobile",
+      "path": "mobile.webm",
+      "lead": 2.957,
+      "duration": 20,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "name": "kiro",
+      "path": "kiro.webm",
+      "lead": 1.237,
+      "duration": 25,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "closing",
+      "path": "closing.webm",
+      "lead": 3.045,
+      "duration": 15,
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "events": [
+    {
+      "segment": "desktop",
+      "time": 5,
+      "actual": 5.068
+    },
+    {
+      "segment": "desktop",
+      "time": 11,
+      "actual": 11.165
+    },
+    {
+      "segment": "desktop",
+      "time": 17,
+      "actual": 17.077
+    },
+    {
+      "segment": "desktop",
+      "time": 20,
+      "actual": 20.069
+    },
+    {
+      "segment": "desktop",
+      "time": 27,
+      "actual": 27.045
+    },
+    {
+      "segment": "desktop",
+      "time": 34,
+      "actual": 34.015
+    },
+    {
+      "segment": "desktop",
+      "time": 41,
+      "actual": 41.036
+    },
+    {
+      "segment": "desktop",
+      "time": 45,
+      "actual": 45.044
+    },
+    {
+      "segment": "desktop",
+      "time": 49,
+      "actual": 49.063
+    },
+    {
+      "segment": "desktop",
+      "time": 53,
+      "actual": 53.046
+    },
+    {
+      "segment": "desktop",
+      "time": 57,
+      "actual": 57.079
+    },
+    {
+      "segment": "desktop",
+      "time": 61,
+      "actual": 61.028
+    },
+    {
+      "segment": "desktop",
+      "time": 66,
+      "actual": 66.112
+    },
+    {
+      "segment": "desktop",
+      "time": 71,
+      "actual": 71.079
+    },
+    {
+      "segment": "desktop",
+      "time": 75,
+      "actual": 75.059
+    },
+    {
+      "segment": "desktop",
+      "time": 78,
+      "actual": 78.076
+    },
+    {
+      "segment": "desktop",
+      "time": 81,
+      "actual": 81.052
+    },
+    {
+      "segment": "desktop",
+      "time": 84,
+      "actual": 84.04
+    },
+    {
+      "segment": "desktop",
+      "time": 87,
+      "actual": 87.109
+    },
+    {
+      "segment": "desktop",
+      "time": 91,
+      "actual": 91.111
+    },
+    {
+      "segment": "desktop",
+      "time": 95,
+      "actual": 95.079
+    },
+    {
+      "segment": "desktop",
+      "time": 98,
+      "actual": 98.075
+    },
+    {
+      "segment": "desktop",
+      "time": 100,
+      "actual": 100.008
+    },
+    {
+      "segment": "mobile",
+      "time": 4,
+      "actual": 4.039
+    },
+    {
+      "segment": "mobile",
+      "time": 7,
+      "actual": 7.066
+    },
+    {
+      "segment": "mobile",
+      "time": 10,
+      "actual": 10.065
+    },
+    {
+      "segment": "mobile",
+      "time": 13,
+      "actual": 13.049
+    },
+    {
+      "segment": "mobile",
+      "time": 17,
+      "actual": 17.053
+    },
+    {
+      "segment": "mobile",
+      "time": 20,
+      "actual": 20.009
+    },
+    {
+      "segment": "kiro",
+      "time": 4,
+      "actual": 4.086
+    },
+    {
+      "segment": "kiro",
+      "time": 8,
+      "actual": 8.026
+    },
+    {
+      "segment": "kiro",
+      "time": 12,
+      "actual": 12.023
+    },
+    {
+      "segment": "kiro",
+      "time": 15,
+      "actual": 15.026
+    },
+    {
+      "segment": "kiro",
+      "time": 18,
+      "actual": 18.048
+    },
+    {
+      "segment": "kiro",
+      "time": 21,
+      "actual": 21.023
+    },
+    {
+      "segment": "kiro",
+      "time": 23,
+      "actual": 23.027
+    },
+    {
+      "segment": "kiro",
+      "time": 25,
+      "actual": 25.001
+    },
+    {
+      "segment": "closing",
+      "time": 4,
+      "actual": 4.051
+    },
+    {
+      "segment": "closing",
+      "time": 7,
+      "actual": 7.223
+    },
+    {
+      "segment": "closing",
+      "time": 11,
+      "actual": 11.054
+    },
+    {
+      "segment": "closing",
+      "time": 15,
+      "actual": 15
+    }
+  ],
+  "errors": []
+}
