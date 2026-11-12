@@ -32,6 +32,13 @@ export default function Detail() {
           <p className={styles.provider}>{institutions.find(item => item.id === opportunity.institutionId)?.name[language]}</p>
           <p className={styles.detailBenefit}>{access?.benefit[language] ?? opportunity.summary[language]}</p>
           <p className={styles.audiencePreview}><strong>{t('companion.forWhom')}: </strong>{opportunity.audienceDescription[language]}</p>
+          {access?.keyCondition && <p className={styles.keyCondition} data-key-condition><strong>{t('companion.keyCondition')}: </strong>{access.keyCondition[language]}</p>}
+          <div className={styles.quickActions}>
+            {opportunity.guidePath && <Link className={styles.primary} to={opportunity.guidePath}>{t('companion.cseGuide')}</Link>}
+            {saved ? <><p role="status" className={styles.saved}>{t('companion.saved')}</p><Link className={styles.secondary} to="/my-route">{t('companion.goRoute')}</Link></> : <button type="button" className={styles.secondary} data-save onClick={() => save(id)}>{t('companion.save')}</button>}
+            <p className={styles.small}>{t('companion.saveExplainer')}</p>
+            {!available && <p role="status" className={styles.notice}>{t('companion.storageUnavailable')}</p>}
+          </div>
           {access?.eligibilityFacts && <section className={styles.eligibilitySummary} data-eligibility aria-labelledby="eligibility-heading">
             <h2 id="eligibility-heading">{t('companion.eligibilityHeading')}</h2>
             <dl>
@@ -44,12 +51,8 @@ export default function Detail() {
           <h2>{t('companion.nextStep')}</h2>
           <p className={styles.deadline}>{opportunity.availability.closesOn ? t('companion.closes') + ': ' + formatDate(opportunity.availability.closesOn, language) : t('companion.noFixedDeadline')}</p>
           {access?.deadlineAt && <p className={styles.small}>{opportunity.availability.description[language]}</p>}
-          {access?.keyCondition && <p className={styles.keyCondition} data-key-condition><strong>{t('companion.keyCondition')}: </strong>{access.keyCondition[language]}</p>}
           {canAct(opportunity) && access ? <a className={styles.primary} data-official-action href={access.actionUrl} target="_blank" rel="noopener noreferrer">{label}<span className="sr-only"> · {t('companion.newTab')}</span></a> : <p className={styles.notice}>{t('companion.notAvailable')}</p>}
           <p className={styles.actionHelp}>{access?.instructions[language] ?? t('companion.externalNote')}</p>
-          {saved ? <><p role="status" className={styles.saved}>{t('companion.saved')}</p><Link className={styles.secondary} to="/my-route">{t('companion.goRoute')}</Link></> : <button type="button" className={styles.secondary} onClick={() => save(id)}>{t('companion.save')}</button>}
-          <p className={styles.small}>{t('companion.saveExplainer')}</p>
-          {!available && <p role="status" className={styles.notice}>{t('companion.storageUnavailable')}</p>}
           <a className={styles.sourceInline} href={opportunity.officialUrl} target="_blank" rel="noopener noreferrer">{t('companion.sourceOfficial')}</a>
           <p className={styles.small}>{t('companion.reviewed', { date: formatDate(opportunity.verification.checkedAt, language) })}</p>
         </aside>
@@ -67,7 +70,6 @@ export default function Detail() {
         <details className={styles.disclosure}><summary>{t('companion.conditions')}</summary>{list(opportunity.conditions)}</details>
         <details className={styles.disclosure}><summary>{t('companion.steps')}</summary><ol>{opportunity.steps.map(step => <li key={step.id}>{step.text[language]}</li>)}</ol></details>
         <details className={styles.disclosure}><summary>{t('companion.availability')}</summary><OpportunityDates opportunity={opportunity} /></details>
-        {opportunity.guidePath && <p><Link className={styles.secondary} to={opportunity.guidePath}>{t('companion.cseGuide')}</Link></p>}
         <details className={styles.disclosure}><summary>{t('companion.sources')}</summary><p className={styles.small}>{t('companion.documentaryNote')}</p><ul>{opportunity.sourceIds.map(sourceId => sources.find(source => source.id === sourceId)).map(source => source && <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title[language]}</a><span className={styles.sourceDate}>{t('companion.sourceConsulted', { date: formatDate(source.consultedAt, language) })}</span></li>)}</ul></details>
         <p className={styles.small}>{t('companion.disclaimer')}</p>
       </div>

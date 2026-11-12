@@ -7,6 +7,8 @@
 .lead { font-size: 1.125rem; line-height: 1.6; max-width: 68ch; }
 .hero .lead { color: #e0e1e5; }
 .homeCountry { max-width: 330px; margin-block: 24px; }
+.cseEntry { display: inline-flex; align-items: center; min-height: 48px; padding: 10px 16px; margin-bottom: 24px; border: 1px solid var(--threshold-light); border-radius: 6px; color: #fff8ec; font-weight: 600; }
+.cseEntry:hover { color: #fff8ec; background: #30394b; }
 .field { display: grid; gap: 6px; margin-bottom: 16px; min-width: 0; }
 .field label, .taskForm label { font-weight: 600; }
 .field select, .taskForm input { width: 100%; max-width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid #737b88; border-radius: 6px; background: #fff; color: var(--text-primary); font-size: 1rem; }
@@ -142,5 +144,8 @@
 .eligibilitySummary dt { color: #4b5563; font-size: 0.8125rem; font-weight: 600; margin-bottom: 4px; }
 .eligibilitySummary dd { margin: 0; font-size: 0.875rem; line-height: 1.5; }
 .keyCondition { border-block: 1px solid #b49a78; padding-block: 12px; font-size: 0.875rem; line-height: 1.5; }
+.quickActions { display: grid; gap: 12px; justify-items: start; margin-block: 20px; }
+.quickActions > p { margin: 0; }
+@media (max-width: 767px) { .quickActions > .primary, .quickActions > .secondary { width: 100%; } }
 @media (max-width: 350px) { .eligibilitySummary dl { grid-template-columns: 1fr; } }
 @media (max-width: 400px) { .goal { min-height: 80px; } .goalTitle { font-size: 1rem; } .facts { grid-template-columns: 1fr; } }
