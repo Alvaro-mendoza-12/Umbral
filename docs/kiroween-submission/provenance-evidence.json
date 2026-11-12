@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "reviewDatePeru": "2026-11-11",
+  "checkedAtUtc": "2026-11-12T02:07:56.675Z",
+  "scope": "Submission documentation and provenance snapshot; no app changes or deployment. One malformed blank ignore line normalized separately by root agent solely to ensure directory inclusion.",
+  "repository": "https://github.com/Alvaro-mendoza-12/Umbral",
+  "branch": "codex/kiroween-submission",
+  "headCommit": "5c77941542c1b498c37639a2d03a26dd8fbfee42",
+  "initialCommit": "813c87ab57084010a8cff0e431344ad6193bd786",
+  "initialGitDates": {
+    "author": "2026-11-10T22:29:05-05:00",
+    "committer": "2026-11-10T22:29:05-05:00"
+  },
+  "productionSourceBaseline": "5c77941542c1b498c37639a2d03a26dd8fbfee42",
+  "publicChecks": [
+    {
+      "url": "https://api.github.com/repos/Alvaro-mendoza-12/Umbral",
+      "httpStatus": 200,
+      "authentication": "none; public read-only REST",
+      "result": {
+        "fullName": "Alvaro-mendoza-12/Umbral",
+        "private": false,
+        "visibility": "public",
+        "createdAtUtc": "2026-11-11T03:07:59Z",
+        "createdAtPeru": "2026-11-10T22:07:59-05:00",
+        "htmlUrl": "https://github.com/Alvaro-mendoza-12/Umbral",
+        "defaultBranch": "main",
+        "licenseSpdx": "MIT"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/Alvaro-mendoza-12/Umbral/license",
+      "httpStatus": 200,
+      "authentication": "none; public read-only REST",
+      "result": {
+        "htmlUrl": "https://github.com/Alvaro-mendoza-12/Umbral/blob/main/LICENSE",
+        "gitBlob": "1feb41a1180b0b9d9b77442878d9e98aa1fd5745",
+        "licenseSpdx": "MIT"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/Alvaro-mendoza-12/Umbral/commits/813c87ab57084010a8cff0e431344ad6193bd786",
+      "httpStatus": 200,
+      "authentication": "none; public read-only REST",
+      "result": {
+        "sha": "813c87ab57084010a8cff0e431344ad6193bd786",
+        "htmlUrl": "https://github.com/Alvaro-mendoza-12/Umbral/commit/813c87ab57084010a8cff0e431344ad6193bd786",
+        "authorDateUtc": "2026-11-11T03:29:05Z",
+        "committerDateUtc": "2026-11-11T03:29:05Z",
+        "datePeru": "2026-11-10T22:29:05-05:00"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/Alvaro-mendoza-12/Umbral/pulls/2",
+      "httpStatus": 200,
+      "authentication": "none; public read-only REST",
+      "result": {
+        "htmlUrl": "https://github.com/Alvaro-mendoza-12/Umbral/pull/2",
+        "state": "closed",
+        "merged": true,
+        "mergedAtUtc": "2026-11-12T01:43:39Z",
+        "mergeCommitSha": "5c77941542c1b498c37639a2d03a26dd8fbfee42"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/Alvaro-mendoza-12/Umbral/actions/runs/43136483189",
+      "httpStatus": 200,
+      "authentication": "none; public read-only REST",
+      "result": {
+        "htmlUrl": "https://github.com/Alvaro-mendoza-12/Umbral/actions/runs/43136483189",
+        "status": "completed",
+        "conclusion": "success",
+        "headSha": "5c77941542c1b498c37639a2d03a26dd8fbfee42",
+        "startedAtUtc": "2026-11-12T01:43:41Z",
+        "updatedAtUtc": "2026-11-12T01:47:46Z"
+      }
+    },
+    {
+      "url": "https://api.github.com/repos/Alvaro-mendoza-12/Umbral/git/ref/heads/main",
+      "httpStatus": 200,
+      "authentication": "none; public read-only REST",
+      "result": {
+        "ref": "refs/heads/main",
+        "sha": "5c77941542c1b498c37639a2d03a26dd8fbfee42"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".kiro/specs/umbral/design.md",
+      "initialBytes": 12604,
+      "currentBytes": 12604,
+      "initialSha256": "8c9859060e7a249408c3ae68a6d88a883d3765cf1b47f90933853a555ea248fb",
+      "currentSha256": "8c9859060e7a249408c3ae68a6d88a883d3765cf1b47f90933853a555ea248fb",
+      "byteIdentical": true,
+      "gitBlobAtInitial": "dda4af63cb4adce65a7adf7f8ac71ca47adfed07",
+      "gitBlobAtHead": "dda4af63cb4adce65a7adf7f8ac71ca47adfed07",
+      "ignoreCheck": {
+        "path": ".kiro/specs/umbral/design.md",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      }
+    },
+    {
+      "path": ".kiro/specs/umbral/requirements.md",
+      "initialBytes": 6923,
+      "currentBytes": 6923,
+      "initialSha256": "9650c47479df5e7853d24d4ef7c7c819957a5158cbaca1b618d7702cd7a9c8fa",
+      "currentSha256": "9650c47479df5e7853d24d4ef7c7c819957a5158cbaca1b618d7702cd7a9c8fa",
+      "byteIdentical": true,
+      "gitBlobAtInitial": "3ced7ad10f3d7ad414a1f1fe20d3b7429ef54fd6",
+      "gitBlobAtHead": "3ced7ad10f3d7ad414a1f1fe20d3b7429ef54fd6",
+      "ignoreCheck": {
+        "path": ".kiro/specs/umbral/requirements.md",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      }
+    },
+    {
+      "path": ".kiro/specs/umbral/tasks.md",
+      "initialBytes": 9368,
+      "currentBytes": 9368,
+      "initialSha256": "51083d8872d9d5c356a5b1aaf573b57af17a5f255ddd073ba69384d410aab309",
+      "currentSha256": "51083d8872d9d5c356a5b1aaf573b57af17a5f255ddd073ba69384d410aab309",
+      "byteIdentical": true,
+      "gitBlobAtInitial": "579c708560466e57e67382e7742ee56db6020a3a",
+      "gitBlobAtHead": "579c708560466e57e67382e7742ee56db6020a3a",
+      "ignoreCheck": {
+        "path": ".kiro/specs/umbral/tasks.md",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      }
+    },
+    {
+      "path": ".kiro/steering/architecture.md",
+      "initialBytes": 7856,
+      "currentBytes": 7856,
+      "initialSha256": "847458882da6173728067b02e8ef7c5dc5247c36a087e9b64f3b4696fdb816ab",
+      "currentSha256": "847458882da6173728067b02e8ef7c5dc5247c36a087e9b64f3b4696fdb816ab",
+      "byteIdentical": true,
+      "gitBlobAtInitial": "fa30ba3c9449e4838ee543382ea1de4255c668a1",
+      "gitBlobAtHead": "fa30ba3c9449e4838ee543382ea1de4255c668a1",
+      "ignoreCheck": {
+        "path": ".kiro/steering/architecture.md",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      }
+    },
+    {
+      "path": ".kiro/steering/product.md",
+      "initialBytes": 4314,
+      "currentBytes": 4314,
+      "initialSha256": "180a1ab830b405668fe6f35ee113bfdf5875ef9a25887a211f65bee473dcfa57",
+      "currentSha256": "180a1ab830b405668fe6f35ee113bfdf5875ef9a25887a211f65bee473dcfa57",
+      "byteIdentical": true,
+      "gitBlobAtInitial": "541f8f8c4fdafe97eaa3acdddaedc422b8427a51",
+      "gitBlobAtHead": "541f8f8c4fdafe97eaa3acdddaedc422b8427a51",
+      "ignoreCheck": {
+        "path": ".kiro/steering/product.md",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      }
+    },
+    {
+      "path": ".kiro/steering/quality.md",
+      "initialBytes": 6619,
+      "currentBytes": 6619,
+      "initialSha256": "693daaecc3a2880f59cabd4833b44db4692b4ede530ed712a28ed28ac700c2d4",
+      "currentSha256": "693daaecc3a2880f59cabd4833b44db4692b4ede530ed712a28ed28ac700c2d4",
+      "byteIdentical": true,
+      "gitBlobAtInitial": "f7724e526911e0cf34aee72ae4bc86735e849ade",
+      "gitBlobAtHead": "f7724e526911e0cf34aee72ae4bc86735e849ade",
+      "ignoreCheck": {
+        "path": ".kiro/steering/quality.md",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      }
+    },
+    {
+      "path": ".kiro/steering/security.md",
+      "initialBytes": 7299,
+      "currentBytes": 7299,
+      "initialSha256": "b42b1cb9e7a46adc35fc98fb416f9530ad894f577152f4642c1fb062f04bf46d",
+      "currentSha256": "b42b1cb9e7a46adc35fc98fb416f9530ad894f577152f4642c1fb062f04bf46d",
+      "byteIdentical": true,
+      "gitBlobAtInitial": "618574a29d21f7269364cf6590e016f155d7df9e",
+      "gitBlobAtHead": "618574a29d21f7269364cf6590e016f155d7df9e",
+      "ignoreCheck": {
+        "path": ".kiro/steering/security.md",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      }
+    },
+    {
+      "path": ".kiro/steering/ux.md",
+      "initialBytes": 10605,
+      "currentBytes": 10605,
+      "initialSha256": "77c9d122653fba650807c7c4cf5f692a2b51959edaafeae5f5cc39263a17b83f",
+      "currentSha256": "77c9d122653fba650807c7c4cf5f692a2b51959edaafeae5f5cc39263a17b83f",
+      "byteIdentical": true,
+      "gitBlobAtInitial": "b570b52b0d8d324544583df2aad63df5e41ffaa9",
+      "gitBlobAtHead": "b570b52b0d8d324544583df2aad63df5e41ffaa9",
+      "ignoreCheck": {
+        "path": ".kiro/steering/ux.md",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      }
+    }
+  ],
+  "allEightArtifactsByteIdentical": true,
+  "ignoreValidation": {
+    "command": "git check-ignore --no-index -v <path>",
+    "gitVersion": "git version 2.56.0.windows.4",
+    "directories": [
+      {
+        "path": ".kiro",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/specs",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/specs/",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/specs/umbral",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/specs/umbral/",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/steering",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/steering/",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/hooks",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/hooks/",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      }
+    ],
+    "hypotheticalPaths": [
+      {
+        "path": ".kiro/__submission_ignore_probe__",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/subdir/new.md",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/specs/__submission_ignore_probe__",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/specs/umbral/new.md",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/steering/new.md",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      },
+      {
+        "path": ".kiro/hooks/new.json",
+        "ignored": false,
+        "exitCode": 1,
+        "output": ""
+      }
+    ],
+    "hypotheticalFilesCreated": false,
+    "allArtifactsAndDirectoriesUnignored": true,
+    "minimalFix": {
+      "file": ".gitignore",
+      "change": "Normalized malformed blank CR-only line after *.tsbuildinfo to an empty LF line. No .kiro path exclusion was added or removed; all .kiro artifacts remain untouched.",
+      "beforeHeadSha256": "18f33847fb043baae6102bcbc6bbfcd0b0ed590ae58e9cff005b31cfe24ef447",
+      "currentSha256": "695179299c43e6f77583f95fab18d71c5e171d526ce54de0a4a18a46b361e3f3",
+      "beforeDiagnostic": "Git for Windows returned exit 0 for trailing-slash directory arguments with a blank pattern at .gitignore line 42; canonical directory paths, tracked files and hypothetical descendants returned exit 1.",
+      "afterDiagnostic": "All recorded directory, tracked-file and hypothetical-path checks return exit 1 with no matching rule."
+    },
+    "emptyLocalDirectory": {
+      "path": ".kiro/hooks",
+      "files": [],
+      "tracked": false,
+      "meaning": "Empty local directory is not an Agent Hook and cannot itself be represented in Git."
+    }
+  },
+  "historicalAttributionAppendix": {
+    "path": "audit/ATTRIBUTION.md",
+    "originalBytes": 3095,
+    "originalSha256": "a9ee8148419b9c0c4b5a779763cf56724bdcbbafcfb96117f1f89cbde0e8efa6",
+    "preservedAsExactByteSuffix": true
+  },
+  "ownerDeclarations": {
+    "source": "Owner statements supplied in task context; not independent identity, enrollment or chronology verification",
+    "residence": "Peru",
+    "age": 20,
+    "team": "solo",
+    "institution": "USAT, Chiclayo",
+    "degreeAsReported": "Ingeniería de Sistemas y Computación",
+    "academicCycle": 3,
+    "academicYearEquivalent": null,
+    "currentEnrollmentOwnerConfirmed": true,
+    "linkedInOwnerProvided": "https://www.linkedin.com/in/alvaro-mendoza-mar%C3%ADn-4202a5327/",
+    "linkedInIndependentlyVerified": false,
+    "studentEmailReceivedPrivately": true,
+    "studentEmailCommitted": false,
+    "studentEmailNextAction": "Owner must paste into Devpost manually; value intentionally excluded from public Git.",
+    "projectStartRecollection": "November 2026; exact day uncertain",
+    "priorOwnCodeIncorporatedOwnerDeclaration": null
+  },
+  "notClaimed": [
+    "Kiro Agent Hooks",
+    "Kiro MCP",
+    "Kiro Crew",
+    "Kiro custom agents",
+    "Kiro Powers",
+    "property-based testing",
+    "complete original Kiro session transcript",
+    "measured social outcomes",
+    "completed human usability study",
+    "public YouTube demo",
+    "published bonus blog",
+    "published social post",
+    "final Devpost submission"
+  ],
+  "requiresOwnerConfirmation": [
+    "Any incorporated nonstandard pre-period work, including earlier Codex research/mockups",
+    "Ownership, licenses and permissions",
+    "Disqualifying relationships, conflicts and sponsor/administrator support",
+    "Startup founder status if claimed",
+    "Kiroween 2025 registration if claimed",
+    "Clarify academic-year form field if cycle 3 cannot be entered directly; do not equate it to third year."
+  ],
+  "officialRules": {
+    "url": "https://kiroween.devpost.com/rules",
+    "reviewDatePeru": "2026-11-11",
+    "submissionStart": "2026-10-30T09:00:00-07:00",
+    "submissionDeadline": "2026-12-04T14:00:00-08:00",
+    "submissionDeadlinePeru": "2026-12-04T17:00:00-05:00"
+  },
+  "limitations": [
+    "Git dates and repository creation do not establish creation dates of all incorporated work.",
+    "File integrity and historical attribution do not prove every individual Kiro interaction.",
+    "Public checks are snapshots, not guarantees of future accessibility.",
+    "No credentials or personal email addresses included."
+  ]
+}

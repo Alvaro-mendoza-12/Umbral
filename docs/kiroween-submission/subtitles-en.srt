@@ -1,0 +1,91 @@
+1
+00:00:00,700 --> 00:00:09,738
+Finding opportunities should not be complicated. Yet information is
+scattered across institutions, portals, and eligibility rules.
+
+2
+00:00:10,138 --> 00:00:16,156
+People need to know where to look, what a listing requires, and which
+step to take next.
+
+3
+00:00:20,700 --> 00:00:27,283
+UMBRAL is an international opportunity companion, built to turn that
+uncertainty into a clearer path.
+
+4
+00:00:27,683 --> 00:00:36,601
+Choose a country independently of your language. The initial catalogue
+covers five countries, alongside international options.
+
+5
+00:00:37,001 --> 00:00:43,299
+The Illuminated Threshold uses warm light and gateways to make the
+interface feel calm and recognizable.
+
+6
+00:00:45,700 --> 00:00:54,018
+Choose Employment, then open a specific vacancy. Each card highlights its
+location, benefit, and a key requirement.
+
+7
+00:00:54,418 --> 00:01:03,596
+This example asks for completed secondary education and basic computer
+skills. Read the full requirements and conditions before applying.
+
+8
+00:01:03,996 --> 00:01:13,278
+Unknown details stay unknown. Review dates and availability are
+editorial, and the official source remains the place to confirm and
+apply.
+
+9
+00:01:15,700 --> 00:01:24,193
+Save an opportunity in My Route without submitting an application. Your
+preparation stays in this browser, without an account.
+
+10
+00:01:24,593 --> 00:01:31,041
+Mark a preparation step and add a simple task. Reloading keeps this local
+progress.
+
+11
+00:01:31,441 --> 00:01:39,030
+You can download or print your plan. These marks describe preparation,
+never approval or eligibility.
+
+12
+00:01:40,700 --> 00:01:48,428
+On mobile, Save is easy to reach beside the summary. The conditions and
+complete requirements remain available.
+
+13
+00:01:48,828 --> 00:01:59,130
+In Peru, a direct CSE entrance leads to the five-step guide and
+checklist. UMBRAL neither classifies households nor submits the official
+request.
+
+14
+00:02:00,700 --> 00:02:06,659
+Kiro built the initial React and TypeScript MVP through original
+specifications and steering documents.
+
+15
+00:02:07,059 --> 00:02:13,587
+These are the actual requirements, design, tasks, and five steering
+files, preserved in the repository.
+
+16
+00:02:13,987 --> 00:02:24,300
+Codex later audited, corrected, tested, and evolved the international
+catalogue and visual experience. The application does not call an AI
+model at runtime.
+
+17
+00:02:25,700 --> 00:02:32,559
+This is a working product, with automated checks and honest limits. Human
+usability sessions are still pending.
+
+18
+00:02:32,959 --> 00:02:39,300
+UMBRAL. Real opportunities. Clearer paths. A brighter next step.

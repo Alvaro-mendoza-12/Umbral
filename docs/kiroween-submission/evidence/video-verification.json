@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-11-12T02:30:16.385Z",
+  "file": "UMBRAL-Kiroween-2026.mp4",
+  "durationSeconds": 160,
+  "width": 1920,
+  "height": 1080,
+  "framesPerSecond": 25,
+  "bytes": 6540215,
+  "sha256": "22ce7fc76221432bef64545fe950edeeaa1e49c1f212d8ec9f6a4526cf7bc086",
+  "decodeErrors": 0,
+  "englishSyntheticNarration": true,
+  "englishVisibleCaptions": true,
+  "selectableEnglishSubtitleTrack": true,
+  "source": "actual production desktop1440x900 and mobile390x844 plus clearly labeled original-file viewer",
+  "productionCommit": "5c77941542c1b498c37639a2d03a26dd8fbfee42",
+  "publicYouTubeURL": null,
+  "reviewFrames": [
+    5,
+    25,
+    59,
+    88,
+    111,
+    132,
+    152
+  ]
+}

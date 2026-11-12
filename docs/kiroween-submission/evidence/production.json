@@ -1,0 +1,10 @@
+{
+  "project": "umbral",
+  "projectId": "prj_yKtjhtNBnLfTc72qufZADydrwClN",
+  "deploymentId": "dpl_UYfcCjiGTXzME3uEY1igRS4QzpiV",
+  "target": "production",
+  "state": "READY",
+  "domain": "https://umbral-seven-khaki.vercel.app",
+  "sha": "5c77941542c1b498c37639a2d03a26dd8fbfee42",
+  "branch": "main"
+}
