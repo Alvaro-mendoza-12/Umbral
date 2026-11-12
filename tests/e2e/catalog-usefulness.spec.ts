@@ -26,7 +26,7 @@ for (const language of ['es', 'en'] as const) {
       await expect(eligibility).toContainText(copy.eligibilityFields.residence);
       await expect(eligibility).toContainText(copy.eligibilityFields.international);
       expect(await eligibility.evaluate(node => Boolean(node.compareDocumentPosition(document.querySelector('[data-official-action]')!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
-      expect(await page.locator('[data-key-condition]').evaluate(node => Boolean(node.compareDocumentPosition(document.querySelector('aside button')!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
+      expect(await page.locator('[data-key-condition]').evaluate(node => Boolean(node.compareDocumentPosition(document.querySelector('[data-save]')!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
       await expect(page.locator('[data-official-action]')).toHaveAttribute('href', /^https:\/\//);
       await expectReflow(page);
     }

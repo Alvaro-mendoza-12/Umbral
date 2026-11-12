@@ -26,6 +26,7 @@ export default function OpportunityHome() {
         <h1>{t('companion.question')}</h1>
         <p className={styles.lead}>{t('companion.intro')}</p>
         <div className={styles.homeCountry}><CountrySelect value={country} onChange={value => { selectCountry(value); setParams({ country: value }); }} /></div>
+        {country === 'PE' && <Link className={styles.cseEntry} to="/cse">{t('companion.cseHome')}</Link>}
         {available ? <nav aria-label={t('companion.question')} className={styles.goals}>
           {categories.map(category => <Link key={category} className={styles.goal} to={`/discover?country=${country}&category=${category}`}>
             <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" strokeLinecap="round"><path d={iconPaths[category]} /></svg>
