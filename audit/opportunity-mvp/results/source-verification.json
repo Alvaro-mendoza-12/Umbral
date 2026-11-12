@@ -1,0 +1,85 @@
+{
+  "consultationDate": "2026-11-11",
+  "records": [
+    {
+      "id": "beca18",
+      "url": "https://www.pronabec.gob.pe/Beca-18/",
+      "finalUrl": "https://www.pronabec.gob.pe/Beca-18/",
+      "httpStatus": 200,
+      "title": "Beca 18 – PRONABEC | PROGRAMA NACIONAL DE BECAS Y CRÉDITO EDUCATIVO",
+      "consultedAt": "2026-11-11",
+      "sha256": "e050e36531d48f0e71ea173eba54419b0c92c747e37648672ffadcc2ff49ddd4",
+      "method": "Direct HTTP GET; content manually read. HTTP status alone does not verify conditions."
+    },
+    {
+      "id": "prepare",
+      "url": "https://www.pronabec.gob.pe/preparate/",
+      "finalUrl": "https://www.pronabec.gob.pe/preparate/",
+      "httpStatus": 200,
+      "title": "Preparate – PRONABEC | PROGRAMA NACIONAL DE BECAS Y CRÉDITO EDUCATIVO",
+      "consultedAt": "2026-11-11",
+      "sha256": "f84860df51862e0c0986605007a3e7b168cba1d24dda7a03bbb5b29007d21c2a",
+      "method": "Direct HTTP GET; content manually read. HTTP status alone does not verify conditions."
+    },
+    {
+      "id": "empleos",
+      "url": "https://www.gob.pe/23475-buscar-trabajo-en-el-portal-empleos-peru",
+      "finalUrl": "https://www.gob.pe/23475-buscar-trabajo-en-el-portal-empleos-peru",
+      "httpStatus": 200,
+      "title": "Buscar trabajo en el portal Empleos Perú - Servicio - Ministerio de Trabajo y Promoción del Empleo - Plataforma del Estado Peruano",
+      "consultedAt": "2026-11-11",
+      "sha256": "4f285b1760621ae8bae72fd2476afd1277071e0310fb89dd53136db43c394115",
+      "method": "Direct HTTP GET; content manually read. HTTP status alone does not verify conditions."
+    },
+    {
+      "id": "capacita",
+      "url": "https://www.gob.pe/institucion/mtpe/campa%C3%B1as/126727-capacita-t",
+      "finalUrl": "https://www.gob.pe/institucion/mtpe/campa%C3%B1as/126727-capacita-t",
+      "httpStatus": 200,
+      "title": "Capacíta-t - Campañas - Ministerio de Trabajo y Promoción del Empleo - Plataforma del Estado Peruano",
+      "consultedAt": "2026-11-11",
+      "sha256": "87dde9e8245fe8222e96b41082e3236561169abff1fdd049eb9f990148ca2275",
+      "method": "Direct HTTP GET; content manually read. HTTP status alone does not verify conditions."
+    },
+    {
+      "id": "capacita-faq",
+      "url": "https://capacitacionlaboral.trabajo.gob.pe/preguntas-frecuentes/",
+      "finalUrl": "https://capacitacionlaboral.trabajo.gob.pe/preguntas-frecuentes/",
+      "httpStatus": 200,
+      "title": "Preguntas Frecuentes » CAPACÍTA-T",
+      "consultedAt": "2026-11-11",
+      "sha256": "680003c8f9830af31187285cc52e72f03e2a1cab8504f2a2d029926273f4e67e",
+      "method": "Direct HTTP GET; content manually read. HTTP status alone does not verify conditions."
+    },
+    {
+      "id": "empresa",
+      "url": "https://www.gob.pe/institucion/tuempresa/campa%C3%B1as/54791-crea-tu-empresa",
+      "finalUrl": "https://www.gob.pe/institucion/tuempresa/campa%C3%B1as/54791-crea-tu-empresa",
+      "httpStatus": 200,
+      "title": "Crea tu empresa - Campañas - Programa Nacional \"Tu Empresa\" - Plataforma del Estado Peruano",
+      "consultedAt": "2026-11-11",
+      "sha256": "d749d5db05cbc45fd36395a8fbcfa33b6e4137167cf9fdf98e80b19607d99f18",
+      "method": "Direct HTTP GET; content manually read. HTTP status alone does not verify conditions."
+    },
+    {
+      "id": "cse",
+      "url": "https://www.gob.pe/83555-solicitar-la-clasificacion-socioeconomica-cse-de-tu-hogar",
+      "finalUrl": "https://www.gob.pe/83555-solicitar-la-clasificacion-socioeconomica-cse-de-tu-hogar",
+      "httpStatus": 200,
+      "title": "Solicitar la Clasificación Socioeconómica (CSE) de tu Hogar - Servicio - Organismo de Focalización e Información Social - Plataforma del Estado Peruano",
+      "consultedAt": "2026-11-11",
+      "sha256": "187bb5cb2a6e99b0b0ffd4772a7319fa759a2c1bbbf6ec9577ddf7ce8db4425b",
+      "method": "Direct HTTP GET; content manually read. HTTP status alone does not verify conditions."
+    },
+    {
+      "id": "ule",
+      "url": "https://www.gob.pe/90813-conocer-la-direccion-de-la-unidad-local-de-empadronamiento-de-tu-municipalidad",
+      "finalUrl": "https://www.gob.pe/90813-conocer-la-direccion-de-la-unidad-local-de-empadronamiento-de-tu-municipalidad",
+      "httpStatus": 200,
+      "title": "Conocer la dirección de la Unidad Local de Empadronamiento de tu municipalidad - Servicio - Organismo de Focalización e Información Social - Plataforma del Estado Peruano",
+      "consultedAt": "2026-11-11",
+      "sha256": "9316b7963ee2385b0ab465a05b698ecd2d711fdfdd216f1cbbadb91c176a89ef",
+      "method": "Direct HTTP GET; content manually read. HTTP status alone does not verify conditions."
+    }
+  ]
+}

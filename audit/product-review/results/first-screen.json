@@ -1,0 +1,338 @@
+[
+  {
+    "project": "small-mobile",
+    "language": "es",
+    "viewport": {
+      "width": 360,
+      "height": 640
+    },
+    "metrics": [
+      {
+        "name": "value",
+        "x": 16,
+        "y": 101,
+        "width": 328,
+        "height": 66.28125,
+        "fontSize": 29.6
+      },
+      {
+        "name": "description",
+        "x": 16,
+        "y": 179.28125,
+        "width": 328,
+        "height": 51.1875,
+        "fontSize": 16
+      },
+      {
+        "name": "start",
+        "x": 33,
+        "y": 417.34375,
+        "width": 294,
+        "height": 48,
+        "fontSize": 16
+      },
+      {
+        "name": "service",
+        "x": 89,
+        "y": 350.96875,
+        "width": 238,
+        "height": 50.375,
+        "fontSize": 18
+      }
+    ]
+  },
+  {
+    "project": "mobile",
+    "language": "es",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "name": "value",
+        "x": 16,
+        "y": 101,
+        "width": 358,
+        "height": 66.28125,
+        "fontSize": 29.6
+      },
+      {
+        "name": "description",
+        "x": 16,
+        "y": 179.28125,
+        "width": 358,
+        "height": 51.1875,
+        "fontSize": 16
+      },
+      {
+        "name": "start",
+        "x": 33,
+        "y": 417.34375,
+        "width": 324,
+        "height": 48,
+        "fontSize": 16
+      },
+      {
+        "name": "service",
+        "x": 89,
+        "y": 350.96875,
+        "width": 268,
+        "height": 50.375,
+        "fontSize": 18
+      }
+    ]
+  },
+  {
+    "project": "tablet",
+    "language": "es",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "metrics": [
+      {
+        "name": "value",
+        "x": 24,
+        "y": 183.8125,
+        "width": 342,
+        "height": 66.28125,
+        "fontSize": 29.6
+      },
+      {
+        "name": "description",
+        "x": 24,
+        "y": 262.09375,
+        "width": 342,
+        "height": 57.59375,
+        "fontSize": 18
+      },
+      {
+        "name": "start",
+        "x": 427,
+        "y": 305.5,
+        "width": 292,
+        "height": 48,
+        "fontSize": 16
+      },
+      {
+        "name": "service",
+        "x": 483,
+        "y": 233.5,
+        "width": 236,
+        "height": 56,
+        "fontSize": 20
+      }
+    ]
+  },
+  {
+    "project": "desktop",
+    "language": "es",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "metrics": [
+      {
+        "name": "value",
+        "x": 112,
+        "y": 174.53125,
+        "width": 568,
+        "height": 119.34375,
+        "fontSize": 53.28
+      },
+      {
+        "name": "description",
+        "x": 112,
+        "y": 305.875,
+        "width": 520,
+        "height": 57.59375,
+        "fontSize": 18
+      },
+      {
+        "name": "start",
+        "x": 843,
+        "y": 320,
+        "width": 402,
+        "height": 48,
+        "fontSize": 16
+      },
+      {
+        "name": "service",
+        "x": 899,
+        "y": 264.75,
+        "width": 337.125,
+        "height": 28,
+        "fontSize": 20
+      }
+    ]
+  },
+  {
+    "project": "small-mobile",
+    "language": "en",
+    "viewport": {
+      "width": 360,
+      "height": 640
+    },
+    "metrics": [
+      {
+        "name": "value",
+        "x": 16,
+        "y": 101,
+        "width": 328,
+        "height": 66.28125,
+        "fontSize": 29.6
+      },
+      {
+        "name": "description",
+        "x": 16,
+        "y": 179.28125,
+        "width": 328,
+        "height": 51.1875,
+        "fontSize": 16
+      },
+      {
+        "name": "start",
+        "x": 33,
+        "y": 417.34375,
+        "width": 294,
+        "height": 48,
+        "fontSize": 16
+      },
+      {
+        "name": "service",
+        "x": 89,
+        "y": 350.96875,
+        "width": 238,
+        "height": 50.375,
+        "fontSize": 18
+      }
+    ]
+  },
+  {
+    "project": "mobile",
+    "language": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "metrics": [
+      {
+        "name": "value",
+        "x": 16,
+        "y": 101,
+        "width": 358,
+        "height": 66.28125,
+        "fontSize": 29.6
+      },
+      {
+        "name": "description",
+        "x": 16,
+        "y": 179.28125,
+        "width": 358,
+        "height": 51.1875,
+        "fontSize": 16
+      },
+      {
+        "name": "start",
+        "x": 33,
+        "y": 417.34375,
+        "width": 324,
+        "height": 48,
+        "fontSize": 16
+      },
+      {
+        "name": "service",
+        "x": 89,
+        "y": 350.96875,
+        "width": 268,
+        "height": 50.375,
+        "fontSize": 18
+      }
+    ]
+  },
+  {
+    "project": "tablet",
+    "language": "en",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "metrics": [
+      {
+        "name": "value",
+        "x": 24,
+        "y": 183.8125,
+        "width": 342,
+        "height": 66.28125,
+        "fontSize": 29.6
+      },
+      {
+        "name": "description",
+        "x": 24,
+        "y": 262.09375,
+        "width": 342,
+        "height": 57.59375,
+        "fontSize": 18
+      },
+      {
+        "name": "start",
+        "x": 427,
+        "y": 305.5,
+        "width": 292,
+        "height": 48,
+        "fontSize": 16
+      },
+      {
+        "name": "service",
+        "x": 483,
+        "y": 233.5,
+        "width": 236,
+        "height": 56,
+        "fontSize": 20
+      }
+    ]
+  },
+  {
+    "project": "desktop",
+    "language": "en",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "metrics": [
+      {
+        "name": "value",
+        "x": 112,
+        "y": 174.53125,
+        "width": 568,
+        "height": 119.34375,
+        "fontSize": 53.28
+      },
+      {
+        "name": "description",
+        "x": 112,
+        "y": 305.875,
+        "width": 520,
+        "height": 57.59375,
+        "fontSize": 18
+      },
+      {
+        "name": "start",
+        "x": 843,
+        "y": 320,
+        "width": 402,
+        "height": 48,
+        "fontSize": 16
+      },
+      {
+        "name": "service",
+        "x": 899,
+        "y": 264.75,
+        "width": 333.125,
+        "height": 28,
+        "fontSize": 20
+      }
+    ]
+  }
+]

@@ -1,0 +1,532 @@
+{
+  "checkedAt": "2026-11-11T20:59:12.228Z",
+  "note": "No availability decision is derived from HTTP status alone. Requisition identity, application route, notices and published deadlines are checked separately.",
+  "jobs": [
+    {
+      "id": "mx-amazon-process",
+      "country": "MX",
+      "url": "https://www.amazon.jobs/en/jobs/10600651/asistente-de-procesos-ob",
+      "http": 200,
+      "title": "Asistente de Procesos OB",
+      "metadata": [],
+      "apply": [
+        "https://www.amazon.jobs/applicant/jobs/10600651/apply"
+      ],
+      "closedNotice": false,
+      "liveSearch": {
+        "http": 200,
+        "matchingRequisition": true,
+        "results": 1,
+        "location": "MX, NLE, Apodaca",
+        "posted": "November 10, 2026"
+      }
+    },
+    {
+      "id": "pe-concentrix-cleaning",
+      "country": "PE",
+      "url": "https://jobs.concentrix.com/job/?id=R1721226",
+      "http": 200,
+      "title": "Personal de Limpieza",
+      "metadata": [
+        {
+          "identifier": "R1721226",
+          "datePosted": "2026-04-11T06:04:19.789+08:00"
+        }
+      ],
+      "apply": [
+        "https://cnx.wd1.myworkdayjobs.com/external_global/job/PER-Lima---Avenida-El-Camino-Real-N195-Calle-Santa-Luisa/Personal-de-Limpieza_R1721226/apply?source=concentrixCareerWebSite"
+      ],
+      "closedNotice": false
+    },
+    {
+      "id": "mx-amazon-operations-intern",
+      "country": "MX",
+      "url": "https://www.amazon.jobs/en/jobs/3181151/operations-intern-auta",
+      "http": 200,
+      "title": "Operations Intern, AUTA",
+      "metadata": [],
+      "apply": [
+        "https://www.amazon.jobs/applicant/jobs/3181151/apply"
+      ],
+      "closedNotice": false,
+      "liveSearch": {
+        "http": 200,
+        "matchingRequisition": true,
+        "results": 4,
+        "location": "MX, DIF, Mexico City",
+        "posted": "February 13, 2026"
+      }
+    },
+    {
+      "id": "co-concentrix-customer",
+      "country": "CO",
+      "url": "https://jobs.concentrix.com/job/?id=CO-1372",
+      "http": 200,
+      "title": "Español",
+      "metadata": [
+        {
+          "identifier": "CO-1372",
+          "datePosted": "2026-04-28T00:45:58.859-04:00"
+        }
+      ],
+      "apply": [
+        "https://concentrix-colombia.talkpush.com/site/campaigns/Z2lkOi8vYXN0cmFldXMvQ2FtcGFpZ246OlJlY29yZC8xMzcy/apply??source=concentrixCareerWebSite"
+      ],
+      "closedNotice": false
+    },
+    {
+      "id": "pe-concentrix-customer",
+      "country": "PE",
+      "url": "https://jobs.concentrix.com/job/?id=PE-29",
+      "http": 200,
+      "title": "Call Center Agent",
+      "metadata": [
+        {
+          "identifier": "PE-29",
+          "datePosted": "2026-03-04T15:39:37.729-05:00"
+        }
+      ],
+      "apply": [
+        "https://concentrix-peru.talkpush.com/site/campaigns/Z2lkOi8vYXN0cmFldXMvQ2FtcGFpZ246OlJlY29yZC8yOQ/apply??source=concentrixCareerWebSite"
+      ],
+      "closedNotice": false
+    },
+    {
+      "id": "co-amazon-business-analyst",
+      "country": "CO",
+      "url": "https://www.amazon.jobs/en/jobs/10590802/business-analyst-network-strategy-performance-network-strategy-and-performance",
+      "http": 200,
+      "title": "Business Analyst, Network Strategy & Performance, Network Strategy and Performance",
+      "metadata": [],
+      "apply": [
+        "https://www.amazon.jobs/applicant/jobs/10590802/apply"
+      ],
+      "closedNotice": false,
+      "liveSearch": {
+        "http": 200,
+        "matchingRequisition": true,
+        "results": 3,
+        "location": "CO, Bogota",
+        "posted": "October 28, 2026"
+      }
+    },
+    {
+      "id": "es-ikea-logistics",
+      "country": "ES",
+      "url": "https://jobs.ikea.com/es/trabajo/granada/aprovisionamiento-reposicion-de-mercancias-ikea-granada-40h-interinidad/24107/102933951680",
+      "http": 200,
+      "title": "Aprovisionamiento/Reposición de Mercancías | IKEA Granada (40H, Interinidad)",
+      "metadata": [
+        {
+          "identifier": "376185",
+          "datePosted": "2026-11-06"
+        }
+      ],
+      "apply": [
+        "https://ikea.avature.net/es_ES/External/JobDetail?jobId=376185&source=Talent+Brew+Career+Page"
+      ],
+      "closedNotice": false,
+      "publishedDeadline": "2026-11-12"
+    },
+    {
+      "id": "es-ikea-sales",
+      "country": "ES",
+      "url": "https://jobs.ikea.com/es/trabajo/marbella/vendedor-a-ikea-marbella-40h-rotativo/24107/102900976960",
+      "http": 200,
+      "title": "Vendedor/a | IKEA Marbella (40H, Rotativo)",
+      "metadata": [],
+      "apply": [
+        "https://ikea.avature.net/es_ES/External/JobDetail?jobId=375891&source=Talent+Brew+Career+Page"
+      ],
+      "closedNotice": false,
+      "publishedDeadline": "2026-11-15"
+    },
+    {
+      "id": "co-aws-intern",
+      "country": "CO",
+      "url": "https://www.amazon.jobs/en/jobs/10506034/aws-demand-generation-intern",
+      "http": 200,
+      "title": "AWS Demand Generation Intern",
+      "metadata": [],
+      "apply": [
+        "https://www.amazon.jobs/applicant/jobs/10506034/apply"
+      ],
+      "closedNotice": false,
+      "liveSearch": {
+        "http": 200,
+        "matchingRequisition": true,
+        "results": 1,
+        "location": "CO, Bogota",
+        "posted": "August 18, 2026"
+      }
+    },
+    {
+      "id": "es-amazon-software-intern",
+      "country": "ES",
+      "url": "https://www.amazon.jobs/en/jobs/10555855/2027-software-dev-engineer-intern-spain",
+      "http": 200,
+      "title": "2027 Software Dev Engineer Intern - Spain",
+      "metadata": [],
+      "apply": [
+        "https://www.amazon.jobs/applicant/jobs/10555855/apply"
+      ],
+      "closedNotice": false,
+      "liveSearch": {
+        "http": 200,
+        "matchingRequisition": true,
+        "results": 1,
+        "location": "ES, M, Madrid",
+        "posted": "September 22, 2026"
+      }
+    },
+    {
+      "id": "pe-promigas-billing",
+      "country": "PE",
+      "url": "https://soycapaz.conadisperu.gob.pe/jobs/vacante-196b171e",
+      "http": 200,
+      "title": "PROMIGAS PERU S.A.",
+      "metadata": [],
+      "apply": [],
+      "closedNotice": false,
+      "publishedDeadline": "2026-11-27",
+      "availableLabel": true,
+      "dates": [
+        "Fecha de inicio29 de octubre de 2026Fecha de cierre27 de noviembre de 2026Vacantes di"
+      ],
+      "applicationEmails": [
+        "tania.guimac@promigas.pe",
+        "mayra.sanchez@promigas.pe"
+      ],
+      "roleFound": true,
+      "applicationProcedure": "Read specific role and send CV to the employer emails published by CONADIS; no web application is claimed."
+    },
+    {
+      "id": "pe-xylem-electromechanical",
+      "country": "PE",
+      "url": "https://soycapaz.conadisperu.gob.pe/jobs/vacante-d643c58d",
+      "http": 200,
+      "title": "EMPRESA XILEM",
+      "metadata": [],
+      "apply": [],
+      "closedNotice": false,
+      "publishedDeadline": "2026-11-20",
+      "availableLabel": true,
+      "dates": [
+        "Fecha de inicio06 de octubre de 2026Fecha de cierre20 de noviembre de 2026Vacantes di"
+      ],
+      "applicationEmails": [
+        "Ivette.abanto@xylem.com",
+        "Guadalupe.garcia@xylem.com"
+      ],
+      "roleFound": true,
+      "applicationProcedure": "Read specific role and send CV to the employer emails published by CONADIS; no web application is claimed."
+    },
+    {
+      "id": "us-amazon-process-assistant",
+      "country": "US",
+      "url": "https://www.amazon.jobs/en/jobs/10570388/process-assistant",
+      "http": 200,
+      "title": "Process Assistant",
+      "metadata": [],
+      "apply": [
+        "https://www.amazon.jobs/applicant/jobs/10570388/apply"
+      ],
+      "closedNotice": false,
+      "liveSearch": {
+        "http": 200,
+        "matchingRequisition": true,
+        "results": 96,
+        "location": "US, IL, Waukegan",
+        "posted": "October  6, 2026"
+      }
+    },
+    {
+      "id": "mx-concentrix-customer",
+      "country": "MX",
+      "url": "https://jobs.concentrix.com/job/?id=R1664956",
+      "http": 200,
+      "title": "Customer Service Agents - Español - CDMX",
+      "metadata": [
+        {
+          "identifier": "R1664956",
+          "datePosted": "2025-08-04T22:21:44.854-06:00"
+        }
+      ],
+      "apply": [
+        "https://concentrix-mexico.talkpush.com/site/campaigns/Z2lkOi8vYXN0cmFldXMvQ2FtcGFpZ246OlJlY29yZC80/apply??source=concentrixCareerWebSite"
+      ],
+      "closedNotice": false
+    },
+    {
+      "id": "us-va-nurse",
+      "country": "US",
+      "url": "https://www.usajobs.gov/job/889380900",
+      "http": 200,
+      "title": "Registered Nurse-Medical, Surgical, Oncology, Telemetry (Inpatient/Acute Care C1_C2)",
+      "metadata": [
+        {
+          "datePosted": "10/19/2026",
+          "validThrough": "2027-09-30"
+        }
+      ],
+      "apply": [
+        "https://www.usajobs.gov/Applicant/Application/ApplyStart/889380900"
+      ],
+      "closedNotice": false,
+      "publishedDeadline": "2027-09-30",
+      "dates": null,
+      "announcementFound": true
+    }
+  ],
+  "amazonApplicationBoundaries": [
+    {
+      "id": "mx-amazon-process",
+      "entry": "https://www.amazon.jobs/applicant/jobs/10600651/apply",
+      "finalOrigin": "https://passport.amazon.jobs",
+      "finalPath": "/",
+      "http": 200,
+      "authPageVisible": true,
+      "closedNotice": false,
+      "headings": [
+        "Log in or create account"
+      ]
+    },
+    {
+      "id": "mx-amazon-operations-intern",
+      "entry": "https://www.amazon.jobs/applicant/jobs/3181151/apply",
+      "finalOrigin": "https://passport.amazon.jobs",
+      "finalPath": "/",
+      "http": 200,
+      "authPageVisible": true,
+      "closedNotice": false,
+      "headings": [
+        "Log in or create account"
+      ]
+    },
+    {
+      "id": "co-amazon-business-analyst",
+      "entry": "https://www.amazon.jobs/applicant/jobs/10590802/apply",
+      "finalOrigin": "https://passport.amazon.jobs",
+      "finalPath": "/",
+      "http": 200,
+      "authPageVisible": true,
+      "closedNotice": false,
+      "headings": [
+        "Log in or create account"
+      ]
+    },
+    {
+      "id": "co-aws-intern",
+      "entry": "https://www.amazon.jobs/applicant/jobs/10506034/apply",
+      "finalOrigin": "https://passport.amazon.jobs",
+      "finalPath": "/",
+      "http": 200,
+      "authPageVisible": true,
+      "closedNotice": false,
+      "headings": [
+        "Log in or create account"
+      ]
+    },
+    {
+      "id": "es-amazon-software-intern",
+      "entry": "https://www.amazon.jobs/applicant/jobs/10555855/apply",
+      "finalOrigin": "https://passport.amazon.jobs",
+      "finalPath": "/",
+      "http": 200,
+      "authPageVisible": true,
+      "closedNotice": false,
+      "headings": [
+        "Log in or create account"
+      ]
+    },
+    {
+      "id": "us-amazon-process-assistant",
+      "entry": "https://www.amazon.jobs/applicant/jobs/10570388/apply",
+      "finalOrigin": "https://passport.amazon.jobs",
+      "finalPath": "/",
+      "http": 200,
+      "authPageVisible": true,
+      "closedNotice": false,
+      "headings": [
+        "Log in or create account"
+      ]
+    }
+  ],
+  "originalDeployment": {
+    "id": "dpl_3i6Y85tydhoEja7e29fDvKY7Z44n",
+    "state": "READY",
+    "projectId": "prj_lcTIJFFWwcijnAo5eUIhTkjMJpXT",
+    "target": null,
+    "commit": "18ce9b74fc02d64f4ae03ae0d9c9049c4056a6d4",
+    "branch": "codex/catalog-usefulness",
+    "url": "https://umbral-review-20261111-6mnp45v52-alvaro-s-projects1.vercel.app"
+  },
+  "necessaryCorrection": {
+    "reason": "Hiring-platform deadlines were published but missing from the catalogue. No new opportunity or feature added.",
+    "granada": {
+      "source": "https://ikea.avature.net/es_ES/External/JobDetail?jobId=376185",
+      "closesOn": "2026-11-12"
+    },
+    "marbella": {
+      "source": "https://ikea.avature.net/es_ES/External/JobDetail?jobId=375891",
+      "closesOn": "2026-11-15"
+    },
+    "timeZone": "Europe/Madrid",
+    "closingHour": "Not published"
+  },
+  "applicationBoundaries": [
+    {
+      "id": "pe-concentrix-cleaning",
+      "matchedRole": true,
+      "route": "https://cnx.wd1.myworkdayjobs.com/external_global/job/PER-Lima---Avenida-El-Camino-Real-N195-Calle-Santa-Luisa/Personal-de-Limpieza_R1721226",
+      "applyControls": [
+        "Apply"
+      ],
+      "headings": [
+        "Apply With Us!",
+        "Personal de Limpieza",
+        "Mission:  ",
+        "Company Overview:  "
+      ]
+    },
+    {
+      "id": "es-ikea-logistics",
+      "applicationHref": "https://ikea.avature.net/es_ES/External/Login?jobId=376185",
+      "route": "https://ikea.avature.net/es_ES/External/Login?jobId=376185",
+      "title": "Inicio de sesión",
+      "headings": [
+        "\n        IKEA\n    ",
+        "\n                            ¡Bienvenido/a de nuevo!                        "
+      ]
+    },
+    {
+      "id": "es-ikea-sales",
+      "applicationHref": "https://ikea.avature.net/es_ES/External/Login?jobId=375891",
+      "route": "https://ikea.avature.net/es_ES/External/Login?jobId=375891",
+      "title": "Inicio de sesión",
+      "headings": [
+        "\n        IKEA\n    ",
+        "\n                            ¡Bienvenido/a de nuevo!                        "
+      ]
+    }
+  ],
+  "hiringPlatformDeadlines": [
+    {
+      "id": "es-ikea-logistics",
+      "title": "Aprovisionamiento/Reposición de Mercancías | IKEA Granada (40H, Interinidad) - Granada (Nevada) - 376185",
+      "publishedDeadline": "2026-11-12",
+      "applicationButtonPresent": true
+    },
+    {
+      "id": "es-ikea-sales",
+      "title": "Vendedor/a | IKEA Marbella (40H, Rotativo) - Málaga -Marbella - 375891",
+      "publishedDeadline": "2026-11-15",
+      "applicationButtonPresent": true
+    }
+  ],
+  "expiryBrowserChecks": [
+    {
+      "id": "es-ikea-logistics",
+      "referenceDate": "2026-11-11",
+      "visibleDeadline": "12 de noviembre de 2026",
+      "actionVisible": true
+    },
+    {
+      "id": "es-ikea-sales",
+      "referenceDate": "2026-11-11",
+      "visibleDeadline": "15 de noviembre de 2026",
+      "actionVisible": true
+    },
+    {
+      "id": "es-ikea-logistics",
+      "simulatedTime": "2026-11-13T15:00:00Z",
+      "closedVisible": true,
+      "applicationActions": 0
+    },
+    {
+      "id": "es-ikea-sales",
+      "simulatedTime": "2026-11-16T15:00:00Z",
+      "closedVisible": true,
+      "applicationActions": 0
+    }
+  ],
+  "publicSeparationChecks": {
+    "stats": {
+      "startTime": "2026-11-11T21:00:45.660Z",
+      "duration": 18507.271999999997,
+      "expected": 12,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "viewports": [
+      "360x640",
+      "1440x900"
+    ],
+    "languages": [
+      "es",
+      "en"
+    ],
+    "scope": "Country filters, saved records across countries, local progress, reload, text export and print",
+    "correctedPreview": "https://umbral-review-20261111-re35sy5c7-alvaro-s-projects1.vercel.app",
+    "correctedPreviewStats": {
+      "startTime": "2026-11-11T21:14:02.774Z",
+      "duration": 19173.604000000003,
+      "expected": 12,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "unitTests": 49,
+  "talkpushApplicationForms": [
+    {
+      "id": "pe-concentrix-customer",
+      "title": "Call Center Agent",
+      "origin": "https://concentrix-peru.talkpush.com",
+      "path": "/careers/29/apply",
+      "visibleInputs": 6,
+      "noApplicationSubmitted": true
+    },
+    {
+      "id": "mx-concentrix-customer",
+      "title": "Customer Service Agents - Español - CDMX",
+      "origin": "https://concentrix-mexico.talkpush.com",
+      "path": "/careers/4/apply",
+      "visibleInputs": 6,
+      "noApplicationSubmitted": true
+    },
+    {
+      "id": "co-concentrix-customer",
+      "title": "Español",
+      "origin": "https://concentrix-colombia.talkpush.com",
+      "path": "/careers/1372/apply",
+      "visibleInputs": 6,
+      "noApplicationSubmitted": true
+    }
+  ],
+  "correctedDeployment": {
+    "id": "dpl_2getetjdbdqVDxXuwwDwXy25UAxc",
+    "state": "READY",
+    "target": null,
+    "projectId": "prj_lcTIJFFWwcijnAo5eUIhTkjMJpXT",
+    "commit": "a3d0cf0ff15b29604b47edb20447d19d3fc50eea",
+    "url": "https://umbral-review-20261111-re35sy5c7-alvaro-s-projects1.vercel.app",
+    "matchingLocalBundle": true,
+    "asset": "/assets/index-y3_hB6hA.js",
+    "publicDeadlineChecks": [
+      {
+        "id": "es-ikea-logistics",
+        "deadlineVisible": "12 de noviembre de 2026",
+        "simulatedClosedDate": "2026-11-13",
+        "expiredActionRemoved": true
+      },
+      {
+        "id": "es-ikea-sales",
+        "deadlineVisible": "15 de noviembre de 2026",
+        "simulatedClosedDate": "2026-11-16",
+        "expiredActionRemoved": true
+      }
+    ]
+  }
+}

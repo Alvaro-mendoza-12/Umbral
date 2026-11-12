@@ -1,0 +1,22 @@
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_3i6Y85tydhoEja7e29fDvKY7Z44n",
+    "url": "https://umbral-review-20261111-6mnp45v52-alvaro-s-projects1.vercel.app",
+    "inspectorUrl": "https://vercel.com/alvaro-s-projects1/umbral-review-20261111/3i6Y85tydhoEja7e29fDvKY7Z44n",
+    "readyState": "READY",
+    "target": null,
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_3i6Y85tydhoEja7e29fDvKY7Z44n"
+  },
+  "message": "Deployment umbral-review-20261111-6mnp45v52-alvaro-s-projects1.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel inspect umbral-review-20261111-6mnp45v52-alvaro-s-projects1.vercel.app",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod",
+      "when": "Promote to production"
+    }
+  ]
+}

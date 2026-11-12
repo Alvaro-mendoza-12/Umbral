@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-11",
+  "branch": "codex/catalog-usefulness",
+  "applicationCommit": "18ce9b74fc02d64f4ae03ae0d9c9049c4056a6d4",
+  "preview": "https://umbral-review-20261111-6mnp45v52-alvaro-s-projects1.vercel.app",
+  "newRecords": 17,
+  "newJobs": 12,
+  "jobsByCountry": {
+    "PE": 4,
+    "US": 2,
+    "MX": 3,
+    "CO": 3,
+    "ES": 3
+  },
+  "concreteOpportunities": 31,
+  "retainedProcedure": "cse-peru",
+  "previous14Reverified": true,
+  "lint": "passed",
+  "build": "passed",
+  "unitTests": 48,
+  "localBrowserTests": {
+    "startTime": "2026-11-11T20:32:04.651Z",
+    "duration": 311668.251,
+    "expected": 468,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "publicBrowserTests": {
+    "startTime": "2026-11-11T20:42:42.063Z",
+    "duration": 110468.827,
+    "expected": 70,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "limitations": [
+    "Manual editorial catalogue, not a real-time hiring feed.",
+    "Unpublished eligibility, salary and deadlines remain explicit unknowns.",
+    "No verified incubator added; training, seed capital, debt and equity acceleration are distinct.",
+    "External account, document and hiring steps were not completed.",
+    "FSA page remains a JavaScript shell in this environment; FAFSA PDF checked. Workday rendering was blank but official job API returned matching R1721226."
+  ],
+  "humanSessions": "not performed"
+}

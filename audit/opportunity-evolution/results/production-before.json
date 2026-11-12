@@ -1,0 +1,12 @@
+{
+  "name": "umbral",
+  "id": "prj_yKtjhtNBnLfTc72qufZADydrwClN",
+  "productionDeployment": "dpl_FocecH2p4BS8BvYXn48NJC6nWZjr",
+  "gitType": "github",
+  "gitRepo": "Umbral",
+  "gitOrg": "Alvaro-mendoza-12",
+  "productionBranch": "main",
+  "ssoProtection": {
+    "deploymentType": "all_except_custom_domains"
+  }
+}

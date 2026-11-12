@@ -1,0 +1,27 @@
+{
+  "contract": "DESIGN.md: compact international entry; only PE/CSE available; country-scoped content; preserve legal text and existing functionality; production/main unchanged.",
+  "targetViewports": ["360x640", "390x844", "768x1024", "1440x900"],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "328 E2E and 30 unit tests pass. Axe checks include ES/EN first views, seven pages and 404, menu and progress states. Keyboard, focus, label-in-name, non-text contrast, reduced motion, forced colors, 320px reflow and 200% root text resizing were checked. This is tested scope, not full WCAG certification."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "Eight rendered ES/EN first-screen geometry records verify title, description, service and primary action fit all four viewports at normal text size. Ninety-two screenshots exist; independent visual review found no remaining blocking clipping. Desktop grid and enlarged-text wrapping were corrected."
+  },
+  "contentStates": {
+    "loading": {"status": "not-applicable", "reason": "Country packages and translations are bundled locally; no asynchronous service or delayed-content state was introduced. Initial network loading is still required before offline use."},
+    "empty": {"status": "pass", "evidence": "MX/CO/ES and unknown countries return no procedures without falling back to PE; UI explains unavailable verified guides and offers an explicit return to Peru. Checklist zero state retains eleven accessible controls."},
+    "error": {"status": "pass", "evidence": "Invalid guide routes recover; corrupt or blocked storage remains usable with its notice; the 404 screen keeps navigation and a return action. All regression cases ran."},
+    "partial": {"status": "pass", "evidence": "Checklist two-item state and guide position persist without implying an approved application. Details open by keyboard and all source paragraphs remain reachable in ES/EN."},
+    "success": {"status": "pass", "evidence": "Guide reaches its final step; eleven checked items and reset behave correctly. Print preserves complete country-scoped steps, eleven items, five sources and local certainty notes. No official submission is performed."},
+    "permission": {"status": "not-applicable", "reason": "No account, citizen document, geolocation or sensitive information is requested. Country is a manual content selection rather than a device-location permission."}
+  },
+  "renderedEvidence": [
+    {"viewport": "360x640", "artifact": "after/small-mobile/home-first-viewport-es.png", "observation": "Purpose, description, PE/CSE identity and Comenzar fit above the fold with readable type; the large doorway has become a compact service cue."},
+    {"viewport": "390x844", "artifact": "after/mobile/home-first-viewport-en.png", "observation": "English copy and service remain visible before scrolling; complete Home is 1616px rather than the previous 3685px in the Spanish full-page comparison."},
+    {"viewport": "768x1024", "artifact": "after/tablet/home-first-viewport-es.png", "observation": "Balanced entry and service columns keep the first screen compact; columns can stack when root text grows."},
+    {"viewport": "1440x900", "artifact": "after/desktop/home-first-viewport-es.png", "observation": "Two columns occupy the intended width; an accidental empty third track was removed and typography retains hierarchy."}
+  ],
+  "limits": {"humanSessions": 0, "physicalDevices": false, "screenReader": false, "productionRelease": false}
+}

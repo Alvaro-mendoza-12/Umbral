@@ -1,0 +1,62 @@
+{
+  "contract": "DESIGN.md: preserve the CSE preparation workflow; make doorway/light functional for entry, current position and checklist count; main/production unchanged.",
+  "targetViewports": ["390x844", "768x1024", "1440x900"],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "171 E2E passed, including axe rules for WCAG A/AA 2.0/2.1/2.2 on seven views and 404, English open-menu and partial states, keyboard, visible-label-in-name, reduced motion, forced colors and 320px reflow. Additional computed non-text contrast checks pass. Scope is tested criteria, not full conformance certification."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "All three Playwright projects pass overflow checks; 33 fresh screenshots generated. Independent visual inspection of home, guide and checklist at all three widths found no blocking clipping. Tablet home was compacted into two columns; mobile home retains CTA before the doorway."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "not-applicable",
+      "reason": "This theme introduces no asynchronous data request or delayed-content/loading state; the existing static application shell and offline cache are retained. Network loading itself is not claimed to be instantaneous."
+    },
+    "empty": {
+      "status": "pass",
+      "evidence": "Checklist starts at 0/11 with eleven unlit segments and actionable checkboxes; empty-state screenshots exist for each width."
+    },
+    "error": {
+      "status": "pass",
+      "evidence": "Invalid guide paths recover, corrupted storage cannot fabricate preparation, blocked writes leave memory interaction available with a notice, and unknown routes keep navigation and skip-link access. Existing regression tests reran successfully."
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "Two nonadjacent checked items produce exactly two lit segments, remain after reload and are captured at all widths. Guide direct entry at step 3 labels position without completing checklist tasks."
+    },
+    "success": {
+      "status": "pass",
+      "evidence": "All eleven checked items produce eleven lights and the explicit preparation-is-not-approval notice. Confirmation reset and reload return the counter to zero; the five-step guide still reaches checklist."
+    },
+    "permission": {
+      "status": "not-applicable",
+      "reason": "The reviewed preparation flow requests no account, personal document, location, camera, microphone or permission; no permission surface was introduced by the design."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "390x844",
+      "artifact": "after/mobile/home-viewport.png",
+      "observation": "Primary action precedes doorway in the first screen; 502px additional full-page height is disclosed as a mobile tradeoff. Guide controls are now before the article; partial checklist screenshots are normalized to scroll top."
+    },
+    {
+      "viewport": "768x1024",
+      "artifact": "after/tablet/home-viewport.png",
+      "observation": "Two columns keep the full entry scene inside the tablet viewport with readable copy and five reachable links. The complete page is 231px shorter than baseline."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "after/desktop/home-viewport.png",
+      "observation": "Entry text and navigation arch form a balanced two-column composition. Light surfaces resume below the scene; complete home is 252px shorter than baseline."
+    }
+  ],
+  "limits": {
+    "userStudy": "not performed",
+    "physicalDevices": "not performed",
+    "screenReader": "not performed",
+    "mainCommit": "ac586fa1822b44ba8f2a0232c6f1fdc858219288",
+    "productionModified": false
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "checkedOn": "2026-11-11",
+  "records": [
+    {
+      "url": "https://www.gaceta.unam.mx/aprendo-plataforma-que-ofrece-cursos-gratis-y-autogestivos/",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gaceta.unam.mx/aprendo-plataforma-que-ofrece-cursos-gratis-y-autogestivos/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 81116,
+      "sha256": "788a8feab3c4f6e920009e2e32f3b28af323986567d20f1126f38323d1dcad35"
+    },
+    {
+      "url": "https://normograma.sena.edu.co/compilacion/docs/circular_sena_0115_2019.htm",
+      "httpStatus": 500,
+      "finalUrl": "https://normograma.sena.edu.co/compilacion/docs/circular_sena_0115_2019.htm",
+      "contentType": "text/html",
+      "bytes": 1208,
+      "sha256": "e1b0a10649c4b92f828523efc2ebe135ea9488179a2816888d1e84f786202dbf"
+    },
+    {
+      "url": "https://studentaid.gov/sites/default/files/2026-27-fafsa-form.pdf",
+      "httpStatus": 200,
+      "finalUrl": "https://studentaid.gov/sites/default/files/2026-27-fafsa-form.pdf",
+      "contentType": "application/pdf",
+      "bytes": 1061186,
+      "sha256": "c0da8772f9aecaa60d92226ed15d58dcc52051e8d8172f8a47d14bc64459313a",
+      "pdfHeader": "%PDF-"
+    },
+    {
+      "url": "https://studentaid.gov/h/apply-for-aid/fafsa",
+      "httpStatus": 200,
+      "finalUrl": "https://studentaid.gov/h/apply-for-aid/fafsa",
+      "contentType": "text/html",
+      "bytes": 11293,
+      "sha256": "df2910376006584f9d3618391dda73ea8351c2b80925951efbbb564be220d471",
+      "rendering": "HTTP response checked; browser rendering failed earlier with ERR_HTTP2_PROTOCOL_ERROR; not confirmed"
+    },
+    {
+      "url": "https://studentaid.gov/understand-aid/types/grants/pell",
+      "httpStatus": 200,
+      "finalUrl": "https://studentaid.gov/understand-aid/types/grants/pell",
+      "contentType": "text/html",
+      "bytes": 11293,
+      "sha256": "cfc605265f4313126488c550d4aa1271522796afc7ebebb2651c9ea7ca982643",
+      "rendering": "HTTP response checked; browser rendering failed earlier with ERR_HTTP2_PROTOCOL_ERROR; not confirmed"
+    },
+    {
+      "url": "https://studentaid.gov/understand-aid/eligibility",
+      "httpStatus": 200,
+      "finalUrl": "https://studentaid.gov/understand-aid/eligibility",
+      "contentType": "text/html",
+      "bytes": 11293,
+      "sha256": "71c9f946edf5aa62a8b616ae52f8cde2fc7f68c44bbc1450cced991d0a75b8c8",
+      "rendering": "HTTP response checked; browser rendering failed earlier with ERR_HTTP2_PROTOCOL_ERROR; not confirmed"
+    },
+    {
+      "url": "https://historico.sena.edu.co/es-co/Noticias/Paginas/noticia.aspx?IdNoticia=7236",
+      "httpStatus": 200,
+      "finalUrl": "https://historico.sena.edu.co/es-co/Noticias/Paginas/noticia.aspx?IdNoticia=7236",
+      "bytes": 115588,
+      "sha256": "bdf07c081ecab1320644912c618ea0ac886dc1e812742ae7c96c5293729f5eb7",
+      "reason": "Replaces the supplementary normograma source that returned HTTP 500. The primary specific course source remains Betowa."
+    }
+  ]
+}

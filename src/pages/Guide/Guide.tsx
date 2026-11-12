@@ -3,15 +3,45 @@ import { Link, Navigate, useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
+import Disclosure from '../../components/common/Disclosure/Disclosure';
 import useLocalStorage from '../../hooks/useLocalStorage';
+import { normalizeLanguage } from '../../services/i18n';
 import { StorageKeys } from '../../utils/storage';
 import styles from './Guide.module.css';
+import ProcedureScope from '../../components/common/ProcedureScope';
 import buttonStyles from '../../components/common/Button/Button.module.css';
 
 const TOTAL_STEPS = 5;
 
+function groupStepContent(content: string) {
+  const introduction: string[] = [];
+  const sections: Array<{ title: string; paragraphs: string[] }> = [];
+  content.split('\n\n').forEach(paragraph => {
+    if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
+      sections.push({ title: paragraph.slice(2, -2), paragraphs: [] });
+    } else if (sections.length) {
+      sections[sections.length - 1].paragraphs.push(paragraph);
+    } else {
+      introduction.push(paragraph);
+    }
+  });
+  return { introduction, sections };
+}
+
+function StepParagraph({ text }: { text: string }) {
+  const lines = text.split('\n');
+  if (lines.every(line => line.trim().startsWith('- '))) {
+    return <ul className={styles.contentList}>{lines.map((line, index) => <li key={index}>{line.trim().slice(2)}</li>)}</ul>;
+  }
+  if (lines.every(line => /^\d+\. /.test(line))) {
+    return <ol className={styles.contentList}>{lines.map((line, index) => <li key={index}>{line.replace(/^\d+\. /, '')}</li>)}</ol>;
+  }
+  return <p className={styles.paragraph}>{text}</p>;
+}
+
 export default function Guide() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = normalizeLanguage(i18n.resolvedLanguage ?? i18n.language);
   const { step: stepParam } = useParams<{ step?: string }>();
   const navigate = useNavigate();
   
@@ -35,6 +65,7 @@ export default function Guide() {
     title: string;
     content: string;
   };
+  const { introduction, sections } = groupStepContent(stepData.content);
 
   const goToPreviousStep = () => {
     if (step > 1) {
@@ -53,6 +84,7 @@ export default function Guide() {
   return (
     <main id="main-content" className={styles.guide}>
       <div className="container">
+        <ProcedureScope />
         <header className={styles.header}>
           <h1>{t('guide.title')}</h1>
           <div className={styles.progressBar}>
@@ -83,20 +115,24 @@ export default function Guide() {
                   const stepNum = i + 1;
                   const stepTitle = t(`guide.steps.${i}.title`);
                   const isActive = stepNum === step;
-                  const isCompleted = stepNum < step;
+                  const isPrevious = stepNum < step;
 
                   return (
                     <li key={stepNum}>
                       <button
                         type="button"
                         onClick={() => navigate(`/guide/${stepNum}`)}
+                        aria-label={`${stepNum}. ${t(`threshold.shortSteps.${i}`)}: ${stepTitle}`}
+                        data-journey-state={isActive ? 'current' : isPrevious ? 'previous' : 'upcoming'}
                         className={`${styles.stepButton} ${
                           isActive ? styles.active : ''
-                        } ${isCompleted ? styles.completed : ''}`}
+                        } ${isPrevious ? styles.previous : ''}`}
                         aria-current={isActive ? 'step' : undefined}
                       >
-                        <span className={styles.stepNumber}>{stepNum}</span>
-                        <span className={styles.stepTitle}>{stepTitle}</span>
+                        <span className={styles.stepNumber} aria-hidden="true">{stepNum}</span>
+                        <span className={styles.stepTitle} aria-hidden="true">{stepTitle}</span>
+                        <span className={styles.shortTitle} aria-hidden="true">{t(`threshold.shortSteps.${i}`)}</span>
+                        {isActive && <span className={styles.currentLabel} aria-hidden="true">{t('threshold.current')}</span>}
                       </button>
                     </li>
                   );
@@ -111,43 +147,21 @@ export default function Guide() {
               <article className={styles.article}>
                 <h2 data-route-focus tabIndex={-1}>{stepData.title}</h2>
                 <div className={styles.stepContent}>
-                  {stepData.content.split('\n\n').map((paragraph, index) => {
-                    if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-                      return (
-                        <h3 key={index} className={styles.subheading}>
-                          {paragraph.replace(/\*\*/g, '')}
-                        </h3>
-                      );
-                    }
-                    if (paragraph.startsWith('-')) {
-                      const items = paragraph
-                        .split('\n')
-                        .filter(line => line.trim().startsWith('-'))
-                        .map(line => line.trim().substring(2));
-                      return (
-                        <ul key={index} className={styles.contentList}>
-                          {items.map((item, i) => (
-                            <li key={i}>{item}</li>
-                          ))}
-                        </ul>
-                      );
-                    }
-                    const numberedLines = paragraph.split('\n');
-                    if (numberedLines.every(line => /^\d+\. /.test(line))) {
-                      return (
-                        <ol key={index} className={styles.contentList}>
-                          {numberedLines.map((line, itemIndex) => (
-                            <li key={itemIndex}>{line.replace(/^\d+\. /, '')}</li>
-                          ))}
-                        </ol>
-                      );
-                    }
-                    return (
-                      <p key={index} className={styles.paragraph}>
-                        {paragraph}
-                      </p>
-                    );
-                  })}
+                  {introduction.map((paragraph, index) => <StepParagraph key={index} text={paragraph} />)}
+                  <p className={styles.preparationNotice}>
+                    {t('guide.disclosureNotice', {
+                      defaultValue: lang === 'en'
+                        ? 'UMBRAL helps you prepare. It does not process applications or decide your CSE or benefits. Do not enter personal information here.'
+                        : 'UMBRAL te ayuda a prepararte. No tramita solicitudes ni decide tu CSE o beneficios. No ingreses datos personales aquí.',
+                    })}
+                  </p>
+                  <div className={styles.detailsList}>
+                    {sections.map((section, index) => (
+                      <Disclosure key={`${step}-${index}`} title={section.title} headingLevel={3}>
+                        {section.paragraphs.map((paragraph, paragraphIndex) => <StepParagraph key={paragraphIndex} text={paragraph} />)}
+                      </Disclosure>
+                    ))}
+                  </div>
                 </div>
               </article>
             </Card>
@@ -179,7 +193,7 @@ export default function Guide() {
                 <h3>{t('guide.completion.title')}</h3>
                 <p>{t('guide.completion.message')}</p>
                 <div className={styles.completionActions}>
-                  <Link to="/checklist" className={`${buttonStyles.button} ${buttonStyles.primary} ${buttonStyles.md}`}>
+                  <Link to="/checklist" className={`${buttonStyles.button} ${buttonStyles.secondary} ${buttonStyles.md}`}>
                     {t('guide.completion.actions.checklist')}
                   </Link>
                   <Link to="/faq" className={`${buttonStyles.button} ${buttonStyles.secondary} ${buttonStyles.md}`}>

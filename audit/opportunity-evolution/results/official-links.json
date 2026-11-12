@@ -1,0 +1,248 @@
+{
+  "checkedOn": "2026-11-11",
+  "records": [
+    {
+      "url": "https://soycapaz.conadisperu.gob.pe/jobs/vacante-196b171e",
+      "httpStatus": 200,
+      "finalUrl": "https://soycapaz.conadisperu.gob.pe/jobs/vacante-196b171e",
+      "title": "PROMIGAS PERU S.A. | Inclúyeme, Soy Capaz",
+      "method": "HTTP GET",
+      "bytes": 42421,
+      "sha256": "b7d7f76c3bbe2e7fd0a35e928876dc76efaa7493ef42faf5defbfbdcdb4c858e",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://soycapaz.conadisperu.gob.pe/jobs/vacante-d643c58d",
+      "httpStatus": 200,
+      "finalUrl": "https://soycapaz.conadisperu.gob.pe/jobs/vacante-d643c58d",
+      "title": "EMPRESA XILEM | Inclúyeme, Soy Capaz",
+      "method": "HTTP GET",
+      "bytes": 46781,
+      "sha256": "7151bcccb301fa6284ecf4b47121354a918fe23f03b43c2a81f4c48763076fff",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://www.usajobs.gov/job/889380900",
+      "httpStatus": 200,
+      "finalUrl": "https://www.usajobs.gov/job/889380900",
+      "title": "USAJOBS - Job Announcement",
+      "method": "HTTP GET",
+      "bytes": 134758,
+      "sha256": "441c62f81d96e6c0631b5d0f344a51fe43a9119ba914f472a87e9c25254c6412",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://www.usajobs.gov/Applicant/Application/ApplyStart/889380900",
+      "httpStatus": 200,
+      "finalUrl": "https://login.usajobs.gov/Account/Login?ReturnUrl=%2Fwsfed%3Fwtrealm%3Dhttps%253A%252F%252Fwww.usajobs.gov%252F%26wa%3Dwsignin1.0%26wreply%3Dhttps%253A%252F%252Fwww.usajobs.gov%252Fsignin-wsfed%26wctx%3DCfDJ8CyDy9_n6FBKpllCM5C-s8WINYTb8v47KcoBDNf-UF2tMyWe-DhMGg1ZGil1_3omSdXifH9o-EssHU36ryYtIVVEc3kiucoCUBCLQ4caicvAXE1RZTMOUXk_UZWbNUt7ZTHir0-5UBiah6aZlAHRBBUWCI1V0gw6A0VyPH9q0L1SsPKsHXt9C-D8KgGicnvl8yXGQtKZwJ8TVLKePB_njSUz-UXAdp1IPkliUqQeYTZmNF_K-yPZ6oDu9nGJCCxZAqOCsnxiBBPp3VRVcCQOGXnrL0N0yjFXK8Oo8EvKi83k",
+      "title": "USAJOBS - Login Gov Acknowledgement",
+      "method": "HTTP GET",
+      "bytes": 19597,
+      "sha256": "d83d62c3e34a0737545c1b67c53e79eac9eb1a5a4d6aedce9f2a90dc0ad64762",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://www.sba.gov/funding-programs/loans/microloans",
+      "httpStatus": 200,
+      "finalUrl": "https://www.sba.gov/loans/microloans/",
+      "title": "Microloans - Small Business Administration",
+      "method": "HTTP GET",
+      "bytes": 151267,
+      "sha256": "ab385b082a00ec3baa34bcb2553d4b1724950d003d02d6762b158466090e84d1",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://www.sba.gov/loans/microloans/list-of-microlenders/",
+      "httpStatus": 200,
+      "finalUrl": "https://www.sba.gov/loans/microloans/list-of-microlenders/",
+      "title": "List of microlenders - Small Business Administration",
+      "method": "HTTP GET",
+      "bytes": 178873,
+      "sha256": "e05efba64fba2a53a577f164c62f2fbe559e47c5453b7db260c2ccc44e09b4a5",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://studentaid.gov/understand-aid/types/grants/pell",
+      "error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://studentaid.gov/understand-aid/types/grants/pell\nCall log:\n\u001b[2m  - navigating to \"https://studentaid.gov/understand-aid/types/grants/pell\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "url": "https://studentaid.gov/h/apply-for-aid/fafsa",
+      "error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://studentaid.gov/h/apply-for-aid/fafsa\nCall log:\n\u001b[2m  - navigating to \"https://studentaid.gov/h/apply-for-aid/fafsa\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "url": "https://www.nafin.com/portalnf/content/financiamiento/mujeres-empresarias.html",
+      "httpStatus": 200,
+      "finalUrl": "https://www.nafin.com/portalnf/content/financiamiento/mujeres-empresarias.html",
+      "title": "NAFIN:: Mujeres empresarias",
+      "method": "HTTP GET",
+      "bytes": 45869,
+      "sha256": "7fd176a0e30d50a7824e9fab9ce3e5714b6b357cbec28ab4ab7b98a93a9e7bcd",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://betowa.sena.edu.co/oferta/english-does-work-level-1?modality=V&offertype=regular&programId=188774",
+      "httpStatus": 200,
+      "finalUrl": "https://betowa.sena.edu.co/oferta/english-does-work-level-1?modality=V&offertype=regular&programId=188774",
+      "title": "Betowa - English does work - level 1 - Programa SENA Virtual | SENA",
+      "method": "HTTP GET",
+      "bytes": 179690,
+      "sha256": "1e3adb4c1b36637649abc9197f32ac3f48542154c4d52f98e92189370b74bb9a",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://aprendomasplus.cuaed.unam.mx/course/view.php?id=17",
+      "httpStatus": 200,
+      "finalUrl": "https://aprendomasplus.cuaed.unam.mx/login/index.php",
+      "title": "Ingresar al sitio | A+ Plus",
+      "method": "HTTP GET",
+      "bytes": 26669,
+      "sha256": "a7ed09b537d03d04627f55f7347b7cbc52bf76cf579c166137bb8a2aa0a6966a",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://aprendomas.cuaed.unam.mx/",
+      "httpStatus": 200,
+      "finalUrl": "https://aprendomasplus.cuaed.unam.mx/",
+      "title": "Inicio | A+ Plus",
+      "method": "HTTP GET",
+      "bytes": 136604,
+      "sha256": "b3a1bcdb07c338938efa3348c3552da833f091a9029cfd5aa837a2a0fd729b3b",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://www.fondoemprender.com/SitePages/FondoEmprenderConv1682026.aspx",
+      "httpStatus": 200,
+      "finalUrl": "https://www.fondoemprender.com/SitePages/FondoEmprenderConv1682026.aspx",
+      "title": "Fondo Emprender - Convocatoria 168",
+      "method": "HTTP GET",
+      "bytes": 57057,
+      "sha256": "4f81091afe06702e46994f0f13975e1aeb777d7261c66d81c52e9628a450a06f",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://capacitacionlaboral.trabajo.gob.pe/cursos/abc-digital/",
+      "httpStatus": 200,
+      "finalUrl": "https://capacitacionlaboral.trabajo.gob.pe/cursos/abc-digital/",
+      "title": "ABC Digital » CAPACÍTA-T",
+      "method": "HTTP GET",
+      "bytes": 46443,
+      "sha256": "45bb178d524cd097b4bfb3950ebf83705c619830337c8adff4ba7252c04ef14c",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://capacitate.trabajo.gob.pe/course/view.php?id=23",
+      "httpStatus": 200,
+      "finalUrl": "https://capacitate.trabajo.gob.pe/login/index.php",
+      "title": "Aula Virtual MTPE: Iniciar sesión en el sitio",
+      "method": "HTTP GET",
+      "bytes": 36026,
+      "sha256": "037b2e6e6995c7e89c1cd3aecf95e06ccf944b5e4c4e8558f2f4a75dfa41afb0",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://innovasuyu.proinnovate.gob.pe/concursos-regionales-2026-la-libertad-emprendimientos-innovadores-segunda-convocatoria/",
+      "httpStatus": 200,
+      "finalUrl": "https://innovasuyu.proinnovate.gob.pe/concursos-regionales-2026-la-libertad-emprendimientos-innovadores-segunda-convocatoria/",
+      "title": "Concursos regionales 2026 - la libertad - Emprendimientos Innovadores - Segunda convocatoria - InnovaSuyu",
+      "method": "HTTP GET",
+      "bytes": 107768,
+      "sha256": "8a46700a820d18e460b40e09758d80bbf2be7a46042101115dc4a7768edccae6",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://www.enisa.es/servicios/financiacion/emprendedoras-digitales",
+      "httpStatus": 200,
+      "finalUrl": "https://www.enisa.es/servicios/financiacion/emprendedoras-digitales/",
+      "title": "Emprendedoras Digitales",
+      "method": "HTTP GET",
+      "bytes": 116937,
+      "sha256": "21e03bf9ffe7a8ec0a90e52f0152d440d7f13defcb224a29a9bb5c5cf5aa2d81",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://cs50.harvard.edu/x/2026/",
+      "httpStatus": 200,
+      "finalUrl": "https://cs50.harvard.edu/x/",
+      "title": "CS50x 2026",
+      "method": "HTTP GET",
+      "bytes": 20480,
+      "sha256": "cdf41c1aad27979ab00099a9b750b462d1cf6ef4309827128756270c99c67e17",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://www.gob.pe/83555-solicitar-la-clasificacion-socioeconomica-cse-de-tu-hogar",
+      "httpStatus": 200,
+      "finalUrl": "https://www.gob.pe/83555-solicitar-la-clasificacion-socioeconomica-cse-de-tu-hogar",
+      "title": "Solicitar la Clasificación Socioeconómica (CSE) de tu Hogar - Servicio - Organismo de Focalización e Información Social - Plataforma del Estado Peruano",
+      "method": "HTTP GET",
+      "bytes": 35117,
+      "sha256": "b68384151ddcfadda1593d51fb822838b451b7ac54a06830a7d51bb7b5149ff2",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://www.juntadeandalucia.es/empleoformacionytrabajoautonomo/formacion/web/buscador-de-cursos/94",
+      "httpStatus": 200,
+      "finalUrl": "https://www.juntadeandalucia.es/empleoformacionytrabajoautonomo/formacion/web/buscador-de-cursos/94",
+      "title": "IFCT050PO - GESTIÓN DE LA SEGURIDAD INFORMÁTICA EN LA EMPRESA | Formación para el Empleo",
+      "method": "HTTP GET",
+      "bytes": 122872,
+      "sha256": "6b94a9e489a768e64186e4eac9e4bd92dd725a90df27d3b492089c86f0c663ad",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://studentaid.gov/understand-aid/eligibility",
+      "error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://studentaid.gov/understand-aid/eligibility\nCall log:\n\u001b[2m  - navigating to \"https://studentaid.gov/understand-aid/eligibility\", waiting until \"networkidle\"\u001b[22m\n"
+    },
+    {
+      "url": "https://cs50.harvard.edu/x/2026/faqs/",
+      "httpStatus": 200,
+      "finalUrl": "https://cs50.harvard.edu/x/faqs/",
+      "title": "CS50x 2026",
+      "method": "HTTP GET",
+      "bytes": 69150,
+      "sha256": "3b805ff525b0cf01510e26d89a762bff906359f06992e82ba892ec538e303fd3",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://studentaid.gov/sites/default/files/2026-27-fafsa-form.pdf",
+      "httpStatus": 200,
+      "finalUrl": "https://studentaid.gov/sites/default/files/2026-27-fafsa-form.pdf",
+      "title": "PDF document",
+      "method": "HTTP GET",
+      "bytes": 1061186,
+      "sha256": "c0da8772f9aecaa60d92226ed15d58dcc52051e8d8172f8a47d14bc64459313a",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    },
+    {
+      "url": "https://inngenius.proinnovate.gob.pe/",
+      "httpStatus": 200,
+      "finalUrl": "https://inngenius.proinnovate.gob.pe/login",
+      "title": "Iniciar sesión - ProInnovate",
+      "method": "Browser rendered",
+      "bytes": 15775,
+      "sha256": "a84d25151f08c5a789df4c71cdd9bb7eeaa580377c4bf4a1e4e0d3a51a1b7d39",
+      "hasVisibleContent": true,
+      "unavailableMessage": false
+    }
+  ]
+}

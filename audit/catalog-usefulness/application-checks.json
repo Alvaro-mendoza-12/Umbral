@@ -1,0 +1,123 @@
+{
+  "date": "2026-11-11",
+  "records": [
+    {
+      "id": "pe-concentrix-customer",
+      "url": "https://concentrix-peru.talkpush.com/careers/29/apply?%3Fsource=concentrixCareerWebSite&id=PE-29&source=concentrixCareerWebsite&utm_source=concentrixCareerWebsite",
+      "http": 200,
+      "title": "Call Center Agent",
+      "closedNotice": false,
+      "visibleInputs": 6
+    },
+    {
+      "id": "pe-concentrix-cleaning",
+      "url": "https://cnx.wd1.myworkdayjobs.com/external_global/job/PER-Lima---Avenida-El-Camino-Real-N195-Calle-Santa-Luisa/Personal-de-Limpieza_R1721226/apply?source=concentrixCareerWebsite&utm_source=concentrixCareerWebsite&id=R1721226",
+      "http": 200,
+      "title": "",
+      "closedNotice": false,
+      "visibleInputs": 0,
+      "rendering": "Browser returned an empty shell. The official Workday CXS job endpoint below returned HTTP 200 and matching requisition R1721226."
+    },
+    {
+      "id": "mx-concentrix-customer",
+      "url": "https://concentrix-mexico.talkpush.com/careers/4/apply?%3Fsource=concentrixCareerWebSite&id=R1664956&source=concentrixCareerWebsite&utm_source=concentrixCareerWebsite",
+      "http": 200,
+      "title": "Customer Service Agents - Español - CDMX",
+      "closedNotice": false,
+      "visibleInputs": 6
+    },
+    {
+      "id": "co-concentrix-customer",
+      "url": "https://concentrix-colombia.talkpush.com/careers/1372/apply?%3Fsource=concentrixCareerWebSite&id=CO-1372&source=concentrixCareerWebsite&utm_source=concentrixCareerWebsite",
+      "http": 200,
+      "title": "Español",
+      "closedNotice": false,
+      "visibleInputs": 6
+    },
+    {
+      "id": "co-sena-english-1",
+      "url": "https://betowa.sena.edu.co/oferta/english-does-work-level-1?modality=V&offertype=regular&programId=188774",
+      "courseVisible": true,
+      "enrolmentVisible": true,
+      "regularOffering": true,
+      "evidence": [
+        "Inscribirme",
+        "Código: 2690647",
+        "Inscribirme"
+      ]
+    },
+    {
+      "id": "us-va-nurse",
+      "url": "https://www.usajobs.gov/Applicant/Application/ApplyStart/889380900",
+      "http": 200,
+      "finalUrl": "https://login.usajobs.gov/Account/Login?ReturnUrl=%2Fwsfed%3Fwtrealm%3Dhttps%253A%252F%252Fwww.usajobs.gov%252F%26wa%3Dwsignin1.0%26wreply%3Dhttps%253A%252F%252Fwww.usajobs.gov%252Fsignin-wsfed%26wctx%3DCfDJ8CyDy9_n6FBKpllCM5C-s8XSvOi1VcyhEuD8wIsIcLNrtmS2E7slC6iyaM-lUvC4Xp0aFqEdGOx6-nLxWg-tFxpmbTcEzSSOMi6Fp4JtnioxTHdFu7BFZdTwwflTH3nDc8jb8WgRzWZ18pXmumszUHackI8O80UyY3FOB8y-uyop6mZEB04vqio0BPrAskPtl8j8gPCEkc5Ad3s4iaEriBcqpal2-TADOmRGhytwuAMYXRJv4tW4zs9ycajwH4Wxt2NCDr1oWmGjSFc9pSYlA1BtWmqaIjauNcXXGPJTqxB4",
+      "contentType": "text/html; charset=utf-8",
+      "title": "You must agree to USAJOBS's terms and conditions."
+    },
+    {
+      "id": "us-pell-2026",
+      "url": "https://studentaid.gov/sites/default/files/2026-27-fafsa-form.pdf",
+      "http": 200,
+      "finalUrl": "https://studentaid.gov/sites/default/files/2026-27-fafsa-form.pdf",
+      "contentType": "application/pdf",
+      "pdfValid": true
+    },
+    {
+      "id": "us-sba-microloan",
+      "url": "https://www.sba.gov/loans/microloans/list-of-microlenders/",
+      "http": 200,
+      "finalUrl": "https://www.sba.gov/loans/microloans/list-of-microlenders/",
+      "contentType": "text/html; charset=UTF-8",
+      "title": "List of microlenders"
+    },
+    {
+      "id": "mx-unam-excel",
+      "url": "https://aprendomasplus.cuaed.unam.mx/course/view.php?id=17",
+      "http": 200,
+      "finalUrl": "https://aprendomasplus.cuaed.unam.mx/login/index.php",
+      "contentType": "text/html; charset=utf-8",
+      "title": "Ingresar a Aprendo+ Plus"
+    },
+    {
+      "id": "pe-abc-digital",
+      "url": "https://capacitate.trabajo.gob.pe/course/view.php?id=23",
+      "http": 200,
+      "finalUrl": "https://capacitate.trabajo.gob.pe/login/index.php",
+      "contentType": "text/html; charset=utf-8",
+      "title": "Aula Virtual MTPE: Iniciar sesión en el sitio"
+    },
+    {
+      "id": "pe-innovasuyu-libertad",
+      "url": "https://inngenius.proinnovate.gob.pe/",
+      "http": 200,
+      "finalUrl": "https://inngenius.proinnovate.gob.pe/login",
+      "contentType": "text/html; charset=utf-8",
+      "title": "Acceso"
+    },
+    {
+      "id": "es-ikea-logistics",
+      "url": "https://ikea.avature.net/es_ES/External/JobDetail?jobId=376185",
+      "http": 200,
+      "finalUrl": "https://ikea.avature.net/es_ES/External/JobDetail?jobId=376185",
+      "contentType": "text/html;charset=UTF-8",
+      "title": "IKEA"
+    },
+    {
+      "id": "es-ikea-sales",
+      "url": "https://ikea.avature.net/es_ES/External/JobDetail?jobId=375891",
+      "http": 200,
+      "finalUrl": "https://ikea.avature.net/es_ES/External/JobDetail?jobId=375891",
+      "contentType": "text/html;charset=UTF-8",
+      "title": "IKEA"
+    },
+    {
+      "id": "pe-concentrix-cleaning",
+      "url": "https://cnx.wd1.myworkdayjobs.com/wday/cxs/cnx/external_global/job/PER-Lima---Avenida-El-Camino-Real-N195-Calle-Santa-Luisa/Personal-de-Limpieza_R1721226",
+      "http": 200,
+      "finalUrl": "https://cnx.wd1.myworkdayjobs.com/wday/cxs/cnx/external_global/job/PER-Lima---Avenida-El-Camino-Real-N195-Calle-Santa-Luisa/Personal-de-Limpieza_R1721226",
+      "contentType": "application/json",
+      "jobReqId": "R1721226",
+      "title": "Personal de Limpieza"
+    }
+  ]
+}

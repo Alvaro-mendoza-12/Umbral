@@ -25,9 +25,15 @@ test.describe('Visual evidence and layout', () => {
       
       // Take screenshot
       await browserPage.screenshot({
-        path: `audit/screenshots/${test.info().project.name}/${page.name}.png`,
+        path: `${process.env.UMBRAL_SCREENSHOTS_DIR || 'audit/screenshots'}/${test.info().project.name}/${page.name}.png`,
         fullPage: true,
       });
+      if (page.name === 'home') {
+        await browserPage.screenshot({
+          path: `${process.env.UMBRAL_SCREENSHOTS_DIR || 'audit/screenshots'}/${test.info().project.name}/home-viewport.png`,
+          fullPage: false,
+        });
+      }
     });
   }
 

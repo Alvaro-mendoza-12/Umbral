@@ -1,0 +1,264 @@
+{
+  "date": "2026-11-11",
+  "sourceCommit": "e7b984f8662148344d5c2afd0350ff73e1492136",
+  "project": "umbral-review-20261111",
+  "projectId": "prj_lcTIJFFWwcijnAo5eUIhTkjMJpXT",
+  "deploymentId": "dpl_3UkfwxoGDFstPXmt3mMonpDtjuQn",
+  "target": "preview",
+  "url": "https://umbral-review-20261111-j9u10cgko-alvaro-s-projects1.vercel.app",
+  "anonymousBrowser": true,
+  "routes": [
+    {
+      "route": "/",
+      "width": 360,
+      "height": 640,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/about",
+      "width": 360,
+      "height": 640,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/guide/1",
+      "width": 360,
+      "height": 640,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/checklist",
+      "width": 360,
+      "height": 640,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/resources",
+      "width": 360,
+      "height": 640,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/faq",
+      "width": 360,
+      "height": 640,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/not-found-review",
+      "width": 360,
+      "height": 640,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/guide/4",
+      "width": 360,
+      "height": 640,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/guide/1",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/checklist",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/resources",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/faq",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/not-found-review",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/guide/4",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/guide/1",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/checklist",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/resources",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/faq",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/not-found-review",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/guide/4",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/about",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/guide/1",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/checklist",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/resources",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/faq",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/not-found-review",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "route": "/guide/4",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "overflow": false
+    }
+  ],
+  "countryEmptyState": true,
+  "primaryAction": true,
+  "languagePersisted": true,
+  "checklistPersisted": true,
+  "printInspected": true,
+  "offlineDeepLink": true,
+  "manifestIcons": [
+    {
+      "src": "/icons/icon-192.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "status": 200,
+      "type": "image/png"
+    }
+  ],
+  "securityHeaders": {
+    "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'",
+    "frameOptions": "DENY",
+    "nosniff": "nosniff",
+    "noindex": "noindex, nofollow",
+    "swCache": "public, max-age=0, must-revalidate"
+  },
+  "pageErrors": [],
+  "thirdPartyRequests": [],
+  "status": "passed"
+}

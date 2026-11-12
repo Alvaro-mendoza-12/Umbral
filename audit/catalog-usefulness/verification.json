@@ -1,0 +1,520 @@
+{
+  "date": "2026-11-11",
+  "note": "HTTP and application destinations are evidence, not an automatic availability decision. Requirements and dates were read against each official listing.",
+  "records": [
+    {
+      "id": "mx-amazon-operations-intern",
+      "url": "https://www.amazon.jobs/en/jobs/3181151/operations-intern-auta",
+      "http": 200,
+      "finalUrl": "https://www.amazon.jobs/en/jobs/3181151/operations-intern-auta",
+      "title": "Operations Intern, AUTA",
+      "bytes": 33930,
+      "sha256": "2b868f210c95927fe243200d960b1b3e3207b82b79b35c2dd2f16bfe05f3e891",
+      "apply": [
+        "https://www.amazon.jobs/applicant/jobs/3181151/apply"
+      ],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "co-concentrix-customer",
+      "url": "https://jobs.concentrix.com/job/?id=CO-1372",
+      "http": 200,
+      "finalUrl": "https://jobs.concentrix.com/job/?id=CO-1372",
+      "title": "Español",
+      "bytes": 158227,
+      "sha256": "36eb4c096ac5680ee552c2bb77000ba654614b0685c255d759d0569e9ffc155f",
+      "apply": [
+        "https://concentrix-colombia.talkpush.com/site/campaigns/Z2lkOi8vYXN0cmFldXMvQ2FtcGFpZ246OlJlY29yZC8xMzcy/apply??source=concentrixCareerWebSite",
+        "https://concentrix-colombia.talkpush.com/site/campaigns/Z2lkOi8vYXN0cmFldXMvQ2FtcGFpZ246OlJlY29yZC8xMzcy/apply??source=concentrixCareerWebSite"
+      ],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "co-amazon-business-analyst",
+      "url": "https://www.amazon.jobs/en/jobs/10590802/business-analyst-network-strategy-performance-network-strategy-and-performance",
+      "http": 200,
+      "finalUrl": "https://www.amazon.jobs/en/jobs/10590802/business-analyst-network-strategy-performance-network-strategy-and-performance",
+      "title": "Business Analyst, Network Strategy & Performance, Network Strategy and Performance",
+      "bytes": 39817,
+      "sha256": "42847b9d573c96a5b032dd53dee29df63f846e475eadcece3c6f4a19c0d033b9",
+      "apply": [
+        "https://www.amazon.jobs/applicant/jobs/10590802/apply"
+      ],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "pe-concentrix-customer",
+      "url": "https://jobs.concentrix.com/job/?id=PE-29",
+      "http": 200,
+      "finalUrl": "https://jobs.concentrix.com/job/?id=PE-29",
+      "title": "Call Center Agent",
+      "bytes": 157708,
+      "sha256": "e0081e905b83fbdc25cc9a990a6205867a8766cb31f1b503993ae267b9c6d6db",
+      "apply": [
+        "https://concentrix-peru.talkpush.com/site/campaigns/Z2lkOi8vYXN0cmFldXMvQ2FtcGFpZ246OlJlY29yZC8yOQ/apply??source=concentrixCareerWebSite",
+        "https://concentrix-peru.talkpush.com/site/campaigns/Z2lkOi8vYXN0cmFldXMvQ2FtcGFpZ246OlJlY29yZC8yOQ/apply??source=concentrixCareerWebSite"
+      ],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "mx-concentrix-customer",
+      "url": "https://jobs.concentrix.com/job/?id=R1664956",
+      "http": 200,
+      "finalUrl": "https://jobs.concentrix.com/job/?id=R1664956",
+      "title": "Customer Service Agents - Español - CDMX",
+      "bytes": 161862,
+      "sha256": "802ba24d16061d9f57c91eeec0e32d003d5236aad5adcdcdd019108324326509",
+      "apply": [
+        "https://concentrix-mexico.talkpush.com/site/campaigns/Z2lkOi8vYXN0cmFldXMvQ2FtcGFpZ246OlJlY29yZC80/apply??source=concentrixCareerWebSite",
+        "https://concentrix-mexico.talkpush.com/site/campaigns/Z2lkOi8vYXN0cmFldXMvQ2FtcGFpZ246OlJlY29yZC80/apply??source=concentrixCareerWebSite"
+      ],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "pe-concentrix-cleaning",
+      "url": "https://jobs.concentrix.com/job/?id=R1721226",
+      "http": 200,
+      "finalUrl": "https://jobs.concentrix.com/job/?id=R1721226",
+      "title": "Personal de Limpieza",
+      "bytes": 158363,
+      "sha256": "800a9e114a4a2f3a91223bd991667102538be341eebceda208daf9ebc57a6454",
+      "apply": [
+        "https://cnx.wd1.myworkdayjobs.com/external_global/job/PER-Lima---Avenida-El-Camino-Real-N195-Calle-Santa-Luisa/Personal-de-Limpieza_R1721226/apply?source=concentrixCareerWebSite",
+        "https://cnx.wd1.myworkdayjobs.com/external_global/job/PER-Lima---Avenida-El-Camino-Real-N195-Calle-Santa-Luisa/Personal-de-Limpieza_R1721226/apply?source=concentrixCareerWebSite"
+      ],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "co-aws-intern",
+      "url": "https://www.amazon.jobs/en/jobs/10506034/aws-demand-generation-intern",
+      "http": 200,
+      "finalUrl": "https://www.amazon.jobs/en/jobs/10506034/aws-demand-generation-intern",
+      "title": "AWS Demand Generation Intern",
+      "bytes": 34423,
+      "sha256": "4834ee2aeeae7a801b4f09917252bddea76dde5f833480ce1a6c97e95ede697f",
+      "apply": [
+        "https://www.amazon.jobs/applicant/jobs/10506034/apply"
+      ],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "es-ikea-logistics",
+      "url": "https://jobs.ikea.com/es/trabajo/granada/aprovisionamiento-reposicion-de-mercancias-ikea-granada-40h-interinidad/24107/102933951680",
+      "http": 200,
+      "finalUrl": "https://jobs.ikea.com/es/trabajo/granada/aprovisionamiento-reposicion-de-mercancias-ikea-granada-40h-interinidad/24107/102933951680",
+      "title": "Aprovisionamiento/Reposición de Mercancías | IKEA Granada (40H, Interinidad)",
+      "bytes": 100177,
+      "sha256": "682f2fb5a16b4249b83de7b023396ec9f770633a66c0143014715938f02034a5",
+      "apply": [],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "es-ikea-sales",
+      "url": "https://jobs.ikea.com/es/trabajo/marbella/vendedor-a-ikea-marbella-40h-rotativo/24107/102900976960",
+      "http": 200,
+      "finalUrl": "https://jobs.ikea.com/es/trabajo/marbella/vendedor-a-ikea-marbella-40h-rotativo/24107/102900976960",
+      "title": "Vendedor/a | IKEA Marbella (40H, Rotativo)",
+      "bytes": 95667,
+      "sha256": "bc91e8579f5c0caba8ac4ba3108607d88399839a52d1b861a5153bc9cab4d29d",
+      "apply": [],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "es-amazon-software-intern",
+      "url": "https://www.amazon.jobs/en/jobs/10555855/2027-software-dev-engineer-intern-spain",
+      "http": 200,
+      "finalUrl": "https://www.amazon.jobs/en/jobs/10555855/2027-software-dev-engineer-intern-spain",
+      "title": "2027 Software Dev Engineer Intern - Spain",
+      "bytes": 43037,
+      "sha256": "79a0a4d0f959a806ccffb7dc92982b66bfb55b5a6d29bff6a2879d8e68f4b21a",
+      "apply": [
+        "https://www.amazon.jobs/applicant/jobs/10555855/apply"
+      ],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "us-amazon-process-assistant",
+      "url": "https://www.amazon.jobs/en/jobs/10570388/process-assistant",
+      "http": 200,
+      "finalUrl": "https://www.amazon.jobs/en/jobs/10570388/process-assistant",
+      "title": "Process Assistant",
+      "bytes": 34180,
+      "sha256": "ab446c0f9ccb5dbdb4fbf46a018660992d1cd6ae00871902948aee538a7f559b",
+      "apply": [
+        "https://www.amazon.jobs/applicant/jobs/10570388/apply"
+      ],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "int-google-it-support",
+      "url": "https://www.coursera.org/professional-certificates/google-it-support",
+      "http": 200,
+      "finalUrl": "https://www.coursera.org/professional-certificates/google-it-support",
+      "title": "Google IT Support Professional Certificate",
+      "bytes": 1020767,
+      "sha256": "b5e75884828825a812e068695e8964fdffd18345584b1c609053a6f8b787e456",
+      "apply": [],
+      "closedNotice": false,
+      "type": "professional-certificate",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-12-11"
+    },
+    {
+      "id": "int-leiden-lexs",
+      "url": "https://www.universiteitleiden.nl/en/scholarships/sea/leiden-university-excellence-scholarship-lexs",
+      "http": 200,
+      "finalUrl": "https://www.universiteitleiden.nl/en/scholarships/sea/leiden-university-excellence-scholarship-lexs",
+      "title": "Leiden University Excellence Scholarship (LExS)",
+      "bytes": 29076,
+      "sha256": "44fdc9dcee1b181746f636e72c8a099a7b990cd19d21bd11237ac851d7bdf7d0",
+      "apply": [],
+      "closedNotice": false,
+      "type": "partial-scholarship",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-18"
+    },
+    {
+      "id": "pe-promigas-billing",
+      "url": "https://soycapaz.conadisperu.gob.pe/jobs/vacante-196b171e",
+      "http": 200,
+      "finalUrl": "https://soycapaz.conadisperu.gob.pe/jobs/vacante-196b171e",
+      "title": "PROMIGAS PERU S.A.",
+      "bytes": 42421,
+      "sha256": "b7d7f76c3bbe2e7fd0a35e928876dc76efaa7493ef42faf5defbfbdcdb4c858e",
+      "apply": [],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "pe-xylem-electromechanical",
+      "url": "https://soycapaz.conadisperu.gob.pe/jobs/vacante-d643c58d",
+      "http": 200,
+      "finalUrl": "https://soycapaz.conadisperu.gob.pe/jobs/vacante-d643c58d",
+      "title": "EMPRESA XILEM",
+      "bytes": 46781,
+      "sha256": "7151bcccb301fa6284ecf4b47121354a918fe23f03b43c2a81f4c48763076fff",
+      "apply": [],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "int-yc-startup-school",
+      "url": "https://www.startupschool.org/",
+      "http": 200,
+      "finalUrl": "https://www.startupschool.org/",
+      "title": "Startup School - The Best Resource for Founders",
+      "bytes": 38372,
+      "sha256": "695fa895784f6db2b1fac4119a72044f792a5a1a9233dea32321dc935a125884",
+      "apply": [
+        "/users/sign_in?sign_up=true",
+        "/users/sign_in?sign_up=true"
+      ],
+      "closedNotice": false,
+      "type": "business-training",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-12-11"
+    },
+    {
+      "id": "us-pell-2026",
+      "url": "https://studentaid.gov/understand-aid/types/grants/pell",
+      "http": 200,
+      "finalUrl": "https://studentaid.gov/understand-aid/types/grants/pell",
+      "title": "Federal Student Aid",
+      "bytes": 11293,
+      "sha256": "24ebd9ac17ebc09e437e9324765c0b22e7130320c3454b2dcd810c83f965b1c6",
+      "apply": [],
+      "closedNotice": false,
+      "type": "education-aid",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-18",
+      "rendering": "HTML is a JavaScript shell; primary action is the verified official FAFSA PDF."
+    },
+    {
+      "id": "int-yc-winter-2027",
+      "url": "https://www.ycombinator.com/apply",
+      "http": 200,
+      "finalUrl": "https://www.ycombinator.com/apply",
+      "title": "Apply to YC | Y Combinator",
+      "bytes": 67949,
+      "sha256": "62f8a85679147a571c49ae61e89357545c088110dbf73caa2e315da118054f2e",
+      "apply": [
+        "/apply",
+        "https://apply.ycombinator.com/home",
+        "https://apply.ycombinator.com/home"
+      ],
+      "closedNotice": false,
+      "type": "accelerator",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-12"
+    },
+    {
+      "id": "us-va-nurse",
+      "url": "https://www.usajobs.gov/job/889380900",
+      "http": 200,
+      "finalUrl": "https://www.usajobs.gov/job/889380900",
+      "title": "Registered Nurse-Medical, Surgical, Oncology, Telemetry (Inpatient/Acute Care C1_C2)",
+      "bytes": 134738,
+      "sha256": "cd8500dd3fdd27c9e2d01d04b9ab54448b63e938e36dfe9cd771a3f9f39fc308",
+      "apply": [
+        "https://www.usajobs.gov/Applicant/Application/ApplyStart/889380900",
+        "https://www.usajobs.gov/Applicant/Application/ApplyStart/889380900"
+      ],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    },
+    {
+      "id": "mx-nafin-women",
+      "url": "https://www.nafin.com/portalnf/content/financiamiento/mujeres-empresarias.html",
+      "http": 200,
+      "finalUrl": "https://www.nafin.com/portalnf/content/financiamiento/mujeres-empresarias.html",
+      "title": "Mujeres empresarias",
+      "bytes": 45869,
+      "sha256": "7fd176a0e30d50a7824e9fab9ce3e5714b6b357cbec28ab4ab7b98a93a9e7bcd",
+      "apply": [],
+      "closedNotice": false,
+      "type": "loan",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-12-11"
+    },
+    {
+      "id": "co-sena-english-1",
+      "url": "https://betowa.sena.edu.co/oferta/english-does-work-level-1?modality=V&offertype=regular&programId=188774",
+      "http": 200,
+      "finalUrl": "https://betowa.sena.edu.co/oferta/english-does-work-level-1?modality=V&offertype=regular&programId=188774",
+      "title": "ENGLISH DOES WORK - LEVEL 1",
+      "bytes": 177486,
+      "sha256": "d6b0ddf5b9ad84728b92e628aaeab73e94372ad13b63be5283b6f2973d16281b",
+      "apply": [],
+      "closedNotice": false,
+      "type": "free-course",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-12-11",
+      "rendering": "Browser confirmed regular course 2690647 and Inscribirme."
+    },
+    {
+      "id": "int-eth-esop-2027",
+      "url": "https://ethz.ch/students/en/studies/financial/scholarships/excellencescholarship.html",
+      "http": 200,
+      "finalUrl": "https://ethz.ch/students/en/studies/financial/scholarships/excellencescholarship.html",
+      "title": "Excellence Scholarship & Opportunity Programme",
+      "bytes": 50830,
+      "sha256": "2f74c357bc148f9bde0b71016a718ea5db74f327f7820f2be7557cd2d7b10731",
+      "apply": [
+        "https://www.lehrbetrieb.ethz.ch/eApply/ealogin.view?lang=en"
+      ],
+      "closedNotice": false,
+      "type": "full-scholarship",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-18"
+    },
+    {
+      "id": "us-sba-microloan",
+      "url": "https://www.sba.gov/funding-programs/loans/microloans",
+      "http": 200,
+      "finalUrl": "https://www.sba.gov/loans/microloans/",
+      "title": "Microloans",
+      "bytes": 151267,
+      "sha256": "ab385b082a00ec3baa34bcb2553d4b1724950d003d02d6762b158466090e84d1",
+      "apply": [],
+      "closedNotice": false,
+      "type": "loan",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-12-11"
+    },
+    {
+      "id": "mx-unam-excel",
+      "url": "https://aprendomas.cuaed.unam.mx/",
+      "http": 200,
+      "finalUrl": "https://aprendomasplus.cuaed.unam.mx/",
+      "title": "Inicio | A+ Plus",
+      "bytes": 136604,
+      "sha256": "cc072f3a05fcf14aa025fd474597abd5253964880703270d9d0b8b77fd62b863",
+      "apply": [],
+      "closedNotice": false,
+      "type": "free-course",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-12-11"
+    },
+    {
+      "id": "co-fondo-emprender-168",
+      "url": "https://www.fondoemprender.com/SitePages/FondoEmprenderConv1682026.aspx",
+      "http": 200,
+      "finalUrl": "https://www.fondoemprender.com/SitePages/FondoEmprenderConv1682026.aspx",
+      "title": "Financiar, mediante recursos de capital semilla del Fondo Emprender, proyectos defortalecimiento productivo presentados bajo las modalidades individual y asociativa por iniciativas productivas, unidades productivas, unidades económicas, modelos o planes de negocio formalmente constituidos, localizados en los departamentos de Caldas, Chocó, Quindío, Risaralda, Valle del Cauca y Tolima, que acrediten afectaciones derivadas del terremoto del 10 de agosto de 2026 o de los incendios forestales.",
+      "bytes": 57057,
+      "sha256": "4f81091afe06702e46994f0f13975e1aeb777d7261c66d81c52e9628a450a06f",
+      "apply": [],
+      "closedNotice": false,
+      "type": "seed-capital",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-18"
+    },
+    {
+      "id": "pe-abc-digital",
+      "url": "https://capacitacionlaboral.trabajo.gob.pe/cursos/abc-digital/",
+      "http": 200,
+      "finalUrl": "https://capacitacionlaboral.trabajo.gob.pe/cursos/abc-digital/",
+      "title": "ABC Digital",
+      "bytes": 46443,
+      "sha256": "a35223d561cb526dcff586865775aa16284e5d8cc79fbcc6fa2c983eef25bf19",
+      "apply": [],
+      "closedNotice": false,
+      "type": "free-course",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-12-11"
+    },
+    {
+      "id": "cse-peru",
+      "url": "https://www.gob.pe/83555-solicitar-la-clasificacion-socioeconomica-cse-de-tu-hogar",
+      "http": 200,
+      "finalUrl": "https://www.gob.pe/83555-solicitar-la-clasificacion-socioeconomica-cse-de-tu-hogar",
+      "title": "Solicitar la Clasificación Socioeconómica (CSE) de tu Hogar",
+      "bytes": 35117,
+      "sha256": "55e6b65765f94ad2091ae1d1d90b09808da7da66fdfb0ab4f2d8a99e1a95ddfb",
+      "apply": [],
+      "closedNotice": false,
+      "type": "procedure",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-12-11"
+    },
+    {
+      "id": "int-cs50x-2026",
+      "url": "https://cs50.harvard.edu/x/2026/",
+      "http": 200,
+      "finalUrl": "https://cs50.harvard.edu/x/",
+      "title": "Welcome",
+      "bytes": 20480,
+      "sha256": "cdf41c1aad27979ab00099a9b750b462d1cf6ef4309827128756270c99c67e17",
+      "apply": [],
+      "closedNotice": false,
+      "type": "free-course",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-12-11"
+    },
+    {
+      "id": "pe-innovasuyu-libertad",
+      "url": "https://innovasuyu.proinnovate.gob.pe/concursos-regionales-2026-la-libertad-emprendimientos-innovadores-segunda-convocatoria/",
+      "http": 200,
+      "finalUrl": "https://innovasuyu.proinnovate.gob.pe/concursos-regionales-2026-la-libertad-emprendimientos-innovadores-segunda-convocatoria/",
+      "title": "Concursos regionales 2026 - la libertad - Emprendimientos Innovadores - Segunda convocatoria - InnovaSuyu",
+      "bytes": 107768,
+      "sha256": "8a46700a820d18e460b40e09758d80bbf2be7a46042101115dc4a7768edccae6",
+      "apply": [],
+      "closedNotice": false,
+      "type": "seed-capital",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-18"
+    },
+    {
+      "id": "es-enisa-digital-women",
+      "url": "https://www.enisa.es/servicios/financiacion/emprendedoras-digitales",
+      "http": 200,
+      "finalUrl": "https://www.enisa.es/servicios/financiacion/emprendedoras-digitales/",
+      "title": "Emprendedoras Digitales",
+      "bytes": 117023,
+      "sha256": "894badf352ec81db9a9e7d4fe78c4fea7a6b197426f724c66ff17c56734710d0",
+      "apply": [],
+      "closedNotice": false,
+      "type": "loan",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-12-11"
+    },
+    {
+      "id": "es-cybersecurity-94",
+      "url": "https://www.juntadeandalucia.es/empleoformacionytrabajoautonomo/formacion/web/buscador-de-cursos/94",
+      "http": 200,
+      "finalUrl": "https://www.juntadeandalucia.es/empleoformacionytrabajoautonomo/formacion/web/buscador-de-cursos/94",
+      "title": "IFCT050PO - GESTIÓN DE LA SEGURIDAD INFORMÁTICA EN LA EMPRESA",
+      "bytes": 122875,
+      "sha256": "3229914c1d888e9c1399665eb26ad7aab383a3d70e6f6d09e4d6d71b08f029ac",
+      "apply": [],
+      "closedNotice": false,
+      "type": "free-course",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-18"
+    },
+    {
+      "id": "mx-amazon-process",
+      "url": "https://www.amazon.jobs/en/jobs/10600651/asistente-de-procesos-ob",
+      "http": 200,
+      "title": "Asistente de Procesos OB",
+      "sha256": "849b9e296435e2b4b9376135df591080d11c326eb07f55a16d9980a5f4bba2f2",
+      "apply": [
+        "https://www.amazon.jobs/applicant/jobs/10600651/apply"
+      ],
+      "closedNotice": false,
+      "type": "job",
+      "verifiedOn": "2026-11-11",
+      "nextReview": "2026-11-14"
+    }
+  ],
+  "excludedCandidates": [
+    {
+      "id": "mx-amazon-control",
+      "url": "https://www.amazon.jobs/en/jobs/10467675/asistente-en-torre-de-control-external-delivery-service-providers-operations-management",
+      "http": 404,
+      "finalUrl": "https://www.amazon.jobs/en/jobs/10467675/asistente-en-torre-de-control-external-delivery-service-providers-operations-management",
+      "title": "Amazon.jobs",
+      "bytes": 24453,
+      "sha256": "a632a04efcf030ce6df44e01ab0faa1468d6b7422c66a6f748b11e43131528e9",
+      "apply": [],
+      "closedNotice": false,
+      "excerpt": "Skip to main content×HomeTeamsLocationsJob categoriesMy careerMy applicationsMy profileAccount securitySettingsSign outResourcesAccommodationsBenefitsInclusive experiencesHow We HireLeadership principlesWorking at AmazonFAQSorry, the job you're looki"
+    }
+  ],
+  "previous14Reviewed": [
+    "pe-promigas-billing",
+    "pe-xylem-electromechanical",
+    "us-va-nurse",
+    "us-pell-2026",
+    "us-sba-microloan",
+    "mx-nafin-women",
+    "mx-unam-excel",
+    "co-sena-english-1",
+    "co-fondo-emprender-168",
+    "es-enisa-digital-women",
+    "es-cybersecurity-94",
+    "pe-abc-digital",
+    "pe-innovasuyu-libertad",
+    "int-cs50x-2026"
+  ]
+}

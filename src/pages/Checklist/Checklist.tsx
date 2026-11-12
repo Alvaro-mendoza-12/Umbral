@@ -2,12 +2,14 @@ import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
+import Disclosure from '../../components/common/Disclosure/Disclosure';
 import useLocalStorage from '../../hooks/useLocalStorage';
 import { normalizeChecklistState, StorageKeys } from '../../utils/storage';
 import { normalizeLanguage } from '../../services/i18n';
 import { checklistItems } from '../../data/checklistItems';
 import { ChecklistState } from '../../types';
 import styles from './Checklist.module.css';
+import ProcedureScope from '../../components/common/ProcedureScope';
 
 const checklistIds = checklistItems.map(item => item.id);
 const readChecklist = (value: unknown) => normalizeChecklistState(value, checklistIds);
@@ -54,6 +56,7 @@ export default function Checklist() {
   return (
     <main id="main-content" className={styles.checklist}>
       <div className="container">
+        <ProcedureScope />
         <header className={styles.header}>
           <h1>{t('checklist.title')}</h1>
           <p className={styles.description}>
@@ -82,19 +85,22 @@ export default function Checklist() {
                   completed: completedCount,
                   total: checklistItems.length,
                 })}</span>
-                <div className={styles.progressBar}>
-                  <div
-                    className={styles.progressFill}
-                    style={{
-                      width: `${(completedCount / checklistItems.length) * 100}%`,
-                    }}
-                    role="progressbar"
-                    aria-label={t('checklist.progressLabel')}
-                    aria-valuenow={completedCount}
-                    aria-valuemin={0}
-                    aria-valuemax={checklistItems.length}
-                  />
+                <div
+                  className={styles.progressBar}
+                  role="progressbar"
+                  aria-label={t('checklist.progressLabel')}
+                  aria-valuenow={completedCount}
+                  aria-valuemin={0}
+                  aria-valuemax={checklistItems.length}
+                  aria-valuetext={t('checklist.progress', { completed: completedCount, total: checklistItems.length })}
+                >
+                  <div className={styles.preparationLights} aria-hidden="true">
+                    {checklistItems.map((item, index) => (
+                      <span key={item.id} data-preparation-light={index < completedCount ? 'on' : 'off'} />
+                    ))}
+                  </div>
                 </div>
+                <p className={styles.progressNote}>{t('threshold.preparationNote')}</p>
               </div>
               <Button variant="secondary" size="sm" onClick={resetChecklist}>
                 {t('checklist.resetButton')}
@@ -117,20 +123,25 @@ export default function Checklist() {
                         onChange={() => toggleItem(item.id)}
                         className={styles.checkbox}
                       />
-                      <div className={styles.itemContent}>
-                        <span className={styles.itemTitle}>
-                          {item.item[lang]}
-                          {item.required && (
-                            <span className={styles.required}> *</span>
-                          )}
-                        </span>
-                        {item.description && (
-                          <span className={styles.itemDescription}>
-                            {item.description[lang]}
-                          </span>
+                      <span className={styles.itemTitle}>
+                        {item.item[lang]}
+                        {item.required && (
+                          <span className={styles.required}> *</span>
                         )}
-                      </div>
+                      </span>
                     </label>
+                    {item.description && (
+                      <Disclosure
+                        className={styles.itemDetails}
+                        title={t('checklist.itemDetails', { defaultValue: lang === 'en' ? 'What to review' : 'Qué revisar' })}
+                        summaryLabel={t('checklist.itemDetailsLabel', {
+                          item: item.item[lang],
+                          defaultValue: lang === 'en' ? 'What to review: {{item}}' : 'Qué revisar: {{item}}',
+                        })}
+                      >
+                        <p>{item.description[lang]}</p>
+                      </Disclosure>
+                    )}
                   </li>
                 ))}
               </ul>

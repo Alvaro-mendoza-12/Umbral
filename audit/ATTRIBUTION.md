@@ -1,5 +1,7 @@
 # Procedencia: Kiro y Codex
 
+Actualización 11-11-2026: el propietario aprobó The Illuminated Threshold. Codex implementó además la portada compacta, divulgación progresiva, paquete PE/CSE y registro internacional, estados sin guías y corrección del entorno de CI. [Informe de esta revisión](product-review/REPORT.md). Estos cambios no se atribuyen a Kiro; sus ocho artefactos originales permanecen intactos.
+
 Revisión 10-11-2026. Este documento describe trabajo observable; no reemplaza sesiones faltantes con archivos inventados.
 
 ## Base original

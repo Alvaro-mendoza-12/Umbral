@@ -1,13 +1,21 @@
 # UMBRAL
 
-**Entiende el trámite. Prepárate con confianza.**
+**Las oportunidades existen. Encontrar el camino no debería ser difícil.**
 
-Guía para preparar una primera solicitud de Clasificación Socioeconómica (CSE), con contenido del distrito de Chiclayo, Perú. Conserva la implementación de Kiro: siete vistas, guía de cinco pasos, once casillas de preparación, recursos, preguntas frecuentes, español/inglés y lectura sin conexión tras la primera carga.
+Esta rama evoluciona UMBRAL hacia un **acompañante internacional de acceso a oportunidades**, conservando **The Illuminated Threshold**. Las [fuentes verificadas](audit/catalog-usefulness/verification.json) registran la revisión del catálogo. `main` y la producción original conservan la versión publicada.
+
+**[Abrir la nueva vista previa pública](https://umbral-review-20261111-re35sy5c7-alvaro-s-projects1.vercel.app)**. Rama `codex/catalog-usefulness`, aplicación `a3d0cf0` (corrección de dos cierres de IKEA). Es un Preview de revisión, sin publicación definitiva. La [vista previa de 18ce9b7](https://umbral-review-20261111-6mnp45v52-alvaro-s-projects1.vercel.app) se conserva.
+
+**Versión de revisión:** 31 oportunidades concretas y el trámite CSE conservado. Hay 15 vacantes: Perú 4, EE. UU. 2, México 3, Colombia 3 y España 3. Se revisaron las 14 oportunidades anteriores y se incorporaron 12 vacantes, dos becas internacionales (completa y parcial), un certificado profesional de pago, capacitación gratuita para emprender y una aceleradora con inversión. Las tarjetas resumen beneficio y requisito clave; antes de postular o guardar se muestran elegibilidad, restricciones y condiciones. Los datos no publicados se identifican expresamente. Las categorías sin registros lo explican. Mi Ruta conserva tareas, progreso, descarga e impresión; país e idioma persisten por separado.
+
+La CSE permanece como un procedimiento de orientación dentro de apoyo familiar, con su guía conservada en `/cse`, cinco pasos, once casillas, recursos y preguntas frecuentes. Las fuentes son específicas de cada país; cambiar idioma no cambia jurisdicción. Español e inglés, almacenamiento local y lectura sin conexión tras la primera carga. No se incorporan cuentas ni APIs de IA.
+
+Se conservan la [revisión de producto anterior](audit/product-review/REPORT.md), [comparación](audit/product-review/compare.html), [guía para cinco adultos](audit/product-review/USABILITY.md) y [resumen editable](audit/product-review/USABILITY-RESULTS.md). Estos documentos corresponden a la fase previa; sus URLs y cobertura no describen esta evolución. Las pruebas humanas siguen pendientes; no se han inventado sesiones ni resultados.
 
 UMBRAL no calcula ni solicita la CSE, consulta padrones o concede beneficios. No sustituye a la ULE ni pide DNI, ingresos, domicilio o documentos. Las casillas registran preparación en el dispositivo, no requisitos obligatorios ni elegibilidad. El hosting puede registrar metadatos técnicos; no se promete anonimato absoluto.
 
 - [Repositorio](https://github.com/Alvaro-mendoza-12/Umbral)
-- [Aplicación pública](https://umbral-seven-khaki.vercel.app)
+- [Producción original, sin cambios](https://umbral-seven-khaki.vercel.app)
 - [Auditoría y resultados](audit/REPORT.md)
 - [Procedencia Kiro/Codex](audit/ATTRIBUTION.md)
 - [Preparación Devpost y pendientes](audit/KIROWEEN.md)
@@ -33,7 +41,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-`test:e2e` compila y prueba producción en un servidor aislado `127.0.0.1:5186`. Incluye navegación, idioma, almacenamiento, popup imprimible, offline y axe. Viewports:390×844,768×1024,1440×900; reflow adicional a 320 px. Son emulaciones, no teléfonos físicos.
+`test:e2e` compila y prueba el build local en un servidor aislado `127.0.0.1:5186`. Incluye los seis recorridos de aceptación en español/inglés, filtros, Mi Ruta, persistencia, descarga, popup imprimible, CSE, idioma, offline y axe. Viewports: 360×640, 390×844, 768×1024 y 1440×900; reflow adicional a 320 px. Son emulaciones, no teléfonos físicos. Para conservar las evidencias de fases anteriores, establecer `UMBRAL_RESULTS_DIR=audit/catalog-usefulness/results` y `UMBRAL_SCREENSHOTS_DIR=test-results/review-screenshots` antes de ejecutar Playwright.
 
 ```sh
 npm run preview
@@ -43,7 +51,9 @@ Desarrollo no es prueba del Service Worker. Offline requiere una primera carga c
 
 ## Estructura y mantenimiento
 
-`.kiro/` conserva Specs/Steering auténticos; `src/` tiene React, traducciones y fuentes; `public/` recursos; `tests/` Vitest/Playwright; `audit/` resultados/capturas; `vercel.json` build estático, rutas SPA y cabeceras. `.github/workflows/quality.yml` automatiza comprobaciones.
+`.kiro/` conserva Specs/Steering auténticos. `src/features/opportunities/` separa dominio, datos, estado local y presentación; el contenido CSE sigue en `src/content/pe/cse/`. `public/` contiene recursos; `tests/`, Vitest/Playwright; `audit/`, resultados/capturas; `vercel.json`, build estático, rutas SPA y cabeceras. `.github/workflows/quality.yml` automatiza comprobaciones.
+
+El catálogo se combina en `src/features/opportunities/data/catalog.ts`; `verified.ts` contiene las oportunidades nuevas y `peru.ts` conserva los registros previos. Los portales generales son complementarios. Las convocatorias cerradas y registros pendientes de revisión no aparecen en la búsqueda inicial. Las fechas y horas publicadas determinan el cierre; tras la próxima revisión editorial pasa a «Requiere confirmación» y se oculta la acción de solicitud. No hay actualización automática desde instituciones ni alertas de fechas.
 
 Se excluyen dependencias, `dist`, secretos, `.env` y metadatos `.vercel`. El lockfile permite instalación reproducible. Licencia [MIT](LICENSE).
 

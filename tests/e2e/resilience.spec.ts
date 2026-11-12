@@ -67,8 +67,8 @@ test('resizing an open mobile menu cannot leave a blocking overlay', async ({ pa
   await page.getByRole('button', { name: /abrir menú/i }).click();
   await page.setViewportSize({ width: 1440, height: 900 });
   await expect(page.getByRole('button', { name: /abrir menú/i })).not.toBeVisible();
-  await navigateFromHeader(page, /acerca/i);
-  await expect(page).toHaveURL('/about');
+  await navigateFromHeader(page, /descubrir/i);
+  await expect(page).toHaveURL('/discover');
 });
 
 test('previously loaded production app supports offline deep links and English', async ({ page, context }) => {

@@ -2,7 +2,9 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import buttonStyles from '../../components/common/Button/Button.module.css';
 import Card from '../../components/common/Card';
+import Disclosure from '../../components/common/Disclosure/Disclosure';
 import styles from './About.module.css';
+import ProcedureScope from '../../components/common/ProcedureScope';
 
 export default function About() {
   const { t } = useTranslation();
@@ -14,6 +16,7 @@ export default function About() {
   return (
     <main id="main-content" className={styles.about}>
       <div className="container">
+        <ProcedureScope />
         <h1>{t('about.title')}</h1>
 
         {/* Definition */}
@@ -24,10 +27,16 @@ export default function About() {
           </Card>
         </section>
 
-        {/* Purpose */}
-        <section className={styles.section}>
-          <Card>
-            <h2>{t('about.purpose.title')}</h2>
+        <p className={styles.notice}>{notes[0]}</p>
+
+        <div className={styles.cta}>
+          <Link to="/guide" className={`${buttonStyles.button} ${buttonStyles.primary} ${buttonStyles.lg}`}>
+            {t('about.cta')}
+          </Link>
+        </div>
+
+        <div className={styles.detailsList}>
+          <Disclosure title={t('about.purpose.title')} headingLevel={2}>
             <p className={styles.content}>{t('about.purpose.content')}</p>
             <h3>{t('about.purpose.examplesTitle')}</h3>
             <ul className={styles.list}>
@@ -35,28 +44,20 @@ export default function About() {
                 <li key={index}>{example}</li>
               ))}
             </ul>
-          </Card>
-        </section>
+          </Disclosure>
 
-        {/* Who can apply */}
-        <section className={styles.section}>
-          <Card>
-            <h2>{t('about.whoCanApply.title')}</h2>
+          <Disclosure title={t('about.whoCanApply.title')} headingLevel={2}>
             <p className={styles.content}>{t('about.whoCanApply.content')}</p>
             <ul className={styles.list}>
               {requirements.map((requirement, index) => (
                 <li key={index}>{requirement}</li>
               ))}
             </ul>
-          </Card>
-        </section>
+          </Disclosure>
 
-        {/* Important */}
-        <section className={styles.section}>
-          <Card variant="highlighted">
-            <h2>{t('about.important.title')}</h2>
+          <Disclosure title={t('about.important.title')} headingLevel={2}>
             <ul className={styles.importantList}>
-              {notes.map((note, index) => (
+              {notes.slice(1).map((note, index) => (
                 <li key={index} className={styles.importantItem}>
                   <svg
                     width="20"
@@ -75,13 +76,7 @@ export default function About() {
                 </li>
               ))}
             </ul>
-          </Card>
-        </section>
-
-        <div className={styles.cta}>
-          <Link to="/guide" className={`${buttonStyles.button} ${buttonStyles.primary} ${buttonStyles.lg}`}>
-            {t('about.cta')}
-          </Link>
+          </Disclosure>
         </div>
       </div>
     </main>

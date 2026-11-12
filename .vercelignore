@@ -1,0 +1,6 @@
+audit/
+tests/
+.kiro/
+playwright-report/
+test-results/
+*.md

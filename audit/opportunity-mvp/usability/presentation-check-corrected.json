@@ -1,0 +1,88 @@
+{
+  "checkedOn": "2026-11-11",
+  "sourceCommit": "b26ba80765e86e6f78c06223adf52900bc8452f8",
+  "method": "Anonymous browser; focused classification check ES/EN",
+  "humanSessions": 0,
+  "records": [
+    {
+      "id": "beca-18-2027",
+      "language": "es",
+      "url": "https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app/opportunities/beca-18-2027",
+      "httpStatus": 200,
+      "kind": "Beca",
+      "badgeText": "Inscripción cerrada"
+    },
+    {
+      "id": "empleos-peru",
+      "language": "es",
+      "url": "https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app/opportunities/empleos-peru",
+      "httpStatus": 200,
+      "kind": "Servicio",
+      "badgeText": "Servicio continuo"
+    },
+    {
+      "id": "capacita-t",
+      "language": "es",
+      "url": "https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app/opportunities/capacita-t",
+      "httpStatus": 200,
+      "kind": "Servicio",
+      "badgeText": "Servicio continuo"
+    },
+    {
+      "id": "tu-empresa",
+      "language": "es",
+      "url": "https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app/opportunities/tu-empresa",
+      "httpStatus": 200,
+      "kind": "Servicio",
+      "badgeText": "Servicio continuo"
+    },
+    {
+      "id": "cse-peru",
+      "language": "es",
+      "url": "https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app/opportunities/cse-peru",
+      "httpStatus": 200,
+      "kind": "Procedimiento de orientación",
+      "badgeText": "Procedimiento de orientación"
+    },
+    {
+      "id": "beca-18-2027",
+      "language": "en",
+      "url": "https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app/opportunities/beca-18-2027",
+      "httpStatus": 200,
+      "kind": "Scholarship",
+      "badgeText": "Registration closed"
+    },
+    {
+      "id": "empleos-peru",
+      "language": "en",
+      "url": "https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app/opportunities/empleos-peru",
+      "httpStatus": 200,
+      "kind": "Service",
+      "badgeText": "Ongoing service"
+    },
+    {
+      "id": "capacita-t",
+      "language": "en",
+      "url": "https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app/opportunities/capacita-t",
+      "httpStatus": 200,
+      "kind": "Service",
+      "badgeText": "Ongoing service"
+    },
+    {
+      "id": "tu-empresa",
+      "language": "en",
+      "url": "https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app/opportunities/tu-empresa",
+      "httpStatus": 200,
+      "kind": "Service",
+      "badgeText": "Ongoing service"
+    },
+    {
+      "id": "cse-peru",
+      "language": "en",
+      "url": "https://umbral-review-20261111-nsail4u22-alvaro-s-projects1.vercel.app/opportunities/cse-peru",
+      "httpStatus": 200,
+      "kind": "Guidance procedure",
+      "badgeText": "Guidance procedure"
+    }
+  ]
+}

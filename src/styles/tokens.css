@@ -2,14 +2,17 @@
   /* ===== Colors ===== */
   
   /* Primary */
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #2563eb;
-  --color-primary-600: #1d4ed8;
-  --color-primary-700: #1e40af;
-  --color-focus: #2563eb;
+  --color-primary-50: #fbf1dc;
+  --color-primary-100: #f3e0b8;
+  --color-primary-300: #d7b071;
+  --color-primary-400: #b58543;
+  --color-primary-500: #80551d;
+  --color-primary-600: #654215;
+  --color-primary-700: #4f3417;
+  --color-focus: #80551d;
+  --threshold-night: #171d2a;
+  --threshold-stone: #30394b;
+  --threshold-light: #f3c789;
   
   /* Secondary */
   --color-secondary-400: #34d399;
@@ -29,27 +32,27 @@
   --color-neutral-900: #111827;
   
   /* Functional */
-  --color-success: #047857;
+  --color-success: #226350;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
   --color-info: #3b82f6;
   
   /* Surface */
   --surface-primary: #ffffff;
-  --surface-secondary: var(--color-neutral-50);
+  --surface-secondary: #f5f6f3;
   --surface-elevated: #ffffff;
   
   /* Text */
   --text-primary: var(--color-neutral-900);
   --text-secondary: var(--color-neutral-700);
-  --text-muted: var(--color-neutral-500);
+  --text-muted: #5c6470;
   --text-inverse: #ffffff;
   
   /* ===== Typography ===== */
   
   /* Families */
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  --font-display: 'Inter', sans-serif;
+  --font-sans: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  --font-display: Georgia, 'Times New Roman', serif;
   
   /* Sizes */
   --text-xs: 0.75rem;    /* 12px */

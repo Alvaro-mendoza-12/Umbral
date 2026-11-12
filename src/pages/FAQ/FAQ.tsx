@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Card from '../../components/common/Card';
 import styles from './FAQ.module.css';
+import ProcedureScope from '../../components/common/ProcedureScope';
 
 export default function FAQ() {
   const { t } = useTranslation();
@@ -20,6 +21,7 @@ export default function FAQ() {
   return (
     <main id="main-content" className={styles.faq}>
       <div className="container">
+        <ProcedureScope />
         <header className={styles.header}>
           <h1>{t('faq.title')}</h1>
           <p className={styles.description}>{t('faq.description')}</p>
@@ -30,37 +32,40 @@ export default function FAQ() {
             const isOpen = openIndex === index;
             return (
               <Card key={index} className={styles.faqItem}>
-                <button
-                  className={styles.questionButton}
-                  onClick={() => toggleItem(index)}
-                  aria-expanded={isOpen}
-                >
-                  <span className={styles.question}>{item.question}</span>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    className={`${styles.icon} ${isOpen ? styles.open : ''}`}
-                    aria-hidden="true"
+                <h2 className={styles.questionHeading}>
+                  <button
+                    type="button"
+                    className={styles.questionButton}
+                    onClick={() => toggleItem(index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`faq-answer-${index}`}
+                    id={`faq-question-${index}`}
                   >
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </button>
-                {isOpen && (
-                  <div className={styles.answer}>
-                    <p>{item.answer}</p>
-                  </div>
-                )}
+                    <span className={styles.question}>{item.question}</span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      className={`${styles.icon} ${isOpen ? styles.open : ''}`}
+                      aria-hidden="true"
+                    >
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  </button>
+                </h2>
+                <div id={`faq-answer-${index}`} aria-labelledby={`faq-question-${index}`} className={styles.answer} hidden={!isOpen}>
+                  <p>{item.answer}</p>
+                </div>
               </Card>
             );
           })}
         </div>
 
         <Card variant="highlighted" className={styles.notFound}>
-          <h3>{t('faq.notFound.title')}</h3>
+          <h2>{t('faq.notFound.title')}</h2>
           <p>{t('faq.notFound.message')}</p>
         </Card>
       </div>
